@@ -1,0 +1,242 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B57F866714CBC8E60026A708 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57F866614CBC8E60026A708 /* Foundation.framework */; };
+		B57F866A14CBC8E60026A708 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57F866914CBC8E60026A708 /* main.m */; };
+		B57F866E14CBC8E60026A708 /* schoolapp.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B57F866D14CBC8E60026A708 /* schoolapp.1 */; };
+		B582F0E514DDD61600E89E40 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B582F0E414DDD61600E89E40 /* Student.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B57F866014CBC8E60026A708 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				B57F866E14CBC8E60026A708 /* schoolapp.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B57F866214CBC8E60026A708 /* schoolapp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = schoolapp; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57F866614CBC8E60026A708 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B57F866914CBC8E60026A708 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B57F866C14CBC8E60026A708 /* schoolapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "schoolapp-Prefix.pch"; sourceTree = "<group>"; };
+		B57F866D14CBC8E60026A708 /* schoolapp.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = schoolapp.1; sourceTree = "<group>"; };
+		B582F0E314DDD61600E89E40 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		B582F0E414DDD61600E89E40 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B57F865F14CBC8E60026A708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57F866714CBC8E60026A708 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B57F865514CBC8BB0026A708 = {
+			isa = PBXGroup;
+			children = (
+				B57F866814CBC8E60026A708 /* schoolapp */,
+				B57F866514CBC8E60026A708 /* Frameworks */,
+				B57F866314CBC8E60026A708 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B57F866314CBC8E60026A708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B57F866214CBC8E60026A708 /* schoolapp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B57F866514CBC8E60026A708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B57F866614CBC8E60026A708 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B57F866814CBC8E60026A708 /* schoolapp */ = {
+			isa = PBXGroup;
+			children = (
+				B57F866914CBC8E60026A708 /* main.m */,
+				B57F866B14CBC8E60026A708 /* Supporting Files */,
+				B582F0E314DDD61600E89E40 /* Student.h */,
+				B582F0E414DDD61600E89E40 /* Student.m */,
+			);
+			path = schoolapp;
+			sourceTree = "<group>";
+		};
+		B57F866B14CBC8E60026A708 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B57F866D14CBC8E60026A708 /* schoolapp.1 */,
+				B57F866C14CBC8E60026A708 /* schoolapp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B57F866114CBC8E60026A708 /* schoolapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57F866F14CBC8E60026A708 /* Build configuration list for PBXNativeTarget "schoolapp" */;
+			buildPhases = (
+				B57F865E14CBC8E60026A708 /* Sources */,
+				B57F865F14CBC8E60026A708 /* Frameworks */,
+				B57F866014CBC8E60026A708 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = schoolapp;
+			productName = schoolapp;
+			productReference = B57F866214CBC8E60026A708 /* schoolapp */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B57F865714CBC8BB0026A708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = NSScreencast;
+			};
+			buildConfigurationList = B57F865A14CBC8BB0026A708 /* Build configuration list for PBXProject "SchoolApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B57F865514CBC8BB0026A708;
+			productRefGroup = B57F866314CBC8E60026A708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B57F866114CBC8E60026A708 /* schoolapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B57F865E14CBC8E60026A708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57F866A14CBC8E60026A708 /* main.m in Sources */,
+				B582F0E514DDD61600E89E40 /* Student.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B57F865C14CBC8BB0026A708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		B57F865D14CBC8BB0026A708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		B57F867014CBC8E60026A708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "schoolapp/schoolapp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B57F867114CBC8E60026A708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "schoolapp/schoolapp-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B57F865A14CBC8BB0026A708 /* Build configuration list for PBXProject "SchoolApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57F865C14CBC8BB0026A708 /* Debug */,
+				B57F865D14CBC8BB0026A708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B57F866F14CBC8E60026A708 /* Build configuration list for PBXNativeTarget "schoolapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57F867014CBC8E60026A708 /* Debug */,
+				B57F867114CBC8E60026A708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B57F865714CBC8BB0026A708 /* Project object */;
+}
