@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+        <key>image</key>
+        <string>beer_alagash.jpg</string>
+        <key>name</key>
+        <string>Alagash White</string>
+        <key>type</key>
+        <string>Belgian White</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_anchor_christmas.jpg</string>
+        <key>name</key>
+        <string>Anchor Christmas Ale</string>
+        <key>type</key>
+        <string>Christmas Ale</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_anchor_steam.jpg</string>
+        <key>name</key>
+        <string>Anchor Steam Beer</string>
+        <key>type</key>
+        <string>Lager</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_bruery_saison_rue.jpg</string>
+        <key>name</key>
+        <string>Bruery Saison Rue</string>
+        <key>type</key>
+        <string>Farmhouse Ale</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_paradox_smokehead.jpg</string>
+        <key>name</key>
+        <string>BrewDog Paradox Smokehead</string>
+        <key>type</key>
+        <string>Stout</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_dortmunder_gold.jpg</string>
+        <key>name</key>
+        <string>Great Lakes Dortmunder Gold</string>
+        <key>type</key>
+        <string>Golden Laker</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_hitacho_lacto_stout.jpg</string>
+        <key>name</key>
+        <string>Hitacho Lacto Stout</string>
+        <key>type</key>
+        <string>Stout</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_capuccino_stout.jpg</string>
+        <key>name</key>
+        <string>Lagunitas Cappuccino Stout</string>
+        <key>type</key>
+        <string>Imperial Stout</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_whiteback_white.jpg</string>
+        <key>name</key>
+        <string>Leelanau Whiteback White</string>
+        <key>type</key>
+        <string>White Ale</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_lion_stout.jpg</string>
+        <key>name</key>
+        <string>Lion Stout</string>
+        <key>type</key>
+        <string>Stout</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_hennepin.jpg</string>
+        <key>name</key>
+        <string>Ommegang Hennepin</string>
+        <key>type</key>
+        <string>American Saison</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_anchor_christmas.jpg</string>
+        <key>name</key>
+        <string>Anchor Christmas Ale</string>
+        <key>type</key>
+        <string>Christmas Ale</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_pretty_things_jack_dor.jpg</string>
+        <key>name</key>
+        <string>Pretty Things Jack D'Or</string>
+        <key>type</key>
+        <string>American Saison</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_rodenbach_grand_cru.jpg</string>
+        <key>name</key>
+        <string>Rodenbach Grand Cru</string>
+        <key>type</key>
+        <string>Grand Cru Ale</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_rogue_dead_guy.jpg</string>
+        <key>name</key>
+        <string>Rogue Dead Guy Ale</string>
+        <key>type</key>
+        <string>Maibock</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_samuel_smith_oatmeal_stout.jpg</string>
+        <key>name</key>
+        <string>Samuel Smith Oatmeal Stout</string>
+        <key>type</key>
+        <string>Oatmeal Stout</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_smuttynose_barleywine.jpg</string>
+        <key>name</key>
+        <string>Smuttynose Barleywine</string>
+        <key>type</key>
+        <string>Barleywine</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_weihenstephaner_hefeweissbier.jpg</string>
+        <key>name</key>
+        <string>Weihenstephaner Hefeweissbier</string>
+        <key>type</key>
+        <string>Hefeweizen</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_cantillon_iris.jpg</string>
+        <key>name</key>
+        <string>Cantillon Iris</string>
+        <key>type</key>
+        <string>Lambic</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_de_struise_pannepot.jpg</string>
+        <key>name</key>
+        <string>De Struise Pannepot</string>
+        <key>type</key>
+        <string>Belgian Quadruple</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_weihenstephaner_hefeweissbier.jpg</string>
+        <key>name</key>
+        <string>Weihenstephaner Hefeweissbier</string>
+        <key>type</key>
+        <string>Hefeweizen</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_jolly_pumpkin_la_roja.jpg</string>
+        <key>name</key>
+        <string>Jolly Pumpkin La Roja</string>
+        <key>type</key>
+        <string>Brown Ale</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_orval_trappist.jpg</string>
+        <key>name</key>
+        <string>Orval</string>
+        <key>type</key>
+        <string>Trappist Ale</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_port_brewing_shark_attack_red.jpg</string>
+        <key>name</key>
+        <string>Port Brewing Shark Attack Red</string>
+        <key>type</key>
+        <string>Imperial Red Ale</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_westvleteren_abt_12.jpg</string>
+        <key>name</key>
+        <string>Westvleteren Abt 12</string>
+        <key>type</key>
+        <string>Trappist Ale</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_harviestoun_old_engine_oil.jpg</string>
+        <key>name</key>
+        <string>Harviestoun Old Engine Oil</string>
+        <key>type</key>
+        <string>English Porter</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_great_divide_yeti_stout.jpg</string>
+        <key>name</key>
+        <string>Great Divide Yeti Imperial Stout</string>
+        <key>type</key>
+        <string>Imperial Stout</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_founders_kbs.jpg</string>
+        <key>name</key>
+        <string>Founders KBS</string>
+        <key>type</key>
+        <string>Stout</string>
+    </dict>
+    <dict>
+        <key>image</key>
+        <string>beer_weihenstephaner_hefeweissbier.jpg</string>
+        <key>name</key>
+        <string>Weihenstephaner Hefeweissbier</string>
+        <key>type</key>
+        <string>Hefeweizen</string>
+    </dict>
+
+
+
+</array>
+</plist>
