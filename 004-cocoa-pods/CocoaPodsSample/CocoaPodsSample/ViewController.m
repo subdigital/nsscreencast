@@ -3,25 +3,22 @@
 //  CocoaPodsSample
 //
 //  Created by Ben Scheirman on 2/12/12.
-//  Copyright (c) 2012 ChaiONE. All rights reserved.
+//  Copyright (c) 2012 NSScreencast. All rights reserved.
 //
 
 #import "ViewController.h"
 
 @implementation ViewController
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+    [super viewDidLoad];        
 }
 
 - (void)viewDidUnload

@@ -3,7 +3,7 @@
 //  CocoaPodsSample
 //
 //  Created by Ben Scheirman on 2/12/12.
-//  Copyright (c) 2012 ChaiONE. All rights reserved.
+//  Copyright (c) 2012 NSScreencast. All rights reserved.
 //
 
 #import "AppDelegate.h"
