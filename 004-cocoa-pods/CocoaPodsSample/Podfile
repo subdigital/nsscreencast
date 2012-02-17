@@ -3,4 +3,4 @@ platform :ios
 dependency 'AFNetworking'
 dependency 'JSONKit'
 dependency 'SVProgressHUD'
-dependency 'YRDropdownView'
+dependency 'libPusher'

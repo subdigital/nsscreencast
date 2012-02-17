@@ -1,0 +1,9 @@
+PODS:
+  - CocoaAsyncSocket (0.0.1)
+  - JSONKit (1.4)
+  - Kiwi (1.0.1)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket (= 0.0.1)
+  - JSONKit (= 1.4)
+  - Kiwi (from `git://github.com/allending/Kiwi.git')

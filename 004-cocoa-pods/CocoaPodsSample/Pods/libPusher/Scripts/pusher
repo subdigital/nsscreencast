@@ -1,0 +1,49 @@
+#!/usr/bin/env ruby
+require 'optparse'
+require 'yaml'
+require 'pusher'
+
+options = {}
+
+if File.exist?(".pusheropts")
+  options.merge!(YAML.load(File.read('.pusheropts')))
+end
+
+OptionParser.new do |opts|
+  opts.banner = "Usage: pusher [options] -c some-channel -e some-event -d extra-data"
+  
+  opts.on("-c", "--channel CHANNEL", "The channel to use when sending.") do |c|
+    options[:channel] = c
+  end
+  
+  opts.on("-e", "--event EVENT", "The name of the event to trigger.") do |e|
+    options[:event] = e
+  end
+  
+  opts.on("-d", "--data [DATA]", "Any additional event data.") do |d|
+    options[:data] = d || ""
+  end
+  
+  opts.on("-a", "--appid [APPID]", "Your Pusher application ID.") do |id|
+    options[:app_id] = id
+  end
+  
+  opts.on("-k", "--key [KEY]", "Your Pusher access key.") do |k|
+    options[:key] = k
+  end
+  
+  opts.on("-s", "--secret [SECRET]", "Your Pusher secret key.") do |s|
+    options[:secret] = s
+  end
+end.parse!
+
+Pusher.app_id = options[:app_id]
+Pusher.key = options[:key]
+Pusher.secret = options[:secret]
+
+if options[:channel].nil? || options[:event].nil?
+  puts "You must specify the following: channel (-c), event: (-e)"
+  exit 1
+end
+
+Pusher[options[:channel]].trigger!(options[:event], options[:data])
