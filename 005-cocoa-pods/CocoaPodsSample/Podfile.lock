@@ -1,0 +1,14 @@
+PODS:
+  - AFNetworking (0.9.0)
+  - CocoaAsyncSocket (0.0.1)
+  - JSONKit (1.4)
+  - SVProgressHUD (0.6)
+  - libPusher (1.1):
+    - CocoaAsyncSocket (= 0.0.1)
+    - JSONKit (= 1.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - JSONKit
+  - SVProgressHUD
+  - libPusher

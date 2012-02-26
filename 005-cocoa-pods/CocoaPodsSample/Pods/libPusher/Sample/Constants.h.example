@@ -1,0 +1,10 @@
+#define PUSHER_API_KEY    @"api-key"
+#define PUSHER_API_SECRET @"secret"
+#define PUSHER_APP_ID     @"app-id"
+
+// run rake authserver:start to run
+#define PRESENCE_AUTH_URL @"http://localhost:9292/presence/auth"
+
+// credentials for private/presence channels
+#define CHANNEL_AUTH_USERNAME @"admin"
+#define CHANNEL_AUTH_PASSWORD @"letmein"

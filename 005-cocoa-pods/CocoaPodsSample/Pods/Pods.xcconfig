@@ -1,0 +1,4 @@
+PODS_ROOT = $(SRCROOT)/Pods
+HEADER_SEARCH_PATHS = "$(PODS_ROOT)/Headers" "$(PODS_ROOT)/Headers/AFNetworking" "$(PODS_ROOT)/Headers/CocoaAsyncSocket" "$(PODS_ROOT)/Headers/JSONKit" "$(PODS_ROOT)/Headers/SVProgressHUD" "$(PODS_ROOT)/Headers/libPusher"
+ALWAYS_SEARCH_USER_PATHS = YES
+OTHER_LDFLAGS = -ObjC -all_load -framework SystemConfiguration -framework CFNetwork -framework QuartzCore -framework CFNetwork
