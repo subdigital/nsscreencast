@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4788D69944834F3AB7999BAD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CAFF6E8F2A40A0AD0A3EBC /* libPods.a */; };
+		B50750B714FAEBAB00FAB24D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50750B614FAEBAB00FAB24D /* UIKit.framework */; };
+		B50750B914FAEBAB00FAB24D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50750B814FAEBAB00FAB24D /* Foundation.framework */; };
+		B50750BB14FAEBAB00FAB24D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50750BA14FAEBAB00FAB24D /* CoreGraphics.framework */; };
+		B50750C114FAEBAB00FAB24D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B50750BF14FAEBAB00FAB24D /* InfoPlist.strings */; };
+		B50750C314FAEBAB00FAB24D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B50750C214FAEBAB00FAB24D /* main.m */; };
+		B50750C714FAEBAB00FAB24D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B50750C614FAEBAB00FAB24D /* AppDelegate.m */; };
+		B50750CA14FAEBAB00FAB24D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50750C914FAEBAB00FAB24D /* ViewController.m */; };
+		B50750CD14FAEBAB00FAB24D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B50750CB14FAEBAB00FAB24D /* ViewController.xib */; };
+		B56FB34614FAFD6E006946AD /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56FB34514FAFD6E006946AD /* avatar.jpg */; };
+		B56FB34914FB018A006946AD /* BeersApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B56FB34814FB018A006946AD /* BeersApiClient.m */; };
+		B56FB35414FB04C9006946AD /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = B56FB35314FB04C9006946AD /* Beer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		62CAFF6E8F2A40A0AD0A3EBC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		86624C66147D44E9AE2470CC /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		B50750B214FAEBAB00FAB24D /* BeerList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50750B614FAEBAB00FAB24D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B50750B814FAEBAB00FAB24D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B50750BA14FAEBAB00FAB24D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B50750BE14FAEBAB00FAB24D /* BeerList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeerList-Info.plist"; sourceTree = "<group>"; };
+		B50750C014FAEBAB00FAB24D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B50750C214FAEBAB00FAB24D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B50750C414FAEBAB00FAB24D /* BeerList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeerList-Prefix.pch"; sourceTree = "<group>"; };
+		B50750C514FAEBAB00FAB24D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B50750C614FAEBAB00FAB24D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B50750C814FAEBAB00FAB24D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B50750C914FAEBAB00FAB24D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B50750CC14FAEBAB00FAB24D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B56FB34514FAFD6E006946AD /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
+		B56FB34714FB018A006946AD /* BeersApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeersApiClient.h; sourceTree = "<group>"; };
+		B56FB34814FB018A006946AD /* BeersApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeersApiClient.m; sourceTree = "<group>"; };
+		B56FB35214FB04C9006946AD /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
+		B56FB35314FB04C9006946AD /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B50750AF14FAEBAB00FAB24D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50750B714FAEBAB00FAB24D /* UIKit.framework in Frameworks */,
+				B50750B914FAEBAB00FAB24D /* Foundation.framework in Frameworks */,
+				B50750BB14FAEBAB00FAB24D /* CoreGraphics.framework in Frameworks */,
+				4788D69944834F3AB7999BAD /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B50750A714FAEBAA00FAB24D = {
+			isa = PBXGroup;
+			children = (
+				B50750BC14FAEBAB00FAB24D /* BeerList */,
+				B50750B514FAEBAB00FAB24D /* Frameworks */,
+				B50750B314FAEBAB00FAB24D /* Products */,
+				86624C66147D44E9AE2470CC /* Pods.xcconfig */,
+				B56FB34514FAFD6E006946AD /* avatar.jpg */,
+			);
+			sourceTree = "<group>";
+		};
+		B50750B314FAEBAB00FAB24D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B50750B214FAEBAB00FAB24D /* BeerList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B50750B514FAEBAB00FAB24D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B50750B614FAEBAB00FAB24D /* UIKit.framework */,
+				B50750B814FAEBAB00FAB24D /* Foundation.framework */,
+				B50750BA14FAEBAB00FAB24D /* CoreGraphics.framework */,
+				62CAFF6E8F2A40A0AD0A3EBC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B50750BC14FAEBAB00FAB24D /* BeerList */ = {
+			isa = PBXGroup;
+			children = (
+				B50750C514FAEBAB00FAB24D /* AppDelegate.h */,
+				B50750C614FAEBAB00FAB24D /* AppDelegate.m */,
+				B50750C814FAEBAB00FAB24D /* ViewController.h */,
+				B50750C914FAEBAB00FAB24D /* ViewController.m */,
+				B50750CB14FAEBAB00FAB24D /* ViewController.xib */,
+				B50750BD14FAEBAB00FAB24D /* Supporting Files */,
+				B56FB34714FB018A006946AD /* BeersApiClient.h */,
+				B56FB34814FB018A006946AD /* BeersApiClient.m */,
+				B56FB35214FB04C9006946AD /* Beer.h */,
+				B56FB35314FB04C9006946AD /* Beer.m */,
+			);
+			path = BeerList;
+			sourceTree = "<group>";
+		};
+		B50750BD14FAEBAB00FAB24D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B50750BE14FAEBAB00FAB24D /* BeerList-Info.plist */,
+				B50750BF14FAEBAB00FAB24D /* InfoPlist.strings */,
+				B50750C214FAEBAB00FAB24D /* main.m */,
+				B50750C414FAEBAB00FAB24D /* BeerList-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B50750B114FAEBAB00FAB24D /* BeerList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B50750D014FAEBAB00FAB24D /* Build configuration list for PBXNativeTarget "BeerList" */;
+			buildPhases = (
+				B50750AE14FAEBAB00FAB24D /* Sources */,
+				B50750AF14FAEBAB00FAB24D /* Frameworks */,
+				B50750B014FAEBAB00FAB24D /* Resources */,
+				7F68FBA6B2604D37B79DE03E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeerList;
+			productName = BeerList;
+			productReference = B50750B214FAEBAB00FAB24D /* BeerList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B50750A914FAEBAA00FAB24D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = NSScreencast;
+			};
+			buildConfigurationList = B50750AC14FAEBAA00FAB24D /* Build configuration list for PBXProject "BeerList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B50750A714FAEBAA00FAB24D;
+			productRefGroup = B50750B314FAEBAB00FAB24D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B50750B114FAEBAB00FAB24D /* BeerList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B50750B014FAEBAB00FAB24D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50750C114FAEBAB00FAB24D /* InfoPlist.strings in Resources */,
+				B50750CD14FAEBAB00FAB24D /* ViewController.xib in Resources */,
+				B56FB34614FAFD6E006946AD /* avatar.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F68FBA6B2604D37B79DE03E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B50750AE14FAEBAB00FAB24D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50750C314FAEBAB00FAB24D /* main.m in Sources */,
+				B50750C714FAEBAB00FAB24D /* AppDelegate.m in Sources */,
+				B50750CA14FAEBAB00FAB24D /* ViewController.m in Sources */,
+				B56FB34914FB018A006946AD /* BeersApiClient.m in Sources */,
+				B56FB35414FB04C9006946AD /* Beer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B50750BF14FAEBAB00FAB24D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B50750C014FAEBAB00FAB24D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B50750CB14FAEBAB00FAB24D /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B50750CC14FAEBAB00FAB24D /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B50750CE14FAEBAB00FAB24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B50750CF14FAEBAB00FAB24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B50750D114FAEBAB00FAB24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86624C66147D44E9AE2470CC /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeerList/BeerList-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "BeerList/BeerList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B50750D214FAEBAB00FAB24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86624C66147D44E9AE2470CC /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeerList/BeerList-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "BeerList/BeerList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B50750AC14FAEBAA00FAB24D /* Build configuration list for PBXProject "BeerList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50750CE14FAEBAB00FAB24D /* Debug */,
+				B50750CF14FAEBAB00FAB24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B50750D014FAEBAB00FAB24D /* Build configuration list for PBXNativeTarget "BeerList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50750D114FAEBAB00FAB24D /* Debug */,
+				B50750D214FAEBAB00FAB24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B50750A914FAEBAA00FAB24D /* Project object */;
+}

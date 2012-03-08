@@ -1,0 +1,7 @@
+PODS:
+  - AFNetworking (0.9.0)
+  - JSONKit (1.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - JSONKit
