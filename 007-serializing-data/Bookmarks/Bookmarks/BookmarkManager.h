@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Bookmark.h"
 
 @interface BookmarkManager : NSObject {
     NSString *_path;
@@ -16,6 +17,6 @@
 + (id)sharedManager;
 
 - (NSArray *)bookmarks;
-- (void)addBookmark:(NSString *)url name:(NSString *)name;
+- (void)addBookmark:(Bookmark *)bookmark;
 
 @end

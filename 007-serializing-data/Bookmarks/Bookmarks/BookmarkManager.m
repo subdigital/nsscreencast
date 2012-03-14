@@ -26,23 +26,23 @@
         NSString *documentsDirectory = nil;
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         documentsDirectory = [paths objectAtIndex:0];
-        _path = [[documentsDirectory stringByAppendingPathComponent:@"bookmarks.plist"] retain];
-        NSLog(@"Saving bookmarks to %@", _path);
+        _path = [[documentsDirectory stringByAppendingPathComponent:@"bookmarks.dat"] retain];
+        NSLog(@"Saving bookmarks in %@", _path);
     }
     
     return self;
 }
 
 - (void)dealloc {
-    [_path release];
     [_bookmarks release];
+    [_path release];
     [super dealloc];
 }
 
 - (void)loadBookmarks {
-    _bookmarks = [[NSArray arrayWithContentsOfFile:_path] retain];
+    _bookmarks = [[NSKeyedUnarchiver unarchiveObjectWithFile:_path] retain];
     if (!_bookmarks) {
-        _bookmarks = [[NSMutableArray array] retain];
+        _bookmarks = [[NSMutableArray array] retain];        
     }
 }
 
@@ -53,18 +53,15 @@
     return _bookmarks;
 }
 
-- (void)addBookmark:(NSString *)url name:(NSString *)name {
+- (void)addBookmark:(Bookmark *)bookmark {
     if (!_bookmarks) 
         [self loadBookmarks];
     
-    NSLog(@"Adding bookmark [name: %@] [url: %@]", name, url);
+    NSLog(@"Adding bookmark [name: %@] [url: %@]", bookmark.label, bookmark.url);
     
-    NSDictionary *bookmarkDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-                                        name, @"name",
-                                        url,  @"url", nil];
-    [_bookmarks addObject:bookmarkDictionary];
-    [_bookmarks writeToFile:_path atomically:YES];
+    [_bookmarks addObject:bookmark];
+    
+    [NSKeyedArchiver archiveRootObject:_bookmarks toFile:_path];
 }
-
 
 @end

@@ -38,8 +38,12 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)addBookmarkViewController:(AddBookmarkViewController *)viewController didSaveBookmarkWithLabel:(NSString *)label url:(NSString *)url {
-    [[BookmarkManager sharedManager] addBookmark:url name:label];
+- (void)addBookmarkViewController:(AddBookmarkViewController *)viewController didSaveBookmarkWithLabel:(NSString *)label url:(NSString *)url {    
+    Bookmark *bookmark = [[[Bookmark alloc] init] autorelease];
+    bookmark.label = label;
+    bookmark.url = url;
+    
+    [[BookmarkManager sharedManager] addBookmark:bookmark];
     [self.tableView reloadData];
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -56,9 +60,9 @@
     if (!cell) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier] autorelease];
     }
-    NSDictionary *bookmark = [[[BookmarkManager sharedManager] bookmarks] objectAtIndex:indexPath.row];
-    cell.textLabel.text = [bookmark objectForKey:@"name"];
-    cell.detailTextLabel.text = [bookmark objectForKey:@"url"];
+    Bookmark *bookmark = [[[BookmarkManager sharedManager] bookmarks] objectAtIndex:indexPath.row];
+    cell.textLabel.text = bookmark.label;
+    cell.detailTextLabel.text = bookmark.url;
     
     return cell;
 }

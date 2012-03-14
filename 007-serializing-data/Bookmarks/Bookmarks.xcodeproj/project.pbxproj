@@ -18,6 +18,7 @@
 		B5C41A4C150D3D12004D3CD2 /* BookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C41A4B150D3D12004D3CD2 /* BookmarkManager.m */; };
 		B5C41A50150D7A44004D3CD2 /* AddBookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C41A4E150D7A44004D3CD2 /* AddBookmarkViewController.m */; };
 		B5C41A51150D7A44004D3CD2 /* AddBookmarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5C41A4F150D7A44004D3CD2 /* AddBookmarkViewController.xib */; };
+		B5D5F3F1150DB76300A2596F /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D5F3F0150DB76300A2596F /* Bookmark.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		B5C41A4D150D7A44004D3CD2 /* AddBookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBookmarkViewController.h; sourceTree = "<group>"; };
 		B5C41A4E150D7A44004D3CD2 /* AddBookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBookmarkViewController.m; sourceTree = "<group>"; };
 		B5C41A4F150D7A44004D3CD2 /* AddBookmarkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddBookmarkViewController.xib; sourceTree = "<group>"; };
+		B5D5F3EF150DB76300A2596F /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
+		B5D5F3F0150DB76300A2596F /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				B5C41A4E150D7A44004D3CD2 /* AddBookmarkViewController.m */,
 				B5C41A4F150D7A44004D3CD2 /* AddBookmarkViewController.xib */,
 				B5C41A34150D3C74004D3CD2 /* Supporting Files */,
+				B5D5F3EF150DB76300A2596F /* Bookmark.h */,
+				B5D5F3F0150DB76300A2596F /* Bookmark.m */,
 			);
 			path = Bookmarks;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				B5C41A41150D3C74004D3CD2 /* ViewController.m in Sources */,
 				B5C41A4C150D3D12004D3CD2 /* BookmarkManager.m in Sources */,
 				B5C41A50150D7A44004D3CD2 /* AddBookmarkViewController.m in Sources */,
+				B5D5F3F1150DB76300A2596F /* Bookmark.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +295,7 @@
 				B5C41A49150D3C74004D3CD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
