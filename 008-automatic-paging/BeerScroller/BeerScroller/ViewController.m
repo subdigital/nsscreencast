@@ -23,11 +23,11 @@ const int kLoadingCellTag = 1321;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Beer!";
     
     self.beers = [NSMutableArray array];
     
-    _currentPage = 1;
-    [self fetchBeers];
+    _currentPage = 0;
 }
 
 - (void)viewDidUnload
@@ -39,6 +39,10 @@ const int kLoadingCellTag = 1321;
 #pragma mark - UITableViewDataSource methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (_currentPage == 0) {
+        return 1;
+    }
+    
     if (_currentPage < _totalPages) {
         return self.beers.count + 1;
     }
@@ -110,6 +114,7 @@ const int kLoadingCellTag = 1321;
                     if (![self.beers containsObject:beer]) {
                         [self.beers addObject:beer];                        
                     }
+
                 }
                 [self.tableView reloadData]; 
             });
