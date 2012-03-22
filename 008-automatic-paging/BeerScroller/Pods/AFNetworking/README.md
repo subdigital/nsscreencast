@@ -20,6 +20,7 @@ Choose AFNetworking for your next project, or migrate over your existing project
 - [Download AFNetworking](https://github.com/AFNetworking/AFNetworking/zipball/master) and try out the included Mac and iPhone example apps
 - Read the ["Getting Started" guide](https://github.com/AFNetworking/AFNetworking/wiki/Getting-Started-with-AFNetworking), [FAQ](https://github.com/AFNetworking/AFNetworking/wiki/AFNetworking-FAQ), or [other articles in the wiki](https://github.com/AFNetworking/AFNetworking/wiki)
 - Check out the [complete documentation](http://afnetworking.org/Documentation/) for a comprehensive look at the APIs available in AFNetworking
+- Watch the [NSScreencast episode about AFNetworking](http://nsscreencast.com/episodes/6-afnetworking) for a quick introduction to how to use it in your application.
 
 ## Overview
 
@@ -76,7 +77,7 @@ AFNetworking is architected to be as small and modular as possible, in order to 
     <td>A subclass of <tt>AFHTTPRequestOperation</tt> for downloading an processing images.</td>
   </tr>
   <tr>
-    <td><a href="http://afnetworking.org/Documentation/Classes/UIImageView(AFNetworking).html">UIImageView+AFNetworking</a></td>
+    <td><a href="http://afnetworking.org/Documentation/Categories/UIImageView+AFNetworking.html">UIImageView+AFNetworking</a></td>
     <td>Adds methods to `UIImageView` for loading remote images asynchronously from a URL.</td>
   </tr>
 </table>

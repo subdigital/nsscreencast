@@ -7,101 +7,101 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8344E73A72C748A3AC4B00AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BAA33B696DA499E98EA43BC /* libPods.a */; };
-		B536DCB11516BF4F003AA585 /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = B536DCB01516BF4F003AA585 /* Beer.m */; };
-		B58C4BC0151690BE007C4A79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58C4BBF151690BE007C4A79 /* UIKit.framework */; };
-		B58C4BC2151690BE007C4A79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58C4BC1151690BE007C4A79 /* Foundation.framework */; };
-		B58C4BC4151690BE007C4A79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58C4BC3151690BE007C4A79 /* CoreGraphics.framework */; };
-		B58C4BCA151690BE007C4A79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B58C4BC8151690BE007C4A79 /* InfoPlist.strings */; };
-		B58C4BCC151690BE007C4A79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B58C4BCB151690BE007C4A79 /* main.m */; };
-		B58C4BD0151690BE007C4A79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B58C4BCF151690BE007C4A79 /* AppDelegate.m */; };
-		B58C4BD3151690BE007C4A79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58C4BD2151690BE007C4A79 /* ViewController.m */; };
+		AF013A15BAD2467CAE2D507A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EF28280DB34157BD43AB21 /* libPods.a */; };
+		B5ADA9AC1517FBC200A85FBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5ADA9AB1517FBC200A85FBB /* UIKit.framework */; };
+		B5ADA9AE1517FBC200A85FBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5ADA9AD1517FBC200A85FBB /* Foundation.framework */; };
+		B5ADA9B01517FBC200A85FBB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5ADA9AF1517FBC200A85FBB /* CoreGraphics.framework */; };
+		B5ADA9B61517FBC200A85FBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5ADA9B41517FBC200A85FBB /* InfoPlist.strings */; };
+		B5ADA9B81517FBC200A85FBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ADA9B71517FBC200A85FBB /* main.m */; };
+		B5ADA9BC1517FBC200A85FBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ADA9BB1517FBC200A85FBB /* AppDelegate.m */; };
+		B5ADA9BF1517FBC200A85FBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ADA9BE1517FBC200A85FBB /* ViewController.m */; };
+		B5ADA9D91517FF4300A85FBB /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ADA9D81517FF4300A85FBB /* Beer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7E035BB4300A4581A9CC9BED /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		9BAA33B696DA499E98EA43BC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B536DCAF1516BF4F003AA585 /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
-		B536DCB01516BF4F003AA585 /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
-		B58C4BBB151690BE007C4A79 /* BeerScroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerScroller.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B58C4BBF151690BE007C4A79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B58C4BC1151690BE007C4A79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B58C4BC3151690BE007C4A79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B58C4BC7151690BE007C4A79 /* BeerScroller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeerScroller-Info.plist"; sourceTree = "<group>"; };
-		B58C4BC9151690BE007C4A79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B58C4BCB151690BE007C4A79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B58C4BCD151690BE007C4A79 /* BeerScroller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeerScroller-Prefix.pch"; sourceTree = "<group>"; };
-		B58C4BCE151690BE007C4A79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B58C4BCF151690BE007C4A79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B58C4BD1151690BE007C4A79 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B58C4BD2151690BE007C4A79 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		28EF28280DB34157BD43AB21 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FDA464AFB5849BEA75C607E /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		B5ADA9A71517FBC200A85FBB /* BeerScroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerScroller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5ADA9AB1517FBC200A85FBB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5ADA9AD1517FBC200A85FBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5ADA9AF1517FBC200A85FBB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5ADA9B31517FBC200A85FBB /* BeerScroller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeerScroller-Info.plist"; sourceTree = "<group>"; };
+		B5ADA9B51517FBC200A85FBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5ADA9B71517FBC200A85FBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5ADA9B91517FBC200A85FBB /* BeerScroller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeerScroller-Prefix.pch"; sourceTree = "<group>"; };
+		B5ADA9BA1517FBC200A85FBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5ADA9BB1517FBC200A85FBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5ADA9BD1517FBC200A85FBB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B5ADA9BE1517FBC200A85FBB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B5ADA9D71517FF4300A85FBB /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
+		B5ADA9D81517FF4300A85FBB /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B58C4BB8151690BE007C4A79 /* Frameworks */ = {
+		B5ADA9A41517FBC200A85FBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B58C4BC0151690BE007C4A79 /* UIKit.framework in Frameworks */,
-				B58C4BC2151690BE007C4A79 /* Foundation.framework in Frameworks */,
-				B58C4BC4151690BE007C4A79 /* CoreGraphics.framework in Frameworks */,
-				8344E73A72C748A3AC4B00AC /* libPods.a in Frameworks */,
+				B5ADA9AC1517FBC200A85FBB /* UIKit.framework in Frameworks */,
+				B5ADA9AE1517FBC200A85FBB /* Foundation.framework in Frameworks */,
+				B5ADA9B01517FBC200A85FBB /* CoreGraphics.framework in Frameworks */,
+				AF013A15BAD2467CAE2D507A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B58C4BB0151690BE007C4A79 = {
+		B5ADA99C1517FBC200A85FBB = {
 			isa = PBXGroup;
 			children = (
-				B58C4BC5151690BE007C4A79 /* BeerScroller */,
-				B58C4BBE151690BE007C4A79 /* Frameworks */,
-				B58C4BBC151690BE007C4A79 /* Products */,
-				7E035BB4300A4581A9CC9BED /* Pods.xcconfig */,
+				B5ADA9B11517FBC200A85FBB /* BeerScroller */,
+				B5ADA9AA1517FBC200A85FBB /* Frameworks */,
+				B5ADA9A81517FBC200A85FBB /* Products */,
+				8FDA464AFB5849BEA75C607E /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
-		B58C4BBC151690BE007C4A79 /* Products */ = {
+		B5ADA9A81517FBC200A85FBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B58C4BBB151690BE007C4A79 /* BeerScroller.app */,
+				B5ADA9A71517FBC200A85FBB /* BeerScroller.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B58C4BBE151690BE007C4A79 /* Frameworks */ = {
+		B5ADA9AA1517FBC200A85FBB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B58C4BBF151690BE007C4A79 /* UIKit.framework */,
-				B58C4BC1151690BE007C4A79 /* Foundation.framework */,
-				B58C4BC3151690BE007C4A79 /* CoreGraphics.framework */,
-				9BAA33B696DA499E98EA43BC /* libPods.a */,
+				B5ADA9AB1517FBC200A85FBB /* UIKit.framework */,
+				B5ADA9AD1517FBC200A85FBB /* Foundation.framework */,
+				B5ADA9AF1517FBC200A85FBB /* CoreGraphics.framework */,
+				28EF28280DB34157BD43AB21 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B58C4BC5151690BE007C4A79 /* BeerScroller */ = {
+		B5ADA9B11517FBC200A85FBB /* BeerScroller */ = {
 			isa = PBXGroup;
 			children = (
-				B536DCAF1516BF4F003AA585 /* Beer.h */,
-				B536DCB01516BF4F003AA585 /* Beer.m */,
-				B58C4BCE151690BE007C4A79 /* AppDelegate.h */,
-				B58C4BCF151690BE007C4A79 /* AppDelegate.m */,
-				B58C4BD1151690BE007C4A79 /* ViewController.h */,
-				B58C4BD2151690BE007C4A79 /* ViewController.m */,
-				B58C4BC6151690BE007C4A79 /* Supporting Files */,
+				B5ADA9D71517FF4300A85FBB /* Beer.h */,
+				B5ADA9D81517FF4300A85FBB /* Beer.m */,
+				B5ADA9BA1517FBC200A85FBB /* AppDelegate.h */,
+				B5ADA9BB1517FBC200A85FBB /* AppDelegate.m */,
+				B5ADA9BD1517FBC200A85FBB /* ViewController.h */,
+				B5ADA9BE1517FBC200A85FBB /* ViewController.m */,
+				B5ADA9B21517FBC200A85FBB /* Supporting Files */,
 			);
 			path = BeerScroller;
 			sourceTree = "<group>";
 		};
-		B58C4BC6151690BE007C4A79 /* Supporting Files */ = {
+		B5ADA9B21517FBC200A85FBB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B58C4BC7151690BE007C4A79 /* BeerScroller-Info.plist */,
-				B58C4BC8151690BE007C4A79 /* InfoPlist.strings */,
-				B58C4BCB151690BE007C4A79 /* main.m */,
-				B58C4BCD151690BE007C4A79 /* BeerScroller-Prefix.pch */,
+				B5ADA9B31517FBC200A85FBB /* BeerScroller-Info.plist */,
+				B5ADA9B41517FBC200A85FBB /* InfoPlist.strings */,
+				B5ADA9B71517FBC200A85FBB /* main.m */,
+				B5ADA9B91517FBC200A85FBB /* BeerScroller-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,14 +109,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B58C4BBA151690BE007C4A79 /* BeerScroller */ = {
+		B5ADA9A61517FBC200A85FBB /* BeerScroller */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B58C4BD9151690BE007C4A79 /* Build configuration list for PBXNativeTarget "BeerScroller" */;
+			buildConfigurationList = B5ADA9C51517FBC200A85FBB /* Build configuration list for PBXNativeTarget "BeerScroller" */;
 			buildPhases = (
-				B58C4BB7151690BE007C4A79 /* Sources */,
-				B58C4BB8151690BE007C4A79 /* Frameworks */,
-				B58C4BB9151690BE007C4A79 /* Resources */,
-				8B898B5DA1114DCCB2E34B1E /* Copy Pods Resources */,
+				B5ADA9A31517FBC200A85FBB /* Sources */,
+				B5ADA9A41517FBC200A85FBB /* Frameworks */,
+				B5ADA9A51517FBC200A85FBB /* Resources */,
+				7812B300CE644E6384F01B6E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,47 +124,48 @@
 			);
 			name = BeerScroller;
 			productName = BeerScroller;
-			productReference = B58C4BBB151690BE007C4A79 /* BeerScroller.app */;
+			productReference = B5ADA9A71517FBC200A85FBB /* BeerScroller.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B58C4BB2151690BE007C4A79 /* Project object */ = {
+		B5ADA99E1517FBC200A85FBB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = NSScreencast;
 			};
-			buildConfigurationList = B58C4BB5151690BE007C4A79 /* Build configuration list for PBXProject "BeerScroller" */;
+			buildConfigurationList = B5ADA9A11517FBC200A85FBB /* Build configuration list for PBXProject "BeerScroller" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B58C4BB0151690BE007C4A79;
-			productRefGroup = B58C4BBC151690BE007C4A79 /* Products */;
+			mainGroup = B5ADA99C1517FBC200A85FBB;
+			productRefGroup = B5ADA9A81517FBC200A85FBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B58C4BBA151690BE007C4A79 /* BeerScroller */,
+				B5ADA9A61517FBC200A85FBB /* BeerScroller */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B58C4BB9151690BE007C4A79 /* Resources */ = {
+		B5ADA9A51517FBC200A85FBB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B58C4BCA151690BE007C4A79 /* InfoPlist.strings in Resources */,
+				B5ADA9B61517FBC200A85FBB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8B898B5DA1114DCCB2E34B1E /* Copy Pods Resources */ = {
+		7812B300CE644E6384F01B6E /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -181,24 +182,24 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B58C4BB7151690BE007C4A79 /* Sources */ = {
+		B5ADA9A31517FBC200A85FBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B58C4BCC151690BE007C4A79 /* main.m in Sources */,
-				B58C4BD0151690BE007C4A79 /* AppDelegate.m in Sources */,
-				B58C4BD3151690BE007C4A79 /* ViewController.m in Sources */,
-				B536DCB11516BF4F003AA585 /* Beer.m in Sources */,
+				B5ADA9B81517FBC200A85FBB /* main.m in Sources */,
+				B5ADA9BC1517FBC200A85FBB /* AppDelegate.m in Sources */,
+				B5ADA9BF1517FBC200A85FBB /* ViewController.m in Sources */,
+				B5ADA9D91517FF4300A85FBB /* Beer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B58C4BC8151690BE007C4A79 /* InfoPlist.strings */ = {
+		B5ADA9B41517FBC200A85FBB /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B58C4BC9151690BE007C4A79 /* en */,
+				B5ADA9B51517FBC200A85FBB /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -206,12 +207,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B58C4BD7151690BE007C4A79 /* Debug */ = {
+		B5ADA9C31517FBC200A85FBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -231,12 +231,11 @@
 			};
 			name = Debug;
 		};
-		B58C4BD8151690BE007C4A79 /* Release */ = {
+		B5ADA9C41517FBC200A85FBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -251,9 +250,9 @@
 			};
 			name = Release;
 		};
-		B58C4BDA151690BE007C4A79 /* Debug */ = {
+		B5ADA9C61517FBC200A85FBB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E035BB4300A4581A9CC9BED /* Pods.xcconfig */;
+			baseConfigurationReference = 8FDA464AFB5849BEA75C607E /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -266,9 +265,9 @@
 			};
 			name = Debug;
 		};
-		B58C4BDB151690BE007C4A79 /* Release */ = {
+		B5ADA9C71517FBC200A85FBB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E035BB4300A4581A9CC9BED /* Pods.xcconfig */;
+			baseConfigurationReference = 8FDA464AFB5849BEA75C607E /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -284,25 +283,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B58C4BB5151690BE007C4A79 /* Build configuration list for PBXProject "BeerScroller" */ = {
+		B5ADA9A11517FBC200A85FBB /* Build configuration list for PBXProject "BeerScroller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B58C4BD7151690BE007C4A79 /* Debug */,
-				B58C4BD8151690BE007C4A79 /* Release */,
+				B5ADA9C31517FBC200A85FBB /* Debug */,
+				B5ADA9C41517FBC200A85FBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B58C4BD9151690BE007C4A79 /* Build configuration list for PBXNativeTarget "BeerScroller" */ = {
+		B5ADA9C51517FBC200A85FBB /* Build configuration list for PBXNativeTarget "BeerScroller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B58C4BDA151690BE007C4A79 /* Debug */,
-				B58C4BDB151690BE007C4A79 /* Release */,
+				B5ADA9C61517FBC200A85FBB /* Debug */,
+				B5ADA9C71517FBC200A85FBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B58C4BB2151690BE007C4A79 /* Project object */;
+	rootObject = B5ADA99E1517FBC200A85FBB /* Project object */;
 }

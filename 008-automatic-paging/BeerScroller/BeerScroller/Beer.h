@@ -2,17 +2,17 @@
 //  Beer.h
 //  BeerScroller
 //
-//  Created by Ben Scheirman on 3/18/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Ben Scheirman on 3/19/12.
+//  Copyright (c) 2012 NSScreencast. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 @interface Beer : NSObject
 
-@property (nonatomic) NSInteger beerId;
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *brewery;
+@property (nonatomic, assign) NSInteger beerId;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *brewery;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 

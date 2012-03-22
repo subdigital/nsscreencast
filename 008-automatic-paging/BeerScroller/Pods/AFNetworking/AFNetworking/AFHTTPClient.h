@@ -27,7 +27,18 @@
 @protocol AFMultipartFormData;
 
 /**
- Method used to encode parameters into request body 
+ Posted when network reachability changes.
+ The notification object is an `NSNumber` object containing the boolean value for the current network reachability.
+ This notification contains no information in the `userInfo` dictionary.
+ 
+ @warning In order for network reachability to be monitored, include the `SystemConfiguration` framework in the active target's "Link Binary With Library" build phase, and add `#import <SystemConfiguration/SystemConfiguration.h>` to the header prefix of the project (Prefix.pch).
+ */
+#ifdef _SYSTEMCONFIGURATION_H
+extern NSString * const AFNetworkingReachabilityDidChangeNotification;
+#endif
+
+/**
+ Method used to encode parameters into request body. 
  */
 typedef enum {
     AFFormURLParameterEncoding,
@@ -407,6 +418,21 @@ extern NSString * AFQueryStringFromParametersWithEncoding(NSDictionary *paramete
         parameters:(NSDictionary *)parameters 
            success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
            failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+/**
+ Creates an `AFHTTPRequestOperation` with a `PATCH` request, and enqueues it to the HTTP client's operation queue.
+ 
+ @param path The path to be appended to the HTTP client's base URL and used as the request URL.
+ @param parameters The parameters to be encoded and set in the request HTTP body.
+ @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes two arguments: the created request operation and the object created from the response data of request.
+ @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the resonse data. This block has no return value and takes two arguments:, the created request operation and the `NSError` object describing the network or parsing error that occurred.
+ 
+ @see HTTPRequestOperationWithRequest:success:failure
+ */
+- (void)patchPath:(NSString *)path
+       parameters:(NSDictionary *)parameters 
+          success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
+          failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 @end
 
 #pragma mark -

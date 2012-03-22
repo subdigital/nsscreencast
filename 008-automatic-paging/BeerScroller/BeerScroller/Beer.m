@@ -2,8 +2,8 @@
 //  Beer.m
 //  BeerScroller
 //
-//  Created by Ben Scheirman on 3/18/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Ben Scheirman on 3/19/12.
+//  Copyright (c) 2012 NSScreencast. All rights reserved.
 //
 
 #import "Beer.h"
@@ -26,11 +26,19 @@
 }
 
 - (BOOL)isEqual:(id)object {
-    if ([object isKindOfClass:[Beer class]]) {
-        return ((Beer *)object).beerId == self.beerId;
+    if (![object isKindOfClass:[Beer class]]) {
+        return NO;
     }
+    
+    Beer *other = (Beer *)object;
+    return other.beerId == self.beerId;
+}
 
-    return NO;
+- (void)dealloc {
+    [_name release];
+    [_brewery release];
+    
+    [super dealloc];
 }
 
 @end

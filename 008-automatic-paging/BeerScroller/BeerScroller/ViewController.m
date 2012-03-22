@@ -2,7 +2,7 @@
 //  ViewController.m
 //  BeerScroller
 //
-//  Created by Ben Scheirman on 3/18/12.
+//  Created by Ben Scheirman on 3/19/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
@@ -10,10 +10,10 @@
 #import "AFNetworking.h"
 #import "Beer.h"
 
-const int kLoadingCellTag = 1321;
+const int kLoadingCellTag = 1273;
 
 @interface ViewController ()
-@property (nonatomic, strong) NSMutableArray *beers;
+@property (nonatomic, retain) NSMutableArray *beers;
 - (void)fetchBeers;
 @end
 
@@ -23,20 +23,26 @@ const int kLoadingCellTag = 1321;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Beer!";
     
     self.beers = [NSMutableArray array];
-    
     _currentPage = 0;
 }
 
-- (void)viewDidUnload
-{
+- (void)viewDidUnload {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
-#pragma mark - UITableViewDataSource methods
+- (void)dealloc {
+    [_beers release];
+    
+    [super dealloc];
+}
+
+#pragma mark - UITableViewDatasource methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (_currentPage == 0) {
@@ -46,20 +52,18 @@ const int kLoadingCellTag = 1321;
     if (_currentPage < _totalPages) {
         return self.beers.count + 1;
     }
-    
     return self.beers.count;
 }
 
 - (UITableViewCell *)beerCellForIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellId = @"beerCell";
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellId];
+    static NSString *cellIdentifier = @"cell";
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
-        cell.textLabel.textColor = [UIColor colorWithRed:0.1 green:0.16 blue:0.27 alpha:1.0];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                       reuseIdentifier:cellIdentifier] autorelease];
     }
     
     Beer *beer = [self.beers objectAtIndex:indexPath.row];
-    
     cell.textLabel.text = beer.name;
     cell.detailTextLabel.text = beer.brewery;
     
@@ -67,14 +71,20 @@ const int kLoadingCellTag = 1321;
 }
 
 - (UITableViewCell *)loadingCell {
-    UITableViewCell *loadingCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-    loadingCell.selectionStyle = UITableViewCellSelectionStyleNone;
-    UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    indicator.center = loadingCell.center;
-    [loadingCell addSubview:indicator];
-    [indicator startAnimating];    
-    loadingCell.tag = kLoadingCellTag;
-    return loadingCell;
+    UITableViewCell *cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                                   reuseIdentifier:nil] autorelease];
+    
+    UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] 
+                                                  initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    activityIndicator.center = cell.center;
+    [cell addSubview:activityIndicator];
+    [activityIndicator release];
+    
+    [activityIndicator startAnimating];
+    
+    cell.tag = kLoadingCellTag;
+    
+    return cell;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -97,38 +107,35 @@ const int kLoadingCellTag = 1321;
 - (void)fetchBeers {
     NSString *urlString = [NSString stringWithFormat:@"http://localhost:3000/beers.json?page=%d", _currentPage];
     NSURL *url = [NSURL URLWithString:urlString];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    [request addValue:@"1234abcd" forHTTPHeaderField:@"x-api-token"];
-
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
     AFJSONRequestOperation *operation = [[AFJSONRequestOperation alloc] initWithRequest:request];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        double delayInSeconds = 1.4;
-        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-            dispatch_async(dispatch_get_main_queue(), ^{
-                NSLog(@"Received: %@", responseObject);
-                _totalPages = [[responseObject objectForKey:@"total_pages"] intValue];
-                for (id beerDictionary in [responseObject objectForKey:@"beers"]) {
-                    Beer *beer = [[Beer alloc] initWithDictionary:beerDictionary];
-                    
-                    if (![self.beers containsObject:beer]) {
-                        [self.beers addObject:beer];                        
-                    }
+        NSLog(@"responseObject %@", responseObject);
+        
+        _totalPages = [[responseObject objectForKey:@"total_pages"] intValue];
+        
+        for (id beerDictionary in [responseObject objectForKey:@"beers"]) {
+            Beer *beer = [[Beer alloc] initWithDictionary:beerDictionary];
+            if (![self.beers containsObject:beer]) {
+                [self.beers addObject:beer];                
+            }
 
-                }
-                [self.tableView reloadData]; 
-            });
-        });
+            [beer release];
+        }
+        
+        [self.tableView reloadData];
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error!  %@", error);
-        [[[UIAlertView alloc] initWithTitle:@"Error!"
-                                    message:@"Received an error from the server.  Please try again later." 
-                                   delegate:nil
-                          cancelButtonTitle:@"OK"
-                          otherButtonTitles:nil] show];
+        NSLog(@"Error: %@", [error localizedDescription]);
+        [[[[UIAlertView alloc] initWithTitle:@"Error fetching beers!"
+                                     message:@"Please try again later"
+                                    delegate:nil
+                           cancelButtonTitle:@"OK"
+                           otherButtonTitles:nil] autorelease] show];
     }];
     
     [operation start];
+    [operation release];
 }
 
 @end

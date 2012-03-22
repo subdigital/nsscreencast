@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  BeerScroller
 //
-//  Created by Ben Scheirman on 3/18/12.
+//  Created by Ben Scheirman on 3/19/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
@@ -15,17 +15,19 @@
 @synthesize window = _window;
 @synthesize viewController = _viewController;
 
+- (void)dealloc
+{
+    [_window release];
+    [_viewController release];
+    [super dealloc];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
- 
- 
-    self.viewController = [[ViewController alloc] initWithStyle:UITableViewStylePlain];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
-    
-    navController.navigationBar.tintColor = [UIColor colorWithRed:0.08 green:0.12 blue:0.20 alpha:1.0];
-    
-    self.window.rootViewController = navController;
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    // Override point for customization after application launch.
+    self.viewController = [[[ViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

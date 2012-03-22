@@ -22,6 +22,38 @@
 
 #import "AFHTTPRequestOperation.h"
 
+static NSString * AFStringFromIndexSet(NSIndexSet *indexSet) {
+    NSMutableString *string = [NSMutableString string];
+
+    NSRange range = NSMakeRange([indexSet firstIndex], 1);
+    while (range.location != NSNotFound) {
+        NSUInteger nextIndex = [indexSet indexGreaterThanIndex:range.location];
+        while (nextIndex == range.location + range.length) {
+            range.length++;
+            nextIndex = [indexSet indexGreaterThanIndex:nextIndex];
+        }
+
+        if (string.length) {
+            [string appendString:@","];
+        }
+
+        if (range.length == 1) {
+            [string appendFormat:@"%u", range.location];
+        } else {
+            NSUInteger firstIndex = range.location;
+            NSUInteger lastIndex = firstIndex + range.length - 1;
+            [string appendFormat:@"%u-%u", firstIndex, lastIndex];
+        }
+
+        range.location = nextIndex;
+        range.length = 1;
+    }
+
+    return string;
+}
+
+#pragma mark -
+
 @interface AFHTTPRequestOperation ()
 @property (readwrite, nonatomic, retain) NSError *HTTPError;
 @end
@@ -30,6 +62,9 @@
 @synthesize acceptableStatusCodes = _acceptableStatusCodes;
 @synthesize acceptableContentTypes = _acceptableContentTypes;
 @synthesize HTTPError = _HTTPError;
+@synthesize successCallbackQueue = _successCallbackQueue;
+@synthesize failureCallbackQueue = _failureCallbackQueue;
+
 
 - (id)initWithRequest:(NSURLRequest *)request {
     self = [super initWithRequest:request];
@@ -46,6 +81,17 @@
     [_acceptableStatusCodes release];
     [_acceptableContentTypes release];
     [_HTTPError release];
+    
+    if (_successCallbackQueue) { 
+        dispatch_release(_successCallbackQueue);
+        _successCallbackQueue = NULL;
+    }
+    
+    if (_failureCallbackQueue) { 
+        dispatch_release(_failureCallbackQueue); 
+        _failureCallbackQueue = NULL;
+    }
+    
     [super dealloc];
 }
 
@@ -57,7 +103,7 @@
     if (self.response && !self.HTTPError) {
         if (![self hasAcceptableStatusCode]) {
             NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
-            [userInfo setValue:[NSString stringWithFormat:NSLocalizedString(@"Expected status code %@, got %d", nil), self.acceptableStatusCodes, [self.response statusCode]] forKey:NSLocalizedDescriptionKey];
+            [userInfo setValue:[NSString stringWithFormat:NSLocalizedString(@"Expected status code in (%@), got %d", nil), AFStringFromIndexSet(self.acceptableStatusCodes), [self.response statusCode]] forKey:NSLocalizedDescriptionKey];
             [userInfo setValue:[self.request URL] forKey:NSURLErrorFailingURLErrorKey];
             
             self.HTTPError = [[[NSError alloc] initWithDomain:AFNetworkingErrorDomain code:NSURLErrorBadServerResponse userInfo:userInfo] autorelease];
@@ -85,6 +131,32 @@
     return !self.acceptableContentTypes || [self.acceptableContentTypes containsObject:[self.response MIMEType]];
 }
 
+- (void)setSuccessCallbackQueue:(dispatch_queue_t)successCallbackQueue {
+    if (successCallbackQueue != _successCallbackQueue) {
+        if (_successCallbackQueue) {
+            dispatch_release(_successCallbackQueue);
+        }
+     
+        if (successCallbackQueue) {
+            dispatch_retain(successCallbackQueue);
+            _successCallbackQueue = successCallbackQueue;
+        }
+    }    
+}
+
+- (void)setFailureCallbackQueue:(dispatch_queue_t)failureCallbackQueue {
+    if (failureCallbackQueue != _failureCallbackQueue) {
+        if (_failureCallbackQueue) {
+            dispatch_release(_failureCallbackQueue);
+        }
+        
+        if (failureCallbackQueue) {
+            dispatch_retain(failureCallbackQueue);
+            _failureCallbackQueue = failureCallbackQueue;
+        }
+    }    
+}
+
 - (void)setCompletionBlockWithSuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
                               failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
 {
@@ -95,13 +167,13 @@
         
         if (self.error) {
             if (failure) {
-                dispatch_async(dispatch_get_main_queue(), ^(void) {
+                dispatch_async(self.failureCallbackQueue ? self.failureCallbackQueue : dispatch_get_main_queue(), ^{
                     failure(self, self.error);
                 });
             }
         } else {
             if (success) {
-                dispatch_async(dispatch_get_main_queue(), ^{
+                dispatch_async(self.successCallbackQueue ? self.successCallbackQueue : dispatch_get_main_queue(), ^{
                     success(self, self.responseData);
                 });
             }
@@ -113,6 +185,6 @@
 
 + (BOOL)canProcessRequest:(NSURLRequest *)request {
     return YES;
-}     
+}
 
 @end
