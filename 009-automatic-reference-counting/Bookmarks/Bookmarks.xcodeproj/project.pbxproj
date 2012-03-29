@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5B70C3B151FCF3900B8BBA7 /* MyUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B70C3A151FCF3900B8BBA7 /* MyUtility.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B5C41A2E150D3C74004D3CD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C41A2D150D3C74004D3CD2 /* UIKit.framework */; };
+		B5C41A30150D3C74004D3CD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C41A2F150D3C74004D3CD2 /* Foundation.framework */; };
+		B5C41A32150D3C74004D3CD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C41A31150D3C74004D3CD2 /* CoreGraphics.framework */; };
+		B5C41A38150D3C74004D3CD2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5C41A36150D3C74004D3CD2 /* InfoPlist.strings */; };
+		B5C41A3A150D3C74004D3CD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C41A39150D3C74004D3CD2 /* main.m */; };
+		B5C41A3E150D3C74004D3CD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C41A3D150D3C74004D3CD2 /* AppDelegate.m */; };
+		B5C41A41150D3C74004D3CD2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C41A40150D3C74004D3CD2 /* ViewController.m */; };
+		B5C41A44150D3C74004D3CD2 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5C41A42150D3C74004D3CD2 /* ViewController.xib */; };
+		B5C41A4C150D3D12004D3CD2 /* BookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C41A4B150D3D12004D3CD2 /* BookmarkManager.m */; };
+		B5C41A50150D7A44004D3CD2 /* AddBookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C41A4E150D7A44004D3CD2 /* AddBookmarkViewController.m */; };
+		B5C41A51150D7A44004D3CD2 /* AddBookmarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5C41A4F150D7A44004D3CD2 /* AddBookmarkViewController.xib */; };
+		B5D5F3F1150DB76300A2596F /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D5F3F0150DB76300A2596F /* Bookmark.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5B70C39151FCF3900B8BBA7 /* MyUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUtility.h; sourceTree = "<group>"; };
+		B5B70C3A151FCF3900B8BBA7 /* MyUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUtility.m; sourceTree = "<group>"; };
+		B5C41A29150D3C74004D3CD2 /* Bookmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C41A2D150D3C74004D3CD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5C41A2F150D3C74004D3CD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5C41A31150D3C74004D3CD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5C41A35150D3C74004D3CD2 /* Bookmarks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bookmarks-Info.plist"; sourceTree = "<group>"; };
+		B5C41A37150D3C74004D3CD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5C41A39150D3C74004D3CD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5C41A3B150D3C74004D3CD2 /* Bookmarks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bookmarks-Prefix.pch"; sourceTree = "<group>"; };
+		B5C41A3C150D3C74004D3CD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5C41A3D150D3C74004D3CD2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5C41A3F150D3C74004D3CD2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B5C41A40150D3C74004D3CD2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B5C41A43150D3C74004D3CD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B5C41A4A150D3D12004D3CD2 /* BookmarkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkManager.h; sourceTree = "<group>"; };
+		B5C41A4B150D3D12004D3CD2 /* BookmarkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkManager.m; sourceTree = "<group>"; };
+		B5C41A4D150D7A44004D3CD2 /* AddBookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBookmarkViewController.h; sourceTree = "<group>"; };
+		B5C41A4E150D7A44004D3CD2 /* AddBookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBookmarkViewController.m; sourceTree = "<group>"; };
+		B5C41A4F150D7A44004D3CD2 /* AddBookmarkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddBookmarkViewController.xib; sourceTree = "<group>"; };
+		B5D5F3EF150DB76300A2596F /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
+		B5D5F3F0150DB76300A2596F /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5C41A26150D3C74004D3CD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C41A2E150D3C74004D3CD2 /* UIKit.framework in Frameworks */,
+				B5C41A30150D3C74004D3CD2 /* Foundation.framework in Frameworks */,
+				B5C41A32150D3C74004D3CD2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5C41A1E150D3C74004D3CD2 = {
+			isa = PBXGroup;
+			children = (
+				B5C41A33150D3C74004D3CD2 /* Bookmarks */,
+				B5C41A2C150D3C74004D3CD2 /* Frameworks */,
+				B5C41A2A150D3C74004D3CD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5C41A2A150D3C74004D3CD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5C41A29150D3C74004D3CD2 /* Bookmarks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5C41A2C150D3C74004D3CD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5C41A2D150D3C74004D3CD2 /* UIKit.framework */,
+				B5C41A2F150D3C74004D3CD2 /* Foundation.framework */,
+				B5C41A31150D3C74004D3CD2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5C41A33150D3C74004D3CD2 /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				B5C41A4A150D3D12004D3CD2 /* BookmarkManager.h */,
+				B5C41A4B150D3D12004D3CD2 /* BookmarkManager.m */,
+				B5C41A3C150D3C74004D3CD2 /* AppDelegate.h */,
+				B5C41A3D150D3C74004D3CD2 /* AppDelegate.m */,
+				B5C41A3F150D3C74004D3CD2 /* ViewController.h */,
+				B5C41A40150D3C74004D3CD2 /* ViewController.m */,
+				B5C41A42150D3C74004D3CD2 /* ViewController.xib */,
+				B5C41A4D150D7A44004D3CD2 /* AddBookmarkViewController.h */,
+				B5C41A4E150D7A44004D3CD2 /* AddBookmarkViewController.m */,
+				B5C41A4F150D7A44004D3CD2 /* AddBookmarkViewController.xib */,
+				B5C41A34150D3C74004D3CD2 /* Supporting Files */,
+				B5D5F3EF150DB76300A2596F /* Bookmark.h */,
+				B5D5F3F0150DB76300A2596F /* Bookmark.m */,
+				B5B70C39151FCF3900B8BBA7 /* MyUtility.h */,
+				B5B70C3A151FCF3900B8BBA7 /* MyUtility.m */,
+			);
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		B5C41A34150D3C74004D3CD2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5C41A35150D3C74004D3CD2 /* Bookmarks-Info.plist */,
+				B5C41A36150D3C74004D3CD2 /* InfoPlist.strings */,
+				B5C41A39150D3C74004D3CD2 /* main.m */,
+				B5C41A3B150D3C74004D3CD2 /* Bookmarks-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5C41A28150D3C74004D3CD2 /* Bookmarks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5C41A47150D3C74004D3CD2 /* Build configuration list for PBXNativeTarget "Bookmarks" */;
+			buildPhases = (
+				B5C41A25150D3C74004D3CD2 /* Sources */,
+				B5C41A26150D3C74004D3CD2 /* Frameworks */,
+				B5C41A27150D3C74004D3CD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bookmarks;
+			productName = Bookmarks;
+			productReference = B5C41A29150D3C74004D3CD2 /* Bookmarks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5C41A20150D3C74004D3CD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = NSScreencast;
+			};
+			buildConfigurationList = B5C41A23150D3C74004D3CD2 /* Build configuration list for PBXProject "Bookmarks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B5C41A1E150D3C74004D3CD2;
+			productRefGroup = B5C41A2A150D3C74004D3CD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5C41A28150D3C74004D3CD2 /* Bookmarks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5C41A27150D3C74004D3CD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C41A38150D3C74004D3CD2 /* InfoPlist.strings in Resources */,
+				B5C41A44150D3C74004D3CD2 /* ViewController.xib in Resources */,
+				B5C41A51150D7A44004D3CD2 /* AddBookmarkViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5C41A25150D3C74004D3CD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C41A3A150D3C74004D3CD2 /* main.m in Sources */,
+				B5C41A3E150D3C74004D3CD2 /* AppDelegate.m in Sources */,
+				B5C41A41150D3C74004D3CD2 /* ViewController.m in Sources */,
+				B5C41A4C150D3D12004D3CD2 /* BookmarkManager.m in Sources */,
+				B5C41A50150D7A44004D3CD2 /* AddBookmarkViewController.m in Sources */,
+				B5D5F3F1150DB76300A2596F /* Bookmark.m in Sources */,
+				B5B70C3B151FCF3900B8BBA7 /* MyUtility.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5C41A36150D3C74004D3CD2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5C41A37150D3C74004D3CD2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B5C41A42150D3C74004D3CD2 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5C41A43150D3C74004D3CD2 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5C41A45150D3C74004D3CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5C41A46150D3C74004D3CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5C41A48150D3C74004D3CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bookmarks/Bookmarks-Prefix.pch";
+				INFOPLIST_FILE = "Bookmarks/Bookmarks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B5C41A49150D3C74004D3CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bookmarks/Bookmarks-Prefix.pch";
+				INFOPLIST_FILE = "Bookmarks/Bookmarks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5C41A23150D3C74004D3CD2 /* Build configuration list for PBXProject "Bookmarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5C41A45150D3C74004D3CD2 /* Debug */,
+				B5C41A46150D3C74004D3CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5C41A47150D3C74004D3CD2 /* Build configuration list for PBXNativeTarget "Bookmarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5C41A48150D3C74004D3CD2 /* Debug */,
+				B5C41A49150D3C74004D3CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5C41A20150D3C74004D3CD2 /* Project object */;
+}
