@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50d" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Beer" representedClassName="Beer" syncable="YES">
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="brewery" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Brewery" inverseName="beers" inverseEntity="Brewery" syncable="YES"/>
+    </entity>
+    <entity name="Brewery" representedClassName="Brewery" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="beers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Beer" inverseName="brewery" inverseEntity="Beer" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Beer" positionX="-45" positionY="0" width="128" height="90"/>
+        <element name="Brewery" positionX="133" positionY="0" width="128" height="75"/>
+    </elements>
+</model>

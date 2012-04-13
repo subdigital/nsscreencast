@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B51087C01533BAA000578E75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51087BF1533BAA000578E75 /* UIKit.framework */; };
+		B51087C21533BAA000578E75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51087C11533BAA000578E75 /* Foundation.framework */; };
+		B51087C41533BAA000578E75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51087C31533BAA000578E75 /* CoreGraphics.framework */; };
+		B51087CA1533BAA000578E75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B51087C81533BAA000578E75 /* InfoPlist.strings */; };
+		B51087CC1533BAA000578E75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B51087CB1533BAA000578E75 /* main.m */; };
+		B51087D01533BAA000578E75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B51087CF1533BAA000578E75 /* AppDelegate.m */; };
+		B51087D31533BAA000578E75 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51087D21533BAA000578E75 /* MasterViewController.m */; };
+		B51087D61533BAA000578E75 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51087D51533BAA000578E75 /* DetailViewController.m */; };
+		B51087D91533BAA000578E75 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B51087D71533BAA000578E75 /* MasterViewController.xib */; };
+		B51087DC1533BAA000578E75 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B51087DA1533BAA000578E75 /* DetailViewController.xib */; };
+		B51087E31533BAB200578E75 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51087E21533BAB200578E75 /* CoreData.framework */; };
+		B51087E71533BAD800578E75 /* Beers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B51087E51533BAD800578E75 /* Beers.xcdatamodeld */; };
+		B51087F01533BC3000578E75 /* _Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = B51087E91533BC3000578E75 /* _Beer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B51087F11533BC3000578E75 /* _Brewery.m in Sources */ = {isa = PBXBuildFile; fileRef = B51087EB1533BC3000578E75 /* _Brewery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B51087F21533BC3000578E75 /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = B51087ED1533BC3000578E75 /* Beer.m */; };
+		B51087F31533BC3000578E75 /* Brewery.m in Sources */ = {isa = PBXBuildFile; fileRef = B51087EF1533BC3000578E75 /* Brewery.m */; };
+		B51087F61533BCB800578E75 /* BeersDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B51087F51533BCB800578E75 /* BeersDataModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B51087BB1533BAA000578E75 /* CoreDataBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51087BF1533BAA000578E75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B51087C11533BAA000578E75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B51087C31533BAA000578E75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B51087C71533BAA000578E75 /* CoreDataBasics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataBasics-Info.plist"; sourceTree = "<group>"; };
+		B51087C91533BAA000578E75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B51087CB1533BAA000578E75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B51087CD1533BAA000578E75 /* CoreDataBasics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataBasics-Prefix.pch"; sourceTree = "<group>"; };
+		B51087CE1533BAA000578E75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B51087CF1533BAA000578E75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B51087D11533BAA000578E75 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		B51087D21533BAA000578E75 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		B51087D41533BAA000578E75 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B51087D51533BAA000578E75 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B51087D81533BAA000578E75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		B51087DB1533BAA000578E75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		B51087E21533BAB200578E75 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B51087E61533BAD800578E75 /* Beers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beers.xcdatamodel; sourceTree = "<group>"; };
+		B51087E81533BC3000578E75 /* _Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Beer.h; sourceTree = "<group>"; };
+		B51087E91533BC3000578E75 /* _Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Beer.m; sourceTree = "<group>"; };
+		B51087EA1533BC3000578E75 /* _Brewery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Brewery.h; sourceTree = "<group>"; };
+		B51087EB1533BC3000578E75 /* _Brewery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Brewery.m; sourceTree = "<group>"; };
+		B51087EC1533BC3000578E75 /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
+		B51087ED1533BC3000578E75 /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
+		B51087EE1533BC3000578E75 /* Brewery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brewery.h; sourceTree = "<group>"; };
+		B51087EF1533BC3000578E75 /* Brewery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brewery.m; sourceTree = "<group>"; };
+		B51087F41533BCB800578E75 /* BeersDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeersDataModel.h; sourceTree = "<group>"; };
+		B51087F51533BCB800578E75 /* BeersDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeersDataModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B51087B81533BAA000578E75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51087E31533BAB200578E75 /* CoreData.framework in Frameworks */,
+				B51087C01533BAA000578E75 /* UIKit.framework in Frameworks */,
+				B51087C21533BAA000578E75 /* Foundation.framework in Frameworks */,
+				B51087C41533BAA000578E75 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B51087B01533BAA000578E75 = {
+			isa = PBXGroup;
+			children = (
+				B51087C51533BAA000578E75 /* CoreDataBasics */,
+				B51087BE1533BAA000578E75 /* Frameworks */,
+				B51087BC1533BAA000578E75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B51087BC1533BAA000578E75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B51087BB1533BAA000578E75 /* CoreDataBasics.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B51087BE1533BAA000578E75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B51087E21533BAB200578E75 /* CoreData.framework */,
+				B51087BF1533BAA000578E75 /* UIKit.framework */,
+				B51087C11533BAA000578E75 /* Foundation.framework */,
+				B51087C31533BAA000578E75 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B51087C51533BAA000578E75 /* CoreDataBasics */ = {
+			isa = PBXGroup;
+			children = (
+				B51087E41533BABB00578E75 /* DataModel */,
+				B51087CE1533BAA000578E75 /* AppDelegate.h */,
+				B51087CF1533BAA000578E75 /* AppDelegate.m */,
+				B51087D11533BAA000578E75 /* MasterViewController.h */,
+				B51087D21533BAA000578E75 /* MasterViewController.m */,
+				B51087D41533BAA000578E75 /* DetailViewController.h */,
+				B51087D51533BAA000578E75 /* DetailViewController.m */,
+				B51087D71533BAA000578E75 /* MasterViewController.xib */,
+				B51087DA1533BAA000578E75 /* DetailViewController.xib */,
+				B51087C61533BAA000578E75 /* Supporting Files */,
+			);
+			path = CoreDataBasics;
+			sourceTree = "<group>";
+		};
+		B51087C61533BAA000578E75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B51087C71533BAA000578E75 /* CoreDataBasics-Info.plist */,
+				B51087C81533BAA000578E75 /* InfoPlist.strings */,
+				B51087CB1533BAA000578E75 /* main.m */,
+				B51087CD1533BAA000578E75 /* CoreDataBasics-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B51087E41533BABB00578E75 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B51087E81533BC3000578E75 /* _Beer.h */,
+				B51087E91533BC3000578E75 /* _Beer.m */,
+				B51087EA1533BC3000578E75 /* _Brewery.h */,
+				B51087EB1533BC3000578E75 /* _Brewery.m */,
+				B51087EC1533BC3000578E75 /* Beer.h */,
+				B51087ED1533BC3000578E75 /* Beer.m */,
+				B51087EE1533BC3000578E75 /* Brewery.h */,
+				B51087EF1533BC3000578E75 /* Brewery.m */,
+				B51087E51533BAD800578E75 /* Beers.xcdatamodeld */,
+				B51087F41533BCB800578E75 /* BeersDataModel.h */,
+				B51087F51533BCB800578E75 /* BeersDataModel.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B51087BA1533BAA000578E75 /* CoreDataBasics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51087DF1533BAA000578E75 /* Build configuration list for PBXNativeTarget "CoreDataBasics" */;
+			buildPhases = (
+				B51087B71533BAA000578E75 /* Sources */,
+				B51087B81533BAA000578E75 /* Frameworks */,
+				B51087B91533BAA000578E75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataBasics;
+			productName = CoreDataBasics;
+			productReference = B51087BB1533BAA000578E75 /* CoreDataBasics.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B51087B21533BAA000578E75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = B51087B51533BAA000578E75 /* Build configuration list for PBXProject "CoreDataBasics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B51087B01533BAA000578E75;
+			productRefGroup = B51087BC1533BAA000578E75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B51087BA1533BAA000578E75 /* CoreDataBasics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B51087B91533BAA000578E75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51087CA1533BAA000578E75 /* InfoPlist.strings in Resources */,
+				B51087D91533BAA000578E75 /* MasterViewController.xib in Resources */,
+				B51087DC1533BAA000578E75 /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B51087B71533BAA000578E75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51087CC1533BAA000578E75 /* main.m in Sources */,
+				B51087D01533BAA000578E75 /* AppDelegate.m in Sources */,
+				B51087D31533BAA000578E75 /* MasterViewController.m in Sources */,
+				B51087D61533BAA000578E75 /* DetailViewController.m in Sources */,
+				B51087E71533BAD800578E75 /* Beers.xcdatamodeld in Sources */,
+				B51087F01533BC3000578E75 /* _Beer.m in Sources */,
+				B51087F11533BC3000578E75 /* _Brewery.m in Sources */,
+				B51087F21533BC3000578E75 /* Beer.m in Sources */,
+				B51087F31533BC3000578E75 /* Brewery.m in Sources */,
+				B51087F61533BCB800578E75 /* BeersDataModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B51087C81533BAA000578E75 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B51087C91533BAA000578E75 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B51087D71533BAA000578E75 /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B51087D81533BAA000578E75 /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		B51087DA1533BAA000578E75 /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B51087DB1533BAA000578E75 /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B51087DD1533BAA000578E75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B51087DE1533BAA000578E75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B51087E01533BAA000578E75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreDataBasics/CoreDataBasics-Prefix.pch";
+				INFOPLIST_FILE = "CoreDataBasics/CoreDataBasics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B51087E11533BAA000578E75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreDataBasics/CoreDataBasics-Prefix.pch";
+				INFOPLIST_FILE = "CoreDataBasics/CoreDataBasics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B51087B51533BAA000578E75 /* Build configuration list for PBXProject "CoreDataBasics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51087DD1533BAA000578E75 /* Debug */,
+				B51087DE1533BAA000578E75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B51087DF1533BAA000578E75 /* Build configuration list for PBXNativeTarget "CoreDataBasics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51087E01533BAA000578E75 /* Debug */,
+				B51087E11533BAA000578E75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B51087E51533BAD800578E75 /* Beers.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B51087E61533BAD800578E75 /* Beers.xcdatamodel */,
+			);
+			currentVersion = B51087E61533BAD800578E75 /* Beers.xcdatamodel */;
+			path = Beers.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B51087B21533BAA000578E75 /* Project object */;
+}
