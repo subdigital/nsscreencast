@@ -1,0 +1,9 @@
+PODS:
+  - AFNetworking (0.9.1)
+  - JSONKit (1.5pre)
+  - MBProgressHUD (0.41)
+
+DEPENDENCIES:
+  - AFNetworking
+  - JSONKit
+  - MBProgressHUD
