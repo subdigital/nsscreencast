@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in MrJenkinsTests");
+    STAssertEquals(1 + 1, 2, @"Uh-oh, math is wrong");
 }
 
 @end
