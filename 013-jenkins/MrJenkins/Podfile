@@ -1,0 +1,10 @@
+platform :ios
+
+dependency 'AFNetworking'
+dependency 'JSONKit'
+dependency 'Reachability'
+
+target "MrJenkinsTests", :exclusive => true do
+  dependency "Kiwi"
+end
+
