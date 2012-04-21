@@ -191,8 +191,8 @@
 				B5EDBD3F154344590000262A /* Sources */,
 				B5EDBD40154344590000262A /* Frameworks */,
 				B5EDBD41154344590000262A /* Resources */,
-				B5EDBD42154344590000262A /* ShellScript */,
 				E8AE3BC000D341E0B5EE8998 /* Copy Pods Resources */,
+				B5EDBD42154344590000262A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -263,6 +263,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			showEnvVarsInLog = 0;
 		};
 		E8AE3BC000D341E0B5EE8998 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -277,6 +278,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -428,7 +430,8 @@
 				INFOPLIST_FILE = "MrJenkinsTests/MrJenkinsTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_AFTER_BUILD = YES;
+				TEST_HOST = "";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -449,7 +452,8 @@
 				INFOPLIST_FILE = "MrJenkinsTests/MrJenkinsTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_AFTER_BUILD = YES;
+				TEST_HOST = "";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
