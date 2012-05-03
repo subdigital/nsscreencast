@@ -1,0 +1,3 @@
+platform :ios
+
+dependency 'AFNetworking'

@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A7607001B554AD58C559CF1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2649499BFD49EAB2784518 /* libPods.a */; };
+		B5CB1751155215BB000B4861 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CB1750155215BB000B4861 /* UIKit.framework */; };
+		B5CB1753155215BB000B4861 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CB1752155215BB000B4861 /* Foundation.framework */; };
+		B5CB1755155215BB000B4861 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CB1754155215BB000B4861 /* CoreGraphics.framework */; };
+		B5CB175B155215BB000B4861 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5CB1759155215BB000B4861 /* InfoPlist.strings */; };
+		B5CB175D155215BB000B4861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CB175C155215BB000B4861 /* main.m */; };
+		B5CB1761155215BB000B4861 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CB1760155215BB000B4861 /* AppDelegate.m */; };
+		B5CB1764155215BB000B4861 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CB1763155215BB000B4861 /* ViewController.m */; };
+		B5CB1767155215BB000B4861 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5CB1765155215BB000B4861 /* ViewController.xib */; };
+		B5CB177A1552233B000B4861 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CB17791552233B000B4861 /* MediaPlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D30EAE29E68447AB3BA6E6A /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		9D2649499BFD49EAB2784518 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CB174C155215BB000B4861 /* TrackingDownloadProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackingDownloadProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CB1750155215BB000B4861 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5CB1752155215BB000B4861 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5CB1754155215BB000B4861 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5CB1758155215BB000B4861 /* TrackingDownloadProgress-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrackingDownloadProgress-Info.plist"; sourceTree = "<group>"; };
+		B5CB175A155215BB000B4861 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5CB175C155215BB000B4861 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5CB175E155215BB000B4861 /* TrackingDownloadProgress-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrackingDownloadProgress-Prefix.pch"; sourceTree = "<group>"; };
+		B5CB175F155215BB000B4861 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5CB1760155215BB000B4861 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5CB1762155215BB000B4861 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B5CB1763155215BB000B4861 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B5CB1766155215BB000B4861 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B5CB17791552233B000B4861 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5CB1749155215BB000B4861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5CB177A1552233B000B4861 /* MediaPlayer.framework in Frameworks */,
+				B5CB1751155215BB000B4861 /* UIKit.framework in Frameworks */,
+				B5CB1753155215BB000B4861 /* Foundation.framework in Frameworks */,
+				B5CB1755155215BB000B4861 /* CoreGraphics.framework in Frameworks */,
+				9A7607001B554AD58C559CF1 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5CB1741155215BA000B4861 = {
+			isa = PBXGroup;
+			children = (
+				B5CB1756155215BB000B4861 /* TrackingDownloadProgress */,
+				B5CB174F155215BB000B4861 /* Frameworks */,
+				B5CB174D155215BB000B4861 /* Products */,
+				4D30EAE29E68447AB3BA6E6A /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B5CB174D155215BB000B4861 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5CB174C155215BB000B4861 /* TrackingDownloadProgress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5CB174F155215BB000B4861 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5CB17791552233B000B4861 /* MediaPlayer.framework */,
+				B5CB1750155215BB000B4861 /* UIKit.framework */,
+				B5CB1752155215BB000B4861 /* Foundation.framework */,
+				B5CB1754155215BB000B4861 /* CoreGraphics.framework */,
+				9D2649499BFD49EAB2784518 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5CB1756155215BB000B4861 /* TrackingDownloadProgress */ = {
+			isa = PBXGroup;
+			children = (
+				B5CB175F155215BB000B4861 /* AppDelegate.h */,
+				B5CB1760155215BB000B4861 /* AppDelegate.m */,
+				B5CB1762155215BB000B4861 /* ViewController.h */,
+				B5CB1763155215BB000B4861 /* ViewController.m */,
+				B5CB1765155215BB000B4861 /* ViewController.xib */,
+				B5CB1757155215BB000B4861 /* Supporting Files */,
+			);
+			path = TrackingDownloadProgress;
+			sourceTree = "<group>";
+		};
+		B5CB1757155215BB000B4861 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5CB1758155215BB000B4861 /* TrackingDownloadProgress-Info.plist */,
+				B5CB1759155215BB000B4861 /* InfoPlist.strings */,
+				B5CB175C155215BB000B4861 /* main.m */,
+				B5CB175E155215BB000B4861 /* TrackingDownloadProgress-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5CB174B155215BB000B4861 /* TrackingDownloadProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5CB176A155215BB000B4861 /* Build configuration list for PBXNativeTarget "TrackingDownloadProgress" */;
+			buildPhases = (
+				B5CB1748155215BB000B4861 /* Sources */,
+				B5CB1749155215BB000B4861 /* Frameworks */,
+				B5CB174A155215BB000B4861 /* Resources */,
+				7758E8B41BCD4209AF4CD8AD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrackingDownloadProgress;
+			productName = TrackingDownloadProgress;
+			productReference = B5CB174C155215BB000B4861 /* TrackingDownloadProgress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5CB1743155215BA000B4861 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = B5CB1746155215BA000B4861 /* Build configuration list for PBXProject "TrackingDownloadProgress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B5CB1741155215BA000B4861;
+			productRefGroup = B5CB174D155215BB000B4861 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5CB174B155215BB000B4861 /* TrackingDownloadProgress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5CB174A155215BB000B4861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5CB175B155215BB000B4861 /* InfoPlist.strings in Resources */,
+				B5CB1767155215BB000B4861 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7758E8B41BCD4209AF4CD8AD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5CB1748155215BB000B4861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5CB175D155215BB000B4861 /* main.m in Sources */,
+				B5CB1761155215BB000B4861 /* AppDelegate.m in Sources */,
+				B5CB1764155215BB000B4861 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5CB1759155215BB000B4861 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5CB175A155215BB000B4861 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B5CB1765155215BB000B4861 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5CB1766155215BB000B4861 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5CB1768155215BB000B4861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		B5CB1769155215BB000B4861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5CB176B155215BB000B4861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D30EAE29E68447AB3BA6E6A /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrackingDownloadProgress/TrackingDownloadProgress-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "TrackingDownloadProgress/TrackingDownloadProgress-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B5CB176C155215BB000B4861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D30EAE29E68447AB3BA6E6A /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrackingDownloadProgress/TrackingDownloadProgress-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "TrackingDownloadProgress/TrackingDownloadProgress-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5CB1746155215BA000B4861 /* Build configuration list for PBXProject "TrackingDownloadProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5CB1768155215BB000B4861 /* Debug */,
+				B5CB1769155215BB000B4861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5CB176A155215BB000B4861 /* Build configuration list for PBXNativeTarget "TrackingDownloadProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5CB176B155215BB000B4861 /* Debug */,
+				B5CB176C155215BB000B4861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5CB1743155215BA000B4861 /* Project object */;
+}
