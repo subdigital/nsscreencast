@@ -1,0 +1,83 @@
+/*
+ Copyright 2009-2010 Urban Airship Inc. All rights reserved.
+ 
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ 
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ 
+ 2. Redistributions in binaryform must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation 
+ and/or other materials provided withthe distribution.
+ 
+ THIS SOFTWARE IS PROVIDED BY THE URBAN AIRSHIP INC ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+ EVENT SHALL URBAN AIRSHIP INC OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+ INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+ 
+"UA_Ooopsie" = "Ooopsie";
+"UA_App_Key_not_set" = "程序KEY/SECRET没有设置，请将从http://go.urbanairship.com获取的KEY/SECRET传入到Airship的初始化方法中，其位于App Delegate的didFinishLaunching方法";
+
+"UA_Update" = "更新";
+"UA_Content" = "内容";
+"UA_Restore" = "恢复";
+
+"UA_Details" = "详细信息";
+"UA_Loading" = "载入中...";
+"UA_Free" = "免费";
+
+"UA_Clear" = "清除";
+"UA_Buy" = "购买";
+"UA_OK" = "好";
+"UA_Cancel" = "取消";
+"UA_Yes" = "对";
+"UA_No" = "不";
+"UA_No_Content" = "没有内容";
+"UA_Download" = "下载";
+
+/* Status messages */
+"UA_Status_Apple" = "检索价格信息。";
+"UA_Status_Failed" = "无法与服务器连接，请检查您的网络连接，然后再试一次。";
+"UA_Status_Disabled" = "购买功能被禁止。请通过'设置'重新启用，然后再试一次。";
+"UA_Status_Downloading" = "读取中...";
+
+/* UIAlerts */
+"UA_purchase_error_title" = "应用商店购买出错：";
+"UA_purchase_error" = "购买此项目时发生错误，请再试一次。";
+
+"UA_download_content_failure_title" = "下载错误:";
+"UA_download_content_failure" = "下载此项目时发生错误. 请再试一次。";
+
+"UA_receipt_verification_failure_title" = "购买错误：";
+"UA_receipt_verification_failure" = "验证收据失败，请再试一次。";
+
+"UA_content_restore_title" = "恢复内容";
+"UA_content_restore" = "存在%d个可以被恢复的内容, 要恢复吗?";
+"UA_content_restore_none" = "不存在可以恢复的购买项目。";
+"UA_content_restore_question" = "检查并恢复至之前的购买项目?";
+
+"UA_item" = "item";
+"UA_item_plural" = "items"; 
+"UA_it" = "it";
+"UA_them" = "them";
+
+"UA_Irreversible" = "不可逆";
+"UA_Clear_History_Warning" = "永久清除历史？";
+
+"UA_installed" = "已安装";
+"UA_update_available" = "更新";
+"UA_not_downloaded" = "下载";
+"UA_downloading" = "下载中";
+"UA_update_all" = "全部更新";
+
+"UA_filter_all" = "全部";
+"UA_filter_installed" = "已安装";
+"UA_filter_updates" = "更新";

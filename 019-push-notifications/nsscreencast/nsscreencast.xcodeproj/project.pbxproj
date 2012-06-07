@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5FD65CA15698EFA00FC7036 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD65C915698EFA00FC7036 /* UIKit.framework */; };
+		B5FD65CC15698EFA00FC7036 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD65CB15698EFA00FC7036 /* Foundation.framework */; };
+		B5FD65CE15698EFA00FC7036 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD65CD15698EFA00FC7036 /* CoreGraphics.framework */; };
+		B5FD65D415698EFA00FC7036 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5FD65D215698EFA00FC7036 /* InfoPlist.strings */; };
+		B5FD65D615698EFA00FC7036 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FD65D515698EFA00FC7036 /* main.m */; };
+		B5FD65DA15698EFA00FC7036 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FD65D915698EFA00FC7036 /* AppDelegate.m */; };
+		B5FD65E215698EFA00FC7036 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD65E115698EFA00FC7036 /* SenTestingKit.framework */; };
+		B5FD65E315698EFA00FC7036 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD65C915698EFA00FC7036 /* UIKit.framework */; };
+		B5FD65E415698EFA00FC7036 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD65CB15698EFA00FC7036 /* Foundation.framework */; };
+		B5FD65EC15698EFA00FC7036 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5FD65EA15698EFA00FC7036 /* InfoPlist.strings */; };
+		B5FD65EF15698EFA00FC7036 /* nsscreencastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FD65EE15698EFA00FC7036 /* nsscreencastTests.m */; };
+		B5FD65FB156995F700FC7036 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FD65F9156995F700FC7036 /* RootViewController.m */; };
+		B5FD65FC156995F700FC7036 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FD65F9156995F700FC7036 /* RootViewController.m */; };
+		B5FD65FD156995F700FC7036 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5FD65FA156995F700FC7036 /* RootViewController.xib */; };
+		B5FD65FE156995F700FC7036 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5FD65FA156995F700FC7036 /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5FD65E515698EFA00FC7036 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FD65BC15698EFA00FC7036 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5FD65C415698EFA00FC7036;
+			remoteInfo = nsscreencast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5FD65C515698EFA00FC7036 /* nsscreencast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nsscreencast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FD65C915698EFA00FC7036 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5FD65CB15698EFA00FC7036 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5FD65CD15698EFA00FC7036 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5FD65D115698EFA00FC7036 /* nsscreencast-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nsscreencast-Info.plist"; sourceTree = "<group>"; };
+		B5FD65D315698EFA00FC7036 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5FD65D515698EFA00FC7036 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5FD65D715698EFA00FC7036 /* nsscreencast-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nsscreencast-Prefix.pch"; sourceTree = "<group>"; };
+		B5FD65D815698EFA00FC7036 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5FD65D915698EFA00FC7036 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5FD65E015698EFA00FC7036 /* nsscreencastTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nsscreencastTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FD65E115698EFA00FC7036 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B5FD65E915698EFA00FC7036 /* nsscreencastTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nsscreencastTests-Info.plist"; sourceTree = "<group>"; };
+		B5FD65EB15698EFA00FC7036 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5FD65ED15698EFA00FC7036 /* nsscreencastTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nsscreencastTests.h; sourceTree = "<group>"; };
+		B5FD65EE15698EFA00FC7036 /* nsscreencastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nsscreencastTests.m; sourceTree = "<group>"; };
+		B5FD65F8156995F700FC7036 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B5FD65F9156995F700FC7036 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		B5FD65FA156995F700FC7036 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5FD65C215698EFA00FC7036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FD65CA15698EFA00FC7036 /* UIKit.framework in Frameworks */,
+				B5FD65CC15698EFA00FC7036 /* Foundation.framework in Frameworks */,
+				B5FD65CE15698EFA00FC7036 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FD65DC15698EFA00FC7036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FD65E215698EFA00FC7036 /* SenTestingKit.framework in Frameworks */,
+				B5FD65E315698EFA00FC7036 /* UIKit.framework in Frameworks */,
+				B5FD65E415698EFA00FC7036 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5FD65BA15698EFA00FC7036 = {
+			isa = PBXGroup;
+			children = (
+				B5FD65CF15698EFA00FC7036 /* nsscreencast */,
+				B5FD65E715698EFA00FC7036 /* nsscreencastTests */,
+				B5FD65C815698EFA00FC7036 /* Frameworks */,
+				B5FD65C615698EFA00FC7036 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5FD65C615698EFA00FC7036 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5FD65C515698EFA00FC7036 /* nsscreencast.app */,
+				B5FD65E015698EFA00FC7036 /* nsscreencastTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5FD65C815698EFA00FC7036 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5FD65C915698EFA00FC7036 /* UIKit.framework */,
+				B5FD65CB15698EFA00FC7036 /* Foundation.framework */,
+				B5FD65CD15698EFA00FC7036 /* CoreGraphics.framework */,
+				B5FD65E115698EFA00FC7036 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5FD65CF15698EFA00FC7036 /* nsscreencast */ = {
+			isa = PBXGroup;
+			children = (
+				B5FD65F8156995F700FC7036 /* RootViewController.h */,
+				B5FD65F9156995F700FC7036 /* RootViewController.m */,
+				B5FD65FA156995F700FC7036 /* RootViewController.xib */,
+				B5FD65D815698EFA00FC7036 /* AppDelegate.h */,
+				B5FD65D915698EFA00FC7036 /* AppDelegate.m */,
+				B5FD65D015698EFA00FC7036 /* Supporting Files */,
+			);
+			path = nsscreencast;
+			sourceTree = "<group>";
+		};
+		B5FD65D015698EFA00FC7036 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5FD65D115698EFA00FC7036 /* nsscreencast-Info.plist */,
+				B5FD65D215698EFA00FC7036 /* InfoPlist.strings */,
+				B5FD65D515698EFA00FC7036 /* main.m */,
+				B5FD65D715698EFA00FC7036 /* nsscreencast-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5FD65E715698EFA00FC7036 /* nsscreencastTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5FD65ED15698EFA00FC7036 /* nsscreencastTests.h */,
+				B5FD65EE15698EFA00FC7036 /* nsscreencastTests.m */,
+				B5FD65E815698EFA00FC7036 /* Supporting Files */,
+			);
+			path = nsscreencastTests;
+			sourceTree = "<group>";
+		};
+		B5FD65E815698EFA00FC7036 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5FD65E915698EFA00FC7036 /* nsscreencastTests-Info.plist */,
+				B5FD65EA15698EFA00FC7036 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5FD65C415698EFA00FC7036 /* nsscreencast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FD65F215698EFA00FC7036 /* Build configuration list for PBXNativeTarget "nsscreencast" */;
+			buildPhases = (
+				B5FD65C115698EFA00FC7036 /* Sources */,
+				B5FD65C215698EFA00FC7036 /* Frameworks */,
+				B5FD65C315698EFA00FC7036 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nsscreencast;
+			productName = nsscreencast;
+			productReference = B5FD65C515698EFA00FC7036 /* nsscreencast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5FD65DF15698EFA00FC7036 /* nsscreencastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FD65F515698EFA00FC7036 /* Build configuration list for PBXNativeTarget "nsscreencastTests" */;
+			buildPhases = (
+				B5FD65DB15698EFA00FC7036 /* Sources */,
+				B5FD65DC15698EFA00FC7036 /* Frameworks */,
+				B5FD65DD15698EFA00FC7036 /* Resources */,
+				B5FD65DE15698EFA00FC7036 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5FD65E615698EFA00FC7036 /* PBXTargetDependency */,
+			);
+			name = nsscreencastTests;
+			productName = nsscreencastTests;
+			productReference = B5FD65E015698EFA00FC7036 /* nsscreencastTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5FD65BC15698EFA00FC7036 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FKB;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = B5FD65BF15698EFA00FC7036 /* Build configuration list for PBXProject "nsscreencast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B5FD65BA15698EFA00FC7036;
+			productRefGroup = B5FD65C615698EFA00FC7036 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5FD65C415698EFA00FC7036 /* nsscreencast */,
+				B5FD65DF15698EFA00FC7036 /* nsscreencastTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5FD65C315698EFA00FC7036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FD65D415698EFA00FC7036 /* InfoPlist.strings in Resources */,
+				B5FD65FD156995F700FC7036 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FD65DD15698EFA00FC7036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FD65EC15698EFA00FC7036 /* InfoPlist.strings in Resources */,
+				B5FD65FE156995F700FC7036 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5FD65DE15698EFA00FC7036 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5FD65C115698EFA00FC7036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FD65D615698EFA00FC7036 /* main.m in Sources */,
+				B5FD65DA15698EFA00FC7036 /* AppDelegate.m in Sources */,
+				B5FD65FB156995F700FC7036 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FD65DB15698EFA00FC7036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FD65EF15698EFA00FC7036 /* nsscreencastTests.m in Sources */,
+				B5FD65FC156995F700FC7036 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5FD65E615698EFA00FC7036 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5FD65C415698EFA00FC7036 /* nsscreencast */;
+			targetProxy = B5FD65E515698EFA00FC7036 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5FD65D215698EFA00FC7036 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5FD65D315698EFA00FC7036 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B5FD65EA15698EFA00FC7036 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5FD65EB15698EFA00FC7036 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B570E7A21569B4A4000FEE80 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Adhoc;
+		};
+		B570E7A31569B4A4000FEE80 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nsscreencast/nsscreencast-Prefix.pch";
+				INFOPLIST_FILE = "nsscreencast/nsscreencast-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Adhoc;
+		};
+		B570E7A41569B4A4000FEE80 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/nsscreencast.app/nsscreencast";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nsscreencast/nsscreencast-Prefix.pch";
+				INFOPLIST_FILE = "nsscreencastTests/nsscreencastTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Adhoc;
+		};
+		B5FD65F015698EFA00FC7036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5FD65F115698EFA00FC7036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5FD65F315698EFA00FC7036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nsscreencast/nsscreencast-Prefix.pch";
+				INFOPLIST_FILE = "nsscreencast/nsscreencast-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B5FD65F415698EFA00FC7036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nsscreencast/nsscreencast-Prefix.pch";
+				INFOPLIST_FILE = "nsscreencast/nsscreencast-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B5FD65F615698EFA00FC7036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/nsscreencast.app/nsscreencast";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nsscreencast/nsscreencast-Prefix.pch";
+				INFOPLIST_FILE = "nsscreencastTests/nsscreencastTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B5FD65F715698EFA00FC7036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/nsscreencast.app/nsscreencast";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nsscreencast/nsscreencast-Prefix.pch";
+				INFOPLIST_FILE = "nsscreencastTests/nsscreencastTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5FD65BF15698EFA00FC7036 /* Build configuration list for PBXProject "nsscreencast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FD65F015698EFA00FC7036 /* Debug */,
+				B5FD65F115698EFA00FC7036 /* Release */,
+				B570E7A21569B4A4000FEE80 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5FD65F215698EFA00FC7036 /* Build configuration list for PBXNativeTarget "nsscreencast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FD65F315698EFA00FC7036 /* Debug */,
+				B5FD65F415698EFA00FC7036 /* Release */,
+				B570E7A31569B4A4000FEE80 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5FD65F515698EFA00FC7036 /* Build configuration list for PBXNativeTarget "nsscreencastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FD65F615698EFA00FC7036 /* Debug */,
+				B5FD65F715698EFA00FC7036 /* Release */,
+				B570E7A41569B4A4000FEE80 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5FD65BC15698EFA00FC7036 /* Project object */;
+}
