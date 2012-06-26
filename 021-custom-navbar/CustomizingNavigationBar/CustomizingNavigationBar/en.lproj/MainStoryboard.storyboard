@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="S5F-A8-ks4">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="11">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+                <navigationController id="3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="EhX-cV-Vw8"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4" customClass="CustomNavigationBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="12" kind="relationship" relationship="rootViewController" id="19"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="685" y="64"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="zrm-kY-hg3">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XXe-Pt-Sny" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="yYC-Jk-RzK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="FY9-oh-DPh"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="uGR-eG-us6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NpQ-Lk-iI8" kind="relationship" relationship="rootViewController" id="jyX-iW-Ud6"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="685" y="1283"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="LNA-6O-KrJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XCN-kN-cbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="NpQ-Lk-iI8" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QmB-NH-2Nm">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="deQ-iX-hDi"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1159" y="1283"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="TR5-Pp-MiI">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3l-5v-abH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="C83-W7-p20" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="pG2-l2-eZ9"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="SNj-Gj-rDL">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="u8c-RT-oRs" kind="relationship" relationship="rootViewController" id="yda-TQ-RbP"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="685" y="687"/>
+        </scene>
+        <!--Explore View Controller-->
+        <scene sceneID="nyb-2A-qNY">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOL-ch-9Ns" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="u8c-RT-oRs" customClass="ExploreViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WeF-YS-l95">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2af-yH-Jny"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1159" y="687"/>
+        </scene>
+        <!--Master View Controller - Master-->
+        <scene sceneID="18">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="" title="Master" id="12" customClass="MasterViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="phq-AM-6qj" style="IBUITableViewCellStyleDefault" id="lJ0-d7-vTF">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="phq-AM-6qj">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="21" kind="push" identifier="showDetail" id="jZb-fq-zAk"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="12" id="16"/>
+                            <outlet property="delegate" destination="12" id="15"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Master" id="36"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1145" y="64"/>
+        </scene>
+        <!--Detail View Controller - Detail-->
+        <scene sceneID="24">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="" title="Detail" id="21" customClass="DetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="22">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="27">
+                                <rect key="frame" x="20" y="174" width="280" height="18"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="26"/>
+                    <connections>
+                        <outlet property="detailDescriptionLabel" destination="27" id="28"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1588" y="64"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="R2s-L4-lZa">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2DW-tB-FiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="S5F-A8-ks4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="aXq-sO-l0a" customClass="CustomTabBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3" kind="relationship" relationship="viewControllers" id="Rj4-oe-IyH"/>
+                        <segue destination="C83-W7-p20" kind="relationship" relationship="viewControllers" id="XVV-qY-vBe"/>
+                        <segue destination="yYC-Jk-RzK" kind="relationship" relationship="viewControllers" id="6hq-S7-LiX"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-1" y="144"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="CustomNavigationBar" superclassName="UINavigationBar">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomNavigationBar.h"/>
+        </class>
+        <class className="CustomTabBar" superclassName="UITabBar">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomTabBar.h"/>
+        </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ExploreViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExploreViewController.h"/>
+        </class>
+        <class className="MasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
+        </class>
+        <class className="ProfileViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
