@@ -17,18 +17,6 @@
 
 @implementation MasterViewController
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Friends"
-                                                        image:nil
-                                                          tag:0];
-        [self.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"tabbar-activity-selected.png"]
-                      withFinishedUnselectedImage:[UIImage imageNamed:@"tabbar-activity.png"]];
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
