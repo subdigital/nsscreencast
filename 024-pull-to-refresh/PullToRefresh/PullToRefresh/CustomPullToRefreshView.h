@@ -1,5 +1,5 @@
 //
-//  MasterViewController.h
+//  CustomPullToRefreshView.h
 //  PullToRefresh
 //
 //  Created by Ben Scheirman on 7/8/12.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "SSPullToRefresh.h"
 
-@interface MasterViewController : UITableViewController <SSPullToRefreshViewDelegate>
+@interface CustomPullToRefreshView : UIView <SSPullToRefreshContentView>
 
 @end

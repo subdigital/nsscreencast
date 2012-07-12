@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CB87ED80E4B41E493337A41 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BF1EFB93BB448C90819DDA /* libPods.a */; };
 		B5979C0315AA0E6B002AFCC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5979C0215AA0E6B002AFCC8 /* UIKit.framework */; };
 		B5979C0515AA0E6B002AFCC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5979C0415AA0E6B002AFCC8 /* Foundation.framework */; };
 		B5979C0715AA0E6B002AFCC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5979C0615AA0E6B002AFCC8 /* CoreGraphics.framework */; };
@@ -16,13 +17,16 @@
 		B5979C1615AA0E6B002AFCC8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5979C1415AA0E6B002AFCC8 /* MainStoryboard.storyboard */; };
 		B5979C1915AA0E6B002AFCC8 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5979C1815AA0E6B002AFCC8 /* MasterViewController.m */; };
 		B5979C1C15AA0E6B002AFCC8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5979C1B15AA0E6B002AFCC8 /* DetailViewController.m */; };
+		B5979C2D15AA12F0002AFCC8 /* CustomPullToRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5979C2C15AA12F0002AFCC8 /* CustomPullToRefreshView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20BF1EFB93BB448C90819DDA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		65163400185344F99E1575BA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		B5979BFE15AA0E6B002AFCC8 /* PullToRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullToRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5979C0215AA0E6B002AFCC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B5979C0415AA0E6B002AFCC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B5979C0615AA0E6B002AFCC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5979C0215AA0E6B002AFCC8 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5979C0415AA0E6B002AFCC8 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5979C0615AA0E6B002AFCC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B5979C0A15AA0E6B002AFCC8 /* PullToRefresh-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PullToRefresh-Info.plist"; sourceTree = "<group>"; };
 		B5979C0C15AA0E6B002AFCC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5979C0E15AA0E6B002AFCC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 		B5979C1815AA0E6B002AFCC8 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		B5979C1A15AA0E6B002AFCC8 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B5979C1B15AA0E6B002AFCC8 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B5979C2B15AA12F0002AFCC8 /* CustomPullToRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPullToRefreshView.h; sourceTree = "<group>"; };
+		B5979C2C15AA12F0002AFCC8 /* CustomPullToRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPullToRefreshView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,7 @@
 				B5979C0315AA0E6B002AFCC8 /* UIKit.framework in Frameworks */,
 				B5979C0515AA0E6B002AFCC8 /* Foundation.framework in Frameworks */,
 				B5979C0715AA0E6B002AFCC8 /* CoreGraphics.framework in Frameworks */,
+				2CB87ED80E4B41E493337A41 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +63,7 @@
 				B5979C0815AA0E6B002AFCC8 /* PullToRefresh */,
 				B5979C0115AA0E6B002AFCC8 /* Frameworks */,
 				B5979BFF15AA0E6B002AFCC8 /* Products */,
+				65163400185344F99E1575BA /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +81,7 @@
 				B5979C0215AA0E6B002AFCC8 /* UIKit.framework */,
 				B5979C0415AA0E6B002AFCC8 /* Foundation.framework */,
 				B5979C0615AA0E6B002AFCC8 /* CoreGraphics.framework */,
+				20BF1EFB93BB448C90819DDA /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,6 +89,7 @@
 		B5979C0815AA0E6B002AFCC8 /* PullToRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				B5979C2915AA12E4002AFCC8 /* UI */,
 				B5979C1115AA0E6B002AFCC8 /* AppDelegate.h */,
 				B5979C1215AA0E6B002AFCC8 /* AppDelegate.m */,
 				B5979C1415AA0E6B002AFCC8 /* MainStoryboard.storyboard */,
@@ -103,6 +113,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B5979C2915AA12E4002AFCC8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B5979C2B15AA12F0002AFCC8 /* CustomPullToRefreshView.h */,
+				B5979C2C15AA12F0002AFCC8 /* CustomPullToRefreshView.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +132,7 @@
 				B5979BFA15AA0E6B002AFCC8 /* Sources */,
 				B5979BFB15AA0E6B002AFCC8 /* Frameworks */,
 				B5979BFC15AA0E6B002AFCC8 /* Resources */,
+				735634484AB04CFA8BFE492B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +180,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		735634484AB04CFA8BFE492B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5979BFA15AA0E6B002AFCC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -169,6 +206,7 @@
 				B5979C1315AA0E6B002AFCC8 /* AppDelegate.m in Sources */,
 				B5979C1915AA0E6B002AFCC8 /* MasterViewController.m in Sources */,
 				B5979C1C15AA0E6B002AFCC8 /* DetailViewController.m in Sources */,
+				B5979C2D15AA12F0002AFCC8 /* CustomPullToRefreshView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +279,7 @@
 		};
 		B5979C2015AA0E6B002AFCC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65163400185344F99E1575BA /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PullToRefresh/PullToRefresh-Prefix.pch";
@@ -252,6 +291,7 @@
 		};
 		B5979C2115AA0E6B002AFCC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65163400185344F99E1575BA /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PullToRefresh/PullToRefresh-Prefix.pch";
@@ -280,6 +320,7 @@
 				B5979C2115AA0E6B002AFCC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
