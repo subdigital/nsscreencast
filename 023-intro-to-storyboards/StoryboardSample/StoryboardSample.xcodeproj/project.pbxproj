@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B531FB1D15A0DC3100B35B60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531FB1C15A0DC3100B35B60 /* UIKit.framework */; };
+		B531FB1F15A0DC3100B35B60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531FB1E15A0DC3100B35B60 /* Foundation.framework */; };
+		B531FB2115A0DC3100B35B60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531FB2015A0DC3100B35B60 /* CoreGraphics.framework */; };
+		B531FB2715A0DC3100B35B60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B531FB2515A0DC3100B35B60 /* InfoPlist.strings */; };
+		B531FB2915A0DC3100B35B60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B531FB2815A0DC3100B35B60 /* main.m */; };
+		B531FB2D15A0DC3100B35B60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B531FB2C15A0DC3100B35B60 /* AppDelegate.m */; };
+		B531FB3415A0DD4F00B35B60 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B531FB3315A0DD4F00B35B60 /* MainStoryboard.storyboard */; };
+		B531FB3815A0E08A00B35B60 /* SleepLogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B531FB3715A0E08A00B35B60 /* SleepLogCell.m */; };
+		B531FB3C15A0E15200B35B60 /* SleepLogListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B531FB3B15A0E15200B35B60 /* SleepLogListViewController.m */; };
+		B531FB3F15A0E53E00B35B60 /* EditSleepLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B531FB3E15A0E53E00B35B60 /* EditSleepLogViewController.m */; };
+		B531FB4315A0E55E00B35B60 /* SleepLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B531FB4215A0E55E00B35B60 /* SleepLog.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B531FB1815A0DC3100B35B60 /* StoryboardSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B531FB1C15A0DC3100B35B60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B531FB1E15A0DC3100B35B60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B531FB2015A0DC3100B35B60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B531FB2415A0DC3100B35B60 /* StoryboardSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StoryboardSample-Info.plist"; sourceTree = "<group>"; };
+		B531FB2615A0DC3100B35B60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B531FB2815A0DC3100B35B60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B531FB2A15A0DC3100B35B60 /* StoryboardSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StoryboardSample-Prefix.pch"; sourceTree = "<group>"; };
+		B531FB2B15A0DC3100B35B60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B531FB2C15A0DC3100B35B60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B531FB3315A0DD4F00B35B60 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B531FB3615A0E08A00B35B60 /* SleepLogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepLogCell.h; sourceTree = "<group>"; };
+		B531FB3715A0E08A00B35B60 /* SleepLogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SleepLogCell.m; sourceTree = "<group>"; };
+		B531FB3A15A0E15200B35B60 /* SleepLogListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepLogListViewController.h; sourceTree = "<group>"; };
+		B531FB3B15A0E15200B35B60 /* SleepLogListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SleepLogListViewController.m; sourceTree = "<group>"; };
+		B531FB3D15A0E53E00B35B60 /* EditSleepLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditSleepLogViewController.h; sourceTree = "<group>"; };
+		B531FB3E15A0E53E00B35B60 /* EditSleepLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditSleepLogViewController.m; sourceTree = "<group>"; };
+		B531FB4115A0E55E00B35B60 /* SleepLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepLog.h; sourceTree = "<group>"; };
+		B531FB4215A0E55E00B35B60 /* SleepLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SleepLog.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B531FB1515A0DC3100B35B60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B531FB1D15A0DC3100B35B60 /* UIKit.framework in Frameworks */,
+				B531FB1F15A0DC3100B35B60 /* Foundation.framework in Frameworks */,
+				B531FB2115A0DC3100B35B60 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B531FB0D15A0DC3100B35B60 = {
+			isa = PBXGroup;
+			children = (
+				B531FB2215A0DC3100B35B60 /* StoryboardSample */,
+				B531FB1B15A0DC3100B35B60 /* Frameworks */,
+				B531FB1915A0DC3100B35B60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B531FB1915A0DC3100B35B60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B531FB1815A0DC3100B35B60 /* StoryboardSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B531FB1B15A0DC3100B35B60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B531FB1C15A0DC3100B35B60 /* UIKit.framework */,
+				B531FB1E15A0DC3100B35B60 /* Foundation.framework */,
+				B531FB2015A0DC3100B35B60 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B531FB2215A0DC3100B35B60 /* StoryboardSample */ = {
+			isa = PBXGroup;
+			children = (
+				B531FB4015A0E55100B35B60 /* Models */,
+				B531FB3915A0E13A00B35B60 /* Controllers */,
+				B531FB3515A0E06F00B35B60 /* Views */,
+				B531FB2B15A0DC3100B35B60 /* AppDelegate.h */,
+				B531FB2C15A0DC3100B35B60 /* AppDelegate.m */,
+				B531FB3315A0DD4F00B35B60 /* MainStoryboard.storyboard */,
+				B531FB2315A0DC3100B35B60 /* Supporting Files */,
+			);
+			path = StoryboardSample;
+			sourceTree = "<group>";
+		};
+		B531FB2315A0DC3100B35B60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B531FB2415A0DC3100B35B60 /* StoryboardSample-Info.plist */,
+				B531FB2515A0DC3100B35B60 /* InfoPlist.strings */,
+				B531FB2815A0DC3100B35B60 /* main.m */,
+				B531FB2A15A0DC3100B35B60 /* StoryboardSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B531FB3515A0E06F00B35B60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B531FB3615A0E08A00B35B60 /* SleepLogCell.h */,
+				B531FB3715A0E08A00B35B60 /* SleepLogCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B531FB3915A0E13A00B35B60 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B531FB3A15A0E15200B35B60 /* SleepLogListViewController.h */,
+				B531FB3B15A0E15200B35B60 /* SleepLogListViewController.m */,
+				B531FB3D15A0E53E00B35B60 /* EditSleepLogViewController.h */,
+				B531FB3E15A0E53E00B35B60 /* EditSleepLogViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B531FB4015A0E55100B35B60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B531FB4115A0E55E00B35B60 /* SleepLog.h */,
+				B531FB4215A0E55E00B35B60 /* SleepLog.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B531FB1715A0DC3100B35B60 /* StoryboardSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B531FB3015A0DC3100B35B60 /* Build configuration list for PBXNativeTarget "StoryboardSample" */;
+			buildPhases = (
+				B531FB1415A0DC3100B35B60 /* Sources */,
+				B531FB1515A0DC3100B35B60 /* Frameworks */,
+				B531FB1615A0DC3100B35B60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StoryboardSample;
+			productName = StoryboardSample;
+			productReference = B531FB1815A0DC3100B35B60 /* StoryboardSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B531FB0F15A0DC3100B35B60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = B531FB1215A0DC3100B35B60 /* Build configuration list for PBXProject "StoryboardSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B531FB0D15A0DC3100B35B60;
+			productRefGroup = B531FB1915A0DC3100B35B60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B531FB1715A0DC3100B35B60 /* StoryboardSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B531FB1615A0DC3100B35B60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B531FB2715A0DC3100B35B60 /* InfoPlist.strings in Resources */,
+				B531FB3415A0DD4F00B35B60 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B531FB1415A0DC3100B35B60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B531FB2915A0DC3100B35B60 /* main.m in Sources */,
+				B531FB2D15A0DC3100B35B60 /* AppDelegate.m in Sources */,
+				B531FB3815A0E08A00B35B60 /* SleepLogCell.m in Sources */,
+				B531FB3C15A0E15200B35B60 /* SleepLogListViewController.m in Sources */,
+				B531FB3F15A0E53E00B35B60 /* EditSleepLogViewController.m in Sources */,
+				B531FB4315A0E55E00B35B60 /* SleepLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B531FB2515A0DC3100B35B60 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B531FB2615A0DC3100B35B60 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B531FB2E15A0DC3100B35B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B531FB2F15A0DC3100B35B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B531FB3115A0DC3100B35B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StoryboardSample/StoryboardSample-Prefix.pch";
+				INFOPLIST_FILE = "StoryboardSample/StoryboardSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B531FB3215A0DC3100B35B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StoryboardSample/StoryboardSample-Prefix.pch";
+				INFOPLIST_FILE = "StoryboardSample/StoryboardSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B531FB1215A0DC3100B35B60 /* Build configuration list for PBXProject "StoryboardSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B531FB2E15A0DC3100B35B60 /* Debug */,
+				B531FB2F15A0DC3100B35B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B531FB3015A0DC3100B35B60 /* Build configuration list for PBXNativeTarget "StoryboardSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B531FB3115A0DC3100B35B60 /* Debug */,
+				B531FB3215A0DC3100B35B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B531FB0F15A0DC3100B35B60 /* Project object */;
+}
