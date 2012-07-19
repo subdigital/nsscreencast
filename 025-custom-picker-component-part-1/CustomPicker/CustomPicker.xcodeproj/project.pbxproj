@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5182A0B15B4DD9400D3DB93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5182A0A15B4DD9400D3DB93 /* UIKit.framework */; };
+		B5182A0D15B4DD9400D3DB93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5182A0C15B4DD9400D3DB93 /* Foundation.framework */; };
+		B5182A0F15B4DD9400D3DB93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5182A0E15B4DD9400D3DB93 /* CoreGraphics.framework */; };
+		B5182A1515B4DD9400D3DB93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5182A1315B4DD9400D3DB93 /* InfoPlist.strings */; };
+		B5182A1715B4DD9400D3DB93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5182A1615B4DD9400D3DB93 /* main.m */; };
+		B5182A1B15B4DD9400D3DB93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5182A1A15B4DD9400D3DB93 /* AppDelegate.m */; };
+		B5182A1E15B4DD9400D3DB93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5182A1D15B4DD9400D3DB93 /* ViewController.m */; };
+		B5182A2115B4DD9400D3DB93 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5182A1F15B4DD9400D3DB93 /* ViewController.xib */; };
+		B5991D1615B4E5B5007E6E0B /* BSModalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5991D1515B4E5B5007E6E0B /* BSModalPickerView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5182A0615B4DD9300D3DB93 /* CustomPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5182A0A15B4DD9400D3DB93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5182A0C15B4DD9400D3DB93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5182A0E15B4DD9400D3DB93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5182A1215B4DD9400D3DB93 /* CustomPicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomPicker-Info.plist"; sourceTree = "<group>"; };
+		B5182A1415B4DD9400D3DB93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5182A1615B4DD9400D3DB93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5182A1815B4DD9400D3DB93 /* CustomPicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomPicker-Prefix.pch"; sourceTree = "<group>"; };
+		B5182A1915B4DD9400D3DB93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5182A1A15B4DD9400D3DB93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5182A1C15B4DD9400D3DB93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B5182A1D15B4DD9400D3DB93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B5182A2015B4DD9400D3DB93 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B5991D1415B4E5B5007E6E0B /* BSModalPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSModalPickerView.h; sourceTree = "<group>"; };
+		B5991D1515B4E5B5007E6E0B /* BSModalPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSModalPickerView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5182A0315B4DD9300D3DB93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5182A0B15B4DD9400D3DB93 /* UIKit.framework in Frameworks */,
+				B5182A0D15B4DD9400D3DB93 /* Foundation.framework in Frameworks */,
+				B5182A0F15B4DD9400D3DB93 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B51829FB15B4DD9300D3DB93 = {
+			isa = PBXGroup;
+			children = (
+				B5182A1015B4DD9400D3DB93 /* CustomPicker */,
+				B5182A0915B4DD9300D3DB93 /* Frameworks */,
+				B5182A0715B4DD9300D3DB93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5182A0715B4DD9300D3DB93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5182A0615B4DD9300D3DB93 /* CustomPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5182A0915B4DD9300D3DB93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5182A0A15B4DD9400D3DB93 /* UIKit.framework */,
+				B5182A0C15B4DD9400D3DB93 /* Foundation.framework */,
+				B5182A0E15B4DD9400D3DB93 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5182A1015B4DD9400D3DB93 /* CustomPicker */ = {
+			isa = PBXGroup;
+			children = (
+				B5182A1915B4DD9400D3DB93 /* AppDelegate.h */,
+				B5182A1A15B4DD9400D3DB93 /* AppDelegate.m */,
+				B5182A1C15B4DD9400D3DB93 /* ViewController.h */,
+				B5182A1D15B4DD9400D3DB93 /* ViewController.m */,
+				B5182A1F15B4DD9400D3DB93 /* ViewController.xib */,
+				B5182A1115B4DD9400D3DB93 /* Supporting Files */,
+				B5991D1415B4E5B5007E6E0B /* BSModalPickerView.h */,
+				B5991D1515B4E5B5007E6E0B /* BSModalPickerView.m */,
+			);
+			path = CustomPicker;
+			sourceTree = "<group>";
+		};
+		B5182A1115B4DD9400D3DB93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5182A1215B4DD9400D3DB93 /* CustomPicker-Info.plist */,
+				B5182A1315B4DD9400D3DB93 /* InfoPlist.strings */,
+				B5182A1615B4DD9400D3DB93 /* main.m */,
+				B5182A1815B4DD9400D3DB93 /* CustomPicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5182A0515B4DD9300D3DB93 /* CustomPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5182A2415B4DD9400D3DB93 /* Build configuration list for PBXNativeTarget "CustomPicker" */;
+			buildPhases = (
+				B5182A0215B4DD9300D3DB93 /* Sources */,
+				B5182A0315B4DD9300D3DB93 /* Frameworks */,
+				B5182A0415B4DD9300D3DB93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomPicker;
+			productName = CustomPicker;
+			productReference = B5182A0615B4DD9300D3DB93 /* CustomPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B51829FD15B4DD9300D3DB93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = B5182A0015B4DD9300D3DB93 /* Build configuration list for PBXProject "CustomPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B51829FB15B4DD9300D3DB93;
+			productRefGroup = B5182A0715B4DD9300D3DB93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5182A0515B4DD9300D3DB93 /* CustomPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5182A0415B4DD9300D3DB93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5182A1515B4DD9400D3DB93 /* InfoPlist.strings in Resources */,
+				B5182A2115B4DD9400D3DB93 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5182A0215B4DD9300D3DB93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5182A1715B4DD9400D3DB93 /* main.m in Sources */,
+				B5182A1B15B4DD9400D3DB93 /* AppDelegate.m in Sources */,
+				B5182A1E15B4DD9400D3DB93 /* ViewController.m in Sources */,
+				B5991D1615B4E5B5007E6E0B /* BSModalPickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5182A1315B4DD9400D3DB93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5182A1415B4DD9400D3DB93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B5182A1F15B4DD9400D3DB93 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5182A2015B4DD9400D3DB93 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5182A2215B4DD9400D3DB93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5182A2315B4DD9400D3DB93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5182A2515B4DD9400D3DB93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomPicker/CustomPicker-Prefix.pch";
+				INFOPLIST_FILE = "CustomPicker/CustomPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B5182A2615B4DD9400D3DB93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomPicker/CustomPicker-Prefix.pch";
+				INFOPLIST_FILE = "CustomPicker/CustomPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5182A0015B4DD9300D3DB93 /* Build configuration list for PBXProject "CustomPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5182A2215B4DD9400D3DB93 /* Debug */,
+				B5182A2315B4DD9400D3DB93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5182A2415B4DD9400D3DB93 /* Build configuration list for PBXNativeTarget "CustomPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5182A2515B4DD9400D3DB93 /* Debug */,
+				B5182A2615B4DD9400D3DB93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B51829FD15B4DD9300D3DB93 /* Project object */;
+}
