@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SyntaxLevelUp' target in the 'SyntaxLevelUp' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
