@@ -1,0 +1,8 @@
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}
+ALWAYS_SEARCH_USER_PATHS = YES
+OTHER_LDFLAGS = -ObjC -lz -framework AudioToolbox -framework CFNetwork -framework CoreGraphics -framework MobileCoreServices -framework Parse -framework QuartzCore -framework Security -framework SystemConfiguration
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Parse"
+HEADER_SEARCH_PATHS = ${PODS_HEADERS_SEARCH_PATHS}
+PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/MGImageUtilities" "${PODS_ROOT}/BuildHeaders/Parse" "${PODS_ROOT}/BuildHeaders/SVProgressHUD"
+PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/MGImageUtilities" "${PODS_ROOT}/Headers/Parse" "${PODS_ROOT}/Headers/SVProgressHUD"

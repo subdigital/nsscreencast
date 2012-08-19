@@ -1,0 +1,6 @@
+platform :ios
+xcodeproj 'Fotogram.xcodeproj'
+
+pod 'Parse', :git => "https://github.com/subdigital/Parse.git", :tag => "1.0.69"
+pod 'MGImageUtilities'
+pod 'SVProgressHUD'
