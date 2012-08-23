@@ -17,7 +17,7 @@
 
     [Parse setApplicationId:@"lGHDZioqlg8PumtwuACrn7Gx9iTfMTjkW39MRzLH"
                   clientKey:@"ziJwCscVlvPjU3xq07skpplliuDwLXkujP25j9x5"];
-    
+        
     FGPhotosViewController *controller = [[FGPhotosViewController alloc] init];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
     self.window.rootViewController = navController;

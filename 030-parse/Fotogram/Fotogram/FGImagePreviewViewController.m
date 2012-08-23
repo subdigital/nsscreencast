@@ -34,6 +34,10 @@
 
     self.imageView.image = _image;
     self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+    
+    NSData *imageData = UIImagePNGRepresentation(_image);
+    self.imageFile = [PFFile fileWithData:imageData];
+    [self.imageFile saveInBackground];
 }
 
 - (void)viewDidUnload {
@@ -43,7 +47,23 @@
 }
 
 - (IBAction)uploadPhoto:(id)sender {
-    // TODO:
+    NSString *caption = self.captionField.text;
+    PFObject *photo = [[PFObject alloc] initWithClassName:@"Photo"];
+    [photo setObject:caption forKey:@"caption"];
+    [photo setObject:self.imageFile forKey:@"photo"];
+    
+    [SVProgressHUD show];
+    [photo saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            [SVProgressHUD dismiss];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"FGPhotoUploaded"
+                                                                object:self];
+            [self.navigationController popViewControllerAnimated:YES];
+        } else {
+            NSLog(@"ERROR: %@", error);
+            [SVProgressHUD dismissWithError:@"ERROR"];
+        }
+    }];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

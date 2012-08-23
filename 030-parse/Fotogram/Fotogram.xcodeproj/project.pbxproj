@@ -17,6 +17,7 @@
 		B5C7739015E17A000087E780 /* FGPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C7738F15E17A000087E780 /* FGPhotosViewController.m */; };
 		B5C7739515E180040087E780 /* FGImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C7739315E180040087E780 /* FGImagePreviewViewController.m */; };
 		B5C7739615E180040087E780 /* FGImagePreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5C7739415E180040087E780 /* FGImagePreviewViewController.xib */; };
+		B5FC2B9915E1A968007BBD45 /* UIImageView+ParseFileSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FC2B9815E1A968007BBD45 /* UIImageView+ParseFileSupport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		B5C7739315E180040087E780 /* FGImagePreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGImagePreviewViewController.m; sourceTree = "<group>"; };
 		B5C7739415E180040087E780 /* FGImagePreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGImagePreviewViewController.xib; sourceTree = "<group>"; };
 		B5C7739715E181B40087E780 /* NSObject+SubscriptSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SubscriptSupport.h"; sourceTree = "<group>"; };
+		B5FC2B9715E1A968007BBD45 /* UIImageView+ParseFileSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ParseFileSupport.h"; sourceTree = "<group>"; };
+		B5FC2B9815E1A968007BBD45 /* UIImageView+ParseFileSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ParseFileSupport.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				B5C7739415E180040087E780 /* FGImagePreviewViewController.xib */,
 				B5C7737715E1721D0087E780 /* Supporting Files */,
 				B5C7739715E181B40087E780 /* NSObject+SubscriptSupport.h */,
+				B5FC2B9715E1A968007BBD45 /* UIImageView+ParseFileSupport.h */,
+				B5FC2B9815E1A968007BBD45 /* UIImageView+ParseFileSupport.m */,
 			);
 			path = Fotogram;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				B5C7738115E1721D0087E780 /* AppDelegate.m in Sources */,
 				B5C7739015E17A000087E780 /* FGPhotosViewController.m in Sources */,
 				B5C7739515E180040087E780 /* FGImagePreviewViewController.m in Sources */,
+				B5FC2B9915E1A968007BBD45 /* UIImageView+ParseFileSupport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
