@@ -1,0 +1,2 @@
+module LattesHelper
+end
