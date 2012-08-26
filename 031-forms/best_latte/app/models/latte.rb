@@ -1,3 +1,4 @@
 class Latte < ActiveRecord::Base
-  attr_accessible :comments, :location, :photo_url, :submitted_by
+  attr_accessible :comments, :location, :photo, :submitted_by
+  mount_uploader :photo, PhotoUploader
 end

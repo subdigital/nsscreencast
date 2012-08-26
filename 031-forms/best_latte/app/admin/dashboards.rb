@@ -1,5 +1,18 @@
 ActiveAdmin::Dashboards.build do
 
+  section "Recent Lattes" do
+    ul(:style => "list-style-type: none") do
+      Latte.order("created_at DESC").limit(5).map do |latte|
+        li do
+          link_to admin_latte_path(latte) do
+            image_tag(latte.photo.thumb_retina.url, :style => "vertical-align: middle") +
+            latte.location
+          end
+        end
+      end
+    end
+  end
+
   # Define your dashboard sections here. Each block will be
   # rendered on the dashboard in the context of the view. So just
   # return the content which you would like to display.

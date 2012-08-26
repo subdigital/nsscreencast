@@ -2,7 +2,7 @@ class LattesController < ApplicationController
   skip_before_filter :verify_authenticity_token, :only => :create
 
   def index
-    @lattes = Lattes.order("created_at DESC")
+    @lattes = Latte.order("created_at DESC")
     render :json => @lattes
   end
 

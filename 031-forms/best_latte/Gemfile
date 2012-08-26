@@ -13,6 +13,10 @@ end
 gem 'jquery-rails'
 gem 'activeadmin'
 
+gem 'carrierwave'
+gem 'fog'
+gem 'mini_magick'
+
 group :development do
   gem 'foreman'
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120826184719) do
+ActiveRecord::Schema.define(:version => 20120826190243) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(:version => 20120826184719) do
   create_table "lattes", :force => true do |t|
     t.string   "location"
     t.text     "comments"
-    t.string   "photo_url"
+    t.string   "photo"
     t.string   "submitted_by"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
