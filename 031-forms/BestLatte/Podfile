@@ -1,0 +1,6 @@
+platform :ios
+xcodeproj 'BestLatte.xcodeproj'
+
+pod 'AFNetworking'
+pod 'BlocksKit'
+pod 'KKGridView'

@@ -1,0 +1,13 @@
+PODS:
+  - A2DynamicDelegate (2.0.1):
+    - libffi
+  - AFNetworking (1.0RC1)
+  - BlocksKit (1.5.1):
+    - A2DynamicDelegate
+  - KKGridView (0.0.1)
+  - libffi (3.0.11)
+
+DEPENDENCIES:
+  - AFNetworking
+  - BlocksKit
+  - KKGridView
