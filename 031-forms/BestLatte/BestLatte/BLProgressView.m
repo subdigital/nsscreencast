@@ -22,11 +22,11 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor colorWithWhite:0.7f alpha:0.8f];
+        self.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.8f];
         self.layer.shadowColor  = [[UIColor blackColor] CGColor];
         self.layer.shadowOffset = CGSizeMake(0, -1);
         self.progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleBar];
-        self.progressView.frame = CGRectInset(self.bounds, 30.0f, 8.0f);
+        self.progressView.frame = CGRectInset(self.bounds, 30.0f, 10.0f);
         
         [self addSubview:self.progressView];
     }
