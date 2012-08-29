@@ -16,11 +16,6 @@
 
 @implementation BLAddLatteViewController
 
-@synthesize locationTextField = _locationTextField;
-@synthesize nameTextField = _nameTextField;
-@synthesize commentsTextView = _commentsTextView;
-@synthesize imageView = _imageView;
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     

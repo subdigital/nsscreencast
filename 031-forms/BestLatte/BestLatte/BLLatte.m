@@ -53,7 +53,8 @@
     NSDictionary *photoDictionary = [dictionary objectForKey:@"photo"];
     self.largeUrl = [photoDictionary objectForKey:@"url"];
     
-    NSDictionary *thumbDictionary = [photoDictionary objectForKey:@"thumb"];
+    NSString *photoKey = IsRetina() ? @"thumb_retina" : @"thumb";
+    NSDictionary *thumbDictionary = [photoDictionary objectForKey:photoKey];
     self.thumbnailUrl = [thumbDictionary objectForKey:@"url"];
 }
 

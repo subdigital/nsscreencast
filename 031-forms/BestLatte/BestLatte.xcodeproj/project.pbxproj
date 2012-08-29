@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		6816A1670A3042BC933ED87A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5353A3615ED94E70083CE0E /* BLHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLHelpers.h; sourceTree = "<group>"; };
 		B536140415EAC991000DA19D /* BLLatte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLatte.h; sourceTree = "<group>"; };
 		B536140515EAC991000DA19D /* BLLatte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLatte.m; sourceTree = "<group>"; };
 		B536140715EAD846000DA19D /* BLLatteGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLatteGridViewController.h; sourceTree = "<group>"; };
@@ -76,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5353A3415ED94D10083CE0E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B5353A3615ED94E70083CE0E /* BLHelpers.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		B53613FE15EAC972000DA19D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +179,7 @@
 		B5FF917F15EAC3BB0043A8CC /* BestLatte */ = {
 			isa = PBXGroup;
 			children = (
+				B5353A3415ED94D10083CE0E /* Helpers */,
 				B5D4E85615EB0B2A003DD58F /* API */,
 				B536140315EAC97C000DA19D /* Models */,
 				B53613FE15EAC972000DA19D /* Controllers */,
