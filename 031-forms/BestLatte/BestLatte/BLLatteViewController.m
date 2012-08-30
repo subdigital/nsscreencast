@@ -11,24 +11,17 @@
 
 @interface BLLatteViewController ()
 
+@property (nonatomic, strong) BLLatte *latte;
+
 // outlets
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *commentsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *authorLabel;
 
-@property (nonatomic, strong) BLLatte *latte;
-
 @end
 
 @implementation BLLatteViewController
-
-@synthesize imageView = _imageView;
-@synthesize commentsLabel = _commentsLabel;
-@synthesize locationLabel = _locationLabel;
-@synthesize authorLabel = _authorLabel;
-
-@synthesize latte = _latte;
 
 - (id)initWithLatte:(BLLatte *)latte {
     self = [super initWithNibName:@"BLLatteViewController" bundle:nil];

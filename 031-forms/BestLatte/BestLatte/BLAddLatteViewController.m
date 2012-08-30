@@ -2,8 +2,8 @@
 //  BLAddLatteViewController.m
 //  BestLatte
 //
-//  Created by Ben Scheirman on 8/26/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Ben Scheirman on 8/28/12.
+//
 //
 
 #import "BLAddLatteViewController.h"
@@ -12,117 +12,85 @@
 
 @interface BLAddLatteViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *locationTextField;
+@property (weak, nonatomic) IBOutlet UITextField *authorTextField;
+@property (weak, nonatomic) IBOutlet UITextView *commentsTextView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @end
 
 @implementation BLAddLatteViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.title = @"Submit Your Latte";
-    self.navigationItem.leftBarButtonItem = [self cancelButton];
+
     self.navigationItem.rightBarButtonItem = [self saveButton];
-}
-
-- (void)viewDidUnload {
-    [self setLocationTextField:nil];
-    [self setNameTextField:nil];
-    [self setCommentsTextView:nil];
-    [self setImageView:nil];
-    [super viewDidUnload];
-}
-
-- (UIBarButtonItem *)cancelButton {
-    return [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
-                                                         target:self
-                                                         action:@selector(cancel:)];
 }
 
 - (UIBarButtonItem *)saveButton {
     return [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave
                                                          target:self
-                                                         action:@selector(save:)];    
+                                                         action:@selector(save:)];
 }
 
-- (void)cancel:(id)sender {
-    [self dismissViewControllerAnimated:YES
-                             completion:^{
-                             }];
-}
-
-- (UIResponder *)findFirstResponder {
-    if ([self.locationTextField isFirstResponder]) {
-        return self.locationTextField;
-    }
-    
-    if ([self.nameTextField isFirstResponder]) {
-        return self.nameTextField;
-    }
-    
-    if ([self.commentsTextView isFirstResponder]) {
-        return self.commentsTextView;
-    }
-    
-    return nil;
-}
-
-- (void)save:(id)sender {
-    [[self findFirstResponder] resignFirstResponder];
-    
-    BLLatte *latte = [[BLLatte alloc] init];
-    latte.location = self.locationTextField.text;
-    latte.submittedBy = self.nameTextField.text;
-    latte.comments = self.commentsTextView.text;
-    
-    if (self.imageView.image) {
-        latte.photoData = UIImagePNGRepresentation(self.imageView.image);        
-    }
-    
-    BLProgressView *progressView = [BLProgressView presentInWindow:self.view.window];
-    [latte saveWithProgress:^(CGFloat progress) {
-        progressView.progress = progress;
-    } completion:^(BOOL success, NSError *error) {
-        [progressView dismiss];
-        if (success) {
-            [self dismissViewControllerAnimated:YES completion:nil];
-        } else {
-            [[[UIAlertView alloc] initWithTitle:@"ERROR"
-                                        message:@"Couldn't save the latte"
-                                       delegate:nil
-                              cancelButtonTitle:@"OK"
-                              otherButtonTitles:nil] show];
-        }
-    }];
+- (void)viewDidUnload {
+    [self setLocationTextField:nil];
+    [self setAuthorTextField:nil];
+    [self setCommentsTextView:nil];
+    [super viewDidUnload];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    UITableViewCell *cell = [self tableView:tableView cellForRowAtIndexPath:indexPath];
     if ([cell.reuseIdentifier isEqualToString:@"photoCell"]) {
         [self promptForPhoto];
     }
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)promptForPhoto {
-    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-    imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum | UIImagePickerControllerSourceTypePhotoLibrary;
+    UIImagePickerController *pickerController = [[UIImagePickerController alloc] init];
+    pickerController.sourceType =
+        UIImagePickerControllerSourceTypePhotoLibrary |
+        UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        imagePicker.sourceType |= UIImagePickerControllerSourceTypeCamera;
+        pickerController.sourceType |=UIImagePickerControllerSourceTypeCamera;
     }
     
-    imagePicker.allowsEditing = YES;
-    imagePicker.delegate = self;
-    [self presentViewController:imagePicker
-                       animated:YES completion:^{   
-                       }];
+    pickerController.delegate = self;
+    pickerController.allowsEditing = YES;
+    
+    [self presentViewController:pickerController
+                       animated:YES completion:nil];
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker
-        didFinishPickingImage:(UIImage *)image
-                  editingInfo:(NSDictionary *)editingInfo {
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
     self.imageView.image = image;
-    [self dismissViewControllerAnimated:YES
-                             completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)save:(id)sender {
+    BLLatte *latte = [[BLLatte alloc] init];
+    latte.location = self.locationTextField.text;
+    latte.submittedBy = self.authorTextField.text;
+    latte.comments = self.commentsTextView.text;
+    latte.photoData = UIImagePNGRepresentation(self.imageView.image);
+    
+    [self.view endEditing:YES];
+    
+    BLProgressView *progressView = [BLProgressView presentInWindow:self.view.window];
+    
+    // save it
+    [latte saveWithProgress:^(CGFloat progress) {
+        [progressView setProgress:progress];
+    } completion:^(BOOL success, NSError *error) {
+        [progressView dismiss];
+        if (success) {
+            [self.navigationController popViewControllerAnimated:YES];
+        } else {
+            NSLog(@"ERROR: %@", error);
+        }
+    }];
 }
 
 @end

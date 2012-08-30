@@ -98,11 +98,11 @@
 }
 
 - (void)addLatte:(id)sender {
-    UIStoryboard *addLatteStoryBoard = [UIStoryboard storyboardWithName:@"BLAddLatteViewController" bundle:nil];
-    UIViewController *addLatteViewController = [addLatteStoryBoard instantiateInitialViewController];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:addLatteViewController];
-    navController.navigationBar.tintColor = [UIColor darkGrayColor];
-    [self presentModalViewController:navController animated:YES];
+
+    UIStoryboard *addLatteStoryBoard = [UIStoryboard storyboardWithName:@"BLAddLatteStoryboard"
+                                                                 bundle:nil];
+    id vc = [addLatteStoryBoard instantiateInitialViewController];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)latteCreated:(NSNotification *)notification {

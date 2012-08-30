@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3560145F94B94D0B953B1E62 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6816A1670A3042BC933ED87A /* libPods.a */; };
+		B5353A4D15EDA8A00083CE0E /* NSDictionary+JSONValueParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = B5353A4C15EDA8A00083CE0E /* NSDictionary+JSONValueParsing.m */; };
+		B5353A4F15EDAA1F0083CE0E /* BLAddLatteStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5353A4E15EDAA1F0083CE0E /* BLAddLatteStoryboard.storyboard */; };
+		B5353A5215EDACA20083CE0E /* BLAddLatteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5353A5115EDACA20083CE0E /* BLAddLatteViewController.m */; };
 		B536140615EAC991000DA19D /* BLLatte.m in Sources */ = {isa = PBXBuildFile; fileRef = B536140515EAC991000DA19D /* BLLatte.m */; };
 		B536140915EAD846000DA19D /* BLLatteGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B536140815EAD846000DA19D /* BLLatteGridViewController.m */; };
 		B536140D15EADB70000DA19D /* BLLatteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B536140C15EADB70000DA19D /* BLLatteCell.m */; };
 		B536141115EADC91000DA19D /* coffee-nophoto.png in Resources */ = {isa = PBXBuildFile; fileRef = B536141015EADC91000DA19D /* coffee-nophoto.png */; };
 		B536141515EAEF52000DA19D /* BLLatteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B536141315EAEF52000DA19D /* BLLatteViewController.m */; };
 		B536141615EAEF52000DA19D /* BLLatteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B536141415EAEF52000DA19D /* BLLatteViewController.xib */; };
-		B536141815EAF568000DA19D /* BLAddLatteViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B536141715EAF568000DA19D /* BLAddLatteViewController.storyboard */; };
-		B536141B15EAF6AB000DA19D /* BLAddLatteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B536141A15EAF6AB000DA19D /* BLAddLatteViewController.m */; };
 		B5D4E85A15EB0B3A003DD58F /* BLAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D4E85915EB0B3A003DD58F /* BLAPIClient.m */; };
 		B5D4E85D15EB0F58003DD58F /* BLNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D4E85C15EB0F58003DD58F /* BLNotifications.m */; };
 		B5D4E86015EB2091003DD58F /* BLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D4E85F15EB2091003DD58F /* BLProgressView.m */; };
@@ -30,6 +31,11 @@
 /* Begin PBXFileReference section */
 		6816A1670A3042BC933ED87A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5353A3615ED94E70083CE0E /* BLHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLHelpers.h; sourceTree = "<group>"; };
+		B5353A4B15EDA8A00083CE0E /* NSDictionary+JSONValueParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSONValueParsing.h"; sourceTree = "<group>"; };
+		B5353A4C15EDA8A00083CE0E /* NSDictionary+JSONValueParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONValueParsing.m"; sourceTree = "<group>"; };
+		B5353A4E15EDAA1F0083CE0E /* BLAddLatteStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BLAddLatteStoryboard.storyboard; sourceTree = "<group>"; };
+		B5353A5015EDACA20083CE0E /* BLAddLatteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAddLatteViewController.h; sourceTree = "<group>"; };
+		B5353A5115EDACA20083CE0E /* BLAddLatteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAddLatteViewController.m; sourceTree = "<group>"; };
 		B536140415EAC991000DA19D /* BLLatte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLatte.h; sourceTree = "<group>"; };
 		B536140515EAC991000DA19D /* BLLatte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLatte.m; sourceTree = "<group>"; };
 		B536140715EAD846000DA19D /* BLLatteGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLatteGridViewController.h; sourceTree = "<group>"; };
@@ -40,9 +46,6 @@
 		B536141215EAEF52000DA19D /* BLLatteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLatteViewController.h; sourceTree = "<group>"; };
 		B536141315EAEF52000DA19D /* BLLatteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLatteViewController.m; sourceTree = "<group>"; };
 		B536141415EAEF52000DA19D /* BLLatteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLLatteViewController.xib; sourceTree = "<group>"; };
-		B536141715EAF568000DA19D /* BLAddLatteViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BLAddLatteViewController.storyboard; sourceTree = "<group>"; };
-		B536141915EAF6AB000DA19D /* BLAddLatteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAddLatteViewController.h; sourceTree = "<group>"; };
-		B536141A15EAF6AB000DA19D /* BLAddLatteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAddLatteViewController.m; sourceTree = "<group>"; };
 		B5D4E85815EB0B3A003DD58F /* BLAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAPIClient.h; sourceTree = "<group>"; };
 		B5D4E85915EB0B3A003DD58F /* BLAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAPIClient.m; sourceTree = "<group>"; };
 		B5D4E85B15EB0F58003DD58F /* BLNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLNotifications.h; sourceTree = "<group>"; };
@@ -80,9 +83,19 @@
 		B5353A3415ED94D10083CE0E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B5353A4A15EDA87A0083CE0E /* Categories */,
 				B5353A3615ED94E70083CE0E /* BLHelpers.h */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B5353A4A15EDA87A0083CE0E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B5353A4B15EDA8A00083CE0E /* NSDictionary+JSONValueParsing.h */,
+				B5353A4C15EDA8A00083CE0E /* NSDictionary+JSONValueParsing.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		B53613FE15EAC972000DA19D /* Controllers */ = {
@@ -93,9 +106,9 @@
 				B536141215EAEF52000DA19D /* BLLatteViewController.h */,
 				B536141315EAEF52000DA19D /* BLLatteViewController.m */,
 				B536141415EAEF52000DA19D /* BLLatteViewController.xib */,
-				B536141715EAF568000DA19D /* BLAddLatteViewController.storyboard */,
-				B536141915EAF6AB000DA19D /* BLAddLatteViewController.h */,
-				B536141A15EAF6AB000DA19D /* BLAddLatteViewController.m */,
+				B5353A4E15EDAA1F0083CE0E /* BLAddLatteStoryboard.storyboard */,
+				B5353A5015EDACA20083CE0E /* BLAddLatteViewController.h */,
+				B5353A5115EDACA20083CE0E /* BLAddLatteViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -259,7 +272,7 @@
 				B5FF918415EAC3BB0043A8CC /* InfoPlist.strings in Resources */,
 				B536141115EADC91000DA19D /* coffee-nophoto.png in Resources */,
 				B536141615EAEF52000DA19D /* BLLatteViewController.xib in Resources */,
-				B536141815EAF568000DA19D /* BLAddLatteViewController.storyboard in Resources */,
+				B5353A4F15EDAA1F0083CE0E /* BLAddLatteStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +306,11 @@
 				B536140915EAD846000DA19D /* BLLatteGridViewController.m in Sources */,
 				B536140D15EADB70000DA19D /* BLLatteCell.m in Sources */,
 				B536141515EAEF52000DA19D /* BLLatteViewController.m in Sources */,
-				B536141B15EAF6AB000DA19D /* BLAddLatteViewController.m in Sources */,
 				B5D4E85A15EB0B3A003DD58F /* BLAPIClient.m in Sources */,
 				B5D4E85D15EB0F58003DD58F /* BLNotifications.m in Sources */,
 				B5D4E86015EB2091003DD58F /* BLProgressView.m in Sources */,
+				B5353A4D15EDA8A00083CE0E /* NSDictionary+JSONValueParsing.m in Sources */,
+				B5353A5215EDACA20083CE0E /* BLAddLatteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

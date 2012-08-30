@@ -11,6 +11,7 @@
 #import "BlocksKit.h"
 #import "BLAPIClient.h"
 #import "BLNotifications.h"
+#import "NSDictionary+JSONValueParsing.h"
 
 @implementation BLLatte
 
@@ -45,17 +46,17 @@
 }
 
 - (void)updateFromJSON:(NSDictionary *)dictionary {
-    self.serverId = [[dictionary objectForKey:@"id"] intValue];
-    self.location = [dictionary objectForKey:@"location"];
-    self.submittedBy = [dictionary objectForKey:@"submitted_by"];
-    self.comments = [dictionary objectForKey:@"comments"];
+    self.serverId = [dictionary intForKey:@"id"];
+    self.location = [dictionary stringForKey:@"location"];
+    self.submittedBy = [dictionary stringForKey:@"submitted_by"];
+    self.comments = [dictionary stringForKey:@"comments"];
     
     NSDictionary *photoDictionary = [dictionary objectForKey:@"photo"];
-    self.largeUrl = [photoDictionary objectForKey:@"url"];
+    self.largeUrl = [photoDictionary stringForKey:@"url"];
     
     NSString *photoKey = IsRetina() ? @"thumb_retina" : @"thumb";
     NSDictionary *thumbDictionary = [photoDictionary objectForKey:photoKey];
-    self.thumbnailUrl = [thumbDictionary objectForKey:@"url"];
+    self.thumbnailUrl = [thumbDictionary stringForKey:@"url"];
 }
 
 - (void)saveWithCompletion:(void (^)(BOOL success, NSError *error))completionBlock {
@@ -69,53 +70,47 @@
     if (!self.submittedBy) self.submittedBy = @"";
     if (!self.comments) self.comments = @"";
 
-    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
-                            self.location, @"latte[location]",
-                            self.submittedBy, @"latte[submitted_by]", 
-                            self.comments, @"latte[comments]", nil];
+    NSDictionary *params = @{
+    @"latte[location]" : self.location,
+    @"latte[submitted_by]" : self.submittedBy,
+    @"latte[comments]" : self.comments
+    };
     
-    NSMutableURLRequest *request = [[BLAPIClient sharedClient] multipartFormRequestWithMethod:@"POST" 
-                                                                                         path:@"/lattes"
-                                                                                   parameters:params
-                                                                    constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+    NSURLRequest *postRequest = [[BLAPIClient sharedClient] multipartFormRequestWithMethod:@"POST"
+                                                                                      path:@"/lattes"
+                                                                                parameters:params
+                                                                 constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
                                                                         [formData appendPartWithFileData:self.photoData
                                                                                                     name:@"latte[photo]"
                                                                                                 fileName:@"latte.png"
                                                                                                 mimeType:@"image/png"];
-                                                                    }];
-    AFHTTPRequestOperation *operation = [[AFJSONRequestOperation alloc] initWithRequest:request];    
+                                                                 }];
+    
+    AFHTTPRequestOperation *operation = [[AFJSONRequestOperation alloc] initWithRequest:postRequest];
+    [operation setUploadProgressBlock:^(NSInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite) {
+        CGFloat progress = ((CGFloat)totalBytesWritten) / totalBytesExpectedToWrite;
+        progressBlock(progress);
+    }];
+    
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (operation.response.statusCode == 200 || operation.response.statusCode == 201) {
-            BOOL success = [[responseObject objectForKey:@"success"] boolValue];
-            
-            if (success) {
-                [self updateFromJSON:[responseObject objectForKey:@"latte"]];
-                [self notifyCreated];
-                completionBlock(YES, nil);
-            } else {
-                NSLog(@"ERRORS: %@", [responseObject objectForKey:@"errors"]);
-                completionBlock(NO, nil);
-            }
-
+            NSLog(@"Created, %@", responseObject);
+            NSDictionary *updatedLatte = [responseObject objectForKey:@"latte"];
+            [self updateFromJSON:updatedLatte];
+            [self notifyCreated];
+            completionBlock(YES, nil);
         } else {
             completionBlock(NO, nil);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completionBlock(NO, error);
     }];
-
-    if (progressBlock) {
-        [operation setUploadProgressBlock:^(NSInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite) {
-            CGFloat progress = totalBytesWritten * 1.0f / totalBytesExpectedToWrite;
-            progressBlock(progress);
-        }];
-    }
     
     [[BLAPIClient sharedClient] enqueueHTTPRequestOperation:operation];
 };
 
 - (void)notifyCreated {
-    [[NSNotificationCenter defaultCenter] postNotificationName:BLLatteCreatedNotification 
+    [[NSNotificationCenter defaultCenter] postNotificationName:BLLatteCreatedNotification
                                                         object:self];
 }
 
