@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5989E6315FD315900D26C7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5989E6215FD315900D26C7E /* UIKit.framework */; };
+		B5989E6515FD315900D26C7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5989E6415FD315900D26C7E /* Foundation.framework */; };
+		B5989E6715FD315900D26C7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5989E6615FD315900D26C7E /* CoreGraphics.framework */; };
+		B5989E6D15FD315900D26C7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5989E6B15FD315900D26C7E /* InfoPlist.strings */; };
+		B5989E6F15FD315900D26C7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5989E6E15FD315900D26C7E /* main.m */; };
+		B5989E7315FD315900D26C7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5989E7215FD315900D26C7E /* AppDelegate.m */; };
+		B5989E7615FD315900D26C7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5989E7515FD315900D26C7E /* ViewController.m */; };
+		B5989E7915FD315900D26C7E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5989E7715FD315900D26C7E /* ViewController.xib */; };
+		B5989E8115FD316B00D26C7E /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5989E8015FD316B00D26C7E /* GradientView.m */; };
+		B5989E8415FD31AE00D26C7E /* DrawingHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B5989E8315FD31AE00D26C7E /* DrawingHelpers.m */; };
+		B5989E8715FD32BB00D26C7E /* PolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5989E8615FD32BB00D26C7E /* PolygonView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5989E5E15FD315900D26C7E /* DrawingPolygons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingPolygons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5989E6215FD315900D26C7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5989E6415FD315900D26C7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5989E6615FD315900D26C7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5989E6A15FD315900D26C7E /* DrawingPolygons-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawingPolygons-Info.plist"; sourceTree = "<group>"; };
+		B5989E6C15FD315900D26C7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5989E6E15FD315900D26C7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5989E7015FD315900D26C7E /* DrawingPolygons-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrawingPolygons-Prefix.pch"; sourceTree = "<group>"; };
+		B5989E7115FD315900D26C7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5989E7215FD315900D26C7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5989E7415FD315900D26C7E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B5989E7515FD315900D26C7E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B5989E7815FD315900D26C7E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B5989E7F15FD316B00D26C7E /* GradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
+		B5989E8015FD316B00D26C7E /* GradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
+		B5989E8215FD31AE00D26C7E /* DrawingHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingHelpers.h; sourceTree = "<group>"; };
+		B5989E8315FD31AE00D26C7E /* DrawingHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingHelpers.m; sourceTree = "<group>"; };
+		B5989E8515FD32BB00D26C7E /* PolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonView.h; sourceTree = "<group>"; };
+		B5989E8615FD32BB00D26C7E /* PolygonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5989E5B15FD315900D26C7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5989E6315FD315900D26C7E /* UIKit.framework in Frameworks */,
+				B5989E6515FD315900D26C7E /* Foundation.framework in Frameworks */,
+				B5989E6715FD315900D26C7E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5989E5315FD315900D26C7E = {
+			isa = PBXGroup;
+			children = (
+				B5989E6815FD315900D26C7E /* DrawingPolygons */,
+				B5989E6115FD315900D26C7E /* Frameworks */,
+				B5989E5F15FD315900D26C7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5989E5F15FD315900D26C7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5989E5E15FD315900D26C7E /* DrawingPolygons.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5989E6115FD315900D26C7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5989E6215FD315900D26C7E /* UIKit.framework */,
+				B5989E6415FD315900D26C7E /* Foundation.framework */,
+				B5989E6615FD315900D26C7E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5989E6815FD315900D26C7E /* DrawingPolygons */ = {
+			isa = PBXGroup;
+			children = (
+				B5989E8215FD31AE00D26C7E /* DrawingHelpers.h */,
+				B5989E8315FD31AE00D26C7E /* DrawingHelpers.m */,
+				B5989E7115FD315900D26C7E /* AppDelegate.h */,
+				B5989E7215FD315900D26C7E /* AppDelegate.m */,
+				B5989E7415FD315900D26C7E /* ViewController.h */,
+				B5989E7515FD315900D26C7E /* ViewController.m */,
+				B5989E7715FD315900D26C7E /* ViewController.xib */,
+				B5989E6915FD315900D26C7E /* Supporting Files */,
+				B5989E7F15FD316B00D26C7E /* GradientView.h */,
+				B5989E8015FD316B00D26C7E /* GradientView.m */,
+				B5989E8515FD32BB00D26C7E /* PolygonView.h */,
+				B5989E8615FD32BB00D26C7E /* PolygonView.m */,
+			);
+			path = DrawingPolygons;
+			sourceTree = "<group>";
+		};
+		B5989E6915FD315900D26C7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5989E6A15FD315900D26C7E /* DrawingPolygons-Info.plist */,
+				B5989E6B15FD315900D26C7E /* InfoPlist.strings */,
+				B5989E6E15FD315900D26C7E /* main.m */,
+				B5989E7015FD315900D26C7E /* DrawingPolygons-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5989E5D15FD315900D26C7E /* DrawingPolygons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5989E7C15FD315900D26C7E /* Build configuration list for PBXNativeTarget "DrawingPolygons" */;
+			buildPhases = (
+				B5989E5A15FD315900D26C7E /* Sources */,
+				B5989E5B15FD315900D26C7E /* Frameworks */,
+				B5989E5C15FD315900D26C7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawingPolygons;
+			productName = DrawingPolygons;
+			productReference = B5989E5E15FD315900D26C7E /* DrawingPolygons.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5989E5515FD315900D26C7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = nsscreencast;
+			};
+			buildConfigurationList = B5989E5815FD315900D26C7E /* Build configuration list for PBXProject "DrawingPolygons" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B5989E5315FD315900D26C7E;
+			productRefGroup = B5989E5F15FD315900D26C7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5989E5D15FD315900D26C7E /* DrawingPolygons */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5989E5C15FD315900D26C7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5989E6D15FD315900D26C7E /* InfoPlist.strings in Resources */,
+				B5989E7915FD315900D26C7E /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5989E5A15FD315900D26C7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5989E6F15FD315900D26C7E /* main.m in Sources */,
+				B5989E7315FD315900D26C7E /* AppDelegate.m in Sources */,
+				B5989E7615FD315900D26C7E /* ViewController.m in Sources */,
+				B5989E8115FD316B00D26C7E /* GradientView.m in Sources */,
+				B5989E8415FD31AE00D26C7E /* DrawingHelpers.m in Sources */,
+				B5989E8715FD32BB00D26C7E /* PolygonView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5989E6B15FD315900D26C7E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5989E6C15FD315900D26C7E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B5989E7715FD315900D26C7E /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5989E7815FD315900D26C7E /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5989E7A15FD315900D26C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5989E7B15FD315900D26C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5989E7D15FD315900D26C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawingPolygons/DrawingPolygons-Prefix.pch";
+				INFOPLIST_FILE = "DrawingPolygons/DrawingPolygons-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B5989E7E15FD315900D26C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawingPolygons/DrawingPolygons-Prefix.pch";
+				INFOPLIST_FILE = "DrawingPolygons/DrawingPolygons-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5989E5815FD315900D26C7E /* Build configuration list for PBXProject "DrawingPolygons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5989E7A15FD315900D26C7E /* Debug */,
+				B5989E7B15FD315900D26C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5989E7C15FD315900D26C7E /* Build configuration list for PBXNativeTarget "DrawingPolygons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5989E7D15FD315900D26C7E /* Debug */,
+				B5989E7E15FD315900D26C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5989E5515FD315900D26C7E /* Project object */;
+}
