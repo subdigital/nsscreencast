@@ -38,8 +38,8 @@ void drawLinearGradient(CGContextRef context, CGColorRef color1, CGColorRef colo
 void drawGlossyGradient(CGContextRef context, CGColorRef color1, CGColorRef color2, CGRect rect) {
     drawLinearGradient(context, color1, color2, rect);
     
-    CGColorRef shineStartColor = [[UIColor colorWithWhite:1.0 alpha:0.05] CGColor];
-    CGColorRef shineEndColor   = [[UIColor colorWithWhite:1.0 alpha:0.6] CGColor];
+    CGColorRef shineStartColor = CGColorRetain([[UIColor colorWithWhite:1.0 alpha:0.05] CGColor]);
+    CGColorRef shineEndColor   = CGColorRetain([[UIColor colorWithWhite:1.0 alpha:0.6] CGColor]);
     
     CGRect shineRect = CGRectMake(CGRectGetMinX(rect),
                                   CGRectGetMinY(rect),
@@ -47,4 +47,7 @@ void drawGlossyGradient(CGContextRef context, CGColorRef color1, CGColorRef colo
                                   floorf(CGRectGetHeight(rect) / 2.0));
     
     drawLinearGradient(context, shineStartColor, shineEndColor, shineRect);
+
+    CGColorRelease(shineStartColor);
+    CGColorRelease(shineEndColor);
 }
