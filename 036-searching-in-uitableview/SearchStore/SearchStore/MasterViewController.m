@@ -34,35 +34,52 @@
 }
 
 - (void)setupSearchBar {
-    const CGFloat SearchBarHeight = 44.0f;
-    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, SearchBarHeight)];
+    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
     self.tableView.tableHeaderView = self.searchBar;
     
-    [self.tableView setContentOffset:CGPointMake(0, SearchBarHeight) animated:NO];
     
     self.searchController = [[UISearchDisplayController alloc] initWithSearchBar:self.searchBar
                                                               contentsController:self];
-    self.searchController.delegate = self;
     self.searchController.searchResultsDataSource = self;
     self.searchController.searchResultsDelegate = self;
+    self.searchController.delegate = self;
     
-    self.searchResults = [NSMutableArray array];
+    CGPoint offset = CGPointMake(0, self.searchBar.frame.size.height);
+    self.tableView.contentOffset = offset;
 }
 							
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self setupSearchBar];
+    self.searchResults = [NSMutableArray array];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
-#pragma mark - search display
+#pragma mark - search
+
+- (void)filterProductsForTerm:(NSString *)term {
+    [self.searchResults removeAllObjects];
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    fetchRequest.entity = [Product entityInManagedObjectContext:[self managedObjectContext]];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name contains[cd] %@ or category.name contains[cd] %@", term, term];
+    fetchRequest.predicate = predicate;
+    
+    NSError *error = nil;
+    NSArray *results = [[self managedObjectContext] executeFetchRequest:fetchRequest error:&error];
+    if (error) {
+        [NSException raise:NSGenericException format:@"Error filtering for term: %@ -- %@", term, error];
+    }
+    
+    [self.searchResults addObjectsFromArray:results];
+}
 
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
-    [self filterProductsMatchingSearchTerm:searchString];
+    [self filterProductsForTerm:searchString];
     return YES;
 }
 
@@ -81,22 +98,6 @@
     }
 }
 
-- (void)filterProductsMatchingSearchTerm:(NSString*)searchText {
-    [self.searchResults removeAllObjects]; // First clear the filtered array.
-    
-    NSFetchRequest *filterRequest = [[NSFetchRequest alloc] init];
-    [filterRequest setEntity:[Product entityInManagedObjectContext:[self managedObjectContext]]];
-    NSPredicate *filterPredicate = [NSPredicate predicateWithFormat:@"name contains[cd] %@ or category.name contains[cd] %@", searchText, searchText];
-    [filterRequest setPredicate:filterPredicate];
-    
-    NSError *error = nil;
-    NSArray *results = [[self managedObjectContext] executeFetchRequest:filterRequest error:&error];
-    if (error) {
-        [NSException raise:NSGenericException format:@"Error filtering products: %@", error];
-    }
-    
-    [self.searchResults addObjectsFromArray:results];
-}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
@@ -107,7 +108,7 @@
     }
     
     Product *product = nil;
-    if (self.tableView == tableView) {
+    if (tableView == self.tableView) {
         product = (Product *)[self.fetchedResultsController objectAtIndexPath:indexPath];
     } else {
         product = [self.searchResults objectAtIndex:indexPath.row];
@@ -123,9 +124,9 @@
         self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     }
     
-    Product *product;
+    Product *product = nil;
     if (tableView == self.tableView) {
-        product = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        product = (Product *)[self.fetchedResultsController objectAtIndexPath:indexPath];
     } else {
         product = [self.searchResults objectAtIndex:indexPath.row];
     }
