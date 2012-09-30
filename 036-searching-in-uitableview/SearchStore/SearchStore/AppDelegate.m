@@ -105,6 +105,25 @@
         bigLebowski.price = [NSDecimalNumber decimalNumberWithString:@"11.99"];
         bigLebowski.category = movies;
         
+        Product *memento = [Product insertInManagedObjectContext:[self managedObjectContext]];
+        memento.name = @"Memento (DVD)";
+        memento.price = [NSDecimalNumber decimalNumberWithString:@"14.99"];
+        memento.category = movies;
+
+        Product *amelie = [Product insertInManagedObjectContext:[self managedObjectContext]];
+        amelie.name = @"Amélie (DVD)";
+        amelie.price = [NSDecimalNumber decimalNumberWithString:@"8.99"];
+        amelie.category = movies;
+        
+        Product *swingers = [Product insertInManagedObjectContext:[self managedObjectContext]];
+        swingers.name = @"Swingers (DVD)";
+        swingers.price = [NSDecimalNumber decimalNumberWithString:@"4.99"];
+        swingers.category = movies;
+        
+        Product *labyrinth = [Product insertInManagedObjectContext:[self managedObjectContext]];
+        labyrinth.name = @"Labyrinth (DVD)";
+        labyrinth.price = [NSDecimalNumber decimalNumberWithString:@"4.99"];
+        labyrinth.category = movies;
         
         NSError *error = nil;
         if ([[self managedObjectContext] save:&error]) {

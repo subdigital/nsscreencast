@@ -12,23 +12,58 @@
 #import "DetailViewController.h"
 #import "ProductCell.h"
 
+@interface MasterViewController() <UISearchDisplayDelegate> {
+    
+}
+
+@property (nonatomic, strong) UISearchBar *searchBar;
+@property (nonatomic, strong) UISearchDisplayController *searchController;
+@property (nonatomic, strong) NSMutableArray *searchResults;
+
+@end
+
 @implementation MasterViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Master", @"Master");
+        self.title = @"Super Store";
     }
     return self;
+}
+
+- (void)setupSearchBar {
+    const CGFloat SearchBarHeight = 44.0f;
+    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, SearchBarHeight)];
+    self.tableView.tableHeaderView = self.searchBar;
+    
+    [self.tableView setContentOffset:CGPointMake(0, SearchBarHeight) animated:NO];
+    
+    self.searchController = [[UISearchDisplayController alloc] initWithSearchBar:self.searchBar
+                                                              contentsController:self];
+    self.searchController.delegate = self;
+    self.searchController.searchResultsDataSource = self;
+    self.searchController.searchResultsDelegate = self;
+    
+    self.searchResults = [NSMutableArray array];
 }
 							
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setupSearchBar];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark - search display
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
+    [self filterProductsMatchingSearchTerm:searchString];
+    return YES;
 }
 
 #pragma mark - Table View
@@ -38,8 +73,29 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
-    return [sectionInfo numberOfObjects];
+    if (tableView == self.tableView) {
+        id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
+        return [sectionInfo numberOfObjects];
+    } else {
+        return self.searchResults.count;
+    }
+}
+
+- (void)filterProductsMatchingSearchTerm:(NSString*)searchText {
+    [self.searchResults removeAllObjects]; // First clear the filtered array.
+    
+    NSFetchRequest *filterRequest = [[NSFetchRequest alloc] init];
+    [filterRequest setEntity:[Product entityInManagedObjectContext:[self managedObjectContext]]];
+    NSPredicate *filterPredicate = [NSPredicate predicateWithFormat:@"name contains[cd] %@ or category.name contains[cd] %@", searchText, searchText];
+    [filterRequest setPredicate:filterPredicate];
+    
+    NSError *error = nil;
+    NSArray *results = [[self managedObjectContext] executeFetchRequest:filterRequest error:&error];
+    if (error) {
+        [NSException raise:NSGenericException format:@"Error filtering products: %@", error];
+    }
+    
+    [self.searchResults addObjectsFromArray:results];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -49,46 +105,32 @@
     if (cell == nil) {
         cell = [[ProductCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
+    
+    Product *product = nil;
+    if (self.tableView == tableView) {
+        product = (Product *)[self.fetchedResultsController objectAtIndexPath:indexPath];
+    } else {
+        product = [self.searchResults objectAtIndex:indexPath.row];
+    }
+    
+    cell.product = product;
 
-    [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-        [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
-        
-        NSError *error = nil;
-        if (![context save:&error]) {
-             // Replace this implementation with code to handle the error appropriately.
-             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
-        }
-    }   
-}
-
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // The table view should not be re-orderable.
-    return NO;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (!self.detailViewController) {
         self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     }
-    NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-    self.detailViewController.detailItem = object;
+    
+    Product *product;
+    if (tableView == self.tableView) {
+        product = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+    } else {
+        product = [self.searchResults objectAtIndex:indexPath.row];
+    }
+    
+    self.detailViewController.detailItem = product;
     [self.navigationController pushViewController:self.detailViewController animated:YES];
 }
 
@@ -133,14 +175,12 @@
     return _fetchedResultsController;
 }    
 
-- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
-{
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
     [self.tableView beginUpdates];
 }
 
 - (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
-           atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type
-{
+           atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
     switch(type) {
         case NSFetchedResultsChangeInsert:
             [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
@@ -155,11 +195,6 @@
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
     [self.tableView endUpdates];
-}
-
-- (void)configureCell:(ProductCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    Product *product = (Product *)[self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.product = product;
 }
 
 @end
