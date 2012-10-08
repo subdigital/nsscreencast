@@ -71,7 +71,7 @@
     
     NSError *error = nil;
     NSArray *results = [[self managedObjectContext] executeFetchRequest:fetchRequest error:&error];
-    if (error) {
+    if (results == nil) {
         [NSException raise:NSGenericException format:@"Error filtering for term: %@ -- %@", term, error];
     }
     
