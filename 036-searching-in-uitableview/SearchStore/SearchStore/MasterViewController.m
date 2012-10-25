@@ -29,6 +29,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = @"Super Store";
+        self.view.backgroundColor = [UIColor redColor]
     }
     return self;
 }

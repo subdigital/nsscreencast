@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F29FBC9A72F4720BF258B13 /* libPods-SmartJsonParsingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFA2112B90E4AFA84F9417A /* libPods-SmartJsonParsingTests.a */; };
+		B570D95A163574EB00E32EEE /* TestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B570D959163574EB00E32EEE /* TestPerson.m */; };
+		B570D95D163576A100E32EEE /* NSString+NamingConventions.m in Sources */ = {isa = PBXBuildFile; fileRef = B570D95C163576A100E32EEE /* NSString+NamingConventions.m */; };
+		B570D95E163576A100E32EEE /* NSString+NamingConventions.m in Sources */ = {isa = PBXBuildFile; fileRef = B570D95C163576A100E32EEE /* NSString+NamingConventions.m */; };
+		B5A81FE31634BCD8000FDECC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A81FE21634BCD8000FDECC /* UIKit.framework */; };
+		B5A81FE51634BCD8000FDECC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A81FE41634BCD8000FDECC /* Foundation.framework */; };
+		B5A81FE71634BCD8000FDECC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A81FE61634BCD8000FDECC /* CoreGraphics.framework */; };
+		B5A81FED1634BCD8000FDECC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5A81FEB1634BCD8000FDECC /* InfoPlist.strings */; };
+		B5A81FEF1634BCD8000FDECC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A81FEE1634BCD8000FDECC /* main.m */; };
+		B5A81FF31634BCD8000FDECC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A81FF21634BCD8000FDECC /* AppDelegate.m */; };
+		B5A81FF51634BCD8000FDECC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A81FF41634BCD8000FDECC /* Default.png */; };
+		B5A81FF71634BCD8000FDECC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A81FF61634BCD8000FDECC /* Default@2x.png */; };
+		B5A81FF91634BCD8000FDECC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A81FF81634BCD8000FDECC /* Default-568h@2x.png */; };
+		B5A820011634BCD8000FDECC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A820001634BCD8000FDECC /* SenTestingKit.framework */; };
+		B5A820021634BCD8000FDECC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A81FE21634BCD8000FDECC /* UIKit.framework */; };
+		B5A820031634BCD8000FDECC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A81FE41634BCD8000FDECC /* Foundation.framework */; };
+		B5A8200B1634BCD8000FDECC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5A820091634BCD8000FDECC /* InfoPlist.strings */; };
+		B5A820261634C023000FDECC /* JSONObjectSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A820251634C023000FDECC /* JSONObjectSpec.m */; };
+		B5A8202C1634C139000FDECC /* JSONObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8202B1634C139000FDECC /* JSONObject.m */; };
+		B5A8202D1634C139000FDECC /* JSONObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8202B1634C139000FDECC /* JSONObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5A820041634BCD8000FDECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5A81FD51634BCD8000FDECC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5A81FDD1634BCD8000FDECC;
+			remoteInfo = SmartJsonParsing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		226ED2B78BFD4502B58B1E0B /* Pods-SmartJsonParsingTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartJsonParsingTests.xcconfig"; path = "Pods/Pods-SmartJsonParsingTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		2EFA2112B90E4AFA84F9417A /* libPods-SmartJsonParsingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartJsonParsingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B570D958163574EB00E32EEE /* TestPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPerson.h; sourceTree = "<group>"; };
+		B570D959163574EB00E32EEE /* TestPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPerson.m; sourceTree = "<group>"; };
+		B570D95B163576A100E32EEE /* NSString+NamingConventions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NamingConventions.h"; sourceTree = "<group>"; };
+		B570D95C163576A100E32EEE /* NSString+NamingConventions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NamingConventions.m"; sourceTree = "<group>"; };
+		B5A81FDE1634BCD8000FDECC /* SmartJsonParsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartJsonParsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A81FE21634BCD8000FDECC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5A81FE41634BCD8000FDECC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5A81FE61634BCD8000FDECC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5A81FEA1634BCD8000FDECC /* SmartJsonParsing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartJsonParsing-Info.plist"; sourceTree = "<group>"; };
+		B5A81FEC1634BCD8000FDECC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5A81FEE1634BCD8000FDECC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5A81FF01634BCD8000FDECC /* SmartJsonParsing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartJsonParsing-Prefix.pch"; sourceTree = "<group>"; };
+		B5A81FF11634BCD8000FDECC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5A81FF21634BCD8000FDECC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5A81FF41634BCD8000FDECC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B5A81FF61634BCD8000FDECC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B5A81FF81634BCD8000FDECC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B5A81FFF1634BCD8000FDECC /* SmartJsonParsingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartJsonParsingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A820001634BCD8000FDECC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B5A820081634BCD8000FDECC /* SmartJsonParsingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartJsonParsingTests-Info.plist"; sourceTree = "<group>"; };
+		B5A8200A1634BCD8000FDECC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5A820251634C023000FDECC /* JSONObjectSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONObjectSpec.m; sourceTree = "<group>"; };
+		B5A8202A1634C139000FDECC /* JSONObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONObject.h; sourceTree = "<group>"; };
+		B5A8202B1634C139000FDECC /* JSONObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5A81FDB1634BCD8000FDECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A81FE31634BCD8000FDECC /* UIKit.framework in Frameworks */,
+				B5A81FE51634BCD8000FDECC /* Foundation.framework in Frameworks */,
+				B5A81FE71634BCD8000FDECC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A81FFB1634BCD8000FDECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A820011634BCD8000FDECC /* SenTestingKit.framework in Frameworks */,
+				B5A820021634BCD8000FDECC /* UIKit.framework in Frameworks */,
+				B5A820031634BCD8000FDECC /* Foundation.framework in Frameworks */,
+				7F29FBC9A72F4720BF258B13 /* libPods-SmartJsonParsingTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5A81FD31634BCD8000FDECC = {
+			isa = PBXGroup;
+			children = (
+				B5A81FE81634BCD8000FDECC /* SmartJsonParsing */,
+				B5A820061634BCD8000FDECC /* SmartJsonParsingTests */,
+				B5A81FE11634BCD8000FDECC /* Frameworks */,
+				B5A81FDF1634BCD8000FDECC /* Products */,
+				226ED2B78BFD4502B58B1E0B /* Pods-SmartJsonParsingTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B5A81FDF1634BCD8000FDECC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5A81FDE1634BCD8000FDECC /* SmartJsonParsing.app */,
+				B5A81FFF1634BCD8000FDECC /* SmartJsonParsingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5A81FE11634BCD8000FDECC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5A81FE21634BCD8000FDECC /* UIKit.framework */,
+				B5A81FE41634BCD8000FDECC /* Foundation.framework */,
+				B5A81FE61634BCD8000FDECC /* CoreGraphics.framework */,
+				B5A820001634BCD8000FDECC /* SenTestingKit.framework */,
+				2EFA2112B90E4AFA84F9417A /* libPods-SmartJsonParsingTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5A81FE81634BCD8000FDECC /* SmartJsonParsing */ = {
+			isa = PBXGroup;
+			children = (
+				B5A81FF11634BCD8000FDECC /* AppDelegate.h */,
+				B5A81FF21634BCD8000FDECC /* AppDelegate.m */,
+				B5A81FE91634BCD8000FDECC /* Supporting Files */,
+				B5A8202A1634C139000FDECC /* JSONObject.h */,
+				B5A8202B1634C139000FDECC /* JSONObject.m */,
+				B570D95B163576A100E32EEE /* NSString+NamingConventions.h */,
+				B570D95C163576A100E32EEE /* NSString+NamingConventions.m */,
+			);
+			path = SmartJsonParsing;
+			sourceTree = "<group>";
+		};
+		B5A81FE91634BCD8000FDECC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5A81FEA1634BCD8000FDECC /* SmartJsonParsing-Info.plist */,
+				B5A81FEB1634BCD8000FDECC /* InfoPlist.strings */,
+				B5A81FEE1634BCD8000FDECC /* main.m */,
+				B5A81FF01634BCD8000FDECC /* SmartJsonParsing-Prefix.pch */,
+				B5A81FF41634BCD8000FDECC /* Default.png */,
+				B5A81FF61634BCD8000FDECC /* Default@2x.png */,
+				B5A81FF81634BCD8000FDECC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5A820061634BCD8000FDECC /* SmartJsonParsingTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5A820071634BCD8000FDECC /* Supporting Files */,
+				B5A820251634C023000FDECC /* JSONObjectSpec.m */,
+				B570D958163574EB00E32EEE /* TestPerson.h */,
+				B570D959163574EB00E32EEE /* TestPerson.m */,
+			);
+			path = SmartJsonParsingTests;
+			sourceTree = "<group>";
+		};
+		B5A820071634BCD8000FDECC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5A820081634BCD8000FDECC /* SmartJsonParsingTests-Info.plist */,
+				B5A820091634BCD8000FDECC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5A81FDD1634BCD8000FDECC /* SmartJsonParsing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A820111634BCD8000FDECC /* Build configuration list for PBXNativeTarget "SmartJsonParsing" */;
+			buildPhases = (
+				B5A81FDA1634BCD8000FDECC /* Sources */,
+				B5A81FDB1634BCD8000FDECC /* Frameworks */,
+				B5A81FDC1634BCD8000FDECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartJsonParsing;
+			productName = SmartJsonParsing;
+			productReference = B5A81FDE1634BCD8000FDECC /* SmartJsonParsing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5A81FFE1634BCD8000FDECC /* SmartJsonParsingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A820141634BCD8000FDECC /* Build configuration list for PBXNativeTarget "SmartJsonParsingTests" */;
+			buildPhases = (
+				B5A81FFA1634BCD8000FDECC /* Sources */,
+				B5A81FFB1634BCD8000FDECC /* Frameworks */,
+				B5A81FFC1634BCD8000FDECC /* Resources */,
+				CBAC9D96A40C4BA893E1054E /* Copy Pods Resources */,
+				B5A81FFD1634BCD8000FDECC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5A820051634BCD8000FDECC /* PBXTargetDependency */,
+			);
+			name = SmartJsonParsingTests;
+			productName = SmartJsonParsingTests;
+			productReference = B5A81FFF1634BCD8000FDECC /* SmartJsonParsingTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5A81FD51634BCD8000FDECC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = NSScreencast;
+			};
+			buildConfigurationList = B5A81FD81634BCD8000FDECC /* Build configuration list for PBXProject "SmartJsonParsing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B5A81FD31634BCD8000FDECC;
+			productRefGroup = B5A81FDF1634BCD8000FDECC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5A81FDD1634BCD8000FDECC /* SmartJsonParsing */,
+				B5A81FFE1634BCD8000FDECC /* SmartJsonParsingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5A81FDC1634BCD8000FDECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A81FED1634BCD8000FDECC /* InfoPlist.strings in Resources */,
+				B5A81FF51634BCD8000FDECC /* Default.png in Resources */,
+				B5A81FF71634BCD8000FDECC /* Default@2x.png in Resources */,
+				B5A81FF91634BCD8000FDECC /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A81FFC1634BCD8000FDECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A8200B1634BCD8000FDECC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5A81FFD1634BCD8000FDECC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBAC9D96A40C4BA893E1054E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SmartJsonParsingTests-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5A81FDA1634BCD8000FDECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A81FEF1634BCD8000FDECC /* main.m in Sources */,
+				B5A81FF31634BCD8000FDECC /* AppDelegate.m in Sources */,
+				B5A8202C1634C139000FDECC /* JSONObject.m in Sources */,
+				B570D95D163576A100E32EEE /* NSString+NamingConventions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A81FFA1634BCD8000FDECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A820261634C023000FDECC /* JSONObjectSpec.m in Sources */,
+				B5A8202D1634C139000FDECC /* JSONObject.m in Sources */,
+				B570D95A163574EB00E32EEE /* TestPerson.m in Sources */,
+				B570D95E163576A100E32EEE /* NSString+NamingConventions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5A820051634BCD8000FDECC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5A81FDD1634BCD8000FDECC /* SmartJsonParsing */;
+			targetProxy = B5A820041634BCD8000FDECC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5A81FEB1634BCD8000FDECC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A81FEC1634BCD8000FDECC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B5A820091634BCD8000FDECC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A8200A1634BCD8000FDECC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5A8200F1634BCD8000FDECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5A820101634BCD8000FDECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5A820121634BCD8000FDECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartJsonParsing/SmartJsonParsing-Prefix.pch";
+				INFOPLIST_FILE = "SmartJsonParsing/SmartJsonParsing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B5A820131634BCD8000FDECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartJsonParsing/SmartJsonParsing-Prefix.pch";
+				INFOPLIST_FILE = "SmartJsonParsing/SmartJsonParsing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B5A820151634BCD8000FDECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 226ED2B78BFD4502B58B1E0B /* Pods-SmartJsonParsingTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmartJsonParsing.app/SmartJsonParsing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartJsonParsing/SmartJsonParsing-Prefix.pch";
+				INFOPLIST_FILE = "SmartJsonParsingTests/SmartJsonParsingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B5A820161634BCD8000FDECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 226ED2B78BFD4502B58B1E0B /* Pods-SmartJsonParsingTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmartJsonParsing.app/SmartJsonParsing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartJsonParsing/SmartJsonParsing-Prefix.pch";
+				INFOPLIST_FILE = "SmartJsonParsingTests/SmartJsonParsingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5A81FD81634BCD8000FDECC /* Build configuration list for PBXProject "SmartJsonParsing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A8200F1634BCD8000FDECC /* Debug */,
+				B5A820101634BCD8000FDECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A820111634BCD8000FDECC /* Build configuration list for PBXNativeTarget "SmartJsonParsing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A820121634BCD8000FDECC /* Debug */,
+				B5A820131634BCD8000FDECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A820141634BCD8000FDECC /* Build configuration list for PBXNativeTarget "SmartJsonParsingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A820151634BCD8000FDECC /* Debug */,
+				B5A820161634BCD8000FDECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5A81FD51634BCD8000FDECC /* Project object */;
+}

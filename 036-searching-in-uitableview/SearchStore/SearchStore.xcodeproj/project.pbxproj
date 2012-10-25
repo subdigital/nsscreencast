@@ -364,6 +364,7 @@
 				B5D1E2861618C6C100A37A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -34,7 +34,6 @@
     return YES;
 }
 
-
 - (int)numberOfProducts {
     return [Product productCountWithManagedObjectContext:[self managedObjectContext]];
 }

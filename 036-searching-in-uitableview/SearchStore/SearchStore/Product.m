@@ -10,7 +10,7 @@
     if (error) {
         [NSException raise:NSGenericException format:@"Couldn't fetch the count of product entities: %@", error];
     }
-    
+
     return count;
 }
 
