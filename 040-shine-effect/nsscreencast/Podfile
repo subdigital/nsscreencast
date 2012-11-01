@@ -1,0 +1,4 @@
+platform :ios
+
+dependency 'AFNetworking'
+dependency 'SVWebViewController', :git => "https://github.com/subdigital/SVWebViewController"
