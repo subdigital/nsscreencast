@@ -1,0 +1,21 @@
+//
+//  CredentialStore.h
+//  AuthClient
+//
+//  Created by Ben Scheirman on 11/4/12.
+//  Copyright (c) 2012 nsscreencast. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "Credentials.h"
+
+@interface CredentialStore : NSObject
+
+- (BOOL)isLoggedIn;
+- (void)clearSavedCredentials;
+- (void)setCredentials:(Credentials *)credentials;
+- (Credentials *)storedCredentials;
+- (NSString *)authToken;
+- (void)setAuthToken:(NSString *)authToken;
+
+@end

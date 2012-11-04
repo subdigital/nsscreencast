@@ -1,0 +1,17 @@
+
+PODS:
+- AFNetworking (1.0.1)
+- SSKeychain (0.1.4)
+- SVProgressHUD (0.8)
+
+DEPENDENCIES:
+- AFNetworking
+- SSKeychain
+- SVProgressHUD
+
+SPEC CHECKSUMS:
+  AFNetworking: 4c11f857c9a18d65f4257c90a1e74ac49f0ac422
+  SSKeychain: a81ff6b65eb5e8fc1fddecf11fe167dba81d4314
+  SVProgressHUD: 51042a14e3a716efdbdd73cbb2181fb23ee94389
+
+COCOAPODS: 0.16.0.rc3

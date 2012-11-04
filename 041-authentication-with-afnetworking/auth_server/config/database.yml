@@ -1,0 +1,20 @@
+shared: &shared
+  encoding: unicode
+  pool: 25
+  min_messages: warning
+  host: localhost
+
+development:
+  adapter: postgresql
+  database: auth_server_development
+  <<: *shared
+
+test:
+  adapter: postgresql
+  database: auth_server_test
+  <<: *shared
+
+production:
+  adapter: postgresql
+  database: auth_server_production
+  <<: *shared
