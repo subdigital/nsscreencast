@@ -30,19 +30,30 @@
     if (![self ensureLoggedIn]) {
         return;
     }
-
-    [SVProgressHUD show];
+    
     [[AuthAPIClient sharedClient] getPath:@"/home/index.json"
                                parameters:nil
                                   success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                                      [SVProgressHUD dismiss];
-                                      self.messageTextView.text = [responseObject description];
-                                  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                                      NSString *errorMessage = [NSString stringWithFormat:@"Requested failed: %@", operation.responseString];
-                                      [SVProgressHUD showErrorWithStatus:errorMessage];
-                                      [self.credentialStore setAuthToken:nil];
-                                  }];
-    
+                                      self.messageTextView.text = operation.responseString;
+                               } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                   NSLog(@"ERROR: %@", error);
+                                   
+                                   if (operation.response.statusCode == 401) {
+                                       // auth token is bad
+                                       [self.credentialStore setAuthToken:nil];
+                                   }
+                                   
+                                   NSData *data = [operation.responseString dataUsingEncoding:NSUTF8StringEncoding];
+                                   NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data
+                                                                                              options:0
+                                                                                                error:nil];
+                                   NSString *errorMessage = [dictionary objectForKey:@"error"];
+                                   [SVProgressHUD showErrorWithStatus:errorMessage];
+                               }];
+}
+
+- (IBAction)clearSavedCredentials:(id)sender {
+    [self.credentialStore clearSavedCredentials];
 }
 
 - (BOOL)ensureLoggedIn {

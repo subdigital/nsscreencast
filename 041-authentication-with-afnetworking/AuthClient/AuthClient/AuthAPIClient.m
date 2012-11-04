@@ -30,20 +30,19 @@
         [self setAuthTokenHeader];
         
         [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(onTokenChanged:)
+                                                 selector:@selector(tokenChanged:)
                                                      name:@"token-changed"
                                                    object:nil];
     }
     return self;
 }
 
-- (void)setAuthTokenHeader{
+- (void)setAuthTokenHeader {
     CredentialStore *store = [[CredentialStore alloc] init];
-    [self setDefaultHeader:@"auth_token"
-                     value:[store authToken]];
+    [self setDefaultHeader:@"auth_token" value:[store authToken]];
 }
 
-- (void)onTokenChanged:(NSNotification *)notification {
+- (void)tokenChanged:(NSNotification *)notification {
     [self setAuthTokenHeader];
 }
 

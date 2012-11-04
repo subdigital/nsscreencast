@@ -25,7 +25,6 @@
 		B521D6A71647100700ECFFC3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B521D6A51647100700ECFFC3 /* LoginViewController.m */; };
 		B521D6A81647100700ECFFC3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B521D6A61647100700ECFFC3 /* LoginViewController.xib */; };
 		B521D6B5164713BD00ECFFC3 /* AuthAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B521D6B4164713BD00ECFFC3 /* AuthAPIClient.m */; };
-		B521D6B916471B2700ECFFC3 /* UserAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B521D6B816471B2700ECFFC3 /* UserAuthenticator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +55,6 @@
 		B521D6A61647100700ECFFC3 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		B521D6B3164713BD00ECFFC3 /* AuthAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthAPIClient.h; sourceTree = "<group>"; };
 		B521D6B4164713BD00ECFFC3 /* AuthAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthAPIClient.m; sourceTree = "<group>"; };
-		B521D6B716471B2700ECFFC3 /* UserAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticator.h; sourceTree = "<group>"; };
-		B521D6B816471B2700ECFFC3 /* UserAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticator.m; sourceTree = "<group>"; };
 		D4DD5066F15940499A6E24C4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CAF7B7595043E6B3F32F2A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -127,8 +124,6 @@
 				B521D6A216470CD000ECFFC3 /* Credentials.m */,
 				B521D6B3164713BD00ECFFC3 /* AuthAPIClient.h */,
 				B521D6B4164713BD00ECFFC3 /* AuthAPIClient.m */,
-				B521D6B716471B2700ECFFC3 /* UserAuthenticator.h */,
-				B521D6B816471B2700ECFFC3 /* UserAuthenticator.m */,
 			);
 			path = AuthClient;
 			sourceTree = "<group>";
@@ -254,7 +249,6 @@
 				B521D6A316470CD000ECFFC3 /* Credentials.m in Sources */,
 				B521D6A71647100700ECFFC3 /* LoginViewController.m in Sources */,
 				B521D6B5164713BD00ECFFC3 /* AuthAPIClient.m in Sources */,
-				B521D6B916471B2700ECFFC3 /* UserAuthenticator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

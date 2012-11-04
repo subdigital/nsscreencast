@@ -18,12 +18,14 @@
 
 - (BOOL)isLoggedIn {
     id authToken = [self authToken];
+    NSLog(@"Auth token: %@", authToken);
     return (authToken != nil);
 }
 
 - (void)clearSavedCredentials {
     [self setSecureValue:nil forKey:USERNAME_KEY];
     [self setSecureValue:nil forKey:PASSWORD_KEY];
+    [self setSecureValue:nil forKey:AUTH_TOKEN_KEY];
 }
 
 - (void)setCredentials:(Credentials *)credentials {
