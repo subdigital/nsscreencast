@@ -21,7 +21,6 @@
 		B521D68D164708FC00ECFFC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B521D68C164708FC00ECFFC3 /* ViewController.m */; };
 		B521D690164708FC00ECFFC3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B521D68E164708FC00ECFFC3 /* ViewController.xib */; };
 		B521D69F16470AE900ECFFC3 /* CredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B521D69E16470AE900ECFFC3 /* CredentialStore.m */; };
-		B521D6A316470CD000ECFFC3 /* Credentials.m in Sources */ = {isa = PBXBuildFile; fileRef = B521D6A216470CD000ECFFC3 /* Credentials.m */; };
 		B521D6A71647100700ECFFC3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B521D6A51647100700ECFFC3 /* LoginViewController.m */; };
 		B521D6A81647100700ECFFC3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B521D6A61647100700ECFFC3 /* LoginViewController.xib */; };
 		B521D6B5164713BD00ECFFC3 /* AuthAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B521D6B4164713BD00ECFFC3 /* AuthAPIClient.m */; };
@@ -48,8 +47,6 @@
 		B521D68F164708FC00ECFFC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		B521D69D16470AE900ECFFC3 /* CredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CredentialStore.h; sourceTree = "<group>"; };
 		B521D69E16470AE900ECFFC3 /* CredentialStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CredentialStore.m; sourceTree = "<group>"; };
-		B521D6A116470CD000ECFFC3 /* Credentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
-		B521D6A216470CD000ECFFC3 /* Credentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Credentials.m; sourceTree = "<group>"; };
 		B521D6A41647100700ECFFC3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B521D6A51647100700ECFFC3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B521D6A61647100700ECFFC3 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -120,8 +117,6 @@
 				B521D67A164708FB00ECFFC3 /* Supporting Files */,
 				B521D69D16470AE900ECFFC3 /* CredentialStore.h */,
 				B521D69E16470AE900ECFFC3 /* CredentialStore.m */,
-				B521D6A116470CD000ECFFC3 /* Credentials.h */,
-				B521D6A216470CD000ECFFC3 /* Credentials.m */,
 				B521D6B3164713BD00ECFFC3 /* AuthAPIClient.h */,
 				B521D6B4164713BD00ECFFC3 /* AuthAPIClient.m */,
 			);
@@ -246,7 +241,6 @@
 				B521D684164708FB00ECFFC3 /* AppDelegate.m in Sources */,
 				B521D68D164708FC00ECFFC3 /* ViewController.m in Sources */,
 				B521D69F16470AE900ECFFC3 /* CredentialStore.m in Sources */,
-				B521D6A316470CD000ECFFC3 /* Credentials.m in Sources */,
 				B521D6A71647100700ECFFC3 /* LoginViewController.m in Sources */,
 				B521D6B5164713BD00ECFFC3 /* AuthAPIClient.m in Sources */,
 			);

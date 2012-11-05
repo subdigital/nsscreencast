@@ -27,29 +27,16 @@
 
 
 - (IBAction)fetchMessage:(id)sender {
+    self.messageTextView.text = @"";
+    
     if (![self ensureLoggedIn]) {
         return;
     }
     
-    [[AuthAPIClient sharedClient] getPath:@"/home/index.json"
-                               parameters:nil
-                                  success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                                      self.messageTextView.text = operation.responseString;
-                               } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                                   NSLog(@"ERROR: %@", error);
-                                   
-                                   if (operation.response.statusCode == 401) {
-                                       // auth token is bad
-                                       [self.credentialStore setAuthToken:nil];
-                                   }
-                                   
-                                   NSData *data = [operation.responseString dataUsingEncoding:NSUTF8StringEncoding];
-                                   NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data
-                                                                                              options:0
-                                                                                                error:nil];
-                                   NSString *errorMessage = [dictionary objectForKey:@"error"];
-                                   [SVProgressHUD showErrorWithStatus:errorMessage];
-                               }];
+    [SVProgressHUD show];
+    
+    
+    [SVProgressHUD dismiss];
 }
 
 - (IBAction)clearSavedCredentials:(id)sender {
