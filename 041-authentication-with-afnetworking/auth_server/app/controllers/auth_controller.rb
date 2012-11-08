@@ -4,7 +4,10 @@ class AuthController < ApplicationController
   def authenticate
     @user = login(params[:username], params[:password])
     if @user
-      @user.regenerate_auth_token! if @user.auth_token_expired?
+      
+      ttl = params[:ttl].blank? ? 600 : params[:ttl].to_i
+      
+      @user.regenerate_auth_token!(ttl.seconds.from_now) if @user.auth_token_expired?
       
       render :status => 200, :json => {
         :username => @user.username,
@@ -13,7 +16,7 @@ class AuthController < ApplicationController
         :auth_token_expires_at => @user.auth_token_expires_at
       }
     else
-      render :status => 401, :json => {:error => "Invalid login"}
+      render :status => 422, :json => {:error => "Invalid credentials"}
     end
   end
 
