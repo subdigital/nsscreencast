@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Credentials.h"
 
 @interface CredentialStore : NSObject
 
