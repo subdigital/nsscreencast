@@ -40,7 +40,6 @@
 - (void)setAuthTokenHeader {
     CredentialStore *store = [[CredentialStore alloc] init];
     NSString *authToken = [store authToken];
-    NSLog(@"Setting auth_token header to: %@", authToken);
     [self setDefaultHeader:@"auth_token" value:authToken];
 }
 

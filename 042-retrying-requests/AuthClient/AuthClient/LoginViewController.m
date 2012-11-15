@@ -10,7 +10,6 @@
 #import "AuthAPIClient.h"
 #import "CredentialStore.h"
 #import "SVProgressHUD.h"
-#import "UserAuthenticator.h"
 
 @interface LoginViewController ()
 @property (nonatomic, strong) CredentialStore *credentialStore;
@@ -30,6 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.credentialStore = [[CredentialStore alloc] init];
+    
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
                                                                                           target:self
                                                                                           action:@selector(cancel:)];
@@ -44,15 +45,35 @@
 - (void)login:(id)sender {
     [SVProgressHUD show];
     
-    UserAuthenticator *authenticator = [[UserAuthenticator alloc] init];
-    [authenticator loginWithUsername:self.usernameField.text
-                            password:self.passwordField.text
-                             success:^{
-                                [SVProgressHUD dismiss];
-                                [self dismissViewControllerAnimated:YES completion:nil];
-                             } failure:^(NSString *error) {
-                                 [SVProgressHUD showErrorWithStatus:error];
-                             }];
+    id params = @{
+        @"username": self.usernameField.text,
+        @"password": self.passwordField.text
+    };
+    
+    [[AuthAPIClient sharedClient] postPath:@"/auth/login.json"
+                                parameters:params
+                                   success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                       
+                                       NSString *authToken = [responseObject objectForKey:@"auth_token"];
+                                       [self.credentialStore setAuthToken:authToken];
+                                       
+                                       [SVProgressHUD dismiss];
+                                       
+                                       [self dismissViewControllerAnimated:YES completion:nil];
+                                       
+                                   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                       if (operation.response.statusCode == 500) {
+                                           [SVProgressHUD showErrorWithStatus:@"Something went wrong!"];
+                                       } else {
+                                           NSData *jsonData = [operation.responseString dataUsingEncoding:NSUTF8StringEncoding];
+                                           NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                                                                options:0
+                                                                                                  error:nil];
+                                           NSString *errorMessage = [json objectForKey:@"error"];
+                                           [SVProgressHUD showErrorWithStatus:errorMessage];
+                                       }
+                                   }];
+    
 }
 
 - (void)cancel:(id)sender {
