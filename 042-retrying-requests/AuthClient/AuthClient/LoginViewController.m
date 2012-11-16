@@ -50,12 +50,14 @@
         @"password": self.passwordField.text
     };
     
-    [[AuthAPIClient sharedClient] postPath:@"/auth/login.json"
+    [[AuthAPIClient sharedClient] postPath:@"/auth/login.json?ttl=30"
                                 parameters:params
                                    success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                        
                                        NSString *authToken = [responseObject objectForKey:@"auth_token"];
                                        [self.credentialStore setAuthToken:authToken];
+                                       [self.credentialStore setUsername:self.usernameField.text];
+                                       [self.credentialStore setPassword:self.passwordField.text];
                                        
                                        [SVProgressHUD dismiss];
                                        
