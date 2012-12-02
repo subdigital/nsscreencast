@@ -222,7 +222,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "MODELS_DIR=\"SearchStore\"\nDATA_MODEL_PACKAGE=\"$MODELS_DIR/SearchStore.xcdatamodeld\"\nCURRENT_VERSION=`/usr/libexec/PlistBuddy \"$DATA_MODEL_PACKAGE/.xccurrentversion\" -c 'print _XCCurrentVersionName'`\nmogenerator --template-var arc=true --model \"$DATA_MODEL_PACKAGE/$CURRENT_VERSION\" --output-dir \"$MODELS_DIR/\"\n";
+			shellScript = "MODELS_DIR=\"SearchStore\"\nDATA_MODEL_PACKAGE=\"$MODELS_DIR/SearchStore.xcdatamodeld\"\nCURRENT_VERSION=`/usr/libexec/PlistBuddy \"$DATA_MODEL_PACKAGE/.xccurrentversion\" -c 'print _XCCurrentVersionName'`\n/usr/local/bin/mogenerator --template-var arc=true --model \"$DATA_MODEL_PACKAGE/$CURRENT_VERSION\" --output-dir \"$MODELS_DIR/\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

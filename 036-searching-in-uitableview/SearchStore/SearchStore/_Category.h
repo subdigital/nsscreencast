@@ -31,7 +31,9 @@ extern const struct CategoryFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSString* name;
+
 
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
@@ -40,7 +42,7 @@ extern const struct CategoryFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSSet* products;
+@property (nonatomic, strong) NSSet *products;
 
 - (NSMutableSet*)productsSet;
 

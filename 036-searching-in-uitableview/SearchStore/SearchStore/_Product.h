@@ -33,7 +33,9 @@ extern const struct ProductFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSString* name;
+
 
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
@@ -41,7 +43,9 @@ extern const struct ProductFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSDecimalNumber* price;
+
 
 
 //- (BOOL)validatePrice:(id*)value_ error:(NSError**)error_;
@@ -50,7 +54,7 @@ extern const struct ProductFetchedProperties {
 
 
 
-@property (nonatomic, strong) Category* category;
+@property (nonatomic, strong) Category *category;
 
 //- (BOOL)validateCategory:(id*)value_ error:(NSError**)error_;
 
