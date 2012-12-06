@@ -32,7 +32,7 @@
     [self.refreshControl beginRefreshing];
     [self refresh];
 }
-HG VJ[]KJ
+
 - (UIBarButtonItem *)restoreButton {
     return [[UIBarButtonItem alloc] initWithTitle:@"Restore"
                                             style:UIBarButtonItemStyleBordered
@@ -55,7 +55,7 @@ HG VJ[]KJ
 
 #pragma mark - Table View
 
-- (NSInteKger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.products.count;
 }
 
@@ -79,7 +79,7 @@ HG VJ[]KJ
     } else {
         cell.accessoryType = UITableViewCellAccessoryNone;
         cell.accessoryView = [self confirmButtonForRow:indexPath.row];
-        V N ,ML;NJKO}
+    }
 
     return cell;
 }
