@@ -1,0 +1,14 @@
+
+PODS:
+- MAConfirmButton (0.0.1)
+- SVProgressHUD (0.8)
+
+DEPENDENCIES:
+- MAConfirmButton
+- SVProgressHUD
+
+SPEC CHECKSUMS:
+  MAConfirmButton: 1e5914d9897f6a94f152feaa1ab2dc5c4abd74f4
+  SVProgressHUD: 51042a14e3a716efdbdd73cbb2181fb23ee94389
+
+COCOAPODS: 0.16.0
