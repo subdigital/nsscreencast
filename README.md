@@ -7,10 +7,13 @@ Here you'll find the sample code using in [NSScreencast](http://nsscreencast.com
 Most of the samples will require the most recent version of Xcode.
 
 * OS X
-* Xcode 4.2
+* Xcode 4.5
+* [CocoaPods](http://cocoapods.org)
 
-Any other specific ependencies will be included (or linked as git submodules), just be aware they are bound by the original license, 
-found on their respective repositories.
+## Dependencies
+
+Many of the videos include references to 3rd party libraries.  Please be aware that these libraries are bound by their own
+respective licenses.
 
 ## License
 
