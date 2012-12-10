@@ -1,0 +1,40 @@
+h1. MAConfirmButton
+
+MAConfirmButton is an animated subclass of UIButton that replicates and improves upon the behavior of the AppStore "Buy Now" buttons.
+
+!http://www.mikeahmarani.com/github/MAConfirmButton.png!
+
+h2. Usage
+
+I attempted to make this class as "drop-in" as possible since it is, after all, a subclass of UIButton. Your project must include the **QuartzCore** framework.
+
+h3. Example
+
+<pre>
+MAConfirmButton *confirmButton = [MAConfirmButton buttonWithTitle:@"Button Title" confirm:@"Confirm Title"];
+[confirmButton addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];	
+[confirmButton setTintColor:[UIColor blueColor]];
+[confirmButton setAnchor:CGPointMake(270, 25)];	
+[self.view addSubview:confirmButton];
+</pre>
+
+h3. Init
+
+<pre>
++ (MAConfirmButton *)buttonWithTitle:(NSString *)disabledString confirm:(NSString *)confirmString;
++ (MAConfirmButton *)buttonWithDisabledTitle:(NSString *)disabledString;
+</pre>
+
+h3. Anchor
+
+It is important that the anchor be set in order to position this button in the view you are adding it to (height\width of the frame are calculated automatically). For now, the anchor point is the **top right** and the button is always aligned right, like the AppStore.
+
+<pre>
+- (void)setAnchor:(CGPoint)anchor;
+</pre>
+
+h3. Change State
+
+<pre>
+- (void)disableWithTitle:(NSString *)disabledString;
+</pre>
