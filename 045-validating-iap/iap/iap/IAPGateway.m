@@ -96,7 +96,29 @@ static NSString * CBBase64EncodedStringFromData(NSData *data) {
                                                         object:productIdentifier];
 }
 
-
+- (void)verifyReceipt:(NSData *)receipt completion:(void (^)(BOOL valid))completion {
+    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/receipts/validate"];
+    NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
+    [req setHTTPMethod:@"POST"];
+    
+    NSString *param = [NSString stringWithFormat:@"receipt_data=%@", CBBase64EncodedStringFromData(receipt)];
+    NSData *paramData = [param dataUsingEncoding:NSUTF8StringEncoding];
+    [req setHTTPBody:paramData];
+    
+    [NSURLConnection sendAsynchronousRequest:req
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+                               NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+                               NSLog(@"HTTP %d", httpResponse.statusCode);
+                               NSLog(@"Response: %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+                               
+                               if (httpResponse.statusCode == 200) {
+                                   completion(YES);
+                               } else {
+                                   completion(NO);
+                               }
+                           }];
+}
 
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions {
     for (SKPaymentTransaction *transaction in transactions) {
@@ -104,10 +126,13 @@ static NSString * CBBase64EncodedStringFromData(NSData *data) {
             NSLog(@"Receipt data: %@", CBBase64EncodedStringFromData(transaction.transactionReceipt));
         }
         switch (transaction.transactionState) {
-            case SKPaymentTransactionStatePurchased:
-                [self markProductPurchased:transaction.payment.productIdentifier];
-                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+            case SKPaymentTransactionStatePurchased: {
+                [self verifyReceipt:transaction.transactionReceipt completion:^(BOOL valid) {
+                    [self markProductPurchased:transaction.payment.productIdentifier];
+                    [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+                }];
                 break;
+            }
                 
             case SKPaymentTransactionStateFailed:
                 NSLog(@"Transaction failed: %@", transaction.error.localizedDescription);
@@ -115,13 +140,14 @@ static NSString * CBBase64EncodedStringFromData(NSData *data) {
                 [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
                 break;
                 
-            case SKPaymentTransactionStateRestored:
-                [self markProductPurchased:transaction.originalTransaction.payment.productIdentifier];
-                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+            case SKPaymentTransactionStateRestored: {
+                [self verifyReceipt:transaction.transactionReceipt completion:^(BOOL valid){
+                    [self markProductPurchased:transaction.payment.productIdentifier];
+                    [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+                }];
+
                 break;
-                
-            default:
-                break;
+            }
         }
     }
 }
