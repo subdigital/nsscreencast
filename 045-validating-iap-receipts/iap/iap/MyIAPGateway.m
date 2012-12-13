@@ -2,8 +2,8 @@
 //  MyIAPGateway.m
 //  iap
 //
-//  Created by ben on 12/2/12.
-//  Copyright (c) 2012 nsscreencast. All rights reserved.
+//  Created by Ben Scheirman on 12/4/12.
+//  Copyright (c) 2012 NSScreencast. All rights reserved.
 //
 
 #import "MyIAPGateway.h"
@@ -14,8 +14,8 @@
     static MyIAPGateway *__instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSSet *productIds = [NSSet setWithObject:@"nsscreencast_iap_backstage"];
-        __instance = [[MyIAPGateway alloc] initWithProductIdentifiers:productIds];
+        NSSet *products = [NSSet setWithObject:@"com.nsscreencast.iap.backstage_pass"];
+        __instance = [[MyIAPGateway alloc] initWithProductIds:products];
     });
     return __instance;
 }

@@ -1,10 +1,9 @@
 class ReceiptsController < ApplicationController
-
   def validate
-    receipt = Itunes::Receipt.validate(params[:receipt_data], :allow_sandbox_servers)
-    Rails.logger.info "Receipt: #{receipt}"
-    render :json => { :status => "ok", :receipt => receipt }
-  rescue StandardErr => e
-    render :json => { :status => "error", :details => e.message }, :status => 400
+    receipt_data = params[:receipt_data]
+    receipt = Itunes::Receipt.verify! receipt_data, :allow_sandbox
+    render :json => {:status => "ok", :receipt => receipt}
+  rescue StandardError => e
+    render :json => {:status => "error", :message => e.message}, :status => 400
   end
 end

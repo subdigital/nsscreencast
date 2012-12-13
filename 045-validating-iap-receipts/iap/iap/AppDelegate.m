@@ -2,25 +2,25 @@
 //  AppDelegate.m
 //  iap
 //
-//  Created by ben on 12/2/12.
-//  Copyright (c) 2012 nsscreencast. All rights reserved.
+//  Created by Ben Scheirman on 12/4/12.
+//  Copyright (c) 2012 NSScreencast. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
-#import "ViewController.h"
+#import "MasterViewController.h"
+#import "MyIAPGateway.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [MyIAPGateway sharedGateway];
 
-    self.viewController = [[ViewController alloc] initWithStyle:UITableViewStylePlain];
-    
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.viewController];
-    self.window.rootViewController = nav;
-    
+    MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+    self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }

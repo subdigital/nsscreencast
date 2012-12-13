@@ -2,22 +2,21 @@
 //  IAPGateway.h
 //  iap
 //
-//  Created by ben on 12/2/12.
-//  Copyright (c) 2012 nsscreencast. All rights reserved.
+//  Created by Ben Scheirman on 12/4/12.
+//  Copyright (c) 2012 NSScreencast. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <StoreKit/StoreKit.h>
 
-NSString * const IAPGatewayProductPurchasedNotification;
+NSString * const IAPGatewayProductPurchased;
 
-typedef void (^IAPProductsBlock)(BOOL worked, NSArray *products);
+typedef void (^IAPGatewayProductsBlock)(BOOL success, NSArray *products);
 
 @interface IAPGateway : NSObject
 
-- (id)initWithProductIdentifiers:(NSSet *)productIdSet;
-- (BOOL)isProductPurchased:(NSString *)sku;
-- (void)fetchProductsWithCompletion:(IAPProductsBlock)block;
+- (id)initWithProductIds:(NSSet *)productIds;
+- (void)fetchProductsWithBlock:(IAPGatewayProductsBlock)block;
+- (BOOL)isProductPurchased:(SKProduct *)product;
 - (void)purchaseProduct:(SKProduct *)product;
-
 @end

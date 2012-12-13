@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-IapServer::Application.config.secret_token = 'ff6ba47a2aa63da34e8bcc0a87a89359614f5dde73aa8e352a8ae3537e008ea8b76a66cd7a40d2e941e7b520022f3cf3c6236e6f28b807bd7bc6c6f4940ec463'
+IapServer::Application.config.secret_token = '6a659e8f78fb4ce61dbec46ef9a5d90e0e8fb57843cb244efbc97d8443f4f017a957f9b900c655dcc76a3e23c5e6a47db37d350e3302a77071dba3edabd045c1'
