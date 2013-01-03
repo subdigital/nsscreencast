@@ -6,10 +6,10 @@
 //  Copyright (c) 2012 nsscreencast. All rights reserved.
 //
 
-#define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
-
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
+
+#define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
 
 @interface ViewController () <UIGestureRecognizerDelegate>
 
@@ -20,131 +20,139 @@
 
 @implementation ViewController
 
+- (UIImage *)nextImage {
+    int index = self.nextImageIndex % self.imageFilenames.count;
+    self.nextImageIndex++;
+    return [UIImage imageNamed:self.imageFilenames[index]];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     self.imageFilenames = @[ @"appriver.jpg", @"moscone.jpg", @"golden_gate.jpg" ];
-    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onViewTap:)];
+    
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                                    action:@selector(onViewDoubleTap:)];
     tapRecognizer.numberOfTapsRequired = 2;
     [self.view addGestureRecognizer:tapRecognizer];
     
-    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onViewSwipe:)];
+    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self
+                                                                                          action:@selector(onSwipeDown:)];
     swipeRecognizer.direction = UISwipeGestureRecognizerDirectionDown;
     swipeRecognizer.delegate = self;
     [self.view addGestureRecognizer:swipeRecognizer];
 }
 
-- (void)onViewTap:(UITapGestureRecognizer *)gesture {
-    NSInteger index = self.nextImageIndex;
-    self.nextImageIndex++;
-    UIImage *image = [UIImage imageNamed:self.imageFilenames[index % self.imageFilenames.count]];
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-
-    // where did we tap?
-    CGPoint tapPoint = [gesture locationInView:self.view];
+- (void)onViewDoubleTap:(UITapGestureRecognizer *)tap {
+    CGPoint touchCenter = [tap locationInView:self.view];
     
-    // position centered around tap
-    CGRect imageFrame = imageView.frame;
-    CGSize size = CGSizeMake(150, 150);
-    imageFrame.size = size;
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[self nextImage]];
     
-    CGPoint origin = CGPointMake(tapPoint.x - imageFrame.size.width / 2.0f, tapPoint.y - imageFrame.size.height / 2.0f);
-    imageFrame.origin = origin;
-    imageView.frame = imageFrame;
+    CGRect imageViewFrame = CGRectMake(0, 0, 200, 200);
+    imageViewFrame.origin = CGPointMake(touchCenter.x - imageViewFrame.size.width / 2.0f, touchCenter.y - imageViewFrame.size.height / 2.0f);
+    imageView.frame = imageViewFrame;
     
-    imageView.alpha = 0.75;
-    CGFloat randomAngle = DEGREES_TO_RADIANS( (arc4random() % 10) - 5 );
-    imageView.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.25, 1.25), randomAngle);
-    [self.view addSubview:imageView];
-    
-    [UIView animateWithDuration:0.25 animations:^{
-        imageView.alpha = 1.0;
-        imageView.transform = CGAffineTransformIdentity;
-    }];
-    
-    
+    imageView.layer.borderWidth = 4;
     imageView.layer.borderColor = [[UIColor whiteColor] CGColor];
-    imageView.layer.borderWidth = 3;
+    imageView.layer.shadowColor = [[UIColor blackColor] CGColor];
+    imageView.layer.shadowOffset = CGSizeMake(0, 1);
     
     CGMutablePathRef shadowPath = CGPathCreateMutable();
     CGAffineTransform transform = imageView.transform;
     CGPathAddRect(shadowPath, &transform, imageView.bounds);
-    imageView.layer.shadowPath = shadowPath;
-    imageView.layer.shadowOffset = CGSizeMake(0, 1.0);
+    
     imageView.layer.shadowOpacity = 0.5;
-    imageView.layer.shadowColor = [[UIColor blackColor] CGColor];
+    imageView.layer.shadowPath = shadowPath;
     
-    [self addGesturesToImageView:imageView];
-}
-
-- (void)onViewSwipe:(UISwipeGestureRecognizer *)swipe {
-    [UIView animateWithDuration:0.5 animations:^{
-        for (UIView *subview in self.view.subviews) {
-            subview.center = CGPointMake(subview.center.x, subview.center.x + 1000);
-        }
-    } completion:^(BOOL finished) {
-        for (UIView *subview in self.view.subviews) {
-            [subview removeFromSuperview];
-        }
+    CGPathRelease(shadowPath);
+    
+    imageView.alpha = 0.75;
+    imageView.transform = CGAffineTransformMakeScale(1.25, 1.25);
+    
+    CGFloat angle = DEGREES_TO_RADIANS((arc4random() % 10) - 5);
+    imageView.transform = CGAffineTransformRotate(imageView.transform, angle);
+    
+    [self.view addSubview:imageView];
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        imageView.alpha = 1;
+        imageView.transform = CGAffineTransformIdentity;
     }];
+    
+    [self addGestureRecognizersToView:imageView];
 }
 
-- (void)addGesturesToImageView:(UIImageView *)imageView {
-    imageView.userInteractionEnabled = YES;
+- (void)onSwipeDown:(UISwipeGestureRecognizer *)swipe {
+    [UIView animateWithDuration:0.5
+                     animations:^{
+                         for (UIView *subview in self.view.subviews) {
+                             CGPoint center = subview.center;
+                             center.y += 1200;
+                             subview.center = center;
+                             
+                             subview.alpha = 0.75;
+                         }
+                     } completion:^(BOOL finished) {
+                         for (UIView *subview in self.view.subviews) {
+                             [subview removeFromSuperview];
+                         }
+                     }];
+}
+
+- (void)addGestureRecognizersToView:(UIView *)view {
+    view.userInteractionEnabled = YES;
     
-    UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(onPanGesture:)];
+    UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self
+                                                                                    action:@selector(onPan:)];
     panRecognizer.delegate = self;
-    [imageView addGestureRecognizer:panRecognizer];
+    [view addGestureRecognizer:panRecognizer];
     
-    UIPinchGestureRecognizer *pinchRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(onPinchGesture:)];
-    panRecognizer.delegate = self;
-    [imageView addGestureRecognizer:pinchRecognizer];
+    UIPinchGestureRecognizer *pinchRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self
+                                                                                          action:@selector(onPinch:)];
+    pinchRecognizer.delegate = self;
+    [view addGestureRecognizer:pinchRecognizer];
     
-    UIRotationGestureRecognizer *rotationRecognizer = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(onRotateGesture:)];
+    UIRotationGestureRecognizer *rotationRecognizer = [[UIRotationGestureRecognizer alloc] initWithTarget:self
+                                                                                                   action:@selector(onRotate:)];
     rotationRecognizer.delegate = self;
-    [imageView addGestureRecognizer:rotationRecognizer];
+    [view addGestureRecognizer:rotationRecognizer];
 }
 
-- (void)onPanGesture:(UIPanGestureRecognizer *)panRecognizer {
-    CGPoint translation = [panRecognizer translationInView:self.view];
-    CGPoint position = panRecognizer.view.center;
-    position.x += translation.x;
-    position.y += translation.y;
+- (void)onPan:(UIPanGestureRecognizer *)pan {
+    CGPoint offset = [pan translationInView:self.view];
+    CGPoint center = pan.view.center;
+    center.x += offset.x;
+    center.y += offset.y;
+    pan.view.center = center;
     
-    panRecognizer.view.center = position;
-    [panRecognizer setTranslation:CGPointZero inView:self.view];
+    [pan setTranslation:CGPointZero inView:self.view];
 }
 
-- (void)onPinchGesture:(UIPinchGestureRecognizer *)pinchRecognizer {
-    CGFloat scale = pinchRecognizer.scale;
-    pinchRecognizer.view.transform = CGAffineTransformScale(pinchRecognizer.view.transform, scale, scale);
-    pinchRecognizer.scale = 1.0;
+- (void)onPinch:(UIPinchGestureRecognizer *)pinch {
+    CGFloat scale = [pinch scale];
+    UIView *view = pinch.view;
+    view.transform = CGAffineTransformScale(view.transform, scale, scale);
+    [pinch setScale:1];
 }
 
-- (void)onRotateGesture:(UIRotationGestureRecognizer *)rotationRecognizer {
-    CGFloat angle = rotationRecognizer.rotation;
-    rotationRecognizer.view.transform = CGAffineTransformRotate(rotationRecognizer.view.transform, angle);
-    rotationRecognizer.rotation = 0;
+- (void)onRotate:(UIRotationGestureRecognizer *)rotation {
+    CGFloat angle = [rotation rotation];
+    rotation.view.transform = CGAffineTransformRotate(rotation.view.transform, angle);
+    [rotation setRotation:0];
 }
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-    NSLog(@"Gesture Recognizer should begin? %@", gestureRecognizer.class);
     if ([gestureRecognizer isKindOfClass:[UISwipeGestureRecognizer class]]) {
-        NSLog(@"Swipe detected, what is the view? %@", self.view);
-        CGPoint touchLocation = [gestureRecognizer locationInView:self.view];
-        UIView *gestureView = [self.view hitTest:touchLocation withEvent:nil];
-        if ([gestureView isKindOfClass:[UIImageView class]])
+        CGPoint touchPoint = [gestureRecognizer locationInView:self.view];
+        UIView *hitTestView = [self.view hitTest:touchPoint withEvent:nil];
+        if ([hitTestView isKindOfClass:[UIImageView class]]) {
             return NO;
+        }
     }
     
     return YES;
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    if ([otherGestureRecognizer isKindOfClass:[UISwipeGestureRecognizer class]]) {
-        return NO;
-    }
-    
     return YES;
 }
 
