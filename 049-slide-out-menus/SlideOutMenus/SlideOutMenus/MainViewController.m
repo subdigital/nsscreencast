@@ -23,11 +23,7 @@
 }
 
 - (UIImage *)listImage {
-    /*
-      I can't distribute this icon, but you can find it in the glyphish 4 set,
-      available here:  http://www.glyphish.com/pro4/
-    */
-    return [UIImage imageNamed:@"399-list1.png"];
+    return [UIImage imageNamed:@"list.png"];
 }
 
 - (UIBarButtonItem *)slideOutBarButton {

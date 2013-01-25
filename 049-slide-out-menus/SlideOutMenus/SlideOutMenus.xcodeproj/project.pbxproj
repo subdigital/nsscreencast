@@ -25,8 +25,8 @@
 		B599C7E116A25C160070544B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B599C7E016A25C160070544B /* Default-568h@2x.png */; };
 		B599C7EA16A25CEE0070544B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B599C7E916A25CEE0070544B /* SWRevealViewController.m */; };
 		B599C7ED16A25D030070544B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B599C7EC16A25D030070544B /* MainViewController.m */; };
-		B599C7F716A25FC90070544B /* 399-list1.png in Resources */ = {isa = PBXBuildFile; fileRef = B599C7F516A25FC90070544B /* 399-list1.png */; };
-		B599C7F816A25FC90070544B /* 399-list1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B599C7F616A25FC90070544B /* 399-list1@2x.png */; };
+		B5CE277216B2C0FD00FD6077 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5CE277016B2C0FD00FD6077 /* list@2x.png */; };
+		B5CE277316B2C0FD00FD6077 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = B5CE277116B2C0FD00FD6077 /* list.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,8 +58,8 @@
 		B599C7E916A25CEE0070544B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		B599C7EB16A25D030070544B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B599C7EC16A25D030070544B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		B599C7F516A25FC90070544B /* 399-list1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "399-list1.png"; path = "../../../../../Dropbox/design/GlyphishPro4/Glyphish Pro 4 Icons (PNG)/white/399-list1.png"; sourceTree = "<group>"; };
-		B599C7F616A25FC90070544B /* 399-list1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "399-list1@2x.png"; path = "../../../../../Dropbox/design/GlyphishPro4/Glyphish Pro 4 Icons (PNG)/white/399-list1@2x.png"; sourceTree = "<group>"; };
+		B5CE277016B2C0FD00FD6077 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
+		B5CE277116B2C0FD00FD6077 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +116,8 @@
 				B510464216A35DC90013A65F /* NVSlideMenuViewController */,
 				B599C7E716A25CDF0070544B /* SWRevealViewController */,
 				B599C7D016A25C160070544B /* SlideOutMenus */,
+				B5CE277016B2C0FD00FD6077 /* list@2x.png */,
+				B5CE277116B2C0FD00FD6077 /* list.png */,
 				B599C7C916A25C160070544B /* Frameworks */,
 				B599C7C716A25C160070544B /* Products */,
 			);
@@ -148,8 +150,6 @@
 				B599C7D916A25C160070544B /* AppDelegate.h */,
 				B599C7DA16A25C160070544B /* AppDelegate.m */,
 				B599C7D116A25C160070544B /* Supporting Files */,
-				B599C7F516A25FC90070544B /* 399-list1.png */,
-				B599C7F616A25FC90070544B /* 399-list1@2x.png */,
 			);
 			path = SlideOutMenus;
 			sourceTree = "<group>";
@@ -232,10 +232,10 @@
 				B599C7DD16A25C160070544B /* Default.png in Resources */,
 				B599C7DF16A25C160070544B /* Default@2x.png in Resources */,
 				B599C7E116A25C160070544B /* Default-568h@2x.png in Resources */,
-				B599C7F716A25FC90070544B /* 399-list1.png in Resources */,
-				B599C7F816A25FC90070544B /* 399-list1@2x.png in Resources */,
 				B510462916A3387C0013A65F /* MenuCell.xib in Resources */,
 				B510464C16A361D30013A65F /* AboutViewController.xib in Resources */,
+				B5CE277216B2C0FD00FD6077 /* list@2x.png in Resources */,
+				B5CE277316B2C0FD00FD6077 /* list.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
