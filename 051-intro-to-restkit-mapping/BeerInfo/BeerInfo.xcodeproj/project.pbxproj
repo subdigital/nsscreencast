@@ -27,6 +27,7 @@
 		B52E21E116B47CDB00627502 /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = B52E21E016B47CDB00627502 /* Beer.m */; };
 		B52E21E316B5E05D00627502 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52E21E216B5E05D00627502 /* SystemConfiguration.framework */; };
 		B52E21E616B602CF00627502 /* Brewery.m in Sources */ = {isa = PBXBuildFile; fileRef = B52E21E516B602CF00627502 /* Brewery.m */; };
+		B52E220816B6232600627502 /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B52E220716B6232600627502 /* MappingProvider.m */; };
 		D27CE98792F441D2A43E89C0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 184FFE78D6A249C09C06ACFC /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +53,6 @@
 		B52E21C316B463FA00627502 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		B52E21C616B464DB00627502 /* BeerStyleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerStyleCell.h; sourceTree = "<group>"; };
 		B52E21C716B464DB00627502 /* BeerStyleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerStyleCell.m; sourceTree = "<group>"; };
-		B52E21C916B4671800627502 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		B52E21D316B47A1700627502 /* BeerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerCell.h; sourceTree = "<group>"; };
 		B52E21D416B47A1700627502 /* BeerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerCell.m; sourceTree = "<group>"; };
 		B52E21D716B47B0600627502 /* beer-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beer-icon@2x.png"; path = "BeerInfo/beer-icon@2x.png"; sourceTree = "<group>"; };
@@ -64,6 +64,8 @@
 		B52E21E216B5E05D00627502 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B52E21E416B602CF00627502 /* Brewery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brewery.h; sourceTree = "<group>"; };
 		B52E21E516B602CF00627502 /* Brewery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brewery.m; sourceTree = "<group>"; };
+		B52E220616B6232600627502 /* MappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProvider.h; sourceTree = "<group>"; };
+		B52E220716B6232600627502 /* MappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingProvider.m; sourceTree = "<group>"; };
 		CA5804B69BEA4D3DA1131669 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -120,10 +122,12 @@
 				B52E21BA16B462FB00627502 /* Models */,
 				B52E21BF16B4636800627502 /* Controllers */,
 				B52E21C516B464C500627502 /* Views */,
+				B52E21C316B463FA00627502 /* Storyboard.storyboard */,
 				B52E21A116B462A300627502 /* AppDelegate.h */,
 				B52E21A216B462A300627502 /* AppDelegate.m */,
+				B52E220616B6232600627502 /* MappingProvider.h */,
+				B52E220716B6232600627502 /* MappingProvider.m */,
 				B52E219916B462A300627502 /* Supporting Files */,
-				B52E21C316B463FA00627502 /* Storyboard.storyboard */,
 			);
 			path = BeerInfo;
 			sourceTree = "<group>";
@@ -145,7 +149,6 @@
 		B52E21BA16B462FB00627502 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B52E21C916B4671800627502 /* Model.h */,
 				B52E21BC16B4635600627502 /* BeerStyle.h */,
 				B52E21BD16B4635600627502 /* BeerStyle.m */,
 				B52E21DF16B47CDB00627502 /* Beer.h */,
@@ -282,6 +285,7 @@
 				B52E21DE16B47BE900627502 /* BeersViewController.m in Sources */,
 				B52E21E116B47CDB00627502 /* Beer.m in Sources */,
 				B52E21E616B602CF00627502 /* Brewery.m in Sources */,
+				B52E220816B6232600627502 /* MappingProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

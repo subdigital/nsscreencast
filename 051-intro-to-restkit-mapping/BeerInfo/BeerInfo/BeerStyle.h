@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Model.h"
 
-@interface BeerStyle : NSObject <Model>
+@interface BeerStyle : NSObject
 
 @property (nonatomic, assign) NSInteger styleId;
 @property (nonatomic, copy) NSString *name;

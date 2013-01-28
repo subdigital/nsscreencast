@@ -12,6 +12,7 @@
 #import "BeerStyle.h"
 #import "BeerStyleCell.h"
 #import "SVProgressHUD.h"
+#import "MappingProvider.h"
 
 @interface BeerStylesViewController ()
 
@@ -33,9 +34,8 @@
 }
 
 - (void)loadBeerStyles {
-    RKMapping *mapping = [BeerStyle mapping];
     NSIndexSet *statusCodes = RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful); // Anything in 2xx
-    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:mapping
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:[MappingProvider beerStyleMapping]
                                                                                        pathPattern:@"/v2/styles"
                                                                                            keyPath:@"data"
                                                                                        statusCodes:statusCodes];

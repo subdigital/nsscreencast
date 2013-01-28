@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Model.h"
 
-@interface Brewery : NSObject <Model>
+@interface Brewery : NSObject
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *website;

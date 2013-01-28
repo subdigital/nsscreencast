@@ -12,6 +12,7 @@
 #import "AFNetworking.h"
 #import "SVProgressHUD.h"
 #import <RestKit/RestKit.h>
+#import "MappingProvider.h"
 
 @interface BeersViewController ()
 
@@ -36,9 +37,8 @@
 - (void)loadBeers {
     self.title = [NSString stringWithFormat:@"%@ Beers", self.beerStyle.name];
 
-    RKMapping *mapping = [Beer mapping];
     NSIndexSet *statusCodes = RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful);
-    RKResponseDescriptor *descriptor = [RKResponseDescriptor responseDescriptorWithMapping:mapping
+    RKResponseDescriptor *descriptor = [RKResponseDescriptor responseDescriptorWithMapping:[MappingProvider beerMapping]
                                                                                pathPattern:@"/v2/beers"
                                                                                    keyPath:@"data"
                                                                                statusCodes:statusCodes];

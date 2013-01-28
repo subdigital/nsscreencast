@@ -11,18 +11,6 @@
 
 @implementation Beer
 
-+ (RKMapping *)mapping {
-    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[Beer class]];
-    [mapping addAttributeMappingsFromArray:@[@"name", @"abv", @"ibu"]];
-    [mapping addAttributeMappingsFromDictionary:@{
-        @"brewery.name": @"brewery",
-        @"labels.icon": @"labelIconImageUrl"
-     }];
-    [mapping addRelationshipMappingWithSourceKeyPath:@"breweries"
-                                             mapping:[Brewery mapping]];
-    return mapping;
-}
-
 - (NSString *)brewery {
     if ([self.breweries count] > 0) {
         return [self.breweries[0] name];

@@ -10,15 +10,4 @@
 
 @implementation BeerStyle
 
-+ (RKMapping *)mapping {
-    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[BeerStyle class]];
-    [mapping addAttributeMappingsFromArray:@[@"name"]];
-    [mapping addAttributeMappingsFromDictionary:@{
-        @"id": @"styleId",
-        @"description": @"styleDescription",
-        @"category.name": @"category"
-     }];
-    return mapping;
-}
-
 @end

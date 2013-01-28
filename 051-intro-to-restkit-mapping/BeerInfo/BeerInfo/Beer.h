@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Model.h"
 
-@interface Beer : NSObject <Model>
+@interface Beer : NSObject
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *ibu;

@@ -10,10 +10,4 @@
 
 @implementation Brewery
 
-+ (RKMapping *)mapping {
-    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[Brewery class]];
-    [mapping addAttributeMappingsFromArray:@[@"name", @"website"]];
-    return mapping;
-}
-
 @end
