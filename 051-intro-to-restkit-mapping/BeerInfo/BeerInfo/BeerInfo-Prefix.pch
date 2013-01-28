@@ -1,0 +1,15 @@
+//
+// Prefix header for all source files of the 'BeerInfo' target in the 'BeerInfo' project
+//
+
+#import <Availability.h>
+#define BREWERY_DB_API_KEY @"cc3b5e9ec96a9021288982a3751cf206"
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
