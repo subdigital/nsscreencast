@@ -11,8 +11,6 @@
 #import "Beer.h"
 #import "AFNetworking.h"
 #import "SVProgressHUD.h"
-#import <RestKit/RestKit.h>
-#import "MappingProvider.h"
 
 @interface BeersViewController ()
 
