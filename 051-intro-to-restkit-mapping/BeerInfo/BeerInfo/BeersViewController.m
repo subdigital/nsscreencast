@@ -24,43 +24,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    if (self.beerStyle) {
-        [SVProgressHUD show];
-        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-        dispatch_async(queue, ^{
-            [self loadBeers];
-        });
-    }
-}
-
-- (void)loadBeers {
-    self.title = [NSString stringWithFormat:@"%@ Beers", self.beerStyle.name];
-
-    NSIndexSet *statusCodes = RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful);
-    RKResponseDescriptor *descriptor = [RKResponseDescriptor responseDescriptorWithMapping:[MappingProvider beerMapping]
-                                                                               pathPattern:@"/v2/beers"
-                                                                                   keyPath:@"data"
-                                                                               statusCodes:statusCodes];
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.brewerydb.com/v2/beers?styleId=%d&withBreweries=Y&key=%@",
-                                       self.beerStyle.styleId,
-                                       BREWERY_DB_API_KEY]];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    RKObjectRequestOperation *operation = [[RKObjectRequestOperation alloc] initWithRequest:request
-                                                                        responseDescriptors:@[descriptor]];
-    [operation setCompletionBlockWithSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-        [SVProgressHUD dismiss];
-        self.beers = mappingResult.array;
-        [self.tableView reloadData];
-    } failure:^(RKObjectRequestOperation *operation, NSError *error) {
-        [SVProgressHUD dismiss];
-        [[[UIAlertView alloc] initWithTitle:@"Error fetching beers"
-                                    message:[NSString stringWithFormat:@"%@", error]
-                                   delegate:nil
-                          cancelButtonTitle:@"OK"
-                          otherButtonTitles:nil] show];
-    }];
-    [operation start];
 }
 
 #pragma mark - Table view data source
