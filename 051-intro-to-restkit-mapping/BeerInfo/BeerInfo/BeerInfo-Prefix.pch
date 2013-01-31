@@ -3,7 +3,10 @@
 //
 
 #import <Availability.h>
-#define BREWERY_DB_API_KEY @"cc3b5e9ec96a9021288982a3751cf206"
+
+// This is a temporary key which I was given permission to distribute.  It is temporary and will likely be disabled by 2013-03-01.
+// To get your own API key, sign up for a free account at http://brewerydb.com
+#define BREWERY_DB_API_KEY @"ef5d82dc772b5fbb54a415b39920eeef"
 
 #ifndef __IPHONE_3_0
 #warning "This project uses features only available in iOS SDK 3.0 and later."

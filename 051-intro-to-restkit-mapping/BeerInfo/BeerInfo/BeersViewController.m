@@ -11,6 +11,8 @@
 #import "Beer.h"
 #import "AFNetworking.h"
 #import "SVProgressHUD.h"
+#import <RestKit/RestKit.h>
+#import "MappingProvider.h"
 
 @interface BeersViewController ()
 
@@ -22,6 +24,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if (self.beerStyle) {
+        [SVProgressHUD show];
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        dispatch_async(queue, ^{
+            [self loadBeers];
+        });
+    }
+}
+
+- (void)loadBeers {
+    NSIndexSet *statusCodeSet = RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful);
+    RKMapping *mapping = [MappingProvider beerMapping];
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:mapping
+                                                                                       pathPattern:@"/v2/beers"
+                                                                                           keyPath:@"data"
+                                                                                       statusCodes:statusCodeSet];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.brewerydb.com/v2/beers?styleId=%d&withBreweries=Y&key=%@",
+                                       self.beerStyle.styleId,
+                                       BREWERY_DB_API_KEY
+                                       ]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    RKObjectRequestOperation *operation = [[RKObjectRequestOperation alloc] initWithRequest:request
+                                                                        responseDescriptors:@[responseDescriptor]];
+    [operation setCompletionBlockWithSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+        self.beers = mappingResult.array;
+        [self.tableView reloadData];
+        [SVProgressHUD dismiss];
+    } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+        NSLog(@"ERROR: %@", error);
+        NSLog(@"Response: %@", operation.HTTPRequestOperation.responseString);
+        [SVProgressHUD showErrorWithStatus:@"Request failed"];
+    }];
+    
+    [operation start];
 }
 
 #pragma mark - Table view data source

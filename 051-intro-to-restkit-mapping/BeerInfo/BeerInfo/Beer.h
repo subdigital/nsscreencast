@@ -13,8 +13,9 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *ibu;
 @property (nonatomic, copy) NSString *abv;
-@property (nonatomic, readonly) NSString *brewery;
 @property (nonatomic, copy) NSString *labelIconImageUrl;
 @property (nonatomic, strong) NSArray *breweries;
+
+@property (nonatomic, readonly) NSString *brewery;
 
 @end

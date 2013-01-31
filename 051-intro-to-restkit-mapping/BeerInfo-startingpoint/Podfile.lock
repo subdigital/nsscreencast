@@ -1,0 +1,36 @@
+
+PODS:
+- AFNetworking (1.1.0)
+- RestKit (0.20.0pre6):
+  - RestKit/Core (= 0.20.0pre6)
+- RestKit/Core (0.20.0pre6):
+  - RestKit/CoreData
+  - RestKit/Network
+  - RestKit/ObjectMapping
+- RestKit/CoreData (0.20.0pre6)
+- RestKit/Network (0.20.0pre6):
+  - AFNetworking (= 1.1.0)
+  - RestKit/ObjectMapping
+  - RestKit/Support
+  - SOCKit
+- RestKit/ObjectMapping (0.20.0pre6)
+- RestKit/Support (0.20.0pre6)
+- SOCKit (1.1)
+- SVProgressHUD (0.8.1)
+
+DEPENDENCIES:
+- RestKit
+- SVProgressHUD
+
+SPEC CHECKSUMS:
+  AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
+  RestKit: ccca19640fcc3031f82ad4250c44061e2e2ddce7
+  RestKit/Core: ccca19640fcc3031f82ad4250c44061e2e2ddce7
+  RestKit/CoreData: ccca19640fcc3031f82ad4250c44061e2e2ddce7
+  RestKit/Network: ccca19640fcc3031f82ad4250c44061e2e2ddce7
+  RestKit/ObjectMapping: ccca19640fcc3031f82ad4250c44061e2e2ddce7
+  RestKit/Support: ccca19640fcc3031f82ad4250c44061e2e2ddce7
+  SOCKit: 179515c1a621dd5652a60e9be02ea4adcd25bc9b
+  SVProgressHUD: 592da548680cd3613923b5f98113add52ad30cc2
+
+COCOAPODS: 0.16.1
