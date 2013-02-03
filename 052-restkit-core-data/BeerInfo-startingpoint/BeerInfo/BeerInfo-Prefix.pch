@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the 'BeerInfo' target in the 'BeerInfo' project
+//
+
+#import <Availability.h>
+
+// This is a temporary key which I was given permission to distribute.  It is temporary and will likely be disabled by 2013-03-01.
+// To get your own API key, sign up for a free account at http://brewerydb.com
+#define BREWERY_DB_API_KEY @"ef5d82dc772b5fbb54a415b39920eeef"
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <SystemConfiguration/SystemConfiguration.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+#endif
