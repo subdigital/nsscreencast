@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="12C2034" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Beer" representedClassName="Beer" syncable="YES">
+        <attribute name="abv" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ibu" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="labelIconImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="breweries" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Brewery" inverseName="beers" inverseEntity="Brewery" syncable="YES"/>
+        <relationship name="style" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="BeerStyle" inverseName="beers" inverseEntity="BeerStyle" syncable="YES"/>
+    </entity>
+    <entity name="BeerStyle" representedClassName="BeerStyle" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="styleDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="styleId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="beers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Beer" inverseName="style" inverseEntity="Beer" syncable="YES"/>
+    </entity>
+    <entity name="Brewery" representedClassName="Brewery" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="beers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Beer" inverseName="breweries" inverseEntity="Beer" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Beer" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="BeerStyle" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Brewery" positionX="160" positionY="192" width="128" height="90"/>
+    </elements>
+</model>
