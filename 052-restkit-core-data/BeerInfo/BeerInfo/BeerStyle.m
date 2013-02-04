@@ -10,6 +10,6 @@
 
 @implementation BeerStyle
 
-// @dynamic styleId, styleDescription, name, category, beers;
+@dynamic styleId, styleDescription, name, category, beers;
 
 @end

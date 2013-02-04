@@ -11,13 +11,13 @@
 
 @class BeerStyle, Brewery;
 
-@interface Beer : NSObject
+@interface Beer : NSManagedObject
 
 @property (nonatomic, strong) NSString *abv;
 @property (nonatomic, strong) NSString *ibu;
 @property (nonatomic, strong) NSString *labelIconImageUrl;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSArray *breweries;
+@property (nonatomic, strong) NSOrderedSet *breweries;
 @property (nonatomic, strong) BeerStyle *style;
 
 @property (nonatomic, readonly) NSString *brewery;

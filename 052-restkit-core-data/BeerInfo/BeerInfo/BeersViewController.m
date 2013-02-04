@@ -47,8 +47,13 @@
                                        BREWERY_DB_API_KEY
                                        ]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    RKObjectRequestOperation *operation = [[RKObjectRequestOperation alloc] initWithRequest:request
-                                                                            responseDescriptors:@[responseDescriptor]];
+    RKManagedObjectRequestOperation *operation = [[RKManagedObjectRequestOperation alloc] initWithRequest:request
+                                                                                      responseDescriptors:@[responseDescriptor]];
+    
+    RKManagedObjectStore *store = [[BeerInfoDataModel sharedDataModel] objectStore];
+    operation.managedObjectCache = store.managedObjectCache;
+    operation.managedObjectContext = store.mainQueueManagedObjectContext;
+    
     [operation setCompletionBlockWithSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
         self.beers = mappingResult.array;
         [self.tableView reloadData];

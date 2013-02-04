@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@interface Brewery : NSObject
+@interface Brewery : NSManagedObject
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *website;

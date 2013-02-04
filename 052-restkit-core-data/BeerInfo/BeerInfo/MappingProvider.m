@@ -15,7 +15,8 @@
 @implementation MappingProvider
 
 + (RKMapping *)beerStyleMapping {
-    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[BeerStyle class]];
+    RKEntityMapping *mapping = [RKEntityMapping mappingForEntityForName:@"BeerStyle"
+                                                   inManagedObjectStore:[[BeerInfoDataModel sharedDataModel] objectStore]];
     [mapping addAttributeMappingsFromArray:@[@"name"]];
     [mapping addAttributeMappingsFromDictionary:@{
         @"id": @"styleId",
@@ -26,7 +27,8 @@
 }
 
 + (RKMapping *)beerMapping {
-    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[Beer class]];
+    RKEntityMapping *mapping = [RKEntityMapping mappingForEntityForName:@"Beer"
+                                                   inManagedObjectStore:[[BeerInfoDataModel sharedDataModel] objectStore]];
     
     [mapping addAttributeMappingsFromArray:@[@"name", @"ibu", @"abv"]];
     [mapping addAttributeMappingsFromDictionary:@{@"labels.icon": @"labelIconImageUrl"}];
@@ -36,7 +38,9 @@
 }
 
 + (RKMapping *)breweryMapping {
-    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[Brewery class]];
+    RKEntityMapping *mapping = [RKEntityMapping mappingForEntityForName:@"Brewery"
+                                                   inManagedObjectStore:[[BeerInfoDataModel sharedDataModel] objectStore]];
+
                                 
     [mapping addAttributeMappingsFromArray:@[@"name", @"website"]];
     return mapping;

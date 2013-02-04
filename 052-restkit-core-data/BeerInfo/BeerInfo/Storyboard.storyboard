@@ -178,6 +178,35 @@
     <resources>
         <image name="beer-icon.png" width="34" height="60"/>
     </resources>
+    <classes>
+        <class className="BeerCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BeerCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="abvLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="breweryLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ibuLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="BeerStyleCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BeerStyleCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="styleCategoryLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="styleDescriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="styleNameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="BeerStylesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BeerStylesViewController.h"/>
+        </class>
+        <class className="BeersViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BeersViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

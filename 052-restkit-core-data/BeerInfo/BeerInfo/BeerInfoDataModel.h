@@ -11,6 +11,8 @@
 
 @interface BeerInfoDataModel : NSObject
 
+@property (nonatomic, strong) RKManagedObjectStore *objectStore;
+
 + (id)sharedDataModel;
 - (void)setup;
 

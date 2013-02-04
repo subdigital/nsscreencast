@@ -10,6 +10,6 @@
 
 @implementation Brewery
 
-// @dynamic name, website;
+ @dynamic name, website;
 
 @end

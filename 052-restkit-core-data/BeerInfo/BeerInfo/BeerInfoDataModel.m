@@ -24,7 +24,28 @@
     return __sharedDataModel;
 }
 
+- (NSManagedObjectModel *)managedObjectModel {
+    return [NSManagedObjectModel mergedModelFromBundles:nil];
+}
+
+- (id)optionsForSqliteStore {
+    return @{
+             NSInferMappingModelAutomaticallyOption: @YES,
+             NSMigratePersistentStoresAutomaticallyOption: @YES
+            };
+}
+
 - (void)setup {
+    self.objectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    
+    NSString *path = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"beerInfo.sqlite"];
+    NSLog(@"Setting up store at %@", path);
+    [self.objectStore addSQLitePersistentStoreAtPath:path
+                              fromSeedDatabaseAtPath:nil
+                                   withConfiguration:nil
+                                             options:[self optionsForSqliteStore]
+                                               error:nil];
+    [self.objectStore createManagedObjectContexts];
 }
 
 @end

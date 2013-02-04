@@ -12,10 +12,10 @@
 
 @implementation Beer
 
-// @dynamic abv, ibu, labelIconImageUrl, name, breweries, style;
+@dynamic abv, ibu, labelIconImageUrl, name, breweries, style;
 
 - (NSString *)brewery {
-    return [[self.breweries objectAtIndex:0] name];
+    return [[self.breweries firstObject] name];
 }
 
 @end
