@@ -1,0 +1,6 @@
+platform :ios, "6.0"
+
+pod 'RestKit'
+pod 'SVProgressHUD'
+pod 'SocketRocket', :podspec => 'SocketRocket.podspec'
+pod 'PonyDebugger', :podspec => 'PonyDebugger.podspec'

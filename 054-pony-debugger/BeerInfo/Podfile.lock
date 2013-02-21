@@ -1,0 +1,49 @@
+
+PODS:
+- AFNetworking (1.1.0)
+- PonyDebugger (0.0.1):
+  - SocketRocket
+- RestKit (0.20.0rc1):
+  - RestKit/Core (= 0.20.0rc1)
+- RestKit/Core (0.20.0rc1):
+  - RestKit/CoreData
+  - RestKit/Network
+  - RestKit/ObjectMapping
+- RestKit/CoreData (0.20.0rc1)
+- RestKit/Network (0.20.0rc1):
+  - AFNetworking (= 1.1.0)
+  - RestKit/ObjectMapping
+  - RestKit/Support
+  - SOCKit
+- RestKit/ObjectMapping (0.20.0rc1)
+- RestKit/Support (0.20.0rc1)
+- SOCKit (1.1)
+- SVProgressHUD (0.9)
+- SocketRocket (0.3.1.beta2)
+
+DEPENDENCIES:
+- PonyDebugger (from `PonyDebugger.podspec')
+- RestKit
+- SVProgressHUD
+- SocketRocket (from `SocketRocket.podspec')
+
+EXTERNAL SOURCES:
+  PonyDebugger:
+    :podspec: PonyDebugger.podspec
+  SocketRocket:
+    :podspec: SocketRocket.podspec
+
+SPEC CHECKSUMS:
+  AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
+  PonyDebugger: 30c8cf9f1e79bd6294730b49821d0ed21c08b5e2
+  RestKit: 0382132969d823a872b377c1ab2e383f3c74a339
+  RestKit/Core: 0382132969d823a872b377c1ab2e383f3c74a339
+  RestKit/CoreData: 0382132969d823a872b377c1ab2e383f3c74a339
+  RestKit/Network: 0382132969d823a872b377c1ab2e383f3c74a339
+  RestKit/ObjectMapping: 0382132969d823a872b377c1ab2e383f3c74a339
+  RestKit/Support: 0382132969d823a872b377c1ab2e383f3c74a339
+  SOCKit: 179515c1a621dd5652a60e9be02ea4adcd25bc9b
+  SVProgressHUD: 98935fbafaf0031df4a9cafca3c66eaf3da06967
+  SocketRocket: 82172f76595d6b09ee18bd4b0ff87eb7441c1615
+
+COCOAPODS: 0.16.2
