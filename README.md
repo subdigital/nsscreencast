@@ -1,13 +1,13 @@
 # NSScreencast Example Code
 
-Here you'll find the sample code using in [NSScreencast](http://nsscreencast.com) episodes.
+Here you'll find the sample code used in [NSScreencast](http://nsscreencast.com) episodes.
 
 ## Requirements
 
 Most of the samples will require the most recent version of Xcode.
 
 * OS X
-* Xcode 4.5
+* Xcode 4.6
 * [CocoaPods](http://cocoapods.org)
 
 ## Dependencies
