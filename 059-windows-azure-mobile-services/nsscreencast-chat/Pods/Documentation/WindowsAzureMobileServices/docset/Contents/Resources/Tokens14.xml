@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MSTableItemRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MSTableItemRequest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTableItemRequest/setItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) id item</Declaration>
+			
+			
+			<Anchor>//api/name/item</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSTableItemRequest/item</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) id item</Declaration>
+			
+			
+			<Anchor>//api/name/item</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTableItemRequest/setItemId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) id itemId</Declaration>
+			
+			
+			<Anchor>//api/name/itemId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSTableItemRequest/itemId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) id itemId</Declaration>
+			
+			
+			<Anchor>//api/name/itemId</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

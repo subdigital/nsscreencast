@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/ben/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.WindowsAzureMobileServices-0.0.2.docset
+Time: 2013-03-24 14:11:40 +0000

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MSTableRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MSTableRequest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTableRequest/setRequestType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) MSTableRequestType requestType</Declaration>
+			
+			
+			<Anchor>//api/name/requestType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSTableRequest/requestType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) MSTableRequestType requestType</Declaration>
+			
+			
+			<Anchor>//api/name/requestType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTableRequest/setTable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSTable *table</Declaration>
+			
+			
+			<Anchor>//api/name/table</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSTableRequest/table</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSTable *table</Declaration>
+			
+			
+			<Anchor>//api/name/table</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTableRequest/setParameters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDictionary *parameters</Declaration>
+			
+			
+			<Anchor>//api/name/parameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSTableRequest/parameters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDictionary *parameters</Declaration>
+			
+			
+			<Anchor>//api/name/parameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTableRequest/setSerializer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;MSSerializer&gt; serializer</Declaration>
+			
+			
+			<Anchor>//api/name/serializer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSTableRequest/serializer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) id&lt;MSSerializer&gt; serializer</Declaration>
+			
+			
+			<Anchor>//api/name/serializer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSTableRequest/requestToInsertItem:withTable:withParameters:withSerializer:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (MSTableItemRequest *)requestToInsertItem:(id)item withTable:(MSTable *)table withParameters:(NSDictionary *)parameters withSerializer:(id&lt;MSSerializer&gt;)serializer completion:(MSItemBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/requestToInsertItem:withTable:withParameters:withSerializer:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSTableRequest/requestToUpdateItem:withTable:withParameters:withSerializer:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (MSTableItemRequest *)requestToUpdateItem:(id)item withTable:(MSTable *)table withParameters:(NSDictionary *)parameters withSerializer:(id&lt;MSSerializer&gt;)serializer completion:(MSItemBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/requestToUpdateItem:withTable:withParameters:withSerializer:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSTableRequest/requestToDeleteItem:withTable:withParameters:withSerializer:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (MSTableDeleteRequest *)requestToDeleteItem:(id)item withTable:(MSTable *)table withParameters:(NSDictionary *)parameters withSerializer:(id&lt;MSSerializer&gt;)serializer completion:(MSDeleteBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/requestToDeleteItem:withTable:withParameters:withSerializer:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSTableRequest/requestToDeleteItemWithId:withTable:withParameters:withSerializer:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (MSTableDeleteRequest *)requestToDeleteItemWithId:(id)itemId withTable:(MSTable *)table withParameters:(NSDictionary *)parameters withSerializer:(id&lt;MSSerializer&gt;)serializer completion:(MSDeleteBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/requestToDeleteItemWithId:withTable:withParameters:withSerializer:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSTableRequest/requestToReadWithId:withTable:withParameters:withSerializer:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (MSTableItemRequest *)requestToReadWithId:(id)itemId withTable:(MSTable *)table withParameters:(NSDictionary *)parameters withSerializer:(id&lt;MSSerializer&gt;)serializer completion:(MSItemBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/requestToReadWithId:withTable:withParameters:withSerializer:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSTableRequest/requestToReadItemsWithQuery:withTable:withSerializer:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (MSTableReadQueryRequest *)requestToReadItemsWithQuery:(NSString *)queryString withTable:(MSTable *)table withSerializer:(id&lt;MSSerializer&gt;)serializer completion:(MSReadQueryBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/requestToReadItemsWithQuery:withTable:withSerializer:completion:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,655 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MSTable Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">WindowsAzureMobileServices 0.0.2 </a></h1>
+				<a id="developerHome" href="../index.html">Windows Azure Team</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MSTable Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/client">&nbsp;&nbsp;&nbsp;&nbsp;client</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/delete:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- delete:completion:</option>
+	
+	<option value="//api/name/delete:parameters:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- delete:parameters:completion:</option>
+	
+	<option value="//api/name/deleteWithId:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteWithId:completion:</option>
+	
+	<option value="//api/name/deleteWithId:parameters:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteWithId:parameters:completion:</option>
+	
+	<option value="//api/name/initWithName:andClient:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithName:andClient:</option>
+	
+	<option value="//api/name/insert:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- insert:completion:</option>
+	
+	<option value="//api/name/insert:parameters:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- insert:parameters:completion:</option>
+	
+	<option value="//api/name/query">&nbsp;&nbsp;&nbsp;&nbsp;- query</option>
+	
+	<option value="//api/name/queryWhere:">&nbsp;&nbsp;&nbsp;&nbsp;- queryWhere:</option>
+	
+	<option value="//api/name/readWhere:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- readWhere:completion:</option>
+	
+	<option value="//api/name/readWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- readWithCompletion:</option>
+	
+	<option value="//api/name/readWithId:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- readWithId:completion:</option>
+	
+	<option value="//api/name/readWithId:parameters:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- readWithId:parameters:completion:</option>
+	
+	<option value="//api/name/readWithQueryString:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- readWithQueryString:completion:</option>
+	
+	<option value="//api/name/update:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- update:completion:</option>
+	
+	<option value="//api/name/update:parameters:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- update:parameters:completion:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/client">client</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delete:completion:">delete:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delete:parameters:completion:">delete:parameters:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteWithId:completion:">deleteWithId:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteWithId:parameters:completion:">deleteWithId:parameters:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithName:andClient:">initWithName:andClient:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insert:completion:">insert:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insert:parameters:completion:">insert:parameters:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/query">query</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/queryWhere:">queryWhere:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readWhere:completion:">readWhere:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readWithCompletion:">readWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readWithId:completion:">readWithId:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readWithId:parameters:completion:">readWithId:parameters:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readWithQueryString:completion:">readWithQueryString:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/update:completion:">update:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/update:parameters:completion:">update:parameters:completion:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MSTable Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MSTable Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MSTable.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/client">&nbsp;&nbsp;client</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithName:andClient:">&ndash;&nbsp;initWithName:andClient:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insert:completion:">&ndash;&nbsp;insert:completion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insert:parameters:completion:">&ndash;&nbsp;insert:parameters:completion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/update:completion:">&ndash;&nbsp;update:completion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/update:parameters:completion:">&ndash;&nbsp;update:parameters:completion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delete:completion:">&ndash;&nbsp;delete:completion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delete:parameters:completion:">&ndash;&nbsp;delete:parameters:completion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteWithId:completion:">&ndash;&nbsp;deleteWithId:completion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteWithId:parameters:completion:">&ndash;&nbsp;deleteWithId:parameters:completion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readWithId:completion:">&ndash;&nbsp;readWithId:completion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readWithId:parameters:completion:">&ndash;&nbsp;readWithId:parameters:completion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readWithQueryString:completion:">&ndash;&nbsp;readWithQueryString:completion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readWithCompletion:">&ndash;&nbsp;readWithCompletion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readWhere:completion:">&ndash;&nbsp;readWhere:completion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/query">&ndash;&nbsp;query</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/queryWhere:">&ndash;&nbsp;queryWhere:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/client" title="client"></a>
+	<h3 class="subsubtitle method-title">client</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) MSClient *client</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *name</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delete:completion:" title="delete:completion:"></a>
+	<h3 class="subsubtitle method-title">delete:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)delete:(NSDictionary *)<em>item</em> completion:(MSDeleteBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delete:parameters:completion:" title="delete:parameters:completion:"></a>
+	<h3 class="subsubtitle method-title">delete:parameters:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)delete:(NSDictionary *)<em>item</em> parameters:(NSDictionary *)<em>parameters</em> completion:(MSDeleteBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteWithId:completion:" title="deleteWithId:completion:"></a>
+	<h3 class="subsubtitle method-title">deleteWithId:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteWithId:(NSNumber *)<em>itemId</em> completion:(MSDeleteBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteWithId:parameters:completion:" title="deleteWithId:parameters:completion:"></a>
+	<h3 class="subsubtitle method-title">deleteWithId:parameters:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteWithId:(NSNumber *)<em>itemId</em> parameters:(NSDictionary *)<em>parameters</em> completion:(MSDeleteBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithName:andClient:" title="initWithName:andClient:"></a>
+	<h3 class="subsubtitle method-title">initWithName:andClient:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithName:(NSString *)<em>tableName</em> andClient:(MSClient *)<em>client</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insert:completion:" title="insert:completion:"></a>
+	<h3 class="subsubtitle method-title">insert:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)insert:(NSDictionary *)<em>item</em> completion:(MSItemBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insert:parameters:completion:" title="insert:parameters:completion:"></a>
+	<h3 class="subsubtitle method-title">insert:parameters:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)insert:(NSDictionary *)<em>item</em> parameters:(NSDictionary *)<em>parameters</em> completion:(MSItemBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/query" title="query"></a>
+	<h3 class="subsubtitle method-title">query</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (MSQuery *)query</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/queryWhere:" title="queryWhere:"></a>
+	<h3 class="subsubtitle method-title">queryWhere:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (MSQuery *)queryWhere:(NSPredicate *)<em>predicate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readWhere:completion:" title="readWhere:completion:"></a>
+	<h3 class="subsubtitle method-title">readWhere:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)readWhere:(NSPredicate *)<em>predicate</em> completion:(MSReadQueryBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readWithCompletion:" title="readWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">readWithCompletion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)readWithCompletion:(MSReadQueryBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readWithId:completion:" title="readWithId:completion:"></a>
+	<h3 class="subsubtitle method-title">readWithId:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)readWithId:(NSNumber *)<em>itemId</em> completion:(MSItemBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readWithId:parameters:completion:" title="readWithId:parameters:completion:"></a>
+	<h3 class="subsubtitle method-title">readWithId:parameters:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)readWithId:(NSNumber *)<em>itemId</em> parameters:(NSDictionary *)<em>parameters</em> completion:(MSItemBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readWithQueryString:completion:" title="readWithQueryString:completion:"></a>
+	<h3 class="subsubtitle method-title">readWithQueryString:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)readWithQueryString:(NSString *)<em>queryString</em> completion:(MSReadQueryBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/update:completion:" title="update:completion:"></a>
+	<h3 class="subsubtitle method-title">update:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)update:(NSDictionary *)<em>item</em> completion:(MSItemBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/update:parameters:completion:" title="update:parameters:completion:"></a>
+	<h3 class="subsubtitle method-title">update:parameters:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)update:(NSDictionary *)<em>item</em> parameters:(NSDictionary *)<em>parameters</em> completion:(MSItemBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Windows Azure Team. All rights reserved. (Last updated: 2013-03-24)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

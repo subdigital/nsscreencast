@@ -1,0 +1,18 @@
+
+PODS:
+- MessagesTableViewController (0.0.1)
+- WindowsAzureMobileServices (0.0.2)
+
+DEPENDENCIES:
+- MessagesTableViewController
+- WindowsAzureMobileServices (from `WindowsAzureMobileServices.podspec')
+
+EXTERNAL SOURCES:
+  WindowsAzureMobileServices:
+    :podspec: WindowsAzureMobileServices.podspec
+
+SPEC CHECKSUMS:
+  MessagesTableViewController: a45dceb6d6fd5e0de612ddf297c70e5749af18be
+  WindowsAzureMobileServices: 7835912dcf9a0d4c28fca93be9d253e23ee5f018
+
+COCOAPODS: 0.16.4

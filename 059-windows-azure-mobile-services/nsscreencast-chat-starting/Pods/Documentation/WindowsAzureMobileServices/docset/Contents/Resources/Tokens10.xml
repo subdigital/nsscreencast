@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MSQuery.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MSQuery</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/setTable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSTable *table</Declaration>
+			
+			
+			<Anchor>//api/name/table</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSQuery/table</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSTable *table</Declaration>
+			
+			
+			<Anchor>//api/name/table</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/setPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSPredicate *predicate</Declaration>
+			
+			
+			<Anchor>//api/name/predicate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSQuery/predicate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSPredicate *predicate</Declaration>
+			
+			
+			<Anchor>//api/name/predicate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/setFetchLimit:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSUInteger fetchLimit</Declaration>
+			
+			
+			<Anchor>//api/name/fetchLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSQuery/fetchLimit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSUInteger fetchLimit</Declaration>
+			
+			
+			<Anchor>//api/name/fetchLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/setFetchOffset:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSUInteger fetchOffset</Declaration>
+			
+			
+			<Anchor>//api/name/fetchOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSQuery/fetchOffset</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSUInteger fetchOffset</Declaration>
+			
+			
+			<Anchor>//api/name/fetchOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/setOrderBy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSArray *orderBy</Declaration>
+			
+			
+			<Anchor>//api/name/orderBy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSQuery/orderBy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSArray *orderBy</Declaration>
+			
+			
+			<Anchor>//api/name/orderBy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/setIncludeTotalCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL includeTotalCount</Declaration>
+			
+			
+			<Anchor>//api/name/includeTotalCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSQuery/includeTotalCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL includeTotalCount</Declaration>
+			
+			
+			<Anchor>//api/name/includeTotalCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/setParameters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *parameters</Declaration>
+			
+			
+			<Anchor>//api/name/parameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSQuery/parameters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *parameters</Declaration>
+			
+			
+			<Anchor>//api/name/parameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/setSelectFields:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *selectFields</Declaration>
+			
+			
+			<Anchor>//api/name/selectFields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSQuery/selectFields</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *selectFields</Declaration>
+			
+			
+			<Anchor>//api/name/selectFields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/initWithTable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithTable:(MSTable *)table</Declaration>
+			
+			
+			<Anchor>//api/name/initWithTable:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/initWithTable:withPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithTable:(MSTable *)table withPredicate:(NSPredicate *)predicate</Declaration>
+			
+			
+			<Anchor>//api/name/initWithTable:withPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/orderByAscending:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>- (void)orderByAscending:(NSString *)field</Declaration>
+			
+			
+			<Anchor>//api/name/orderByAscending:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/orderByDescending:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>- (void)orderByDescending:(NSString *)field</Declaration>
+			
+			
+			<Anchor>//api/name/orderByDescending:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/readWithCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>- (void)readWithCompletion:(MSReadQueryBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/readWithCompletion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSQuery/queryStringOrError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSQuery.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)queryStringOrError:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/queryStringOrError:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/BubbleMessageCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/BubbleMessageCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleMessageCell.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BubbleMessageCell/setBubbleView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleMessageCell.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) BubbleView *bubbleView</Declaration>
+			
+			
+			<Anchor>//api/name/bubbleView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BubbleMessageCell/bubbleView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleMessageCell.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) BubbleView *bubbleView</Declaration>
+			
+			
+			<Anchor>//api/name/bubbleView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BubbleMessageCell/initWithBubbleStyle:reuseIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleMessageCell.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithBubbleStyle:(BubbleMessageStyle)style reuseIdentifier:(NSString *)reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/initWithBubbleStyle:reuseIdentifier:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MSLoginSerializer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MSLoginSerializer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginSerializer.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSLoginSerializer/loginSerializer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginSerializer.h</DeclaredIn>			
+			
+			<Declaration>+ (MSLoginSerializer *)loginSerializer</Declaration>
+			
+			
+			<Anchor>//api/name/loginSerializer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginSerializer/dataFromToken:orError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginSerializer.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)dataFromToken:(id)token orError:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/dataFromToken:orError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginSerializer/userFromData:orError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginSerializer.h</DeclaredIn>			
+			
+			<Declaration>- (MSUser *)userFromData:(NSData *)data orError:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/userFromData:orError:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

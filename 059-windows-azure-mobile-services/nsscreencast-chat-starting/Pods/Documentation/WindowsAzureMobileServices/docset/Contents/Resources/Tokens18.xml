@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MSUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MSUser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSUser.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSUser/setUserId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSUser/userId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSUser/setMobileServiceAuthenticationToken:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *mobileServiceAuthenticationToken</Declaration>
+			
+			
+			<Anchor>//api/name/mobileServiceAuthenticationToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSUser/mobileServiceAuthenticationToken</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *mobileServiceAuthenticationToken</Declaration>
+			
+			
+			<Anchor>//api/name/mobileServiceAuthenticationToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSUser/initWithUserId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSUser.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithUserId:(NSString *)userId</Declaration>
+			
+			
+			<Anchor>//api/name/initWithUserId:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

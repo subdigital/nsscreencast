@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MSLoginView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MSLoginView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginView/setClient:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSLoginView/client</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginView/setStartURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSURL *startURL</Declaration>
+			
+			
+			<Anchor>//api/name/startURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSLoginView/startURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSURL *startURL</Declaration>
+			
+			
+			<Anchor>//api/name/startURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginView/setEndURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSURL *endURL</Declaration>
+			
+			
+			<Anchor>//api/name/endURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSLoginView/endURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSURL *endURL</Declaration>
+			
+			
+			<Anchor>//api/name/endURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginView/setToolbar:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIToolbar *toolbar</Declaration>
+			
+			
+			<Anchor>//api/name/toolbar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSLoginView/toolbar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIToolbar *toolbar</Declaration>
+			
+			
+			<Anchor>//api/name/toolbar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginView/setActivityIndicator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIActivityIndicatorView *activityIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/activityIndicator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSLoginView/activityIndicator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIActivityIndicatorView *activityIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/activityIndicator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginView/setShowToolbar:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL showToolbar</Declaration>
+			
+			
+			<Anchor>//api/name/showToolbar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSLoginView/showToolbar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL showToolbar</Declaration>
+			
+			
+			<Anchor>//api/name/showToolbar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginView/setToolbarPosition:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) UIToolbarPosition toolbarPosition</Declaration>
+			
+			
+			<Anchor>//api/name/toolbarPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSLoginView/toolbarPosition</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) UIToolbarPosition toolbarPosition</Declaration>
+			
+			
+			<Anchor>//api/name/toolbarPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginView/initWithFrame:client:startURL:endURL:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame client:(MSClient *)client startURL:(NSURL *)startURL endURL:(NSURL *)endURL completion:(MSLoginViewBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:client:startURL:endURL:completion:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

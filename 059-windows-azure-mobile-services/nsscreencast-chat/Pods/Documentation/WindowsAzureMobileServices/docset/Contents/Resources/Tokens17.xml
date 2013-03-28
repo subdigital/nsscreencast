@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MSTableURLBuilder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MSTableURLBuilder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableURLBuilder.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSTableURLBuilder/URLForTable:withParameters:orError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableURLBuilder.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)URLForTable:(MSTable *)table withParameters:(NSDictionary *)parameters orError:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/URLForTable:withParameters:orError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSTableURLBuilder/URLForTable:withItemIdString:withParameters:orError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableURLBuilder.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)URLForTable:(MSTable *)table withItemIdString:(NSString *)itemId withParameters:(NSDictionary *)parameters orError:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/URLForTable:withItemIdString:withParameters:orError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSTableURLBuilder/URLForTable:withQuery:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableURLBuilder.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)URLForTable:(MSTable *)table withQuery:(NSString *)query</Declaration>
+			
+			
+			<Anchor>//api/name/URLForTable:withQuery:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSTableURLBuilder/queryStringFromQuery:orError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableURLBuilder.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)queryStringFromQuery:(MSQuery *)query orError:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/queryStringFromQuery:orError:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

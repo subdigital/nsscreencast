@@ -1,0 +1,570 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MessagesViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MessagesTableViewController 0.0.1 </a></h1>
+				<a id="developerHome" href="../index.html">Jesse Squires</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MessagesViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/inputView">&nbsp;&nbsp;&nbsp;&nbsp;inputView</option>
+	
+	<option value="//api/name/previousTextViewContentHeight">&nbsp;&nbsp;&nbsp;&nbsp;previousTextViewContentHeight</option>
+	
+	<option value="//api/name/tableView">&nbsp;&nbsp;&nbsp;&nbsp;tableView</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/finishSend">&nbsp;&nbsp;&nbsp;&nbsp;- finishSend</option>
+	
+	<option value="//api/name/handleSwipe:">&nbsp;&nbsp;&nbsp;&nbsp;- handleSwipe:</option>
+	
+	<option value="//api/name/handleWillHideKeyboard:">&nbsp;&nbsp;&nbsp;&nbsp;- handleWillHideKeyboard:</option>
+	
+	<option value="//api/name/handleWillShowKeyboard:">&nbsp;&nbsp;&nbsp;&nbsp;- handleWillShowKeyboard:</option>
+	
+	<option value="//api/name/keyboardWillShowHide:">&nbsp;&nbsp;&nbsp;&nbsp;- keyboardWillShowHide:</option>
+	
+	<option value="//api/name/messageStyleForRowAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- messageStyleForRowAtIndexPath:</option>
+	
+	<option value="//api/name/scrollToBottomAnimated:">&nbsp;&nbsp;&nbsp;&nbsp;- scrollToBottomAnimated:</option>
+	
+	<option value="//api/name/sendPressed:">&nbsp;&nbsp;&nbsp;&nbsp;- sendPressed:</option>
+	
+	<option value="//api/name/sendPressed:withText:">&nbsp;&nbsp;&nbsp;&nbsp;- sendPressed:withText:</option>
+	
+	<option value="//api/name/setBackgroundColor:">&nbsp;&nbsp;&nbsp;&nbsp;- setBackgroundColor:</option>
+	
+	<option value="//api/name/textForRowAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- textForRowAtIndexPath:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inputView">inputView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/previousTextViewContentHeight">previousTextViewContentHeight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableView">tableView</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/finishSend">finishSend</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleSwipe:">handleSwipe:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleWillHideKeyboard:">handleWillHideKeyboard:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleWillShowKeyboard:">handleWillShowKeyboard:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keyboardWillShowHide:">keyboardWillShowHide:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messageStyleForRowAtIndexPath:">messageStyleForRowAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrollToBottomAnimated:">scrollToBottomAnimated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendPressed:">sendPressed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendPressed:withText:">sendPressed:withText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBackgroundColor:">setBackgroundColor:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textForRowAtIndexPath:">textForRowAtIndexPath:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MessagesViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MessagesViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">UITableViewDataSource<br />UITableViewDelegate<br />UITextViewDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MessagesViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableView">&nbsp;&nbsp;tableView</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inputView">&nbsp;&nbsp;inputView</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/previousTextViewContentHeight">&nbsp;&nbsp;previousTextViewContentHeight</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendPressed:withText:">&ndash;&nbsp;sendPressed:withText:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendPressed:">&ndash;&nbsp;sendPressed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleSwipe:">&ndash;&nbsp;handleSwipe:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messageStyleForRowAtIndexPath:">&ndash;&nbsp;messageStyleForRowAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textForRowAtIndexPath:">&ndash;&nbsp;textForRowAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/finishSend">&ndash;&nbsp;finishSend</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setBackgroundColor:">&ndash;&nbsp;setBackgroundColor:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrollToBottomAnimated:">&ndash;&nbsp;scrollToBottomAnimated:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleWillShowKeyboard:">&ndash;&nbsp;handleWillShowKeyboard:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleWillHideKeyboard:">&ndash;&nbsp;handleWillHideKeyboard:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keyboardWillShowHide:">&ndash;&nbsp;keyboardWillShowHide:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/inputView" title="inputView"></a>
+	<h3 class="subsubtitle method-title">inputView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) MessageInputView *inputView</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/previousTextViewContentHeight" title="previousTextViewContentHeight"></a>
+	<h3 class="subsubtitle method-title">previousTextViewContentHeight</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat previousTextViewContentHeight</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableView" title="tableView"></a>
+	<h3 class="subsubtitle method-title">tableView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UITableView *tableView</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/finishSend" title="finishSend"></a>
+	<h3 class="subsubtitle method-title">finishSend</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)finishSend</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleSwipe:" title="handleSwipe:"></a>
+	<h3 class="subsubtitle method-title">handleSwipe:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)handleSwipe:(UIGestureRecognizer *)<em>guestureRecognizer</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleWillHideKeyboard:" title="handleWillHideKeyboard:"></a>
+	<h3 class="subsubtitle method-title">handleWillHideKeyboard:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)handleWillHideKeyboard:(NSNotification *)<em>notification</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleWillShowKeyboard:" title="handleWillShowKeyboard:"></a>
+	<h3 class="subsubtitle method-title">handleWillShowKeyboard:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)handleWillShowKeyboard:(NSNotification *)<em>notification</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keyboardWillShowHide:" title="keyboardWillShowHide:"></a>
+	<h3 class="subsubtitle method-title">keyboardWillShowHide:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)keyboardWillShowHide:(NSNotification *)<em>notification</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messageStyleForRowAtIndexPath:" title="messageStyleForRowAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">messageStyleForRowAtIndexPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BubbleMessageStyle)messageStyleForRowAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scrollToBottomAnimated:" title="scrollToBottomAnimated:"></a>
+	<h3 class="subsubtitle method-title">scrollToBottomAnimated:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)scrollToBottomAnimated:(BOOL)<em>animated</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendPressed:" title="sendPressed:"></a>
+	<h3 class="subsubtitle method-title">sendPressed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)sendPressed:(UIButton *)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendPressed:withText:" title="sendPressed:withText:"></a>
+	<h3 class="subsubtitle method-title">sendPressed:withText:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)sendPressed:(UIButton *)<em>sender</em> withText:(NSString *)<em>text</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setBackgroundColor:" title="setBackgroundColor:"></a>
+	<h3 class="subsubtitle method-title">setBackgroundColor:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setBackgroundColor:(UIColor *)<em>color</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textForRowAtIndexPath:" title="textForRowAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">textForRowAtIndexPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)textForRowAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Jesse Squires. All rights reserved. (Last updated: 2013-03-10)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

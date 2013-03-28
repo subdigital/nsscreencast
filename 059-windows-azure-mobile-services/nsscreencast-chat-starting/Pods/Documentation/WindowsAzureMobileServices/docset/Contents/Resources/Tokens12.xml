@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MSTableConnection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MSTableConnection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableConnection.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTableConnection/setTable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSTable *table</Declaration>
+			
+			
+			<Anchor>//api/name/table</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSTableConnection/table</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSTable *table</Declaration>
+			
+			
+			<Anchor>//api/name/table</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSTableConnection/connectionWithItemRequest:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (MSTableConnection *)connectionWithItemRequest:(MSTableItemRequest *)request completion:(MSItemBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/connectionWithItemRequest:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSTableConnection/connectionWithDeleteRequest:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (MSTableConnection *)connectionWithDeleteRequest:(MSTableDeleteRequest *)request completion:(MSDeleteBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/connectionWithDeleteRequest:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSTableConnection/connectionWithReadRequest:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (MSTableConnection *)connectionWithReadRequest:(MSTableReadQueryRequest *)request completion:(MSReadQueryBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/connectionWithReadRequest:completion:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

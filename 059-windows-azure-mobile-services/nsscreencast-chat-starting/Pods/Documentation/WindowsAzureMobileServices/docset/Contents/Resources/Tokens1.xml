@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MSClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MSClient</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClient/setApplicationURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSURL *applicationURL</Declaration>
+			
+			
+			<Anchor>//api/name/applicationURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSClient/applicationURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSURL *applicationURL</Declaration>
+			
+			
+			<Anchor>//api/name/applicationURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClient/setApplicationKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *applicationKey</Declaration>
+			
+			
+			<Anchor>//api/name/applicationKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSClient/applicationKey</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *applicationKey</Declaration>
+			
+			
+			<Anchor>//api/name/applicationKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClient/setFilters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSArray *filters</Declaration>
+			
+			
+			<Anchor>//api/name/filters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSClient/filters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSArray *filters</Declaration>
+			
+			
+			<Anchor>//api/name/filters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClient/setCurrentUser:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) MSUser *currentUser</Declaration>
+			
+			
+			<Anchor>//api/name/currentUser</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSClient/currentUser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) MSUser *currentUser</Declaration>
+			
+			
+			<Anchor>//api/name/currentUser</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSClient/clientWithApplicationURLString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>+ (MSClient *)clientWithApplicationURLString:(NSString *)urlString</Declaration>
+			
+			
+			<Anchor>//api/name/clientWithApplicationURLString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSClient/clientWithApplicationURLString:withApplicationKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>+ (MSClient *)clientWithApplicationURLString:(NSString *)urlString withApplicationKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/clientWithApplicationURLString:withApplicationKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSClient/clientWithApplicationURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>+ (MSClient *)clientWithApplicationURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/clientWithApplicationURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MSClient/clientWithApplicationURL:withApplicationKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>+ (MSClient *)clientWithApplicationURL:(NSURL *)url withApplicationKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/clientWithApplicationURL:withApplicationKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClient/initWithApplicationURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithApplicationURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/initWithApplicationURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClient/initWithApplicationURL:withApplicationKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithApplicationURL:(NSURL *)url withApplicationKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/initWithApplicationURL:withApplicationKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClient/clientwithFilter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>- (MSClient *)clientwithFilter:(id&lt;MSFilter&gt;)filter</Declaration>
+			
+			
+			<Anchor>//api/name/clientwithFilter:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClient/loginWithProvider:onController:animated:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)loginWithProvider:(NSString *)provider onController:(UIViewController *)controller animated:(BOOL)animated completion:(MSClientLoginBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/loginWithProvider:onController:animated:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClient/loginViewControllerWithProvider:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>- (MSLoginController *)loginViewControllerWithProvider:(NSString *)provider completion:(MSClientLoginBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/loginViewControllerWithProvider:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClient/loginWithProvider:withToken:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)loginWithProvider:(NSString *)provider withToken:(NSDictionary *)token completion:(MSClientLoginBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/loginWithProvider:withToken:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClient/logout</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)logout</Declaration>
+			
+			
+			<Anchor>//api/name/logout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClient/getTable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClient.h</DeclaredIn>			
+			
+			<Declaration>- (MSTable *)getTable:(NSString *)tableName</Declaration>
+			
+			
+			<Anchor>//api/name/getTable:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

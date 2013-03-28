@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MSLoginController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MSLoginController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginController/setClient:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSLoginController/client</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginController/setProvider:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *provider</Declaration>
+			
+			
+			<Anchor>//api/name/provider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSLoginController/provider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *provider</Declaration>
+			
+			
+			<Anchor>//api/name/provider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginController/setActivityIndicator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIActivityIndicatorView *activityIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/activityIndicator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSLoginController/activityIndicator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIActivityIndicatorView *activityIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/activityIndicator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginController/setToolbar:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIToolbar *toolbar</Declaration>
+			
+			
+			<Anchor>//api/name/toolbar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSLoginController/toolbar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIToolbar *toolbar</Declaration>
+			
+			
+			<Anchor>//api/name/toolbar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginController/setShowToolbar:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL showToolbar</Declaration>
+			
+			
+			<Anchor>//api/name/showToolbar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSLoginController/showToolbar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL showToolbar</Declaration>
+			
+			
+			<Anchor>//api/name/showToolbar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginController/setToolbarPosition:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) UIToolbarPosition toolbarPosition</Declaration>
+			
+			
+			<Anchor>//api/name/toolbarPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSLoginController/toolbarPosition</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) UIToolbarPosition toolbarPosition</Declaration>
+			
+			
+			<Anchor>//api/name/toolbarPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSLoginController/initWithClient:provider:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSLoginController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithClient:(MSClient *)client provider:(NSString *)provider completion:(MSClientLoginBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/initWithClient:provider:completion:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
