@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MSClientConnection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MSClientConnection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClientConnection.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClientConnection/setClient:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClientConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSClientConnection/client</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClientConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClientConnection/setRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClientConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSURLRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSClientConnection/request</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClientConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSURLRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClientConnection/setCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClientConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) MSResponseBlock completion</Declaration>
+			
+			
+			<Anchor>//api/name/completion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSClientConnection/completion</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClientConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) MSResponseBlock completion</Declaration>
+			
+			
+			<Anchor>//api/name/completion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClientConnection/initWithRequest:withClient:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClientConnection.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithRequest:(NSURLRequest *)request withClient:(MSClient *)client completion:(MSResponseBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/initWithRequest:withClient:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClientConnection/start</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClientConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSClientConnection/startWithoutFilters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSClientConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)startWithoutFilters</Declaration>
+			
+			
+			<Anchor>//api/name/startWithoutFilters</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

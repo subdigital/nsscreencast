@@ -1,0 +1,567 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MSQuery Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">WindowsAzureMobileServices 0.0.2 </a></h1>
+				<a id="developerHome" href="../index.html">Windows Azure Team</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MSQuery Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/fetchLimit">&nbsp;&nbsp;&nbsp;&nbsp;fetchLimit</option>
+	
+	<option value="//api/name/fetchOffset">&nbsp;&nbsp;&nbsp;&nbsp;fetchOffset</option>
+	
+	<option value="//api/name/includeTotalCount">&nbsp;&nbsp;&nbsp;&nbsp;includeTotalCount</option>
+	
+	<option value="//api/name/orderBy">&nbsp;&nbsp;&nbsp;&nbsp;orderBy</option>
+	
+	<option value="//api/name/parameters">&nbsp;&nbsp;&nbsp;&nbsp;parameters</option>
+	
+	<option value="//api/name/predicate">&nbsp;&nbsp;&nbsp;&nbsp;predicate</option>
+	
+	<option value="//api/name/selectFields">&nbsp;&nbsp;&nbsp;&nbsp;selectFields</option>
+	
+	<option value="//api/name/table">&nbsp;&nbsp;&nbsp;&nbsp;table</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithTable:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTable:</option>
+	
+	<option value="//api/name/initWithTable:withPredicate:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTable:withPredicate:</option>
+	
+	<option value="//api/name/orderByAscending:">&nbsp;&nbsp;&nbsp;&nbsp;- orderByAscending:</option>
+	
+	<option value="//api/name/orderByDescending:">&nbsp;&nbsp;&nbsp;&nbsp;- orderByDescending:</option>
+	
+	<option value="//api/name/queryStringOrError:">&nbsp;&nbsp;&nbsp;&nbsp;- queryStringOrError:</option>
+	
+	<option value="//api/name/readWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- readWithCompletion:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchLimit">fetchLimit</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchOffset">fetchOffset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/includeTotalCount">includeTotalCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/orderBy">orderBy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parameters">parameters</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/predicate">predicate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectFields">selectFields</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/table">table</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTable:">initWithTable:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTable:withPredicate:">initWithTable:withPredicate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/orderByAscending:">orderByAscending:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/orderByDescending:">orderByDescending:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/queryStringOrError:">queryStringOrError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readWithCompletion:">readWithCompletion:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MSQuery Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MSQuery Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MSQuery.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/table">&nbsp;&nbsp;table</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/predicate">&nbsp;&nbsp;predicate</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchLimit">&nbsp;&nbsp;fetchLimit</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchOffset">&nbsp;&nbsp;fetchOffset</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/orderBy">&nbsp;&nbsp;orderBy</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/includeTotalCount">&nbsp;&nbsp;includeTotalCount</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parameters">&nbsp;&nbsp;parameters</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectFields">&nbsp;&nbsp;selectFields</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithTable:">&ndash;&nbsp;initWithTable:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithTable:withPredicate:">&ndash;&nbsp;initWithTable:withPredicate:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/orderByAscending:">&ndash;&nbsp;orderByAscending:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/orderByDescending:">&ndash;&nbsp;orderByDescending:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readWithCompletion:">&ndash;&nbsp;readWithCompletion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/queryStringOrError:">&ndash;&nbsp;queryStringOrError:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchLimit" title="fetchLimit"></a>
+	<h3 class="subsubtitle method-title">fetchLimit</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSUInteger fetchLimit</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchOffset" title="fetchOffset"></a>
+	<h3 class="subsubtitle method-title">fetchOffset</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSUInteger fetchOffset</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/includeTotalCount" title="includeTotalCount"></a>
+	<h3 class="subsubtitle method-title">includeTotalCount</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL includeTotalCount</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/orderBy" title="orderBy"></a>
+	<h3 class="subsubtitle method-title">orderBy</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSArray *orderBy</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parameters" title="parameters"></a>
+	<h3 class="subsubtitle method-title">parameters</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSDictionary *parameters</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/predicate" title="predicate"></a>
+	<h3 class="subsubtitle method-title">predicate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSPredicate *predicate</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectFields" title="selectFields"></a>
+	<h3 class="subsubtitle method-title">selectFields</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSArray *selectFields</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/table" title="table"></a>
+	<h3 class="subsubtitle method-title">table</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) MSTable *table</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithTable:" title="initWithTable:"></a>
+	<h3 class="subsubtitle method-title">initWithTable:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithTable:(MSTable *)<em>table</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithTable:withPredicate:" title="initWithTable:withPredicate:"></a>
+	<h3 class="subsubtitle method-title">initWithTable:withPredicate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithTable:(MSTable *)<em>table</em> withPredicate:(NSPredicate *)<em>predicate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/orderByAscending:" title="orderByAscending:"></a>
+	<h3 class="subsubtitle method-title">orderByAscending:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)orderByAscending:(NSString *)<em>field</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/orderByDescending:" title="orderByDescending:"></a>
+	<h3 class="subsubtitle method-title">orderByDescending:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)orderByDescending:(NSString *)<em>field</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/queryStringOrError:" title="queryStringOrError:"></a>
+	<h3 class="subsubtitle method-title">queryStringOrError:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)queryStringOrError:(NSError **)<em>error</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readWithCompletion:" title="readWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">readWithCompletion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)readWithCompletion:(MSReadQueryBlock)<em>completion</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Windows Azure Team. All rights reserved. (Last updated: 2013-03-24)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>WindowsAzureMobileServices 0.0.2</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>MSClient</Name>
+			<Path>Classes/MSClient.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>MSClientConnection</Name>
+			<Path>Classes/MSClientConnection.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>MSJSONSerializer</Name>
+			<Path>Classes/MSJSONSerializer.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>MSLogin</Name>
+			<Path>Classes/MSLogin.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>MSLoginController</Name>
+			<Path>Classes/MSLoginController.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>MSLoginSerializer</Name>
+			<Path>Classes/MSLoginSerializer.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>MSLoginView</Name>
+			<Path>Classes/MSLoginView.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>MSNaiveISODateFormatter</Name>
+			<Path>Classes/MSNaiveISODateFormatter.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>MSPredicateTranslator</Name>
+			<Path>Classes/MSPredicateTranslator.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>MSQuery</Name>
+			<Path>Classes/MSQuery.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>MSTable</Name>
+			<Path>Classes/MSTable.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>MSTableConnection</Name>
+			<Path>Classes/MSTableConnection.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>MSTableDeleteRequest</Name>
+			<Path>Classes/MSTableDeleteRequest.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>MSTableItemRequest</Name>
+			<Path>Classes/MSTableItemRequest.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>MSTableReadQueryRequest</Name>
+			<Path>Classes/MSTableReadQueryRequest.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>MSTableRequest</Name>
+			<Path>Classes/MSTableRequest.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>MSTableURLBuilder</Name>
+			<Path>Classes/MSTableURLBuilder.html</Path>
+		</Node>
+		<Node id="18">
+			<Name>MSUser</Name>
+			<Path>Classes/MSUser.html</Path>
+		</Node>
+		<Node id="19">
+			<Name>MSUserAgentBuilder</Name>
+			<Path>Classes/MSUserAgentBuilder.html</Path>
+		</Node>
+		
+		
+		<Node id="20">
+			<Name>MSFilter</Name>
+			<Path>Protocols/MSFilter.html</Path>
+		</Node>
+		<Node id="21">
+			<Name>MSSerializer</Name>
+			<Path>Protocols/MSSerializer.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

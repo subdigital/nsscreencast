@@ -1,0 +1,1 @@
+../../WindowsAzureMobileServices/sdk/iOS/src/MSLoginSerializer.h

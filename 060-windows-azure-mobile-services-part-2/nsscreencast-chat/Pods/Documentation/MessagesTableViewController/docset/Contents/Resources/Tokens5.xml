@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MessagesViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MessagesViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/setTableView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MessagesViewController/tableView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/setInputView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) MessageInputView *inputView</Declaration>
+			
+			
+			<Anchor>//api/name/inputView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MessagesViewController/inputView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) MessageInputView *inputView</Declaration>
+			
+			
+			<Anchor>//api/name/inputView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/setPreviousTextViewContentHeight:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) CGFloat previousTextViewContentHeight</Declaration>
+			
+			
+			<Anchor>//api/name/previousTextViewContentHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MessagesViewController/previousTextViewContentHeight</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) CGFloat previousTextViewContentHeight</Declaration>
+			
+			
+			<Anchor>//api/name/previousTextViewContentHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/sendPressed:withText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendPressed:(UIButton *)sender withText:(NSString *)text</Declaration>
+			
+			
+			<Anchor>//api/name/sendPressed:withText:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/sendPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendPressed:(UIButton *)sender</Declaration>
+			
+			
+			<Anchor>//api/name/sendPressed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/handleSwipe:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleSwipe:(UIGestureRecognizer *)guestureRecognizer</Declaration>
+			
+			
+			<Anchor>//api/name/handleSwipe:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/messageStyleForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>- (BubbleMessageStyle)messageStyleForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/messageStyleForRowAtIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/textForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)textForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/textForRowAtIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/finishSend</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)finishSend</Declaration>
+			
+			
+			<Anchor>//api/name/finishSend</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/setBackgroundColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setBackgroundColor:(UIColor *)color</Declaration>
+			
+			
+			<Anchor>//api/name/setBackgroundColor:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/scrollToBottomAnimated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)scrollToBottomAnimated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/scrollToBottomAnimated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/handleWillShowKeyboard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleWillShowKeyboard:(NSNotification *)notification</Declaration>
+			
+			
+			<Anchor>//api/name/handleWillShowKeyboard:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/handleWillHideKeyboard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleWillHideKeyboard:(NSNotification *)notification</Declaration>
+			
+			
+			<Anchor>//api/name/handleWillHideKeyboard:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessagesViewController/keyboardWillShowHide:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessagesViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)keyboardWillShowHide:(NSNotification *)notification</Declaration>
+			
+			
+			<Anchor>//api/name/keyboardWillShowHide:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

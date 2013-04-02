@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MessageInputView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MessageInputView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessageInputView.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessageInputView/setTextView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessageInputView.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) UITextView *textView</Declaration>
+			
+			
+			<Anchor>//api/name/textView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MessageInputView/textView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessageInputView.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) UITextView *textView</Declaration>
+			
+			
+			<Anchor>//api/name/textView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MessageInputView/setSendButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessageInputView.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) UIButton *sendButton</Declaration>
+			
+			
+			<Anchor>//api/name/sendButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MessageInputView/sendButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessageInputView.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) UIButton *sendButton</Declaration>
+			
+			
+			<Anchor>//api/name/sendButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MessageInputView/textViewLineHeight</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessageInputView.h</DeclaredIn>			
+			
+			<Declaration>+ (CGFloat)textViewLineHeight</Declaration>
+			
+			
+			<Anchor>//api/name/textViewLineHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MessageInputView/maxLines</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessageInputView.h</DeclaredIn>			
+			
+			<Declaration>+ (CGFloat)maxLines</Declaration>
+			
+			
+			<Anchor>//api/name/maxLines</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MessageInputView/maxHeight</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessageInputView.h</DeclaredIn>			
+			
+			<Declaration>+ (CGFloat)maxHeight</Declaration>
+			
+			
+			<Anchor>//api/name/maxHeight</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

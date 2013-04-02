@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/BubbleView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/BubbleView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleView.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BubbleView/setStyle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleView.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BubbleMessageStyle style</Declaration>
+			
+			
+			<Anchor>//api/name/style</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BubbleView/style</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleView.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BubbleMessageStyle style</Declaration>
+			
+			
+			<Anchor>//api/name/style</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BubbleView/setText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleView.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, nonatomic) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BubbleView/text</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleView.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, nonatomic) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BubbleView/font</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleView.h</DeclaredIn>			
+			
+			<Declaration>+ (UIFont *)font</Declaration>
+			
+			
+			<Anchor>//api/name/font</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BubbleView/textSizeForText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleView.h</DeclaredIn>			
+			
+			<Declaration>+ (CGSize)textSizeForText:(NSString *)txt</Declaration>
+			
+			
+			<Anchor>//api/name/textSizeForText:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BubbleView/bubbleSizeForText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleView.h</DeclaredIn>			
+			
+			<Declaration>+ (CGSize)bubbleSizeForText:(NSString *)txt</Declaration>
+			
+			
+			<Anchor>//api/name/bubbleSizeForText:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BubbleView/cellHeightForText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleView.h</DeclaredIn>			
+			
+			<Declaration>+ (CGFloat)cellHeightForText:(NSString *)txt</Declaration>
+			
+			
+			<Anchor>//api/name/cellHeightForText:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BubbleView/maxCharactersPerLine</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BubbleView.h</DeclaredIn>			
+			
+			<Declaration>+ (int)maxCharactersPerLine</Declaration>
+			
+			
+			<Anchor>//api/name/maxCharactersPerLine</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

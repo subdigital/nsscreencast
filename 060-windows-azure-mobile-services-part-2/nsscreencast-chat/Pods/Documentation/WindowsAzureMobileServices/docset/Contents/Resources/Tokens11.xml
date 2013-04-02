@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MSTable.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MSTable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/setName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSTable/name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/setClient:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSTable/client</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) MSClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/initWithName:andClient:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithName:(NSString *)tableName andClient:(MSClient *)client</Declaration>
+			
+			
+			<Anchor>//api/name/initWithName:andClient:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/insert:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)insert:(NSDictionary *)item completion:(MSItemBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/insert:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/insert:parameters:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)insert:(NSDictionary *)item parameters:(NSDictionary *)parameters completion:(MSItemBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/insert:parameters:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/update:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)update:(NSDictionary *)item completion:(MSItemBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/update:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/update:parameters:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)update:(NSDictionary *)item parameters:(NSDictionary *)parameters completion:(MSItemBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/update:parameters:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/delete:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)delete:(NSDictionary *)item completion:(MSDeleteBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/delete:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/delete:parameters:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)delete:(NSDictionary *)item parameters:(NSDictionary *)parameters completion:(MSDeleteBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/delete:parameters:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/deleteWithId:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteWithId:(NSNumber *)itemId completion:(MSDeleteBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/deleteWithId:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/deleteWithId:parameters:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteWithId:(NSNumber *)itemId parameters:(NSDictionary *)parameters completion:(MSDeleteBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/deleteWithId:parameters:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/readWithId:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)readWithId:(NSNumber *)itemId completion:(MSItemBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/readWithId:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/readWithId:parameters:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)readWithId:(NSNumber *)itemId parameters:(NSDictionary *)parameters completion:(MSItemBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/readWithId:parameters:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/readWithQueryString:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)readWithQueryString:(NSString *)queryString completion:(MSReadQueryBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/readWithQueryString:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/readWithCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)readWithCompletion:(MSReadQueryBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/readWithCompletion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/readWhere:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)readWhere:(NSPredicate *)predicate completion:(MSReadQueryBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/readWhere:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/query</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (MSQuery *)query</Declaration>
+			
+			
+			<Anchor>//api/name/query</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTable/queryWhere:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTable.h</DeclaredIn>			
+			
+			<Declaration>- (MSQuery *)queryWhere:(NSPredicate *)predicate</Declaration>
+			
+			
+			<Anchor>//api/name/queryWhere:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

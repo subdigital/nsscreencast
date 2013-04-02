@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MSTableReadQueryRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MSTableReadQueryRequest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MSTableReadQueryRequest/setQueryString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *queryString</Declaration>
+			
+			
+			<Anchor>//api/name/queryString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MSTableReadQueryRequest/queryString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MSTableRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *queryString</Declaration>
+			
+			
+			<Anchor>//api/name/queryString</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

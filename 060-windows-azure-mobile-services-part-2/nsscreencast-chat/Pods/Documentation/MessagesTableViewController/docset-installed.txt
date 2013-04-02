@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/ben/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.MessagesTableViewController-0.0.1.docset
+Time: 2013-03-10 16:44:55 +0000

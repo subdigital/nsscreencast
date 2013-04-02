@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FC242226CE14A97BF7E1307 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DA827FA343428095F86FA5 /* libPods.a */; };
+		B541F49D16FE4D3800D5835F /* NSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B541F49C16FE4D3800D5835F /* NSCMessage.m */; };
+		B57639D116ECDCF6005A17F6 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57639D016ECDCF6005A17F6 /* Storyboard.storyboard */; };
+		B57639D616ECDF72005A17F6 /* NSCSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57639D516ECDF72005A17F6 /* NSCSignInViewController.m */; };
+		B57639D916ECF07E005A17F6 /* NSCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57639D816ECF07E005A17F6 /* NSCChatViewController.m */; };
+		B57A176416EBDE0100CDC3AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57A176316EBDE0100CDC3AA /* UIKit.framework */; };
+		B57A176616EBDE0100CDC3AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57A176516EBDE0100CDC3AA /* Foundation.framework */; };
+		B57A176816EBDE0100CDC3AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57A176716EBDE0100CDC3AA /* CoreGraphics.framework */; };
+		B57A176E16EBDE0100CDC3AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B57A176C16EBDE0100CDC3AA /* InfoPlist.strings */; };
+		B57A177016EBDE0100CDC3AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57A176F16EBDE0100CDC3AA /* main.m */; };
+		B57A177416EBDE0100CDC3AA /* NSCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B57A177316EBDE0100CDC3AA /* NSCAppDelegate.m */; };
+		B57A177616EBDE0100CDC3AA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B57A177516EBDE0100CDC3AA /* Default.png */; };
+		B57A177816EBDE0100CDC3AA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B57A177716EBDE0100CDC3AA /* Default@2x.png */; };
+		B57A177A16EBDE0100CDC3AA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B57A177916EBDE0100CDC3AA /* Default-568h@2x.png */; };
+		B57A178216EBE3B400CDC3AA /* NSCLobbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57A178116EBE3B400CDC3AA /* NSCLobbyViewController.m */; };
+		B585B86A16EC5AD9008BEEB0 /* NSCRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = B585B86916EC5AD9008BEEB0 /* NSCRoom.m */; };
+		B5882D0516FBFD7B003EB927 /* NSCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B5882D0416FBFD7B003EB927 /* NSCUser.m */; };
+		B5B81EE916FE2DBD005332D1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B81EE416FE2DBD005332D1 /* Icon.png */; };
+		B5B81EEA16FE2DBD005332D1 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B81EE516FE2DBD005332D1 /* Icon-72.png */; };
+		B5B81EEB16FE2DBD005332D1 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B81EE616FE2DBD005332D1 /* Icon@2x.png */; };
+		B5B81EEC16FE2DBD005332D1 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = B5B81EE716FE2DBD005332D1 /* iTunesArtwork */; };
+		B5B81EED16FE2DBD005332D1 /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B81EE816FE2DBD005332D1 /* Icon-144.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6DCD0119ED01438EA33CA7B8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		90DA827FA343428095F86FA5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B541F49B16FE4D3800D5835F /* NSCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCMessage.h; sourceTree = "<group>"; };
+		B541F49C16FE4D3800D5835F /* NSCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCMessage.m; sourceTree = "<group>"; };
+		B57639D016ECDCF6005A17F6 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		B57639D416ECDF72005A17F6 /* NSCSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCSignInViewController.h; sourceTree = "<group>"; };
+		B57639D516ECDF72005A17F6 /* NSCSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCSignInViewController.m; sourceTree = "<group>"; };
+		B57639D716ECF07E005A17F6 /* NSCChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCChatViewController.h; sourceTree = "<group>"; };
+		B57639D816ECF07E005A17F6 /* NSCChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCChatViewController.m; sourceTree = "<group>"; };
+		B57A176016EBDE0100CDC3AA /* NSScreencastChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSScreencastChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57A176316EBDE0100CDC3AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B57A176516EBDE0100CDC3AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B57A176716EBDE0100CDC3AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B57A176B16EBDE0100CDC3AA /* NSScreencastChat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSScreencastChat-Info.plist"; sourceTree = "<group>"; };
+		B57A176D16EBDE0100CDC3AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B57A176F16EBDE0100CDC3AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B57A177116EBDE0100CDC3AA /* NSScreencastChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSScreencastChat-Prefix.pch"; sourceTree = "<group>"; };
+		B57A177216EBDE0100CDC3AA /* NSCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSCAppDelegate.h; sourceTree = "<group>"; };
+		B57A177316EBDE0100CDC3AA /* NSCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSCAppDelegate.m; sourceTree = "<group>"; };
+		B57A177516EBDE0100CDC3AA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B57A177716EBDE0100CDC3AA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B57A177916EBDE0100CDC3AA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B57A178016EBE3B400CDC3AA /* NSCLobbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCLobbyViewController.h; sourceTree = "<group>"; };
+		B57A178116EBE3B400CDC3AA /* NSCLobbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCLobbyViewController.m; sourceTree = "<group>"; };
+		B585B86816EC5AD9008BEEB0 /* NSCRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCRoom.h; sourceTree = "<group>"; };
+		B585B86916EC5AD9008BEEB0 /* NSCRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCRoom.m; sourceTree = "<group>"; };
+		B5882D0316FBFD7B003EB927 /* NSCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCUser.h; sourceTree = "<group>"; };
+		B5882D0416FBFD7B003EB927 /* NSCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCUser.m; sourceTree = "<group>"; };
+		B5B81EE416FE2DBD005332D1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B5B81EE516FE2DBD005332D1 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		B5B81EE616FE2DBD005332D1 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		B5B81EE716FE2DBD005332D1 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		B5B81EE816FE2DBD005332D1 /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B57A175D16EBDE0100CDC3AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57A176416EBDE0100CDC3AA /* UIKit.framework in Frameworks */,
+				B57A176616EBDE0100CDC3AA /* Foundation.framework in Frameworks */,
+				B57A176816EBDE0100CDC3AA /* CoreGraphics.framework in Frameworks */,
+				8FC242226CE14A97BF7E1307 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B57639D216ECDCFC005A17F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B585B86816EC5AD9008BEEB0 /* NSCRoom.h */,
+				B585B86916EC5AD9008BEEB0 /* NSCRoom.m */,
+				B5882D0316FBFD7B003EB927 /* NSCUser.h */,
+				B5882D0416FBFD7B003EB927 /* NSCUser.m */,
+				B541F49B16FE4D3800D5835F /* NSCMessage.h */,
+				B541F49C16FE4D3800D5835F /* NSCMessage.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B57639D316ECDD03005A17F6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B57A178016EBE3B400CDC3AA /* NSCLobbyViewController.h */,
+				B57A178116EBE3B400CDC3AA /* NSCLobbyViewController.m */,
+				B57639D416ECDF72005A17F6 /* NSCSignInViewController.h */,
+				B57639D516ECDF72005A17F6 /* NSCSignInViewController.m */,
+				B57639D716ECF07E005A17F6 /* NSCChatViewController.h */,
+				B57639D816ECF07E005A17F6 /* NSCChatViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B57A175716EBDE0100CDC3AA = {
+			isa = PBXGroup;
+			children = (
+				B57A176916EBDE0100CDC3AA /* NSScreencastChat */,
+				B5B81EE316FE2D98005332D1 /* Resources */,
+				B57A176216EBDE0100CDC3AA /* Frameworks */,
+				B57A176116EBDE0100CDC3AA /* Products */,
+				6DCD0119ED01438EA33CA7B8 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B57A176116EBDE0100CDC3AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B57A176016EBDE0100CDC3AA /* NSScreencastChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B57A176216EBDE0100CDC3AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B57A176316EBDE0100CDC3AA /* UIKit.framework */,
+				B57A176516EBDE0100CDC3AA /* Foundation.framework */,
+				B57A176716EBDE0100CDC3AA /* CoreGraphics.framework */,
+				90DA827FA343428095F86FA5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B57A176916EBDE0100CDC3AA /* NSScreencastChat */ = {
+			isa = PBXGroup;
+			children = (
+				B57639D316ECDD03005A17F6 /* View Controllers */,
+				B57639D216ECDCFC005A17F6 /* Models */,
+				B57A177216EBDE0100CDC3AA /* NSCAppDelegate.h */,
+				B57A177316EBDE0100CDC3AA /* NSCAppDelegate.m */,
+				B57639D016ECDCF6005A17F6 /* Storyboard.storyboard */,
+				B57A176A16EBDE0100CDC3AA /* Supporting Files */,
+			);
+			path = NSScreencastChat;
+			sourceTree = "<group>";
+		};
+		B57A176A16EBDE0100CDC3AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B57A176B16EBDE0100CDC3AA /* NSScreencastChat-Info.plist */,
+				B57A176C16EBDE0100CDC3AA /* InfoPlist.strings */,
+				B57A176F16EBDE0100CDC3AA /* main.m */,
+				B57A177116EBDE0100CDC3AA /* NSScreencastChat-Prefix.pch */,
+				B57A177516EBDE0100CDC3AA /* Default.png */,
+				B57A177716EBDE0100CDC3AA /* Default@2x.png */,
+				B57A177916EBDE0100CDC3AA /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5B81EE316FE2D98005332D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5B81EE416FE2DBD005332D1 /* Icon.png */,
+				B5B81EE516FE2DBD005332D1 /* Icon-72.png */,
+				B5B81EE616FE2DBD005332D1 /* Icon@2x.png */,
+				B5B81EE716FE2DBD005332D1 /* iTunesArtwork */,
+				B5B81EE816FE2DBD005332D1 /* Icon-144.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B57A175F16EBDE0100CDC3AA /* NSScreencastChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57A177D16EBDE0100CDC3AA /* Build configuration list for PBXNativeTarget "NSScreencastChat" */;
+			buildPhases = (
+				B57A175C16EBDE0100CDC3AA /* Sources */,
+				B57A175D16EBDE0100CDC3AA /* Frameworks */,
+				B57A175E16EBDE0100CDC3AA /* Resources */,
+				F5D91F86212946FD8D2A01CA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSScreencastChat;
+			productName = NSScreencastChat;
+			productReference = B57A176016EBDE0100CDC3AA /* NSScreencastChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B57A175816EBDE0100CDC3AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NSC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = NSScreencast;
+			};
+			buildConfigurationList = B57A175B16EBDE0100CDC3AA /* Build configuration list for PBXProject "NSScreencastChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B57A175716EBDE0100CDC3AA;
+			productRefGroup = B57A176116EBDE0100CDC3AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B57A175F16EBDE0100CDC3AA /* NSScreencastChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B57A175E16EBDE0100CDC3AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57A176E16EBDE0100CDC3AA /* InfoPlist.strings in Resources */,
+				B57A177616EBDE0100CDC3AA /* Default.png in Resources */,
+				B57A177816EBDE0100CDC3AA /* Default@2x.png in Resources */,
+				B57A177A16EBDE0100CDC3AA /* Default-568h@2x.png in Resources */,
+				B57639D116ECDCF6005A17F6 /* Storyboard.storyboard in Resources */,
+				B5B81EE916FE2DBD005332D1 /* Icon.png in Resources */,
+				B5B81EEA16FE2DBD005332D1 /* Icon-72.png in Resources */,
+				B5B81EEB16FE2DBD005332D1 /* Icon@2x.png in Resources */,
+				B5B81EEC16FE2DBD005332D1 /* iTunesArtwork in Resources */,
+				B5B81EED16FE2DBD005332D1 /* Icon-144.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F5D91F86212946FD8D2A01CA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B57A175C16EBDE0100CDC3AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57A177016EBDE0100CDC3AA /* main.m in Sources */,
+				B57A177416EBDE0100CDC3AA /* NSCAppDelegate.m in Sources */,
+				B57A178216EBE3B400CDC3AA /* NSCLobbyViewController.m in Sources */,
+				B585B86A16EC5AD9008BEEB0 /* NSCRoom.m in Sources */,
+				B57639D616ECDF72005A17F6 /* NSCSignInViewController.m in Sources */,
+				B57639D916ECF07E005A17F6 /* NSCChatViewController.m in Sources */,
+				B5882D0516FBFD7B003EB927 /* NSCUser.m in Sources */,
+				B541F49D16FE4D3800D5835F /* NSCMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B57A176C16EBDE0100CDC3AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57A176D16EBDE0100CDC3AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B57A177B16EBDE0100CDC3AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B57A177C16EBDE0100CDC3AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B57A177E16EBDE0100CDC3AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DCD0119ED01438EA33CA7B8 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSScreencastChat/NSScreencastChat-Prefix.pch";
+				INFOPLIST_FILE = "NSScreencastChat/NSScreencastChat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B57A177F16EBDE0100CDC3AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DCD0119ED01438EA33CA7B8 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSScreencastChat/NSScreencastChat-Prefix.pch";
+				INFOPLIST_FILE = "NSScreencastChat/NSScreencastChat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B57A175B16EBDE0100CDC3AA /* Build configuration list for PBXProject "NSScreencastChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57A177B16EBDE0100CDC3AA /* Debug */,
+				B57A177C16EBDE0100CDC3AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B57A177D16EBDE0100CDC3AA /* Build configuration list for PBXNativeTarget "NSScreencastChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57A177E16EBDE0100CDC3AA /* Debug */,
+				B57A177F16EBDE0100CDC3AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B57A175816EBDE0100CDC3AA /* Project object */;
+}

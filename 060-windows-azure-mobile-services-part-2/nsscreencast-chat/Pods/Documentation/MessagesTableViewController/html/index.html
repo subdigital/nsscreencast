@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>MessagesTableViewController 0.0.1 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">MessagesTableViewController 0.0.1 </a></h1>
+				<a id="developerHome" href="index.html">Jesse Squires</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MessagesTableViewController 0.0.1 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MessagesTableViewController 0.0.1 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1>MessagesTableViewController</h1>
+
+<p>A messages UI for iPhone and iPad.</p>
+
+<p>!<a href="https://raw.github.com/jessesquires/MessagesTableViewController/master/Screenshots/iphone-screenshot1.png">Messages Tableview iPhone screenshot 1</a> &nbsp;&nbsp;&nbsp;&nbsp; !<a href="https://raw.github.com/jessesquires/MessagesTableViewController/master/Screenshots/iphone-screenshot2.png">Messages Tableview iPhone screenshot 2</a></p>
+
+<p>This messages tableview controller is very similar to the iOS Messages app. <strong>Note, this is only a messaging UI, not a messaging app.</strong> This is intended to be used in an existing app where you have (or are developing) a messaging system and need a user interface for it.</p>
+
+<h2>About</h2>
+
+<p>This is <em>heavily</em> based on work by <a href="https://github.com/soffes">Sam Soffes</a>&lsquo; <a href="https://github.com/soffes/ssmessagesviewcontroller">SSMessagingViewController</a>. I took Soffes&rsquo; code base and developed this to use in <a href="http://www.hemoglobe.com">Hemoglobe</a> for private messages between users. I didn&rsquo;t fork the original repo simply because my refactoring was too extensive.</p>
+
+<p>Notable changes from <a href="https://github.com/soffes/ssmessagesviewcontroller">SSMessagingViewController</a>:</p>
+
+<ul>
+<li>Brought up-to-date for iOS 6.0 and ARC</li>
+<li>Allows arbitrary message sizes (and message bubble sizes)</li>
+<li>Universal for iPhone and iPad</li>
+<li>Dynamically resizes input text view as you type</li>
+<li>Improved hiding/showing keyboard with <code>NSNotification</code></li>
+<li>Automatically enables/disables send button if text view is empty or not</li>
+<li>Refactoring, refinements, and fixes</li>
+</ul>
+
+
+<h2>Installation</h2>
+
+<ul>
+<li>Drag the <code>MessagesTableViewController/</code> folder to your project.</li>
+<li>Add the <code>AudioToolbox.framework</code> to your project, if you want to use the sound effects</li>
+<li>Subclass <a href="Classes/MessagesViewController.html"><code>MessagesViewController</code></a></li>
+<li>Override the following methods:
+
+<ul>
+<li><code>- (BubbleMessageStyle)messageStyleForRowAtIndexPath:(NSIndexPath *)indexPath</code>
+
+<ul>
+<li>The style of the bubble for this row</li>
+<li>Style options are: <code>BubbleMessageStyleOutgoing</code> or <code>BubbleMessageStyleIncoming</code></li>
+</ul>
+</li>
+<li><code>- (NSString *)textForRowAtIndexPath:(NSIndexPath *)indexPath</code>
+
+<ul>
+<li>The text to be displayed for this row</li>
+</ul>
+</li>
+<li><code>- (void)sendPressed:(UIButton *)sender withText:(NSString *)text</code>
+
+<ul>
+<li>Hook into your own backend here</li>
+<li>Call <code>[self finishSend]</code> at the end of this method to animate and reset the text input view</li>
+<li>Optionally play sound effects with <a href="Classes/MessageSoundEffect.html#//api/name/playMessageSentSound"><code>[MessageSoundEffect playMessageSentSound]</code></a> or <a href="Classes/MessageSoundEffect.html#//api/name/playMessageReceivedSound"><code>[MessageSoundEffect playMessageReceivedSound]</code></a></li>
+</ul>
+</li>
+<li><code>- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section</code>
+
+<ul>
+<li>The API table view data source method that you should be familiar with</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Present view programmatically, <strong>does not work with Storyboards</strong></li>
+<li>See the included Demo project <code>MessagesDemo.xcodeproj</code> for example</li>
+</ul>
+
+
+<h2>ToDo</h2>
+
+<ul>
+<li>Landscape mode</li>
+<li>Swipe down to hide keyboard (like iOS Messages)</li>
+<li>Allow text input view to resize dynamically (i.e., stretch up to top navigation bar like iOS Messages)</li>
+<li>Display &ldquo;To:&rdquo; search field for new messages</li>
+<li>&ldquo;Send&rdquo; images or video</li>
+<li>Storyboards support</li>
+</ul>
+
+
+<h2>Related Projects</h2>
+
+<p><a href="https://github.com/soffes/ssmessagesviewcontroller">SSMessagingViewController</a></p>
+
+<p><a href="https://github.com/acani/AcaniChat">AcaniChat</a></p>
+
+<h2>License</h2>
+
+<p>You are free to use this as you please. No attribution necessary.</p>
+
+<p><strong>If you do use this, I would love to here about it!</strong></p>
+
+<p>MIT License
+Copyright &copy; 2013 Jesse Squires</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &ldquo;Software&rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED &ldquo;AS IS&rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/BubbleMessageCell.html">BubbleMessageCell</a></li>
+							
+							<li><a href="Classes/BubbleView.html">BubbleView</a></li>
+							
+							<li><a href="Classes/MessageInputView.html">MessageInputView</a></li>
+							
+							<li><a href="Classes/MessageSoundEffect.html">MessageSoundEffect</a></li>
+							
+							<li><a href="Classes/MessagesViewController.html">MessagesViewController</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/NSString+MessagesView.html">NSString(MessagesView)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Jesse Squires. All rights reserved. (Last updated: 2013-03-10)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

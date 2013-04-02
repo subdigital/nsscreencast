@@ -1,0 +1,5 @@
+platform :ios, '6.0'
+xcodeproj 'NSScreencastChat/NSScreencastChat.xcodeproj'
+
+pod 'WindowsAzureMobileServices', :podspec => "WindowsAzureMobileServices.podspec"
+pod 'MessagesTableViewController'

@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>WindowsAzureMobileServices 0.0.2 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">WindowsAzureMobileServices 0.0.2 </a></h1>
+				<a id="developerHome" href="index.html">Windows Azure Team</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WindowsAzureMobileServices 0.0.2 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WindowsAzureMobileServices 0.0.2 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1>Windows Azure Mobile Services</h1>
+
+<p>With Windows Azure Mobile Services you can add a scalable backend to your connected client applications in minutes. To learn more, visit our <a href="http://www.windowsazure.com/en-us/develop/mobile">Developer Center</a>.</p>
+
+<h2>Getting Started</h2>
+
+<p>If you are new to Mobile Services, you can get started by following our tutorials for connecting your Mobile Services cloud backend to <a href="https://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started/">Windows Store apps</a>, <a href="https://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started-ios/">iOS apps</a>, and <a href="https://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started-android/">Android apps</a>.</p>
+
+<h2>Download Source Code</h2>
+
+<p>To get the source code of our SDKs and samples via <strong>git</strong> just type:</p>
+
+<pre><code>git clone https://github.com/WindowsAzure/azure-mobile-services.git
+cd ./azure-mobile-services/
+</code></pre>
+
+<h2>Windows 8 and Windows Phone 8 Client SDK</h2>
+
+<p>Our Windows SDK makes it incredibly easy to use Mobile Services from your Windows Store and Windows Phone 8 applications. You can <a href="http://go.microsoft.com/fwlink/?LinkId=257545&amp;clcid=0x409">download the SDK</a> directly or you can download the source code using the instructions above. The Windows Client SDK can be found under <code>/azure-mobile-services/sdk/windows</code> and the Windows Phone 8 Client SDK is under <code>/azure-mobile-services/sdk/windowsphone</code>.</p>
+
+<h2>iOS Client SDK</h2>
+
+<p>Note: This iOS client is released as a preview. It is currently under development.</p>
+
+<p>Add a cloud backend to your iOS application in minutes with our iOS client SDK. You can <a href="https://go.microsoft.com/fwLink/?LinkID=266533&amp;clcid=0x409">download the iOS SDK</a> directly or you can download the source code using the instructions above and then you will find the SDK under <code>azure-mobile-services/sdk/iOS</code>. As always we’re excited to get your feedback on this early version of the library on <a href="https://github.com/WindowsAzure/azure-mobile-services/issues">our issues page</a>, and welcome your <a href="http://windowsazure.github.com/guidelines.html">contributions</a>. </p>
+
+<h3>Prerequisities</h3>
+
+<p>The SDK requires Windows 8 RTM and Visual Studio 2012 RTM.</p>
+
+<h3>Running the Tests</h3>
+
+<p>The Windows SDK has a suite of unit tests but the process for running these tests might be unfamiliar.</p>
+
+<ol>
+<li>Open the <code>/azure-mobile-services/sdk/windows/win8sdk.sln</code> solution file in Visual Studio 2012.</li>
+<li>Right click on the <code>Microsoft.Azure.Zumo.Windows.CSharp.Test</code> project in the solution explorer and select <code>Set as StartUp Project</code>.</li>
+<li>Press F5</li>
+<li>A Windows Store application will appear with a prompt for a Runtime Uri and Tags. You can safely ignore this prompt and just click the Start button.</li>
+<li>The test suite will run and display the results.</li>
+</ol>
+
+
+<h3>Building and Referencing the SDK</h3>
+
+<p>When you build the solution the output is written to the  <code>/azure-mobile-services/sdk/windows/bin</code> folder. To reference the SDK from a C# Windows Store application, use the dll located at
+ <code>/azure-mobile-services/sdk/windows/bin/{Flavor}/Windows 8/Managed/Microsoft.WindowsAzure.MobileServices.Managed.dll</code> (where {Flavor} is Debug or Release).</p>
+
+<h2>Android SDK</h2>
+
+<h3>Prerequisities</h3>
+
+<p>The SDK requires Eclipse and the latest <a href="http://developer.android.com/tools/sdk/eclipse-adt.html">Android Development Tools</a>.</p>
+
+<h3>Building and Referencing the SDK</h3>
+
+<ol>
+<li>In the folder <code>\azure-mobile-services\sdk\android\src\sdk\libs</code>, run either the <code>getLibs.ps1</code> script if you are running on Windows or the <code>getLibs.sh</code> script if you are running on Linux to download the required dependencies.</li>
+<li>Import the <code>\azure-mobile-services\sdk\android\src\sdk</code> project into your workspace</li>
+<li>Once Eclipse is done compiling, the resulting .jar file will be located in <code>\azure-mobile-services\sdk\android\src\sdk\bin</code>.</li>
+<li>To optionally build JavaDocs, right-click the <code>javadoc.xml</code> file and select Run As > Ant Build.</li>
+</ol>
+
+
+<h3>Running the Tests</h3>
+
+<p>The SDK has a suite of unit tests that you can easily run.</p>
+
+<ol>
+<li>Import the <code>\azure-mobile-services\sdk\android\test\sdk.testapp.tests</code> project in your Eclipse workspace</li>
+<li>Right-click the project name and select Run As > Android JUnit Test</li>
+</ol>
+
+
+<p>It also contains an end-to-end test application.</p>
+
+<ol>
+<li>Use the <a href="http://manage.windowsazure.com">Azure portal</a> to create a new mobile service. Note down the service name and application key.</li>
+<li>If you want to run the authentication tests, configure all four authentication providers on the &ldquo;Identity&rdquo; tab</li>
+<li><a href="http://nodejs.org/">Install node.js</a> and then run the command <code>npm install azure-cli -g</code>. This installs the Azure command-line tool.</li>
+<li>Use the <code>azure account</code> command to configure the tool to work with your Azure subscription</li>
+<li>Run the <code>SetupTables.sh</code> script in the <code>\azure-mobile-services\test\Android\SetupScripts</code> folder, which uses the tool to automatically create the tables needed for the test application to work.</li>
+<li>In the folder <code>\azure-mobile-services\test\Android\ZumoE2ETestApp\libs</code>, run either the <code>getLibs.ps1</code> script if you are running on Windows or the <code>getLibs.sh</code> script if you are running on Linux to download the required dependencies.</li>
+<li>Import the <code>\azure-mobile-services\test\Android\ZumoE2ETestApp</code> project in your Eclipse workspace</li>
+<li>Once the app is running, go to Settings type your mobile service URL and application key</li>
+<li>If you also want to test push support, get a Google Cloud Messaging API key from the <a href="https://code.google.com/apis/console/">Google APIs Console</a> and paste the key in the text box labeled GCM Sender Id</li>
+<li>Check the tests you want to run and then select &ldquo;Run selected tests&rdquo;</li>
+</ol>
+
+
+<h2>Sample Application: Doto</h2>
+
+<p>Doto is a simple, social todo list application that demonstrates the features of Windows Azure Mobile Services. You can find doto under <code>/azure-mobile-services/samples/doto</code>.</p>
+
+<h2>Need Help?</h2>
+
+<p>Be sure to check out the Mobile Services <a href="http://social.msdn.microsoft.com/Forums/en-US/azuremobile/">Developer Forum</a> if you are having trouble. The Mobile Services product team actively monitors the forum and will be more than happy to assist you.</p>
+
+<h2>Contribute Code or Provide Feedback</h2>
+
+<p>If you would like to become an active contributor to this project please follow the instructions provided in <a href="http://windowsazure.github.com/guidelines.html">Windows Azure Projects Contribution Guidelines</a>.</p>
+
+<p>If you encounter any bugs with the library please file an issue in the <a href="https://github.com/WindowsAzure/azure-mobile-services/issues">Issues</a> section of the project.</p>
+
+<h2>Learn More</h2>
+
+<p><a href="http://www.windowsazure.com/en-us/develop/mobile">Windows Azure Mobile Services Developer Center</a></p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/MSClient.html">MSClient</a></li>
+							
+							<li><a href="Classes/MSClientConnection.html">MSClientConnection</a></li>
+							
+							<li><a href="Classes/MSJSONSerializer.html">MSJSONSerializer</a></li>
+							
+							<li><a href="Classes/MSLogin.html">MSLogin</a></li>
+							
+							<li><a href="Classes/MSLoginController.html">MSLoginController</a></li>
+							
+							<li><a href="Classes/MSLoginSerializer.html">MSLoginSerializer</a></li>
+							
+							<li><a href="Classes/MSLoginView.html">MSLoginView</a></li>
+							
+							<li><a href="Classes/MSNaiveISODateFormatter.html">MSNaiveISODateFormatter</a></li>
+							
+							<li><a href="Classes/MSPredicateTranslator.html">MSPredicateTranslator</a></li>
+							
+							<li><a href="Classes/MSQuery.html">MSQuery</a></li>
+							
+							<li><a href="Classes/MSTable.html">MSTable</a></li>
+							
+							<li><a href="Classes/MSTableConnection.html">MSTableConnection</a></li>
+							
+							<li><a href="Classes/MSTableDeleteRequest.html">MSTableDeleteRequest</a></li>
+							
+							<li><a href="Classes/MSTableItemRequest.html">MSTableItemRequest</a></li>
+							
+							<li><a href="Classes/MSTableReadQueryRequest.html">MSTableReadQueryRequest</a></li>
+							
+							<li><a href="Classes/MSTableRequest.html">MSTableRequest</a></li>
+							
+							<li><a href="Classes/MSTableURLBuilder.html">MSTableURLBuilder</a></li>
+							
+							<li><a href="Classes/MSUser.html">MSUser</a></li>
+							
+							<li><a href="Classes/MSUserAgentBuilder.html">MSUserAgentBuilder</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						<h2 class="index-title">Protocol References</h2>
+						<ul>
+							
+							<li><a href="Protocols/MSFilter.html">MSFilter</a></li>
+							
+							<li><a href="Protocols/MSSerializer.html">MSSerializer</a></li>
+							
+						</ul>
+						
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Windows Azure Team. All rights reserved. (Last updated: 2013-03-24)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MessageSoundEffect.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MessageSoundEffect</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessageSoundEffect.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MessageSoundEffect/playMessageReceivedSound</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessageSoundEffect.h</DeclaredIn>			
+			
+			<Declaration>+ (void)playMessageReceivedSound</Declaration>
+			
+			
+			<Anchor>//api/name/playMessageReceivedSound</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MessageSoundEffect/playMessageSentSound</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MessageSoundEffect.h</DeclaredIn>			
+			
+			<Declaration>+ (void)playMessageSentSound</Declaration>
+			
+			
+			<Anchor>//api/name/playMessageSentSound</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
