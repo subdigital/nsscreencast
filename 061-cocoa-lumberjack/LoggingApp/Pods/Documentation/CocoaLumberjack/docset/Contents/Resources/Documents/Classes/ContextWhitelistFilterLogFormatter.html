@@ -1,0 +1,395 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ContextWhitelistFilterLogFormatter Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CocoaLumberjack HEAD based on 1.6 </a></h1>
+				<a id="developerHome" href="../index.html">Robbie Hanson</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ContextWhitelistFilterLogFormatter Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addToWhitelist:">&nbsp;&nbsp;&nbsp;&nbsp;- addToWhitelist:</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/isOnWhitelist:">&nbsp;&nbsp;&nbsp;&nbsp;- isOnWhitelist:</option>
+	
+	<option value="//api/name/removeFromWhitelist:">&nbsp;&nbsp;&nbsp;&nbsp;- removeFromWhitelist:</option>
+	
+	<option value="//api/name/whitelist">&nbsp;&nbsp;&nbsp;&nbsp;- whitelist</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addToWhitelist:">addToWhitelist:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isOnWhitelist:">isOnWhitelist:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeFromWhitelist:">removeFromWhitelist:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/whitelist">whitelist</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ContextWhitelistFilterLogFormatter Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ContextWhitelistFilterLogFormatter Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ContextFilterLogFormatter.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Welcome to Cocoa Lumberjack!</p>
+
+<p>The project page has a wealth of documentation if you have any questions.
+<a href="https://github.com/robbiehanson/CocoaLumberjack">https://github.com/robbiehanson/CocoaLumberjack</a></p>
+
+<p>If you&rsquo;re new to the project you may wish to read the &ldquo;Getting Started&rdquo; page.
+<a href="https://github.com/robbiehanson/CocoaLumberjack/wiki/GettingStarted">https://github.com/robbiehanson/CocoaLumberjack/wiki/GettingStarted</a></p>
+
+<p>This class provides a log formatter that filters log statements from a logging context not on the whitelist.</p>
+
+<p>A log formatter can be added to any logger to format and/or filter its output.
+You can learn more about log formatters here:
+<a href="https://github.com/robbiehanson/CocoaLumberjack/wiki/CustomFormatters">https://github.com/robbiehanson/CocoaLumberjack/wiki/CustomFormatters</a></p>
+
+<p>You can learn more about logging context&rsquo;s here:
+<a href="https://github.com/robbiehanson/CocoaLumberjack/wiki/CustomContext">https://github.com/robbiehanson/CocoaLumberjack/wiki/CustomContext</a></p>
+
+<p>But here&rsquo;s a quick overview / refresher:</p>
+
+<p>Every log statement has a logging context.
+These come from the underlying logging macros defined in <a href="../Classes/DDLog.html">DDLog</a>.h.
+The default logging context is zero.
+You can define multiple logging context&rsquo;s for use in your application.
+For example, logically separate parts of your app each have a different logging context.
+Also 3rd party frameworks that make use of Lumberjack generally use their own dedicated logging context.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addToWhitelist:">&ndash;&nbsp;addToWhitelist:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeFromWhitelist:">&ndash;&nbsp;removeFromWhitelist:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/whitelist">&ndash;&nbsp;whitelist</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isOnWhitelist:">&ndash;&nbsp;isOnWhitelist:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addToWhitelist:" title="addToWhitelist:"></a>
+	<h3 class="subsubtitle method-title">addToWhitelist:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addToWhitelist:(int)<em>loggingContext</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isOnWhitelist:" title="isOnWhitelist:"></a>
+	<h3 class="subsubtitle method-title">isOnWhitelist:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isOnWhitelist:(int)<em>loggingContext</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeFromWhitelist:" title="removeFromWhitelist:"></a>
+	<h3 class="subsubtitle method-title">removeFromWhitelist:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeFromWhitelist:(int)<em>loggingContext</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/whitelist" title="whitelist"></a>
+	<h3 class="subsubtitle method-title">whitelist</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)whitelist</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Robbie Hanson. All rights reserved. (Last updated: 2013-04-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,735 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DDLogFileInfo Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CocoaLumberjack HEAD based on 1.6 </a></h1>
+				<a id="developerHome" href="../index.html">Robbie Hanson</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DDLogFileInfo Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/age">&nbsp;&nbsp;&nbsp;&nbsp;age</option>
+	
+	<option value="//api/name/creationDate">&nbsp;&nbsp;&nbsp;&nbsp;creationDate</option>
+	
+	<option value="//api/name/fileAttributes">&nbsp;&nbsp;&nbsp;&nbsp;fileAttributes</option>
+	
+	<option value="//api/name/fileName">&nbsp;&nbsp;&nbsp;&nbsp;fileName</option>
+	
+	<option value="//api/name/filePath">&nbsp;&nbsp;&nbsp;&nbsp;filePath</option>
+	
+	<option value="//api/name/fileSize">&nbsp;&nbsp;&nbsp;&nbsp;fileSize</option>
+	
+	<option value="//api/name/isArchived">&nbsp;&nbsp;&nbsp;&nbsp;isArchived</option>
+	
+	<option value="//api/name/modificationDate">&nbsp;&nbsp;&nbsp;&nbsp;modificationDate</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/logFileWithPath:">&nbsp;&nbsp;&nbsp;&nbsp;+ logFileWithPath:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addExtendedAttributeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- addExtendedAttributeWithName:</option>
+	
+	<option value="//api/name/addExtensionAttributeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- addExtensionAttributeWithName:</option>
+	
+	<option value="//api/name/hasExtendedAttributeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- hasExtendedAttributeWithName:</option>
+	
+	<option value="//api/name/hasExtensionAttributeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- hasExtensionAttributeWithName:</option>
+	
+	<option value="//api/name/initWithFilePath:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithFilePath:</option>
+	
+	<option value="//api/name/removeExtendedAttributeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- removeExtendedAttributeWithName:</option>
+	
+	<option value="//api/name/removeExtensionAttributeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- removeExtensionAttributeWithName:</option>
+	
+	<option value="//api/name/renameFile:">&nbsp;&nbsp;&nbsp;&nbsp;- renameFile:</option>
+	
+	<option value="//api/name/reset">&nbsp;&nbsp;&nbsp;&nbsp;- reset</option>
+	
+	<option value="//api/name/reverseCompareByCreationDate:">&nbsp;&nbsp;&nbsp;&nbsp;- reverseCompareByCreationDate:</option>
+	
+	<option value="//api/name/reverseCompareByModificationDate:">&nbsp;&nbsp;&nbsp;&nbsp;- reverseCompareByModificationDate:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/age">age</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/creationDate">creationDate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fileAttributes">fileAttributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fileName">fileName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/filePath">filePath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fileSize">fileSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isArchived">isArchived</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/modificationDate">modificationDate</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logFileWithPath:">logFileWithPath:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addExtendedAttributeWithName:">addExtendedAttributeWithName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addExtensionAttributeWithName:">addExtensionAttributeWithName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasExtendedAttributeWithName:">hasExtendedAttributeWithName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasExtensionAttributeWithName:">hasExtensionAttributeWithName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithFilePath:">initWithFilePath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeExtendedAttributeWithName:">removeExtendedAttributeWithName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeExtensionAttributeWithName:">removeExtensionAttributeWithName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/renameFile:">renameFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reset">reset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reverseCompareByCreationDate:">reverseCompareByCreationDate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reverseCompareByModificationDate:">reverseCompareByModificationDate:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DDLogFileInfo Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DDLogFileInfo Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DDFileLogger.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>DDLogFileInfo is a simple class that provides access to various file attributes.
+It provides good performance as it only fetches the information if requested,
+and it caches the information to prevent duplicate fetches.</p>
+
+<p>It was designed to provide quick snapshots of the current state of log files,
+and to help sort log files in an array.</p>
+
+<p>This class does not monitor the files, or update it&rsquo;s cached attribute values if the file changes on disk.
+This is not what the class was designed for.</p>
+
+<p>If you absolutely must get updated values,
+you can invoke the <a href="#//api/name/reset">reset</a> method which will clear the cache.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/filePath">&nbsp;&nbsp;filePath</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fileName">&nbsp;&nbsp;fileName</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fileAttributes">&nbsp;&nbsp;fileAttributes</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/creationDate">&nbsp;&nbsp;creationDate</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/modificationDate">&nbsp;&nbsp;modificationDate</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fileSize">&nbsp;&nbsp;fileSize</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/age">&nbsp;&nbsp;age</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isArchived">&nbsp;&nbsp;isArchived</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logFileWithPath:">+&nbsp;logFileWithPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithFilePath:">&ndash;&nbsp;initWithFilePath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reset">&ndash;&nbsp;reset</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/renameFile:">&ndash;&nbsp;renameFile:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasExtensionAttributeWithName:">&ndash;&nbsp;hasExtensionAttributeWithName:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addExtensionAttributeWithName:">&ndash;&nbsp;addExtensionAttributeWithName:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeExtensionAttributeWithName:">&ndash;&nbsp;removeExtensionAttributeWithName:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasExtendedAttributeWithName:">&ndash;&nbsp;hasExtendedAttributeWithName:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addExtendedAttributeWithName:">&ndash;&nbsp;addExtendedAttributeWithName:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeExtendedAttributeWithName:">&ndash;&nbsp;removeExtendedAttributeWithName:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reverseCompareByCreationDate:">&ndash;&nbsp;reverseCompareByCreationDate:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reverseCompareByModificationDate:">&ndash;&nbsp;reverseCompareByModificationDate:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/age" title="age"></a>
+	<h3 class="subsubtitle method-title">age</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSTimeInterval age</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/creationDate" title="creationDate"></a>
+	<h3 class="subsubtitle method-title">creationDate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly) NSDate *creationDate</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fileAttributes" title="fileAttributes"></a>
+	<h3 class="subsubtitle method-title">fileAttributes</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly) NSDictionary *fileAttributes</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fileName" title="fileName"></a>
+	<h3 class="subsubtitle method-title">fileName</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly) NSString *fileName</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/filePath" title="filePath"></a>
+	<h3 class="subsubtitle method-title">filePath</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly) NSString *filePath</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fileSize" title="fileSize"></a>
+	<h3 class="subsubtitle method-title">fileSize</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) unsigned long long fileSize</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isArchived" title="isArchived"></a>
+	<h3 class="subsubtitle method-title">isArchived</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) BOOL isArchived</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/modificationDate" title="modificationDate"></a>
+	<h3 class="subsubtitle method-title">modificationDate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly) NSDate *modificationDate</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/logFileWithPath:" title="logFileWithPath:"></a>
+	<h3 class="subsubtitle method-title">logFileWithPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)logFileWithPath:(NSString *)<em>filePath</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addExtendedAttributeWithName:" title="addExtendedAttributeWithName:"></a>
+	<h3 class="subsubtitle method-title">addExtendedAttributeWithName:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addExtendedAttributeWithName:(NSString *)<em>attrName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addExtensionAttributeWithName:" title="addExtensionAttributeWithName:"></a>
+	<h3 class="subsubtitle method-title">addExtensionAttributeWithName:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addExtensionAttributeWithName:(NSString *)<em>attrName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasExtendedAttributeWithName:" title="hasExtendedAttributeWithName:"></a>
+	<h3 class="subsubtitle method-title">hasExtendedAttributeWithName:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)hasExtendedAttributeWithName:(NSString *)<em>attrName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasExtensionAttributeWithName:" title="hasExtensionAttributeWithName:"></a>
+	<h3 class="subsubtitle method-title">hasExtensionAttributeWithName:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)hasExtensionAttributeWithName:(NSString *)<em>attrName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithFilePath:" title="initWithFilePath:"></a>
+	<h3 class="subsubtitle method-title">initWithFilePath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithFilePath:(NSString *)<em>filePath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeExtendedAttributeWithName:" title="removeExtendedAttributeWithName:"></a>
+	<h3 class="subsubtitle method-title">removeExtendedAttributeWithName:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeExtendedAttributeWithName:(NSString *)<em>attrName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeExtensionAttributeWithName:" title="removeExtensionAttributeWithName:"></a>
+	<h3 class="subsubtitle method-title">removeExtensionAttributeWithName:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeExtensionAttributeWithName:(NSString *)<em>attrName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/renameFile:" title="renameFile:"></a>
+	<h3 class="subsubtitle method-title">renameFile:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)renameFile:(NSString *)<em>newFileName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reset" title="reset"></a>
+	<h3 class="subsubtitle method-title">reset</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)reset</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reverseCompareByCreationDate:" title="reverseCompareByCreationDate:"></a>
+	<h3 class="subsubtitle method-title">reverseCompareByCreationDate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSComparisonResult)reverseCompareByCreationDate:(DDLogFileInfo *)<em>another</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reverseCompareByModificationDate:" title="reverseCompareByModificationDate:"></a>
+	<h3 class="subsubtitle method-title">reverseCompareByModificationDate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSComparisonResult)reverseCompareByModificationDate:(DDLogFileInfo *)<em>another</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Robbie Hanson. All rights reserved. (Last updated: 2013-04-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

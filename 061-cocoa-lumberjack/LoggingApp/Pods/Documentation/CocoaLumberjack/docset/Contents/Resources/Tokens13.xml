@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DispatchQueueLogFormatter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DispatchQueueLogFormatter</TokenIdentifier>
+			<Abstract type="html">Welcome to Cocoa Lumberjack!</Abstract>
+			<DeclaredIn>DispatchQueueLogFormatter.h</DeclaredIn>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DispatchQueueLogFormatter/init</TokenIdentifier>
+			<Abstract type="html">Standard init method.
+Configure using properties as desired.</Abstract>
+			<DeclaredIn>DispatchQueueLogFormatter.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DispatchQueueLogFormatter/setMinQueueLength:</TokenIdentifier>
+			<Abstract type="html">The minQueueLength restricts the minimum size of the [detail box].
+If the minQueueLength is set to 0, there is no restriction.</Abstract>
+			<DeclaredIn>DispatchQueueLogFormatter.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSUInteger minQueueLength</Declaration>
+			
+			
+			<Anchor>//api/name/minQueueLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DispatchQueueLogFormatter/minQueueLength</TokenIdentifier>
+			<Abstract type="html">The minQueueLength restricts the minimum size of the [detail box].
+If the minQueueLength is set to 0, there is no restriction.</Abstract>
+			<DeclaredIn>DispatchQueueLogFormatter.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSUInteger minQueueLength</Declaration>
+			
+			
+			<Anchor>//api/name/minQueueLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DispatchQueueLogFormatter/setMaxQueueLength:</TokenIdentifier>
+			<Abstract type="html">The maxQueueLength restricts the number of characters that will be inside the [detail box].
+If the maxQueueLength is 0, there is no restriction.</Abstract>
+			<DeclaredIn>DispatchQueueLogFormatter.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSUInteger maxQueueLength</Declaration>
+			
+			
+			<Anchor>//api/name/maxQueueLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DispatchQueueLogFormatter/maxQueueLength</TokenIdentifier>
+			<Abstract type="html">The maxQueueLength restricts the number of characters that will be inside the [detail box].
+If the maxQueueLength is 0, there is no restriction.</Abstract>
+			<DeclaredIn>DispatchQueueLogFormatter.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSUInteger maxQueueLength</Declaration>
+			
+			
+			<Anchor>//api/name/maxQueueLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DispatchQueueLogFormatter/replacementStringForQueueLabel:</TokenIdentifier>
+			<Abstract type="html">Sometimes queue labels have long names like &quot;com.apple.main-queue&quot;,
+but you&apos;d prefer something shorter like simply &quot;main&quot;.</Abstract>
+			<DeclaredIn>DispatchQueueLogFormatter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)replacementStringForQueueLabel:(NSString *)longLabel</Declaration>
+			
+			
+			<Anchor>//api/name/replacementStringForQueueLabel:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DispatchQueueLogFormatter/setReplacementString:forQueueLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DispatchQueueLogFormatter.h</DeclaredIn>			
+			
+			<Declaration>- (void)setReplacementString:(NSString *)shortLabel forQueueLabel:(NSString *)longLabel</Declaration>
+			
+			
+			<Anchor>//api/name/setReplacementString:forQueueLabel:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

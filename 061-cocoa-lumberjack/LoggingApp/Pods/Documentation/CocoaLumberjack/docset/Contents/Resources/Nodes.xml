@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>CocoaLumberjack HEAD based on 1.6</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>ContextBlacklistFilterLogFormatter</Name>
+			<Path>Classes/ContextBlacklistFilterLogFormatter.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>ContextWhitelistFilterLogFormatter</Name>
+			<Path>Classes/ContextWhitelistFilterLogFormatter.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>DDASLLogger</Name>
+			<Path>Classes/DDASLLogger.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>DDAbstractDatabaseLogger</Name>
+			<Path>Classes/DDAbstractDatabaseLogger.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>DDAbstractLogger</Name>
+			<Path>Classes/DDAbstractLogger.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>DDFileLogger</Name>
+			<Path>Classes/DDFileLogger.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>DDLog</Name>
+			<Path>Classes/DDLog.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>DDLogFileFormatterDefault</Name>
+			<Path>Classes/DDLogFileFormatterDefault.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>DDLogFileInfo</Name>
+			<Path>Classes/DDLogFileInfo.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>DDLogFileManagerDefault</Name>
+			<Path>Classes/DDLogFileManagerDefault.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>DDLogMessage</Name>
+			<Path>Classes/DDLogMessage.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>DDTTYLogger</Name>
+			<Path>Classes/DDTTYLogger.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>DispatchQueueLogFormatter</Name>
+			<Path>Classes/DispatchQueueLogFormatter.html</Path>
+		</Node>
+		
+		
+		<Node id="14">
+			<Name>DDLogFileManager</Name>
+			<Path>Protocols/DDLogFileManager.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>DDLogFormatter</Name>
+			<Path>Protocols/DDLogFormatter.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>DDLogger</Name>
+			<Path>Protocols/DDLogger.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>DDRegisteredDynamicLogging</Name>
+			<Path>Protocols/DDRegisteredDynamicLogging.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

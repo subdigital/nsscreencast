@@ -1,0 +1,11 @@
+
+PODS:
+- CocoaLumberjack (HEAD based on 1.6)
+
+DEPENDENCIES:
+- CocoaLumberjack (HEAD)
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 0f2fa7090a23f13261072d882e017c688300efbe
+
+COCOAPODS: 0.16.4
