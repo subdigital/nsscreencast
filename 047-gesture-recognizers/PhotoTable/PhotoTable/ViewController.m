@@ -140,19 +140,11 @@
     [rotation setRotation:0];
 }
 
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-    if ([gestureRecognizer isKindOfClass:[UISwipeGestureRecognizer class]]) {
-        CGPoint touchPoint = [gestureRecognizer locationInView:self.view];
-        UIView *hitTestView = [self.view hitTest:touchPoint withEvent:nil];
-        if ([hitTestView isKindOfClass:[UIImageView class]]) {
-            return NO;
-        }
-    }
-    
-    return YES;
-}
-
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    if ([gestureRecognizer isKindOfClass:[UISwipeGestureRecognizer class]] ||
+        [otherGestureRecognizer isKindOfClass:[UISwipeGestureRecognizer class]]) {
+        return NO;
+    }
     return YES;
 }
 
