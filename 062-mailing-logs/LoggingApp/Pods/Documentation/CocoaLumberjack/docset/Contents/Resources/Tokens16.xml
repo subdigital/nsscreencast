@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/DDLogger.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/DDLogger</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDLog.h</DeclaredIn>
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DDLogger/logMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDLog.h</DeclaredIn>			
+			
+			<Declaration>- (void)logMessage:(DDLogMessage *)logMessage</Declaration>
+			
+			
+			<Anchor>//api/name/logMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DDLogger/logFormatter</TokenIdentifier>
+			<Abstract type="html">Formatters may optionally be added to any logger.</Abstract>
+			<DeclaredIn>DDLog.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;DDLogFormatter&gt;)logFormatter</Declaration>
+			
+			
+			<Anchor>//api/name/logFormatter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DDLogger/setLogFormatter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDLog.h</DeclaredIn>			
+			
+			<Declaration>- (void)setLogFormatter:(id&lt;DDLogFormatter&gt;)formatter</Declaration>
+			
+			
+			<Anchor>//api/name/setLogFormatter:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DDLogger/didAddLogger</TokenIdentifier>
+			<Abstract type="html">Since logging is asynchronous, adding and removing loggers is also asynchronous.
+In other words, the loggers are added and removed at appropriate times with regards to log messages.</Abstract>
+			<DeclaredIn>DDLog.h</DeclaredIn>			
+			
+			<Declaration>- (void)didAddLogger</Declaration>
+			
+			
+			<Anchor>//api/name/didAddLogger</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DDLogger/willRemoveLogger</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDLog.h</DeclaredIn>			
+			
+			<Declaration>- (void)willRemoveLogger</Declaration>
+			
+			
+			<Anchor>//api/name/willRemoveLogger</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DDLogger/flush</TokenIdentifier>
+			<Abstract type="html">Some loggers may buffer IO for optimization purposes.
+For example, a database logger may only save occasionaly as the disk IO is slow.
+In such loggers, this method should be implemented to flush any pending IO.</Abstract>
+			<DeclaredIn>DDLog.h</DeclaredIn>			
+			
+			<Declaration>- (void)flush</Declaration>
+			
+			
+			<Anchor>//api/name/flush</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DDLogger/loggerQueue</TokenIdentifier>
+			<Abstract type="html">Each logger is executed concurrently with respect to the other loggers.
+Thus, a dedicated dispatch queue is used for each logger.
+Logger implementations may optionally choose to provide their own dispatch queue.</Abstract>
+			<DeclaredIn>DDLog.h</DeclaredIn>			
+			
+			<Declaration>- (dispatch_queue_t)loggerQueue</Declaration>
+			
+			
+			<Anchor>//api/name/loggerQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DDLogger/loggerName</TokenIdentifier>
+			<Abstract type="html">If the logger implementation does not choose to provide its own queue,
+one will automatically be created for it.
+The created queue will receive its name from this method.
+This may be helpful for debugging or profiling reasons.</Abstract>
+			<DeclaredIn>DDLog.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)loggerName</Declaration>
+			
+			
+			<Anchor>//api/name/loggerName</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

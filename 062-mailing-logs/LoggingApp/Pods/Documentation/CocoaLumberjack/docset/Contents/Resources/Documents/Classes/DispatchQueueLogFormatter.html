@@ -1,0 +1,591 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DispatchQueueLogFormatter Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CocoaLumberjack HEAD based on 1.6 </a></h1>
+				<a id="developerHome" href="../index.html">Robbie Hanson</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DispatchQueueLogFormatter Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/maxQueueLength">&nbsp;&nbsp;&nbsp;&nbsp;maxQueueLength</option>
+	
+	<option value="//api/name/minQueueLength">&nbsp;&nbsp;&nbsp;&nbsp;minQueueLength</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/replacementStringForQueueLabel:">&nbsp;&nbsp;&nbsp;&nbsp;- replacementStringForQueueLabel:</option>
+	
+	<option value="//api/name/setReplacementString:forQueueLabel:">&nbsp;&nbsp;&nbsp;&nbsp;- setReplacementString:forQueueLabel:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxQueueLength">maxQueueLength</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minQueueLength">minQueueLength</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replacementStringForQueueLabel:">replacementStringForQueueLabel:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setReplacementString:forQueueLabel:">setReplacementString:forQueueLabel:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DispatchQueueLogFormatter Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DispatchQueueLogFormatter Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DispatchQueueLogFormatter.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Welcome to Cocoa Lumberjack!</p>
+
+<p>The project page has a wealth of documentation if you have any questions.
+<a href="https://github.com/robbiehanson/CocoaLumberjack">https://github.com/robbiehanson/CocoaLumberjack</a></p>
+
+<p>If you&rsquo;re new to the project you may wish to read the &ldquo;Getting Started&rdquo; page.
+<a href="https://github.com/robbiehanson/CocoaLumberjack/wiki/GettingStarted">https://github.com/robbiehanson/CocoaLumberjack/wiki/GettingStarted</a></p>
+
+<p>This class provides a log formatter that prints the dispatch_queue label instead of the mach_thread_id.</p>
+
+<p>A log formatter can be added to any logger to format and/or filter its output.
+You can learn more about log formatters here:
+<a href="https://github.com/robbiehanson/CocoaLumberjack/wiki/CustomFormatters">https://github.com/robbiehanson/CocoaLumberjack/wiki/CustomFormatters</a></p>
+
+<p>A typical NSLog (or <a href="../Classes/DDTTYLogger.html">DDTTYLogger</a>) prints detailed info as [&lt;process_id>:&lt;thread_id>].
+For example:</p>
+
+<p>2011-10-17 20:21:45.435 AppName[19928:5207] Your log message here</p>
+
+<p>Where:
+&ndash; 19928 = process id
+&ndash;  5207 = thread id (mach_thread_id printed in hex)</p>
+
+<p>When using grand central dispatch (GCD), this information is less useful.
+This is because a single serial dispatch queue may be run on any thread from an internally managed thread pool.
+For example:</p>
+
+<p>2011-10-17 20:32:31.111 AppName[19954:4d07] Message from my_serial_dispatch_queue
+2011-10-17 20:32:31.112 AppName[19954:5207] Message from my_serial_dispatch_queue
+2011-10-17 20:32:31.113 AppName[19954:2c55] Message from my_serial_dispatch_queue</p>
+
+<p>This formatter allows you to replace the standard [box:info] with the dispatch_queue name.
+For example:</p>
+
+<p>2011-10-17 20:32:31.111 AppName[img-scaling] Message from my_serial_dispatch_queue
+2011-10-17 20:32:31.112 AppName[img-scaling] Message from my_serial_dispatch_queue
+2011-10-17 20:32:31.113 AppName[img-scaling] Message from my_serial_dispatch_queue</p>
+
+<p>If the dispatch_queue doesn&rsquo;t have a set name, then it falls back to the thread name.
+If the current thread doesn&rsquo;t have a set name, then it falls back to the mach_thread_id in hex (like normal).</p>
+
+<p>Note: If manually creating your own background threads (via NSThread/alloc/init or NSThread/detachNeThread),
+you can use [[NSThread currentThread] setName:(NSString *)].</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		<span class="tooltip"><p>Standard init method.
+Configure using properties as desired.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minQueueLength">&nbsp;&nbsp;minQueueLength</a></code>
+		<span class="tooltip"><p>The minQueueLength restricts the minimum size of the [detail box].
+If the minQueueLength is set to 0, there is no restriction.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxQueueLength">&nbsp;&nbsp;maxQueueLength</a></code>
+		<span class="tooltip"><p>The maxQueueLength restricts the number of characters that will be inside the [detail box].
+If the maxQueueLength is 0, there is no restriction.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/replacementStringForQueueLabel:">&ndash;&nbsp;replacementStringForQueueLabel:</a></code>
+		<span class="tooltip"><p>Sometimes queue labels have long names like &ldquo;com.apple.main-queue&rdquo;,
+but you&rsquo;d prefer something shorter like simply &ldquo;main&rdquo;.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setReplacementString:forQueueLabel:">&ndash;&nbsp;setReplacementString:forQueueLabel:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/maxQueueLength" title="maxQueueLength"></a>
+	<h3 class="subsubtitle method-title">maxQueueLength</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The maxQueueLength restricts the number of characters that will be inside the [detail box].
+If the maxQueueLength is 0, there is no restriction.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign) NSUInteger maxQueueLength</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The maxQueueLength restricts the number of characters that will be inside the [detail box].
+If the maxQueueLength is 0, there is no restriction.</p>
+
+<p>For example, say a dispatch_queue has a label of &ldquo;diskIO&rdquo;:</p>
+
+<p>If the maxQueueLength is 0: [diskIO]
+If the maxQueueLength is 4: [disk]
+If the maxQueueLength is 5: [diskI]
+If the maxQueueLength is 6: [diskIO]
+If the maxQueueLength is 7: [diskIO]
+If the maxQueueLength is 8: [diskIO]</p>
+
+<p>The default maxQueueLength is 0 (no maximum, so [detail box] won&rsquo;t be truncated).</p>
+
+<p>If you want every [detail box] to have the exact same width,
+set both <a href="#//api/name/minQueueLength">minQueueLength</a> and maxQueueLength to the same value.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DispatchQueueLogFormatter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minQueueLength" title="minQueueLength"></a>
+	<h3 class="subsubtitle method-title">minQueueLength</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The minQueueLength restricts the minimum size of the [detail box].
+If the minQueueLength is set to 0, there is no restriction.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign) NSUInteger minQueueLength</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The minQueueLength restricts the minimum size of the [detail box].
+If the minQueueLength is set to 0, there is no restriction.</p>
+
+<p>For example, say a dispatch_queue has a label of &ldquo;diskIO&rdquo;:</p>
+
+<p>If the minQueueLength is 0: [diskIO]
+If the minQueueLength is 4: [diskIO]
+If the minQueueLength is 5: [diskIO]
+If the minQueueLength is 6: [diskIO]
+If the minQueueLength is 7: [diskIO ]
+If the minQueueLength is 8: [diskIO  ]</p>
+
+<p>The default minQueueLength is 0 (no minimum, so [detail box] won&rsquo;t be padded).</p>
+
+<p>If you want every [detail box] to have the exact same width,
+set both minQueueLength and <a href="#//api/name/maxQueueLength">maxQueueLength</a> to the same value.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DispatchQueueLogFormatter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Standard init method.
+Configure using properties as desired.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Standard init method.
+Configure using properties as desired.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DispatchQueueLogFormatter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/replacementStringForQueueLabel:" title="replacementStringForQueueLabel:"></a>
+	<h3 class="subsubtitle method-title">replacementStringForQueueLabel:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sometimes queue labels have long names like &ldquo;com.apple.main-queue&rdquo;,
+but you&rsquo;d prefer something shorter like simply &ldquo;main&rdquo;.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)replacementStringForQueueLabel:(NSString *)<em>longLabel</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sometimes queue labels have long names like &ldquo;com.apple.main-queue&rdquo;,
+but you&rsquo;d prefer something shorter like simply &ldquo;main&rdquo;.</p>
+
+<p>This method allows you to set such preferred replacements.
+The above example is set by default.</p>
+
+<p>To remove/undo a previous replacement, invoke this method with nil for the &lsquo;shortLabel&rsquo; parameter.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DispatchQueueLogFormatter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setReplacementString:forQueueLabel:" title="setReplacementString:forQueueLabel:"></a>
+	<h3 class="subsubtitle method-title">setReplacementString:forQueueLabel:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setReplacementString:(NSString *)<em>shortLabel</em> forQueueLabel:(NSString *)<em>longLabel</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Robbie Hanson. All rights reserved. (Last updated: 2013-04-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

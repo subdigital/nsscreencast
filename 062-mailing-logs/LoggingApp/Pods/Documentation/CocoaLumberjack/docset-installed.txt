@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/ben/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.CocoaLumberjack-HEAD-based-on-1.6.docset
+Time: 2013-04-01 16:10:47 +0000

@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>CocoaLumberjack HEAD based on 1.6 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">CocoaLumberjack HEAD based on 1.6 </a></h1>
+				<a id="developerHome" href="index.html">Robbie Hanson</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CocoaLumberjack HEAD based on 1.6 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CocoaLumberjack HEAD based on 1.6 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h3>Lumberjack is Fast &amp; Simple, yet Powerful &amp; Flexible.</h3>
+
+<p>It is similar in concept to other popular logging frameworks such as log4j, yet is designed specifically for Objective-C, and takes advantage of features such as multi-threading, grand central dispatch (if available), lockless atomic operations, and the dynamic nature of the Objective-C runtime.</p>
+
+<h3>Lumberjack is Fast</h3>
+
+<p>In most cases it is an order of magnitude faster than NSLog.</p>
+
+<h3>Lumberjack is Simple</h3>
+
+<p>It takes as little as a single line of code to configure lumberjack when your application launches. Then simply replace your NSLog statements with <a href="Classes/DDLog.html">DDLog</a> statements and that&rsquo;s about it. (And the <a href="Classes/DDLog.html">DDLog</a> macros have the exact same format and syntax as NSLog, so it&rsquo;s super easy.)</p>
+
+<h3>Lumberjack is Powerful:</h3>
+
+<p>One log statement can be sent to multiple loggers, meaning you can log to a file and the console simultaneously. Want more? Create your own loggers (it&rsquo;s easy) and send your log statements over the network. Or to a database or distributed file system. The sky is the limit.</p>
+
+<h3>Lumberjack is Flexible:</h3>
+
+<p>Configure your logging however you want. Change log levels per file (perfect for debugging). Change log levels per logger (verbose console, but concise log file). Change log levels per xcode configuration (verbose debug, but concise release). Have your log statements compiled out of the release build. Customize the number of log levels for your application. Add your own fine-grained logging. Dynamically change log levels during runtime. Choose how &amp; when you want your log files to be rolled. Upload your log files to a central server. Compress archived log files to save disk space&hellip;</p>
+
+<br/>
+
+
+<p>This framework is for you if:</p>
+
+<ul>
+<li>You&rsquo;re looking for a way to track down that impossible-to-reproduce bug that keeps popping up in the field.</li>
+<li>You&rsquo;re frustrated with the super short console log on the iPhone.</li>
+<li>You&rsquo;re looking to take your application to the next level in terms of support and stability.</li>
+<li>You&rsquo;re looking for an enterprise level logging solution for your application (Mac or iPhone).</li>
+</ul>
+
+
+<br/>
+
+
+<p><strong><a href="https://github.com/robbiehanson/CocoaLumberjack/wiki/GettingStarted">Get started using Lumberjack</a></strong><br/>
+<strong><a href="https://github.com/robbiehanson/CocoaLumberjack/wiki">Learn more about Lumberjack</a></strong><br/></p>
+
+<br/>
+
+
+<p>Can&rsquo;t find the answer to your question in any of the <a href="https://github.com/robbiehanson/CocoaLumberjack/wiki">wiki</a> articles? Try the <strong><a href="http://groups.google.com/group/cocoalumberjack">mailing list</a></strong>.</p>
+
+<br/>
+
+
+<br/>
+
+
+<p>Love the project? Wanna buy me a coffee? (or a beer :D) <a href="[https://www.paypal.com/cgi-bin/webscr?cmd=](https://www.paypal.com/cgi-bin/webscr?cmd="><img src="~!@[http://www.paypal.com/en](http://www.paypal.com/en" alt="donation" />_US/i/btn/btn_donate_SM.gif)</a>@!~_s-xclick&amp;hosted_button_id=UZRA26JPJB3DA)</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/ContextBlacklistFilterLogFormatter.html">ContextBlacklistFilterLogFormatter</a></li>
+							
+							<li><a href="Classes/ContextWhitelistFilterLogFormatter.html">ContextWhitelistFilterLogFormatter</a></li>
+							
+							<li><a href="Classes/DDASLLogger.html">DDASLLogger</a></li>
+							
+							<li><a href="Classes/DDAbstractDatabaseLogger.html">DDAbstractDatabaseLogger</a></li>
+							
+							<li><a href="Classes/DDAbstractLogger.html">DDAbstractLogger</a></li>
+							
+							<li><a href="Classes/DDFileLogger.html">DDFileLogger</a></li>
+							
+							<li><a href="Classes/DDLog.html">DDLog</a></li>
+							
+							<li><a href="Classes/DDLogFileFormatterDefault.html">DDLogFileFormatterDefault</a></li>
+							
+							<li><a href="Classes/DDLogFileInfo.html">DDLogFileInfo</a></li>
+							
+							<li><a href="Classes/DDLogFileManagerDefault.html">DDLogFileManagerDefault</a></li>
+							
+							<li><a href="Classes/DDLogMessage.html">DDLogMessage</a></li>
+							
+							<li><a href="Classes/DDTTYLogger.html">DDTTYLogger</a></li>
+							
+							<li><a href="Classes/DispatchQueueLogFormatter.html">DispatchQueueLogFormatter</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						<h2 class="index-title">Protocol References</h2>
+						<ul>
+							
+							<li><a href="Protocols/DDLogFileManager.html">DDLogFileManager</a></li>
+							
+							<li><a href="Protocols/DDLogFormatter.html">DDLogFormatter</a></li>
+							
+							<li><a href="Protocols/DDLogger.html">DDLogger</a></li>
+							
+							<li><a href="Protocols/DDRegisteredDynamicLogging.html">DDRegisteredDynamicLogging</a></li>
+							
+						</ul>
+						
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Robbie Hanson. All rights reserved. (Last updated: 2013-04-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

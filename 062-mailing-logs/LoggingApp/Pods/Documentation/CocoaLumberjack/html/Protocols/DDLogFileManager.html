@@ -1,0 +1,542 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DDLogFileManager Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CocoaLumberjack HEAD based on 1.6 </a></h1>
+				<a id="developerHome" href="../index.html">Robbie Hanson</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DDLogFileManager Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/maximumNumberOfLogFiles">&nbsp;&nbsp;&nbsp;&nbsp;maximumNumberOfLogFiles</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/createNewLogFile">&nbsp;&nbsp;&nbsp;&nbsp;- createNewLogFile</option>
+	
+	<option value="//api/name/didArchiveLogFile:">&nbsp;&nbsp;&nbsp;&nbsp;- didArchiveLogFile:</option>
+	
+	<option value="//api/name/didRollAndArchiveLogFile:">&nbsp;&nbsp;&nbsp;&nbsp;- didRollAndArchiveLogFile:</option>
+	
+	<option value="//api/name/logsDirectory">&nbsp;&nbsp;&nbsp;&nbsp;- logsDirectory</option>
+	
+	<option value="//api/name/sortedLogFileInfos">&nbsp;&nbsp;&nbsp;&nbsp;- sortedLogFileInfos</option>
+	
+	<option value="//api/name/sortedLogFileNames">&nbsp;&nbsp;&nbsp;&nbsp;- sortedLogFileNames</option>
+	
+	<option value="//api/name/sortedLogFilePaths">&nbsp;&nbsp;&nbsp;&nbsp;- sortedLogFilePaths</option>
+	
+	<option value="//api/name/unsortedLogFileInfos">&nbsp;&nbsp;&nbsp;&nbsp;- unsortedLogFileInfos</option>
+	
+	<option value="//api/name/unsortedLogFileNames">&nbsp;&nbsp;&nbsp;&nbsp;- unsortedLogFileNames</option>
+	
+	<option value="//api/name/unsortedLogFilePaths">&nbsp;&nbsp;&nbsp;&nbsp;- unsortedLogFilePaths</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maximumNumberOfLogFiles">maximumNumberOfLogFiles</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createNewLogFile">createNewLogFile</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didArchiveLogFile:">didArchiveLogFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didRollAndArchiveLogFile:">didRollAndArchiveLogFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logsDirectory">logsDirectory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sortedLogFileInfos">sortedLogFileInfos</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sortedLogFileNames">sortedLogFileNames</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sortedLogFilePaths">sortedLogFilePaths</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unsortedLogFileInfos">unsortedLogFileInfos</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unsortedLogFileNames">unsortedLogFileNames</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unsortedLogFilePaths">unsortedLogFilePaths</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DDLogFileManager Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DDLogFileManager Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DDFileLogger.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maximumNumberOfLogFiles">&nbsp;&nbsp;maximumNumberOfLogFiles</a></code>
+		<span class="tooltip"><p>The maximum number of archived log files to keep on disk.
+For example, if this property is set to 3,
+then the LogFileManager will only keep 3 archived log files (plus the current active log file) on disk.
+Once the active log file is rolled/archived, then the oldest of the existing 3 rolled/archived log files is deleted.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logsDirectory">&ndash;&nbsp;logsDirectory</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unsortedLogFilePaths">&ndash;&nbsp;unsortedLogFilePaths</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unsortedLogFileNames">&ndash;&nbsp;unsortedLogFileNames</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unsortedLogFileInfos">&ndash;&nbsp;unsortedLogFileInfos</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sortedLogFilePaths">&ndash;&nbsp;sortedLogFilePaths</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sortedLogFileNames">&ndash;&nbsp;sortedLogFileNames</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sortedLogFileInfos">&ndash;&nbsp;sortedLogFileInfos</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createNewLogFile">&ndash;&nbsp;createNewLogFile</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didArchiveLogFile:">&ndash;&nbsp;didArchiveLogFile:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didRollAndArchiveLogFile:">&ndash;&nbsp;didRollAndArchiveLogFile:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/maximumNumberOfLogFiles" title="maximumNumberOfLogFiles"></a>
+	<h3 class="subsubtitle method-title">maximumNumberOfLogFiles</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The maximum number of archived log files to keep on disk.
+For example, if this property is set to 3,
+then the LogFileManager will only keep 3 archived log files (plus the current active log file) on disk.
+Once the active log file is rolled/archived, then the oldest of the existing 3 rolled/archived log files is deleted.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readwrite, assign) NSUInteger maximumNumberOfLogFiles</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The maximum number of archived log files to keep on disk.
+For example, if this property is set to 3,
+then the LogFileManager will only keep 3 archived log files (plus the current active log file) on disk.
+Once the active log file is rolled/archived, then the oldest of the existing 3 rolled/archived log files is deleted.</p>
+
+<p>You may optionally disable deleting old/rolled/archived log files by setting this property to zero.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DDFileLogger.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/createNewLogFile" title="createNewLogFile"></a>
+	<h3 class="subsubtitle method-title">createNewLogFile</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)createNewLogFile</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didArchiveLogFile:" title="didArchiveLogFile:"></a>
+	<h3 class="subsubtitle method-title">didArchiveLogFile:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)didArchiveLogFile:(NSString *)<em>logFilePath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didRollAndArchiveLogFile:" title="didRollAndArchiveLogFile:"></a>
+	<h3 class="subsubtitle method-title">didRollAndArchiveLogFile:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)didRollAndArchiveLogFile:(NSString *)<em>logFilePath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logsDirectory" title="logsDirectory"></a>
+	<h3 class="subsubtitle method-title">logsDirectory</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)logsDirectory</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sortedLogFileInfos" title="sortedLogFileInfos"></a>
+	<h3 class="subsubtitle method-title">sortedLogFileInfos</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)sortedLogFileInfos</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sortedLogFileNames" title="sortedLogFileNames"></a>
+	<h3 class="subsubtitle method-title">sortedLogFileNames</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)sortedLogFileNames</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sortedLogFilePaths" title="sortedLogFilePaths"></a>
+	<h3 class="subsubtitle method-title">sortedLogFilePaths</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)sortedLogFilePaths</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unsortedLogFileInfos" title="unsortedLogFileInfos"></a>
+	<h3 class="subsubtitle method-title">unsortedLogFileInfos</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)unsortedLogFileInfos</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unsortedLogFileNames" title="unsortedLogFileNames"></a>
+	<h3 class="subsubtitle method-title">unsortedLogFileNames</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)unsortedLogFileNames</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unsortedLogFilePaths" title="unsortedLogFilePaths"></a>
+	<h3 class="subsubtitle method-title">unsortedLogFilePaths</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)unsortedLogFilePaths</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Robbie Hanson. All rights reserved. (Last updated: 2013-04-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/DDLogFormatter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/DDLogFormatter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDLog.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DDLogFormatter/formatLogMessage:</TokenIdentifier>
+			<Abstract type="html">Formatters may optionally be added to any logger.
+This allows for increased flexibility in the logging environment.
+For example, log messages for log files may be formatted differently than log messages for the console.</Abstract>
+			<DeclaredIn>DDLog.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)formatLogMessage:(DDLogMessage *)logMessage</Declaration>
+			
+			
+			<Anchor>//api/name/formatLogMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DDLogFormatter/didAddToLogger:</TokenIdentifier>
+			<Abstract type="html">A single formatter instance can be added to multiple loggers.
+These methods provides hooks to notify the formatter of when it&apos;s added/removed.</Abstract>
+			<DeclaredIn>DDLog.h</DeclaredIn>			
+			
+			<Declaration>- (void)didAddToLogger:(id&lt;DDLogger&gt;)logger</Declaration>
+			
+			
+			<Anchor>//api/name/didAddToLogger:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DDLogFormatter/willRemoveFromLogger:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDLog.h</DeclaredIn>			
+			
+			<Declaration>- (void)willRemoveFromLogger:(id&lt;DDLogger&gt;)logger</Declaration>
+			
+			
+			<Anchor>//api/name/willRemoveFromLogger:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
