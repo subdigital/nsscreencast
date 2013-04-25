@@ -1,0 +1,19 @@
+//
+// Prefix header for all source files of the 'WhatsAround' target in the 'WhatsAround' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+    #import <SystemConfiguration/SystemConfiguration.h>
+#endif
+
+#define FOURSQUARE_APP_CLIENT_ID @"__GET_AN_APP_AT_FOURSQUARE.COM__"
+#define FOURSQUARE_APP_CLIENT_SECRET @"__GET_AN_APP_AT_FOURSQUARE.COM__"

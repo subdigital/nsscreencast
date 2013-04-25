@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76BE4A63FD70451C8D97E10D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F3E10417CA4528A83A5EF4 /* libPods.a */; };
+		B56110BB171D820400D8F000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56110BA171D820400D8F000 /* UIKit.framework */; };
+		B56110BD171D820400D8F000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56110BC171D820400D8F000 /* Foundation.framework */; };
+		B56110BF171D820400D8F000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56110BE171D820400D8F000 /* CoreGraphics.framework */; };
+		B56110C5171D820400D8F000 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B56110C3171D820400D8F000 /* InfoPlist.strings */; };
+		B56110C7171D820400D8F000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B56110C6171D820400D8F000 /* main.m */; };
+		B56110CB171D820400D8F000 /* WARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B56110CA171D820400D8F000 /* WARAppDelegate.m */; };
+		B56110CD171D820500D8F000 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B56110CC171D820500D8F000 /* Default.png */; };
+		B56110CF171D820500D8F000 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B56110CE171D820500D8F000 /* Default@2x.png */; };
+		B56110D1171D820500D8F000 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B56110D0171D820500D8F000 /* Default-568h@2x.png */; };
+		B56110D9171D820500D8F000 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56110D8171D820500D8F000 /* SenTestingKit.framework */; };
+		B56110DA171D820500D8F000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56110BA171D820400D8F000 /* UIKit.framework */; };
+		B56110DB171D820500D8F000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56110BC171D820400D8F000 /* Foundation.framework */; };
+		B56110E3171D820500D8F000 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B56110E1171D820500D8F000 /* InfoPlist.strings */; };
+		B56110E6171D820500D8F000 /* WhatsAroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B56110E5171D820500D8F000 /* WhatsAroundTests.m */; };
+		B56110F7171D837300D8F000 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56110F6171D837300D8F000 /* Storyboard.storyboard */; };
+		B56110F9171D838D00D8F000 /* Storyboard_Pad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56110F8171D838D00D8F000 /* Storyboard_Pad.storyboard */; };
+		B56110FC171D845F00D8F000 /* WARMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56110FB171D845F00D8F000 /* WARMapViewController.m */; };
+		B56110FD171D845F00D8F000 /* WARMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56110FB171D845F00D8F000 /* WARMapViewController.m */; };
+		B56110FF171D84B200D8F000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56110FE171D84B200D8F000 /* MapKit.framework */; };
+		B5611101171D84B900D8F000 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5611100171D84B900D8F000 /* SystemConfiguration.framework */; };
+		B5611103171D84C500D8F000 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5611102171D84C500D8F000 /* MobileCoreServices.framework */; };
+		B5611105171D84CD00D8F000 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5611104171D84CD00D8F000 /* CoreLocation.framework */; };
+		B56858D61726C3A400EC9931 /* FSQVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = B56858D51726C3A400EC9931 /* FSQVenue.m */; };
+		B56858D71726C3A400EC9931 /* FSQVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = B56858D51726C3A400EC9931 /* FSQVenue.m */; };
+		B56858DA1726C97C00EC9931 /* WARVenueAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B56858D91726C97C00EC9931 /* WARVenueAnnotation.m */; };
+		B56858DB1726C97C00EC9931 /* WARVenueAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B56858D91726C97C00EC9931 /* WARVenueAnnotation.m */; };
+		B588DF4517260469005C7074 /* FSQFoursquareAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B588DF4417260469005C7074 /* FSQFoursquareAPIClient.m */; };
+		B588DF4617260469005C7074 /* FSQFoursquareAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B588DF4417260469005C7074 /* FSQFoursquareAPIClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B56110DC171D820500D8F000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B56110AF171D820400D8F000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B56110B6171D820400D8F000;
+			remoteInfo = WhatsAround;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		34F3E10417CA4528A83A5EF4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56110B7171D820400D8F000 /* WhatsAround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsAround.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56110BA171D820400D8F000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B56110BC171D820400D8F000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B56110BE171D820400D8F000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B56110C2171D820400D8F000 /* WhatsAround-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhatsAround-Info.plist"; sourceTree = "<group>"; };
+		B56110C4171D820400D8F000 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B56110C6171D820400D8F000 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B56110C8171D820400D8F000 /* WhatsAround-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhatsAround-Prefix.pch"; sourceTree = "<group>"; };
+		B56110C9171D820400D8F000 /* WARAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WARAppDelegate.h; sourceTree = "<group>"; };
+		B56110CA171D820400D8F000 /* WARAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WARAppDelegate.m; sourceTree = "<group>"; };
+		B56110CC171D820500D8F000 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B56110CE171D820500D8F000 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B56110D0171D820500D8F000 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B56110D7171D820500D8F000 /* WhatsAroundTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsAroundTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56110D8171D820500D8F000 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B56110E0171D820500D8F000 /* WhatsAroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhatsAroundTests-Info.plist"; sourceTree = "<group>"; };
+		B56110E2171D820500D8F000 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B56110E4171D820500D8F000 /* WhatsAroundTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatsAroundTests.h; sourceTree = "<group>"; };
+		B56110E5171D820500D8F000 /* WhatsAroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhatsAroundTests.m; sourceTree = "<group>"; };
+		B56110F6171D837300D8F000 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		B56110F8171D838D00D8F000 /* Storyboard_Pad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_Pad.storyboard; sourceTree = "<group>"; };
+		B56110FA171D845F00D8F000 /* WARMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WARMapViewController.h; sourceTree = "<group>"; };
+		B56110FB171D845F00D8F000 /* WARMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WARMapViewController.m; sourceTree = "<group>"; };
+		B56110FE171D84B200D8F000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B5611100171D84B900D8F000 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B5611102171D84C500D8F000 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B5611104171D84CD00D8F000 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B56858D41726C3A400EC9931 /* FSQVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSQVenue.h; sourceTree = "<group>"; };
+		B56858D51726C3A400EC9931 /* FSQVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSQVenue.m; sourceTree = "<group>"; };
+		B56858D81726C97C00EC9931 /* WARVenueAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WARVenueAnnotation.h; sourceTree = "<group>"; };
+		B56858D91726C97C00EC9931 /* WARVenueAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WARVenueAnnotation.m; sourceTree = "<group>"; };
+		B588DF4317260469005C7074 /* FSQFoursquareAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSQFoursquareAPIClient.h; sourceTree = "<group>"; };
+		B588DF4417260469005C7074 /* FSQFoursquareAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSQFoursquareAPIClient.m; sourceTree = "<group>"; };
+		DA6411B8C0C44940AA5EA715 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB95F8F57BBF477D9F88715C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B56110B4171D820400D8F000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5611105171D84CD00D8F000 /* CoreLocation.framework in Frameworks */,
+				B5611103171D84C500D8F000 /* MobileCoreServices.framework in Frameworks */,
+				B5611101171D84B900D8F000 /* SystemConfiguration.framework in Frameworks */,
+				B56110FF171D84B200D8F000 /* MapKit.framework in Frameworks */,
+				B56110BB171D820400D8F000 /* UIKit.framework in Frameworks */,
+				B56110BD171D820400D8F000 /* Foundation.framework in Frameworks */,
+				B56110BF171D820400D8F000 /* CoreGraphics.framework in Frameworks */,
+				76BE4A63FD70451C8D97E10D /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56110D3171D820500D8F000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56110D9171D820500D8F000 /* SenTestingKit.framework in Frameworks */,
+				B56110DA171D820500D8F000 /* UIKit.framework in Frameworks */,
+				B56110DB171D820500D8F000 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B56110AE171D820400D8F000 = {
+			isa = PBXGroup;
+			children = (
+				B56110F3171D82E600D8F000 /* Lib */,
+				B56110C0171D820400D8F000 /* WhatsAround */,
+				B56110DE171D820500D8F000 /* WhatsAroundTests */,
+				B56110F4171D82F900D8F000 /* Resources */,
+				B56110B9171D820400D8F000 /* Frameworks */,
+				B56110B8171D820400D8F000 /* Products */,
+				EB95F8F57BBF477D9F88715C /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B56110B8171D820400D8F000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B56110B7171D820400D8F000 /* WhatsAround.app */,
+				B56110D7171D820500D8F000 /* WhatsAroundTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B56110B9171D820400D8F000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5611104171D84CD00D8F000 /* CoreLocation.framework */,
+				B5611102171D84C500D8F000 /* MobileCoreServices.framework */,
+				B5611100171D84B900D8F000 /* SystemConfiguration.framework */,
+				B56110FE171D84B200D8F000 /* MapKit.framework */,
+				B56110BA171D820400D8F000 /* UIKit.framework */,
+				B56110BC171D820400D8F000 /* Foundation.framework */,
+				B56110BE171D820400D8F000 /* CoreGraphics.framework */,
+				B56110D8171D820500D8F000 /* SenTestingKit.framework */,
+				DA6411B8C0C44940AA5EA715 /* libPods.a */,
+				34F3E10417CA4528A83A5EF4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B56110C0171D820400D8F000 /* WhatsAround */ = {
+			isa = PBXGroup;
+			children = (
+				B56110F2171D82C600D8F000 /* Support */,
+				B56110EF171D827800D8F000 /* Models */,
+				B56110F1171D82B400D8F000 /* Controllers */,
+				B56110F0171D82A800D8F000 /* Views */,
+				B56110C9171D820400D8F000 /* WARAppDelegate.h */,
+				B56110CA171D820400D8F000 /* WARAppDelegate.m */,
+				B56110F6171D837300D8F000 /* Storyboard.storyboard */,
+				B56110F8171D838D00D8F000 /* Storyboard_Pad.storyboard */,
+				B56110C1171D820400D8F000 /* Supporting Files */,
+			);
+			path = WhatsAround;
+			sourceTree = "<group>";
+		};
+		B56110C1171D820400D8F000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B56110C2171D820400D8F000 /* WhatsAround-Info.plist */,
+				B56110C3171D820400D8F000 /* InfoPlist.strings */,
+				B56110C6171D820400D8F000 /* main.m */,
+				B56110C8171D820400D8F000 /* WhatsAround-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B56110DE171D820500D8F000 /* WhatsAroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				B56110E4171D820500D8F000 /* WhatsAroundTests.h */,
+				B56110E5171D820500D8F000 /* WhatsAroundTests.m */,
+				B56110DF171D820500D8F000 /* Supporting Files */,
+			);
+			path = WhatsAroundTests;
+			sourceTree = "<group>";
+		};
+		B56110DF171D820500D8F000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B56110E0171D820500D8F000 /* WhatsAroundTests-Info.plist */,
+				B56110E1171D820500D8F000 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B56110EF171D827800D8F000 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B56110F0171D82A800D8F000 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B56858D81726C97C00EC9931 /* WARVenueAnnotation.h */,
+				B56858D91726C97C00EC9931 /* WARVenueAnnotation.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B56110F1171D82B400D8F000 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B56110FA171D845F00D8F000 /* WARMapViewController.h */,
+				B56110FB171D845F00D8F000 /* WARMapViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B56110F2171D82C600D8F000 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		B56110F3171D82E600D8F000 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B588DF4317260469005C7074 /* FSQFoursquareAPIClient.h */,
+				B588DF4417260469005C7074 /* FSQFoursquareAPIClient.m */,
+				B56858D41726C3A400EC9931 /* FSQVenue.h */,
+				B56858D51726C3A400EC9931 /* FSQVenue.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		B56110F4171D82F900D8F000 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B56110F5171D830C00D8F000 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B56110F5171D830C00D8F000 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B56110CC171D820500D8F000 /* Default.png */,
+				B56110CE171D820500D8F000 /* Default@2x.png */,
+				B56110D0171D820500D8F000 /* Default-568h@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B56110B6171D820400D8F000 /* WhatsAround */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B56110E9171D820500D8F000 /* Build configuration list for PBXNativeTarget "WhatsAround" */;
+			buildPhases = (
+				3BFCF5FA16C34F0FB1F2AB7C /* Check Pods Manifest.lock */,
+				B56110B3171D820400D8F000 /* Sources */,
+				B56110B4171D820400D8F000 /* Frameworks */,
+				B56110B5171D820400D8F000 /* Resources */,
+				ED5C6289BDD54AD2B69FAF80 /* Copy Pods Resources */,
+				926BC2AD80DB40B2A16D8444 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhatsAround;
+			productName = WhatsAround;
+			productReference = B56110B7171D820400D8F000 /* WhatsAround.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B56110D6171D820500D8F000 /* WhatsAroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B56110EC171D820500D8F000 /* Build configuration list for PBXNativeTarget "WhatsAroundTests" */;
+			buildPhases = (
+				B56110D2171D820500D8F000 /* Sources */,
+				B56110D3171D820500D8F000 /* Frameworks */,
+				B56110D4171D820500D8F000 /* Resources */,
+				B56110D5171D820500D8F000 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B56110DD171D820500D8F000 /* PBXTargetDependency */,
+			);
+			name = WhatsAroundTests;
+			productName = WhatsAroundTests;
+			productReference = B56110D7171D820500D8F000 /* WhatsAroundTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B56110AF171D820400D8F000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WAR;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = NSScreencast;
+			};
+			buildConfigurationList = B56110B2171D820400D8F000 /* Build configuration list for PBXProject "WhatsAround" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B56110AE171D820400D8F000;
+			productRefGroup = B56110B8171D820400D8F000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B56110B6171D820400D8F000 /* WhatsAround */,
+				B56110D6171D820500D8F000 /* WhatsAroundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B56110B5171D820400D8F000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56110C5171D820400D8F000 /* InfoPlist.strings in Resources */,
+				B56110CD171D820500D8F000 /* Default.png in Resources */,
+				B56110CF171D820500D8F000 /* Default@2x.png in Resources */,
+				B56110D1171D820500D8F000 /* Default-568h@2x.png in Resources */,
+				B56110F7171D837300D8F000 /* Storyboard.storyboard in Resources */,
+				B56110F9171D838D00D8F000 /* Storyboard_Pad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56110D4171D820500D8F000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56110E3171D820500D8F000 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BFCF5FA16C34F0FB1F2AB7C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+		926BC2AD80DB40B2A16D8444 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		B56110D5171D820500D8F000 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		ED5C6289BDD54AD2B69FAF80 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B56110B3171D820400D8F000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56110C7171D820400D8F000 /* main.m in Sources */,
+				B56110CB171D820400D8F000 /* WARAppDelegate.m in Sources */,
+				B56110FC171D845F00D8F000 /* WARMapViewController.m in Sources */,
+				B588DF4517260469005C7074 /* FSQFoursquareAPIClient.m in Sources */,
+				B56858D61726C3A400EC9931 /* FSQVenue.m in Sources */,
+				B56858DA1726C97C00EC9931 /* WARVenueAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56110D2171D820500D8F000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56110E6171D820500D8F000 /* WhatsAroundTests.m in Sources */,
+				B56110FD171D845F00D8F000 /* WARMapViewController.m in Sources */,
+				B588DF4617260469005C7074 /* FSQFoursquareAPIClient.m in Sources */,
+				B56858D71726C3A400EC9931 /* FSQVenue.m in Sources */,
+				B56858DB1726C97C00EC9931 /* WARVenueAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B56110DD171D820500D8F000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B56110B6171D820400D8F000 /* WhatsAround */;
+			targetProxy = B56110DC171D820500D8F000 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B56110C3171D820400D8F000 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B56110C4171D820400D8F000 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B56110E1171D820500D8F000 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B56110E2171D820500D8F000 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B56110E7171D820500D8F000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B56110E8171D820500D8F000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B56110EA171D820500D8F000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB95F8F57BBF477D9F88715C /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatsAround/WhatsAround-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "WhatsAround/WhatsAround-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B56110EB171D820500D8F000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB95F8F57BBF477D9F88715C /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatsAround/WhatsAround-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "WhatsAround/WhatsAround-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B56110ED171D820500D8F000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhatsAround.app/WhatsAround";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatsAround/WhatsAround-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PODS_HEADER_SEARCH_PATHS)";
+				INFOPLIST_FILE = "WhatsAroundTests/WhatsAroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B56110EE171D820500D8F000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhatsAround.app/WhatsAround";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatsAround/WhatsAround-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PODS_HEADER_SEARCH_PATHS)";
+				INFOPLIST_FILE = "WhatsAroundTests/WhatsAroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B56110B2171D820400D8F000 /* Build configuration list for PBXProject "WhatsAround" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56110E7171D820500D8F000 /* Debug */,
+				B56110E8171D820500D8F000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B56110E9171D820500D8F000 /* Build configuration list for PBXNativeTarget "WhatsAround" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56110EA171D820500D8F000 /* Debug */,
+				B56110EB171D820500D8F000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B56110EC171D820500D8F000 /* Build configuration list for PBXNativeTarget "WhatsAroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56110ED171D820500D8F000 /* Debug */,
+				B56110EE171D820500D8F000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B56110AF171D820400D8F000 /* Project object */;
+}

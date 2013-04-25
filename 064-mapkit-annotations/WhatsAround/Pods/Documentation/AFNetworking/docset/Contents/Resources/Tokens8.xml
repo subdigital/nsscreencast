@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AFXMLRequestOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AFXMLRequestOperation</TokenIdentifier>
+			<Abstract type="html">AFXMLRequestOperation is a subclass of AFHTTPRequestOperation for downloading and working with XML response data.</Abstract>
+			<DeclaredIn>AFXMLRequestOperation.h</DeclaredIn>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFXMLRequestOperation/setResponseXMLParser:</TokenIdentifier>
+			<Abstract type="html">An NSXMLParser object constructed from the response data.</Abstract>
+			<DeclaredIn>AFXMLRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, strong) NSXMLParser *responseXMLParser</Declaration>
+			
+			
+			<Anchor>//api/name/responseXMLParser</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFXMLRequestOperation/responseXMLParser</TokenIdentifier>
+			<Abstract type="html">An NSXMLParser object constructed from the response data.</Abstract>
+			<DeclaredIn>AFXMLRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, strong) NSXMLParser *responseXMLParser</Declaration>
+			
+			
+			<Anchor>//api/name/responseXMLParser</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFXMLRequestOperation/setResponseXMLDocument:</TokenIdentifier>
+			<Abstract type="html">An NSXMLDocument object constructed from the response data. If an error occurs while parsing, nil will be returned, and the error property will be set to the error.</Abstract>
+			<DeclaredIn>AFXMLRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, strong) NSXMLDocument *responseXMLDocument</Declaration>
+			
+			
+			<Anchor>//api/name/responseXMLDocument</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFXMLRequestOperation/responseXMLDocument</TokenIdentifier>
+			<Abstract type="html">An NSXMLDocument object constructed from the response data. If an error occurs while parsing, nil will be returned, and the error property will be set to the error.</Abstract>
+			<DeclaredIn>AFXMLRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, strong) NSXMLDocument *responseXMLDocument</Declaration>
+			
+			
+			<Anchor>//api/name/responseXMLDocument</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AFXMLRequestOperation/XMLParserRequestOperationWithRequest:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an AFXMLRequestOperation object and sets the specified success and failure callbacks.</Abstract>
+			<DeclaredIn>AFXMLRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)XMLParserRequestOperationWithRequest:(NSURLRequest *)urlRequest success:(void ( ^ ) ( NSURLRequest *request , NSHTTPURLResponse *response , NSXMLParser *XMLParser ))success failure:(void ( ^ ) ( NSURLRequest *request , NSHTTPURLResponse *response , NSError *error , NSXMLParser *XMLParser ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlRequest</Name>
+					<Abstract type="html">The request object to be loaded asynchronously during execution of the operation</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the operation finishes successfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the XML parser constructed with the response data of request.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the operation finishes unsuccessfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the error describing the network error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new XML request operation</Abstract></ReturnValue>
+			<Anchor>//api/name/XMLParserRequestOperationWithRequest:success:failure:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AFXMLRequestOperation/XMLDocumentRequestOperationWithRequest:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an AFXMLRequestOperation object and sets the specified success and failure callbacks.</Abstract>
+			<DeclaredIn>AFXMLRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)XMLDocumentRequestOperationWithRequest:(NSURLRequest *)urlRequest success:(void ( ^ ) ( NSURLRequest *request , NSHTTPURLResponse *response , NSXMLDocument *document ))success failure:(void ( ^ ) ( NSURLRequest *request , NSHTTPURLResponse *response , NSError *error , NSXMLDocument *document ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlRequest</Name>
+					<Abstract type="html">The request object to be loaded asynchronously during execution of the operation</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the operation finishes successfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the XML document created from the response data of request.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data as XML. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new XML request operation</Abstract></ReturnValue>
+			<Anchor>//api/name/XMLDocumentRequestOperationWithRequest:success:failure:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
