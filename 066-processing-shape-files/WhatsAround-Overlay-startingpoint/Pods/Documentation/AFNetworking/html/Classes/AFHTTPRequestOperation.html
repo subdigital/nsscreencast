@@ -1,0 +1,949 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AFHTTPRequestOperation Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AFNetworking 1.2.1 </a></h1>
+				<a id="developerHome" href="../index.html">Mattt Thompson and Scott Raymond</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AFHTTPRequestOperation Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/failureCallbackQueue">&nbsp;&nbsp;&nbsp;&nbsp;failureCallbackQueue</option>
+	
+	<option value="//api/name/hasAcceptableContentType">&nbsp;&nbsp;&nbsp;&nbsp;hasAcceptableContentType</option>
+	
+	<option value="//api/name/hasAcceptableStatusCode">&nbsp;&nbsp;&nbsp;&nbsp;hasAcceptableStatusCode</option>
+	
+	<option value="//api/name/response">&nbsp;&nbsp;&nbsp;&nbsp;response</option>
+	
+	<option value="//api/name/successCallbackQueue">&nbsp;&nbsp;&nbsp;&nbsp;successCallbackQueue</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/acceptableContentTypes">&nbsp;&nbsp;&nbsp;&nbsp;+ acceptableContentTypes</option>
+	
+	<option value="//api/name/acceptableStatusCodes">&nbsp;&nbsp;&nbsp;&nbsp;+ acceptableStatusCodes</option>
+	
+	<option value="//api/name/addAcceptableContentTypes:">&nbsp;&nbsp;&nbsp;&nbsp;+ addAcceptableContentTypes:</option>
+	
+	<option value="//api/name/addAcceptableStatusCodes:">&nbsp;&nbsp;&nbsp;&nbsp;+ addAcceptableStatusCodes:</option>
+	
+	<option value="//api/name/canProcessRequest:">&nbsp;&nbsp;&nbsp;&nbsp;+ canProcessRequest:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/setCompletionBlockWithSuccess:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- setCompletionBlockWithSuccess:failure:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting HTTP URL Connection Information">Getting HTTP URL Connection Information</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing And Checking For Acceptable HTTP Responses">Managing And Checking For Acceptable HTTP Responses</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Acceptable HTTP Status Codes &amp; Content Types">Managing Acceptable HTTP Status Codes &amp; Content Types</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Determining Whether A Request Can Be Processed">Determining Whether A Request Can Be Processed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setting Completion Block Success / Failure Callbacks">Setting Completion Block Success / Failure Callbacks</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/failureCallbackQueue">failureCallbackQueue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasAcceptableContentType">hasAcceptableContentType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasAcceptableStatusCode">hasAcceptableStatusCode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/response">response</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/successCallbackQueue">successCallbackQueue</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/acceptableContentTypes">acceptableContentTypes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/acceptableStatusCodes">acceptableStatusCodes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAcceptableContentTypes:">addAcceptableContentTypes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAcceptableStatusCodes:">addAcceptableStatusCodes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/canProcessRequest:">canProcessRequest:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCompletionBlockWithSuccess:failure:">setCompletionBlockWithSuccess:failure:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AFHTTPRequestOperation Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AFHTTPRequestOperation Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/AFURLConnectionOperation.html">AFURLConnectionOperation</a> : NSOperation</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AFHTTPRequestOperation.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>AFHTTPRequestOperation</code> is a subclass of <a href="../Classes/AFURLConnectionOperation.html"><code>AFURLConnectionOperation</code></a> for requests using the HTTP or HTTPS protocols. It encapsulates the concept of acceptable status codes and content types, which determine the success or failure of a request.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Getting HTTP URL Connection Information" name="task_Getting HTTP URL Connection Information"></a>
+						<h3 class="subsubtitle task-title">Getting HTTP URL Connection Information</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/response">&nbsp;&nbsp;response</a></code>
+		<span class="tooltip"><p>The last HTTP response received by the operation&rsquo;s connection.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing And Checking For Acceptable HTTP Responses" name="task_Managing And Checking For Acceptable HTTP Responses"></a>
+						<h3 class="subsubtitle task-title">Managing And Checking For Acceptable HTTP Responses</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasAcceptableStatusCode">&nbsp;&nbsp;hasAcceptableStatusCode</a></code>
+		<span class="tooltip"><p>A Boolean value that corresponds to whether the status code of the <a href="#//api/name/response">response</a> is within the specified set of acceptable status codes. Returns <code>YES</code> if <a href="#//api/name/acceptableStatusCodes"><code>acceptableStatusCodes</code></a> is <code>nil</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasAcceptableContentType">&nbsp;&nbsp;hasAcceptableContentType</a></code>
+		<span class="tooltip"><p>A Boolean value that corresponds to whether the MIME type of the <a href="#//api/name/response">response</a> is among the specified set of acceptable content types. Returns <code>YES</code> if <a href="#//api/name/acceptableContentTypes"><code>acceptableContentTypes</code></a> is <code>nil</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/successCallbackQueue">&nbsp;&nbsp;successCallbackQueue</a></code>
+		<span class="tooltip"><p>The callback dispatch queue on success. If <code>NULL</code> (default), the main queue is used.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/failureCallbackQueue">&nbsp;&nbsp;failureCallbackQueue</a></code>
+		<span class="tooltip"><p>The callback dispatch queue on failure. If <code>NULL</code> (default), the main queue is used.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Acceptable HTTP Status Codes &amp; Content Types" name="task_Managing Acceptable HTTP Status Codes &amp; Content Types"></a>
+						<h3 class="subsubtitle task-title">Managing Acceptable HTTP Status Codes &amp; Content Types</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/acceptableStatusCodes">+&nbsp;acceptableStatusCodes</a></code>
+		<span class="tooltip"><p>Returns an <code>NSIndexSet</code> object containing the ranges of acceptable HTTP status codes. When non-<code>nil</code>, the operation will set the <code>error</code> property to an error in <code>AFErrorDomain</code>. See <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAcceptableStatusCodes:">+&nbsp;addAcceptableStatusCodes:</a></code>
+		<span class="tooltip"><p>Adds status codes to the set of acceptable HTTP status codes returned by <a href="#//api/name/acceptableStatusCodes"><code>acceptableStatusCodes</code></a> in subsequent calls by this class and its descendants.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/acceptableContentTypes">+&nbsp;acceptableContentTypes</a></code>
+		<span class="tooltip"><p>Returns an <code>NSSet</code> object containing the acceptable MIME types. When non-<code>nil</code>, the operation will set the <code>error</code> property to an error in <code>AFErrorDomain</code>. See <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html</a>#sec14.17</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAcceptableContentTypes:">+&nbsp;addAcceptableContentTypes:</a></code>
+		<span class="tooltip"><p>Adds content types to the set of acceptable MIME types returned by <a href="#//api/name/acceptableContentTypes"><code>acceptableContentTypes</code></a> in subsequent calls by this class and its descendants.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Determining Whether A Request Can Be Processed" name="task_Determining Whether A Request Can Be Processed"></a>
+						<h3 class="subsubtitle task-title">Determining Whether A Request Can Be Processed</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/canProcessRequest:">+&nbsp;canProcessRequest:</a></code>
+		<span class="tooltip"><p>A Boolean value determining whether or not the class can process the specified request. For example, <a href="../Classes/AFJSONRequestOperation.html"><code>AFJSONRequestOperation</code></a> may check to make sure the content type was <code>application/json</code> or the URL path extension was <code>.json</code>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Setting Completion Block Success / Failure Callbacks" name="task_Setting Completion Block Success / Failure Callbacks"></a>
+						<h3 class="subsubtitle task-title">Setting Completion Block Success / Failure Callbacks</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setCompletionBlockWithSuccess:failure:">&ndash;&nbsp;setCompletionBlockWithSuccess:failure:</a></code>
+		<span class="tooltip"><p>Sets the <code>completionBlock</code> property with a block that executes either the specified success or failure block, depending on the state of the request on completion. If <code>error</code> returns a value, which can be caused by an unacceptable status code or content type, then <code>failure</code> is executed. Otherwise, <code>success</code> is executed.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/failureCallbackQueue" title="failureCallbackQueue"></a>
+	<h3 class="subsubtitle method-title">failureCallbackQueue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The callback dispatch queue on failure. If <code>NULL</code> (default), the main queue is used.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) dispatch_queue_t failureCallbackQueue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The callback dispatch queue on failure. If <code>NULL</code> (default), the main queue is used.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPRequestOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasAcceptableContentType" title="hasAcceptableContentType"></a>
+	<h3 class="subsubtitle method-title">hasAcceptableContentType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A Boolean value that corresponds to whether the MIME type of the <a href="#//api/name/response">response</a> is among the specified set of acceptable content types. Returns <code>YES</code> if <a href="#//api/name/acceptableContentTypes"><code>acceptableContentTypes</code></a> is <code>nil</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL hasAcceptableContentType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A Boolean value that corresponds to whether the MIME type of the <a href="#//api/name/response">response</a> is among the specified set of acceptable content types. Returns <code>YES</code> if <a href="#//api/name/acceptableContentTypes"><code>acceptableContentTypes</code></a> is <code>nil</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPRequestOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasAcceptableStatusCode" title="hasAcceptableStatusCode"></a>
+	<h3 class="subsubtitle method-title">hasAcceptableStatusCode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A Boolean value that corresponds to whether the status code of the <a href="#//api/name/response">response</a> is within the specified set of acceptable status codes. Returns <code>YES</code> if <a href="#//api/name/acceptableStatusCodes"><code>acceptableStatusCodes</code></a> is <code>nil</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL hasAcceptableStatusCode</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A Boolean value that corresponds to whether the status code of the <a href="#//api/name/response">response</a> is within the specified set of acceptable status codes. Returns <code>YES</code> if <a href="#//api/name/acceptableStatusCodes"><code>acceptableStatusCodes</code></a> is <code>nil</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPRequestOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/response" title="response"></a>
+	<h3 class="subsubtitle method-title">response</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The last HTTP response received by the operation&rsquo;s connection.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) NSHTTPURLResponse *response</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The last HTTP response received by the operation&rsquo;s connection.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPRequestOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/successCallbackQueue" title="successCallbackQueue"></a>
+	<h3 class="subsubtitle method-title">successCallbackQueue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The callback dispatch queue on success. If <code>NULL</code> (default), the main queue is used.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) dispatch_queue_t successCallbackQueue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The callback dispatch queue on success. If <code>NULL</code> (default), the main queue is used.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPRequestOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/acceptableContentTypes" title="acceptableContentTypes"></a>
+	<h3 class="subsubtitle method-title">acceptableContentTypes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an <code>NSSet</code> object containing the acceptable MIME types. When non-<code>nil</code>, the operation will set the <code>error</code> property to an error in <code>AFErrorDomain</code>. See <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html</a>#sec14.17</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSSet *)acceptableContentTypes</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns an <code>NSSet</code> object containing the acceptable MIME types. When non-<code>nil</code>, the operation will set the <code>error</code> property to an error in <code>AFErrorDomain</code>. See <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html</a>#sec14.17</p>
+
+<p>By default, this is <code>nil</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPRequestOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/acceptableStatusCodes" title="acceptableStatusCodes"></a>
+	<h3 class="subsubtitle method-title">acceptableStatusCodes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an <code>NSIndexSet</code> object containing the ranges of acceptable HTTP status codes. When non-<code>nil</code>, the operation will set the <code>error</code> property to an error in <code>AFErrorDomain</code>. See <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSIndexSet *)acceptableStatusCodes</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns an <code>NSIndexSet</code> object containing the ranges of acceptable HTTP status codes. When non-<code>nil</code>, the operation will set the <code>error</code> property to an error in <code>AFErrorDomain</code>. See <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>
+
+<p>By default, this is the range 200 to 299, inclusive.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPRequestOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addAcceptableContentTypes:" title="addAcceptableContentTypes:"></a>
+	<h3 class="subsubtitle method-title">addAcceptableContentTypes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds content types to the set of acceptable MIME types returned by <a href="#//api/name/acceptableContentTypes"><code>acceptableContentTypes</code></a> in subsequent calls by this class and its descendants.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)addAcceptableContentTypes:(NSSet *)<em>contentTypes</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>contentTypes</em></dt>
+			<dd><p>The content types to be added to the set of acceptable MIME types</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adds content types to the set of acceptable MIME types returned by <a href="#//api/name/acceptableContentTypes"><code>acceptableContentTypes</code></a> in subsequent calls by this class and its descendants.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPRequestOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addAcceptableStatusCodes:" title="addAcceptableStatusCodes:"></a>
+	<h3 class="subsubtitle method-title">addAcceptableStatusCodes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds status codes to the set of acceptable HTTP status codes returned by <a href="#//api/name/acceptableStatusCodes"><code>acceptableStatusCodes</code></a> in subsequent calls by this class and its descendants.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)addAcceptableStatusCodes:(NSIndexSet *)<em>statusCodes</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>statusCodes</em></dt>
+			<dd><p>The status codes to be added to the set of acceptable HTTP status codes</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adds status codes to the set of acceptable HTTP status codes returned by <a href="#//api/name/acceptableStatusCodes"><code>acceptableStatusCodes</code></a> in subsequent calls by this class and its descendants.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPRequestOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/canProcessRequest:" title="canProcessRequest:"></a>
+	<h3 class="subsubtitle method-title">canProcessRequest:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A Boolean value determining whether or not the class can process the specified request. For example, <a href="../Classes/AFJSONRequestOperation.html"><code>AFJSONRequestOperation</code></a> may check to make sure the content type was <code>application/json</code> or the URL path extension was <code>.json</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)canProcessRequest:(NSURLRequest *)<em>urlRequest</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlRequest</em></dt>
+			<dd><p>The request that is determined to be supported or not supported for this class.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A Boolean value determining whether or not the class can process the specified request. For example, <a href="../Classes/AFJSONRequestOperation.html"><code>AFJSONRequestOperation</code></a> may check to make sure the content type was <code>application/json</code> or the URL path extension was <code>.json</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPRequestOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/setCompletionBlockWithSuccess:failure:" title="setCompletionBlockWithSuccess:failure:"></a>
+	<h3 class="subsubtitle method-title">setCompletionBlockWithSuccess:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the <code>completionBlock</code> property with a block that executes either the specified success or failure block, depending on the state of the request on completion. If <code>error</code> returns a value, which can be caused by an unacceptable status code or content type, then <code>failure</code> is executed. Otherwise, <code>success</code> is executed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setCompletionBlockWithSuccess:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))<em>success</em> failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>The block to be executed on the completion of a successful request. This block has no return value and takes two arguments: the receiver operation and the object constructed from the <a href="#//api/name/response">response</a> data of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>The block to be executed on the completion of an unsuccessful request. This block has no return value and takes two arguments: the receiver operation and the error that occurred during the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the <code>completionBlock</code> property with a block that executes either the specified success or failure block, depending on the state of the request on completion. If <code>error</code> returns a value, which can be caused by an unacceptable status code or content type, then <code>failure</code> is executed. Otherwise, <code>success</code> is executed.</p>
+
+<p>This method should be overridden in subclasses in order to specify the <a href="#//api/name/response">response</a> object passed into the success block.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPRequestOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Mattt Thompson and Scott Raymond. All rights reserved. (Last updated: 2013-04-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

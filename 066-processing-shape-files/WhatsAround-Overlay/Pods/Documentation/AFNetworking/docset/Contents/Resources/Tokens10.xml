@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AFMultipartFormData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AFMultipartFormData</TokenIdentifier>
+			<Abstract type="html">The AFMultipartFormData protocol defines the methods supported by the parameter in the block argument of AFHTTPClient -multipartFormRequestWithMethod:path:parameters:constructingBodyWithBlock:.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithFileURL:name:error:</TokenIdentifier>
+			<Abstract type="html">Appends the HTTP header Content-Disposition: file; filename=#{generated filename}; name=#{name}&quot; and Content-Type: #{generated mimeType}, followed by the encoded file data and the multipart form boundary.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)appendPartWithFileURL:(NSURL *)fileURL name:(NSString *)name error:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fileURL</Name>
+					<Abstract type="html">The URL corresponding to the file whose content will be appended to the form. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name to be associated with the specified data. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">If an error occurs, upon return contains an NSError object that describes the problem.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the file data was successfully appended, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/appendPartWithFileURL:name:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithFileURL:name:fileName:mimeType:error:</TokenIdentifier>
+			<Abstract type="html">Appends the HTTP header Content-Disposition: file; filename=#{filename}; name=#{name}&quot; and Content-Type: #{mimeType}, followed by the encoded file data and the multipart form boundary.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)appendPartWithFileURL:(NSURL *)fileURL name:(NSString *)name fileName:(NSString *)fileName mimeType:(NSString *)mimeType error:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fileURL</Name>
+					<Abstract type="html">The URL corresponding to the file whose content will be appended to the form. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name to be associated with the specified data. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The file name to be used in the Content-Disposition header. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">The declared MIME type of the file data. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">If an error occurs, upon return contains an NSError object that describes the problem.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the file data was successfully appended otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/appendPartWithFileURL:name:fileName:mimeType:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithInputStream:name:fileName:length:mimeType:</TokenIdentifier>
+			<Abstract type="html">Appends the HTTP header Content-Disposition: file; filename=#{filename}; name=#{name}&quot; and Content-Type: #{mimeType}, followed by the data from the input stream and the multipart form boundary.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)appendPartWithInputStream:(NSInputStream *)inputStream name:(NSString *)name fileName:(NSString *)fileName length:(unsigned long long)length mimeType:(NSString *)mimeType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>inputStream</Name>
+					<Abstract type="html">The input stream to be appended to the form data</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name to be associated with the specified input stream. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The filename to be associated with the specified input stream. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>length</Name>
+					<Abstract type="html">The length of the specified input stream in bytes.</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">The MIME type of the specified data. (For example, the MIME type for a JPEG image is image/jpeg.) For a list of valid MIME types, see http://www.iana.org/assignments/media-types/. This parameter must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/appendPartWithInputStream:name:fileName:length:mimeType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithFileData:name:fileName:mimeType:</TokenIdentifier>
+			<Abstract type="html">Appends the HTTP header Content-Disposition: file; filename=#{filename}; name=#{name}&quot; and Content-Type: #{mimeType}, followed by the encoded file data and the multipart form boundary.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)appendPartWithFileData:(NSData *)data name:(NSString *)name fileName:(NSString *)fileName mimeType:(NSString *)mimeType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data to be encoded and appended to the form data.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name to be associated with the specified data. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The filename to be associated with the specified data. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">The MIME type of the specified data. (For example, the MIME type for a JPEG image is image/jpeg.) For a list of valid MIME types, see http://www.iana.org/assignments/media-types/. This parameter must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/appendPartWithFileData:name:fileName:mimeType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithFormData:name:</TokenIdentifier>
+			<Abstract type="html">Appends the HTTP headers Content-Disposition: form-data; name=#{name}&quot;, followed by the encoded data and the multipart form boundary.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)appendPartWithFormData:(NSData *)data name:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data to be encoded and appended to the form data.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name to be associated with the specified data. This parameter must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/appendPartWithFormData:name:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithHeaders:body:</TokenIdentifier>
+			<Abstract type="html">Appends HTTP headers, followed by the encoded data and the multipart form boundary.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)appendPartWithHeaders:(NSDictionary *)headers body:(NSData *)body</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>headers</Name>
+					<Abstract type="html">The HTTP headers to be appended to the form data.</Abstract>
+				</Parameter><Parameter>
+					<Name>body</Name>
+					<Abstract type="html">The data to be encoded and appended to the form data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/appendPartWithHeaders:body:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/throttleBandwidthWithPacketSize:delay:</TokenIdentifier>
+			<Abstract type="html">Throttles request bandwidth by limiting the packet size and adding a delay for each chunk read from the upload stream.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)throttleBandwidthWithPacketSize:(NSUInteger)numberOfBytes delay:(NSTimeInterval)delay</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>numberOfBytes</Name>
+					<Abstract type="html">Maximum packet size, in number of bytes. The default packet size for an input stream is 32kb.</Abstract>
+				</Parameter><Parameter>
+					<Name>delay</Name>
+					<Abstract type="html">Duration of delay each time a packet is read. By default, no delay is set.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/throttleBandwidthWithPacketSize:delay:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

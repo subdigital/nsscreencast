@@ -1,0 +1,783 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AFMultipartFormData Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AFNetworking 1.2.1 </a></h1>
+				<a id="developerHome" href="../index.html">Mattt Thompson and Scott Raymond</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AFMultipartFormData Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/appendPartWithFileData:name:fileName:mimeType:">&nbsp;&nbsp;&nbsp;&nbsp;- appendPartWithFileData:name:fileName:mimeType:</option>
+	
+	<option value="//api/name/appendPartWithFileURL:name:error:">&nbsp;&nbsp;&nbsp;&nbsp;- appendPartWithFileURL:name:error:</option>
+	
+	<option value="//api/name/appendPartWithFileURL:name:fileName:mimeType:error:">&nbsp;&nbsp;&nbsp;&nbsp;- appendPartWithFileURL:name:fileName:mimeType:error:</option>
+	
+	<option value="//api/name/appendPartWithFormData:name:">&nbsp;&nbsp;&nbsp;&nbsp;- appendPartWithFormData:name:</option>
+	
+	<option value="//api/name/appendPartWithHeaders:body:">&nbsp;&nbsp;&nbsp;&nbsp;- appendPartWithHeaders:body:</option>
+	
+	<option value="//api/name/appendPartWithInputStream:name:fileName:length:mimeType:">&nbsp;&nbsp;&nbsp;&nbsp;- appendPartWithInputStream:name:fileName:length:mimeType:</option>
+	
+	<option value="//api/name/throttleBandwidthWithPacketSize:delay:">&nbsp;&nbsp;&nbsp;&nbsp;- throttleBandwidthWithPacketSize:delay:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendPartWithFileData:name:fileName:mimeType:">appendPartWithFileData:name:fileName:mimeType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendPartWithFileURL:name:error:">appendPartWithFileURL:name:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendPartWithFileURL:name:fileName:mimeType:error:">appendPartWithFileURL:name:fileName:mimeType:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendPartWithFormData:name:">appendPartWithFormData:name:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendPartWithHeaders:body:">appendPartWithHeaders:body:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendPartWithInputStream:name:fileName:length:mimeType:">appendPartWithInputStream:name:fileName:length:mimeType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/throttleBandwidthWithPacketSize:delay:">throttleBandwidthWithPacketSize:delay:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AFMultipartFormData Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AFMultipartFormData Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AFHTTPClient.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>AFMultipartFormData</code> protocol defines the methods supported by the parameter in the block argument of <code></code>AFHTTPClient<code> -multipartFormRequestWithMethod:path:parameters:constructingBodyWithBlock:</code>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appendPartWithFileURL:name:error:">&ndash;&nbsp;appendPartWithFileURL:name:error:</a></code>
+		<span class="tooltip"><p>Appends the HTTP header <code>Content-Disposition: file; filename=#{generated filename}; name=#{name}"</code> and <code>Content-Type: #{generated mimeType}</code>, followed by the encoded file data and the multipart form boundary.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appendPartWithFileURL:name:fileName:mimeType:error:">&ndash;&nbsp;appendPartWithFileURL:name:fileName:mimeType:error:</a></code>
+		<span class="tooltip"><p>Appends the HTTP header <code>Content-Disposition: file; filename=#{filename}; name=#{name}"</code> and <code>Content-Type: #{mimeType}</code>, followed by the encoded file data and the multipart form boundary.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appendPartWithInputStream:name:fileName:length:mimeType:">&ndash;&nbsp;appendPartWithInputStream:name:fileName:length:mimeType:</a></code>
+		<span class="tooltip"><p>Appends the HTTP header <code>Content-Disposition: file; filename=#{filename}; name=#{name}"</code> and <code>Content-Type: #{mimeType}</code>, followed by the data from the input stream and the multipart form boundary.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appendPartWithFileData:name:fileName:mimeType:">&ndash;&nbsp;appendPartWithFileData:name:fileName:mimeType:</a></code>
+		<span class="tooltip"><p>Appends the HTTP header <code>Content-Disposition: file; filename=#{filename}; name=#{name}"</code> and <code>Content-Type: #{mimeType}</code>, followed by the encoded file data and the multipart form boundary.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appendPartWithFormData:name:">&ndash;&nbsp;appendPartWithFormData:name:</a></code>
+		<span class="tooltip"><p>Appends the HTTP headers <code>Content-Disposition: form-data; name=#{name}"</code>, followed by the encoded data and the multipart form boundary.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appendPartWithHeaders:body:">&ndash;&nbsp;appendPartWithHeaders:body:</a></code>
+		<span class="tooltip"><p>Appends HTTP headers, followed by the encoded data and the multipart form boundary.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/throttleBandwidthWithPacketSize:delay:">&ndash;&nbsp;throttleBandwidthWithPacketSize:delay:</a></code>
+		<span class="tooltip"><p>Throttles request bandwidth by limiting the packet size and adding a delay for each chunk read from the upload stream.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/appendPartWithFileData:name:fileName:mimeType:" title="appendPartWithFileData:name:fileName:mimeType:"></a>
+	<h3 class="subsubtitle method-title">appendPartWithFileData:name:fileName:mimeType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Appends the HTTP header <code>Content-Disposition: file; filename=#{filename}; name=#{name}"</code> and <code>Content-Type: #{mimeType}</code>, followed by the encoded file data and the multipart form boundary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)appendPartWithFileData:(NSData *)<em>data</em> name:(NSString *)<em>name</em> fileName:(NSString *)<em>fileName</em> mimeType:(NSString *)<em>mimeType</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>The data to be encoded and appended to the form data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name to be associated with the specified data. This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileName</em></dt>
+			<dd><p>The filename to be associated with the specified data. This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mimeType</em></dt>
+			<dd><p>The MIME type of the specified data. (For example, the MIME type for a JPEG image is image/jpeg.) For a list of valid MIME types, see <a href="http://www.iana.org/assignments/media-types/.">http://www.iana.org/assignments/media-types/.</a> This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Appends the HTTP header <code>Content-Disposition: file; filename=#{filename}; name=#{name}"</code> and <code>Content-Type: #{mimeType}</code>, followed by the encoded file data and the multipart form boundary.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/appendPartWithFileURL:name:error:" title="appendPartWithFileURL:name:error:"></a>
+	<h3 class="subsubtitle method-title">appendPartWithFileURL:name:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Appends the HTTP header <code>Content-Disposition: file; filename=#{generated filename}; name=#{name}"</code> and <code>Content-Type: #{generated mimeType}</code>, followed by the encoded file data and the multipart form boundary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)appendPartWithFileURL:(NSURL *)<em>fileURL</em> name:(NSString *)<em>name</em> error:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileURL</em></dt>
+			<dd><p>The URL corresponding to the file whose content will be appended to the form. This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name to be associated with the specified data. This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>If an error occurs, upon return contains an <code>NSError</code> object that describes the problem.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the file data was successfully appended, otherwise <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Appends the HTTP header <code>Content-Disposition: file; filename=#{generated filename}; name=#{name}"</code> and <code>Content-Type: #{generated mimeType}</code>, followed by the encoded file data and the multipart form boundary.</p>
+
+<p>The filename and MIME type for this data in the form will be automatically generated, using the last path component of the <code>fileURL</code> and system associated MIME type for the <code>fileURL</code> extension, respectively.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/appendPartWithFileURL:name:fileName:mimeType:error:" title="appendPartWithFileURL:name:fileName:mimeType:error:"></a>
+	<h3 class="subsubtitle method-title">appendPartWithFileURL:name:fileName:mimeType:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Appends the HTTP header <code>Content-Disposition: file; filename=#{filename}; name=#{name}"</code> and <code>Content-Type: #{mimeType}</code>, followed by the encoded file data and the multipart form boundary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)appendPartWithFileURL:(NSURL *)<em>fileURL</em> name:(NSString *)<em>name</em> fileName:(NSString *)<em>fileName</em> mimeType:(NSString *)<em>mimeType</em> error:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileURL</em></dt>
+			<dd><p>The URL corresponding to the file whose content will be appended to the form. This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name to be associated with the specified data. This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileName</em></dt>
+			<dd><p>The file name to be used in the <code>Content-Disposition</code> header. This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mimeType</em></dt>
+			<dd><p>The declared MIME type of the file data. This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>If an error occurs, upon return contains an <code>NSError</code> object that describes the problem.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the file data was successfully appended otherwise <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Appends the HTTP header <code>Content-Disposition: file; filename=#{filename}; name=#{name}"</code> and <code>Content-Type: #{mimeType}</code>, followed by the encoded file data and the multipart form boundary.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/appendPartWithFormData:name:" title="appendPartWithFormData:name:"></a>
+	<h3 class="subsubtitle method-title">appendPartWithFormData:name:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Appends the HTTP headers <code>Content-Disposition: form-data; name=#{name}"</code>, followed by the encoded data and the multipart form boundary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)appendPartWithFormData:(NSData *)<em>data</em> name:(NSString *)<em>name</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>The data to be encoded and appended to the form data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name to be associated with the specified data. This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Appends the HTTP headers <code>Content-Disposition: form-data; name=#{name}"</code>, followed by the encoded data and the multipart form boundary.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/appendPartWithHeaders:body:" title="appendPartWithHeaders:body:"></a>
+	<h3 class="subsubtitle method-title">appendPartWithHeaders:body:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Appends HTTP headers, followed by the encoded data and the multipart form boundary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)appendPartWithHeaders:(NSDictionary *)<em>headers</em> body:(NSData *)<em>body</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>headers</em></dt>
+			<dd><p>The HTTP headers to be appended to the form data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>body</em></dt>
+			<dd><p>The data to be encoded and appended to the form data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Appends HTTP headers, followed by the encoded data and the multipart form boundary.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/appendPartWithInputStream:name:fileName:length:mimeType:" title="appendPartWithInputStream:name:fileName:length:mimeType:"></a>
+	<h3 class="subsubtitle method-title">appendPartWithInputStream:name:fileName:length:mimeType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Appends the HTTP header <code>Content-Disposition: file; filename=#{filename}; name=#{name}"</code> and <code>Content-Type: #{mimeType}</code>, followed by the data from the input stream and the multipart form boundary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)appendPartWithInputStream:(NSInputStream *)<em>inputStream</em> name:(NSString *)<em>name</em> fileName:(NSString *)<em>fileName</em> length:(unsigned long long)<em>length</em> mimeType:(NSString *)<em>mimeType</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>inputStream</em></dt>
+			<dd><p>The input stream to be appended to the form data</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name to be associated with the specified input stream. This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileName</em></dt>
+			<dd><p>The filename to be associated with the specified input stream. This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>length</em></dt>
+			<dd><p>The length of the specified input stream in bytes.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mimeType</em></dt>
+			<dd><p>The MIME type of the specified data. (For example, the MIME type for a JPEG image is image/jpeg.) For a list of valid MIME types, see <a href="http://www.iana.org/assignments/media-types/.">http://www.iana.org/assignments/media-types/.</a> This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Appends the HTTP header <code>Content-Disposition: file; filename=#{filename}; name=#{name}"</code> and <code>Content-Type: #{mimeType}</code>, followed by the data from the input stream and the multipart form boundary.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/throttleBandwidthWithPacketSize:delay:" title="throttleBandwidthWithPacketSize:delay:"></a>
+	<h3 class="subsubtitle method-title">throttleBandwidthWithPacketSize:delay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Throttles request bandwidth by limiting the packet size and adding a delay for each chunk read from the upload stream.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)throttleBandwidthWithPacketSize:(NSUInteger)<em>numberOfBytes</em> delay:(NSTimeInterval)<em>delay</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>numberOfBytes</em></dt>
+			<dd><p>Maximum packet size, in number of bytes. The default packet size for an input stream is 32kb.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delay</em></dt>
+			<dd><p>Duration of delay each time a packet is read. By default, no delay is set.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Throttles request bandwidth by limiting the packet size and adding a delay for each chunk read from the upload stream.</p>
+
+<p>When uploading over a 3G or EDGE connection, requests may fail with &ldquo;request body stream exhausted&rdquo;. Setting a maximum packet size and delay according to the recommended values (<code>kAFUploadStream3GSuggestedPacketSize</code> and <code>kAFUploadStream3GSuggestedDelay</code>) lowers the risk of the input stream exceeding its allocated bandwidth. Unfortunately, as of iOS 6, there is no definite way to distinguish between a 3G, EDGE, or LTE connection. As such, it is not recommended that you throttle bandwidth based solely on network reachability. Instead, you should consider checking for the &ldquo;request body stream exhausted&rdquo; in a failure block, and then retrying the request with throttled bandwidth.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Mattt Thompson and Scott Raymond. All rights reserved. (Last updated: 2013-04-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

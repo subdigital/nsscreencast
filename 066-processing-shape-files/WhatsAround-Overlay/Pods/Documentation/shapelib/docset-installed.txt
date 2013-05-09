@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/ben/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.shapelib.shapelib-1.3.docset
+Time: 2013-04-29 13:06:59 +0000

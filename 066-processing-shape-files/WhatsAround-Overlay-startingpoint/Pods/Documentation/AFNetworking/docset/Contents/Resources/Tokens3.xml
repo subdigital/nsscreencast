@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AFImageRequestOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AFImageRequestOperation</TokenIdentifier>
+			<Abstract type="html">AFImageRequestOperation is a subclass of AFHTTPRequestOperation for downloading an processing images.</Abstract>
+			<DeclaredIn>AFImageRequestOperation.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFImageRequestOperation/setResponseImage:</TokenIdentifier>
+			<Abstract type="html">An image constructed from the response data. If an error occurs during the request, nil will be returned, and the error property will be set to the error.</Abstract>
+			<DeclaredIn>AFImageRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, strong) UIImage *responseImage</Declaration>
+			
+			
+			<Anchor>//api/name/responseImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFImageRequestOperation/responseImage</TokenIdentifier>
+			<Abstract type="html">An image constructed from the response data. If an error occurs during the request, nil will be returned, and the error property will be set to the error.</Abstract>
+			<DeclaredIn>AFImageRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, strong) UIImage *responseImage</Declaration>
+			
+			
+			<Anchor>//api/name/responseImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFImageRequestOperation/setImageScale:</TokenIdentifier>
+			<Abstract type="html">The scale factor used when interpreting the image data to construct responseImage. Specifying a scale factor of 1.0 results in an image whose size matches the pixel-based dimensions of the image. Applying a different scale factor changes the size of the image as reported by the size property. This is set to the value of scale of the main screen by default, which automatically scales images for retina displays, for instance.</Abstract>
+			<DeclaredIn>AFImageRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat imageScale</Declaration>
+			
+			
+			<Anchor>//api/name/imageScale</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFImageRequestOperation/imageScale</TokenIdentifier>
+			<Abstract type="html">The scale factor used when interpreting the image data to construct responseImage. Specifying a scale factor of 1.0 results in an image whose size matches the pixel-based dimensions of the image. Applying a different scale factor changes the size of the image as reported by the size property. This is set to the value of scale of the main screen by default, which automatically scales images for retina displays, for instance.</Abstract>
+			<DeclaredIn>AFImageRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat imageScale</Declaration>
+			
+			
+			<Anchor>//api/name/imageScale</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AFImageRequestOperation/imageRequestOperationWithRequest:success:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an AFImageRequestOperation object and sets the specified success callback.</Abstract>
+			<DeclaredIn>AFImageRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)imageRequestOperationWithRequest:(NSURLRequest *)urlRequest success:(void ( ^ ) ( UIImage *image ))success</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlRequest</Name>
+					<Abstract type="html">The request object to be loaded asynchronously during execution of the operation.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the request finishes successfully. This block has no return value and takes a single arguments, the image created from the response data of the request.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new image request operation</Abstract></ReturnValue>
+			<Anchor>//api/name/imageRequestOperationWithRequest:success:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AFImageRequestOperation/imageRequestOperationWithRequest:imageProcessingBlock:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an AFImageRequestOperation object and sets the specified success callback.</Abstract>
+			<DeclaredIn>AFImageRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)imageRequestOperationWithRequest:(NSURLRequest *)urlRequest imageProcessingBlock:(UIImage *( ^ ) ( UIImage *image ))imageProcessingBlock success:(void ( ^ ) ( NSURLRequest *request , NSHTTPURLResponse *response , UIImage *image ))success failure:(void ( ^ ) ( NSURLRequest *request , NSHTTPURLResponse *response , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlRequest</Name>
+					<Abstract type="html">The request object to be loaded asynchronously during execution of the operation.</Abstract>
+				</Parameter><Parameter>
+					<Name>imageProcessingBlock</Name>
+					<Abstract type="html">A block object to be executed after the image request finishes successfully, but before the image is returned in the success block. This block takes a single argument, the image loaded from the response body, and returns the processed image.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the request finishes successfully, with a status code in the 2xx range, and with an acceptable content type (e.g. image/png). This block has no return value and takes three arguments: the request object of the operation, the response for the request, and the image created from the response data.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the request finishes unsuccessfully. This block has no return value and takes three arguments: the request object of the operation, the response for the request, and the error associated with the cause for the unsuccessful operation.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new image request operation</Abstract></ReturnValue>
+			<Anchor>//api/name/imageRequestOperationWithRequest:imageProcessingBlock:success:failure:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,1850 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AFURLConnectionOperation Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AFNetworking 1.2.1 </a></h1>
+				<a id="developerHome" href="../index.html">Mattt Thompson and Scott Raymond</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AFURLConnectionOperation Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/SSLPinningMode">&nbsp;&nbsp;&nbsp;&nbsp;SSLPinningMode</option>
+	
+	<option value="//api/name/allowsInvalidSSLCertificate">&nbsp;&nbsp;&nbsp;&nbsp;allowsInvalidSSLCertificate</option>
+	
+	<option value="//api/name/credential">&nbsp;&nbsp;&nbsp;&nbsp;credential</option>
+	
+	<option value="//api/name/error">&nbsp;&nbsp;&nbsp;&nbsp;error</option>
+	
+	<option value="//api/name/inputStream">&nbsp;&nbsp;&nbsp;&nbsp;inputStream</option>
+	
+	<option value="//api/name/outputStream">&nbsp;&nbsp;&nbsp;&nbsp;outputStream</option>
+	
+	<option value="//api/name/request">&nbsp;&nbsp;&nbsp;&nbsp;request</option>
+	
+	<option value="//api/name/response">&nbsp;&nbsp;&nbsp;&nbsp;response</option>
+	
+	<option value="//api/name/responseData">&nbsp;&nbsp;&nbsp;&nbsp;responseData</option>
+	
+	<option value="//api/name/responseString">&nbsp;&nbsp;&nbsp;&nbsp;responseString</option>
+	
+	<option value="//api/name/responseStringEncoding">&nbsp;&nbsp;&nbsp;&nbsp;responseStringEncoding</option>
+	
+	<option value="//api/name/runLoopModes">&nbsp;&nbsp;&nbsp;&nbsp;runLoopModes</option>
+	
+	<option value="//api/name/shouldUseCredentialStorage">&nbsp;&nbsp;&nbsp;&nbsp;shouldUseCredentialStorage</option>
+	
+	<option value="//api/name/userInfo">&nbsp;&nbsp;&nbsp;&nbsp;userInfo</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithRequest:</option>
+	
+	<option value="//api/name/isPaused">&nbsp;&nbsp;&nbsp;&nbsp;- isPaused</option>
+	
+	<option value="//api/name/pause">&nbsp;&nbsp;&nbsp;&nbsp;- pause</option>
+	
+	<option value="//api/name/resume">&nbsp;&nbsp;&nbsp;&nbsp;- resume</option>
+	
+	<option value="//api/name/setAuthenticationAgainstProtectionSpaceBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setAuthenticationAgainstProtectionSpaceBlock:</option>
+	
+	<option value="//api/name/setAuthenticationChallengeBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setAuthenticationChallengeBlock:</option>
+	
+	<option value="//api/name/setCacheResponseBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setCacheResponseBlock:</option>
+	
+	<option value="//api/name/setDownloadProgressBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setDownloadProgressBlock:</option>
+	
+	<option value="//api/name/setRedirectResponseBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setRedirectResponseBlock:</option>
+	
+	<option value="//api/name/setShouldExecuteAsBackgroundTaskWithExpirationHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- setShouldExecuteAsBackgroundTaskWithExpirationHandler:</option>
+	
+	<option value="//api/name/setUploadProgressBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setUploadProgressBlock:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Run Loop Modes">Accessing Run Loop Modes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting URL Connection Information">Getting URL Connection Information</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting Response Data">Getting Response Data</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing URL Credentials">Managing URL Credentials</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Streams">Accessing Streams</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Request Operation Information">Managing Request Operation Information</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing an AFURLConnectionOperation Object">Initializing an AFURLConnectionOperation Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Pausing / Resuming Requests">Pausing / Resuming Requests</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Backgrounding Task Behavior">Configuring Backgrounding Task Behavior</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setting Progress Callbacks">Setting Progress Callbacks</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setting NSURLConnection Delegate Callbacks">Setting NSURLConnection Delegate Callbacks</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/SSLPinningMode">SSLPinningMode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allowsInvalidSSLCertificate">allowsInvalidSSLCertificate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/credential">credential</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/error">error</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inputStream">inputStream</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/outputStream">outputStream</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/request">request</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/response">response</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/responseData">responseData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/responseString">responseString</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/responseStringEncoding">responseStringEncoding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/runLoopModes">runLoopModes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldUseCredentialStorage">shouldUseCredentialStorage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userInfo">userInfo</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithRequest:">initWithRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isPaused">isPaused</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pause">pause</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resume">resume</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAuthenticationAgainstProtectionSpaceBlock:">setAuthenticationAgainstProtectionSpaceBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAuthenticationChallengeBlock:">setAuthenticationChallengeBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCacheResponseBlock:">setCacheResponseBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDownloadProgressBlock:">setDownloadProgressBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRedirectResponseBlock:">setRedirectResponseBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setShouldExecuteAsBackgroundTaskWithExpirationHandler:">setShouldExecuteAsBackgroundTaskWithExpirationHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUploadProgressBlock:">setUploadProgressBlock:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AFURLConnectionOperation Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AFURLConnectionOperation Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSOperation</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">#<br />&amp;<br />(<br />)<br />1080<br />50000<br />&gt;=<br />NSCoding<br />NSCopying<br />NSURLConnectionDataDelegate<br />NSURLConnectionDelegate<br />\<br />__IPHONE_OS_VERSION_MIN_REQUIRED<br />__MAC_OS_X_VERSION_MIN_REQUIRED<br />defined<br />endif<br />if<br />|</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AFURLConnectionOperation.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>AFURLConnectionOperation</code> is a subclass of <code>NSOperation</code> that implements <code>NSURLConnection</code> delegate methods.</p>
+
+<h2>Subclassing Notes</h2>
+
+<p>This is the base class of all network <a href="#//api/name/request">request</a> operations. You may wish to create your own subclass in order to implement additional <code>NSURLConnection</code> delegate methods (see &ldquo;<code>NSURLConnection</code> Delegate Methods&rdquo; below), or to provide additional properties and/or class constructors.</p>
+
+<p>If you are creating a subclass that communicates over the HTTP or HTTPS protocols, you may want to consider subclassing <a href="../Classes/AFHTTPRequestOperation.html"><code>AFHTTPRequestOperation</code></a> instead, as it supports specifying acceptable content types or status codes.</p>
+
+<h2>NSURLConnection Delegate Methods</h2>
+
+<p><code>AFURLConnectionOperation</code> implements the following <code>NSURLConnection</code> delegate methods:</p>
+
+<ul>
+<li><code>connection:didReceiveResponse:</code></li>
+<li><code>connection:didReceiveData:</code></li>
+<li><code>connectionDidFinishLoading:</code></li>
+<li><code>connection:didFailWithError:</code></li>
+<li><code>connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:</code></li>
+<li><code>connection:willCacheResponse:</code></li>
+<li><code>connection:canAuthenticateAgainstProtectionSpace:</code></li>
+<li><code>connection:didReceiveAuthenticationChallenge:</code></li>
+<li><code>connectionShouldUseCredentialStorage:</code></li>
+<li><code>connection:needNewBodyStream:</code></li>
+</ul>
+
+
+<p>If any of these methods are overridden in a subclass, they <em>must</em> call the <code>super</code> implementation first.</p>
+
+<h2>Class Constructors</h2>
+
+<p>Class constructors, or methods that return an unowned instance, are the preferred way for subclasses to encapsulate any particular logic for handling the setup or parsing of <a href="#//api/name/response">response</a> data. For instance, <a href="../Classes/AFJSONRequestOperation.html"><code>AFJSONRequestOperation</code></a> provides <code>JSONRequestOperationWithRequest:success:failure:</code>, which takes block arguments, whose parameter on for a successful <a href="#//api/name/request">request</a> is the JSON object initialized from the <code></code>response<code> data</code>.</p>
+
+<h2>Callbacks and Completion Blocks</h2>
+
+<p>The built-in <code>completionBlock</code> provided by <code>NSOperation</code> allows for custom behavior to be executed after the <a href="#//api/name/request">request</a> finishes. It is a common pattern for class constructors in subclasses to take callback block parameters, and execute them conditionally in the body of its <code>completionBlock</code>. Make sure to handle cancelled operations appropriately when setting a <code>completionBlock</code> (i.e. returning early before parsing <a href="#//api/name/response">response</a> data). See the implementation of any of the <a href="../Classes/AFHTTPRequestOperation.html"><code>AFHTTPRequestOperation</code></a> subclasses for an example of this.</p>
+
+<p>Subclasses are strongly discouraged from overriding <code>setCompletionBlock:</code>, as <code>AFURLConnectionOperation</code>&rsquo;s implementation includes a workaround to mitigate retain cycles, and what Apple rather ominously refers to as <a href="http://developer.apple.com/library/ios/#technotes/tn2109/">&ldquo;The Deallocation Problem&rdquo;</a>.</p>
+
+<h2>SSL Pinning</h2>
+
+<p>Relying on the CA trust model to validate SSL certificates exposes your app to security vulnerabilities, such as man-in-the-middle attacks. For applications that connect to known servers, SSL certificate pinning provides an increased level of security, by checking server certificate validity against those specified in the app bundle.</p>
+
+<p>SSL with certificate pinning is strongly recommended for any application that transmits sensitive information to an external webservice.</p>
+
+<p>When <code>_AFNETWORKING_PIN_SSL_CERTIFICATES_</code> is defined and the Security framework is linked, connections will be validated on all matching certificates with a <code>.cer</code> extension in the bundle root.</p>
+
+<h2>NSCoding &amp; NSCopying Conformance</h2>
+
+<p><code>AFURLConnectionOperation</code> conforms to the <code>NSCoding</code> and <code>NSCopying</code> protocols, allowing operations to be archived to disk, and copied in memory, respectively. However, because of the intrinsic limitations of capturing the exact state of an operation at a particular moment, there are some important caveats to keep in mind:</p>
+
+<h3>NSCoding Caveats</h3>
+
+<ul>
+<li>Encoded operations do not include any block or stream properties. Be sure to set <code>completionBlock</code>, <a href="#//api/name/outputStream"><code>outputStream</code></a>, and any callback blocks as necessary when using <code>-initWithCoder:</code> or <code>NSKeyedUnarchiver</code>.</li>
+<li>Operations are paused on <code>encodeWithCoder:</code>. If the operation was encoded while paused or still executing, its archived state will return <code>YES</code> for <code>isReady</code>. Otherwise, the state of an operation when encoding will remain unchanged.</li>
+</ul>
+
+
+<h3>NSCopying Caveats</h3>
+
+<ul>
+<li><code>-copy</code> and <code>-copyWithZone:</code> return a new operation with the <code>NSURLRequest</code> of the original. So rather than an exact copy of the operation at that particular instant, the copying mechanism returns a completely new instance, which can be useful for retrying operations.</li>
+<li>A copy of an operation will not include the <a href="#//api/name/outputStream"><code>outputStream</code></a> of the original.</li>
+<li>Operation copies do not include <code>completionBlock</code>. <code>completionBlock</code> often strongly captures a reference to <code>self</code>, which would otherwise have the unintuitive side-effect of pointing to the <em>original</em> operation when copied.</li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Accessing Run Loop Modes" name="task_Accessing Run Loop Modes"></a>
+						<h3 class="subsubtitle task-title">Accessing Run Loop Modes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/runLoopModes">&nbsp;&nbsp;runLoopModes</a></code>
+		<span class="tooltip"><p>The run loop modes in which the operation will run on the network thread. By default, this is a single-member set containing <code>NSRunLoopCommonModes</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting URL Connection Information" name="task_Getting URL Connection Information"></a>
+						<h3 class="subsubtitle task-title">Getting URL Connection Information</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/request">&nbsp;&nbsp;request</a></code>
+		<span class="tooltip"><p>The request used by the operation&rsquo;s connection.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/response">&nbsp;&nbsp;response</a></code>
+		<span class="tooltip"><p>The last response received by the operation&rsquo;s connection.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/error">&nbsp;&nbsp;error</a></code>
+		<span class="tooltip"><p>The error, if any, that occurred in the lifecycle of the <a href="#//api/name/request">request</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allowsInvalidSSLCertificate">&nbsp;&nbsp;allowsInvalidSSLCertificate</a></code>
+		<span class="tooltip"><p>Whether the connection should accept an invalid SSL certificate.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting Response Data" name="task_Getting Response Data"></a>
+						<h3 class="subsubtitle task-title">Getting Response Data</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/responseData">&nbsp;&nbsp;responseData</a></code>
+		<span class="tooltip"><p>The data received during the <a href="#//api/name/request">request</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/responseString">&nbsp;&nbsp;responseString</a></code>
+		<span class="tooltip"><p>The string representation of the <a href="#//api/name/response">response</a> data.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/responseStringEncoding">&nbsp;&nbsp;responseStringEncoding</a></code>
+		<span class="tooltip"><p>The string encoding of the <a href="#//api/name/response">response</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing URL Credentials" name="task_Managing URL Credentials"></a>
+						<h3 class="subsubtitle task-title">Managing URL Credentials</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldUseCredentialStorage">&nbsp;&nbsp;shouldUseCredentialStorage</a></code>
+		<span class="tooltip"><p>Whether the URL connection should consult the <a href="#//api/name/credential">credential</a> storage for authenticating the connection. <code>YES</code> by default.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/credential">&nbsp;&nbsp;credential</a></code>
+		<span class="tooltip"><p>The credential used for authentication challenges in <code>-connection:didReceiveAuthenticationChallenge:</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/SSLPinningMode">&nbsp;&nbsp;SSLPinningMode</a></code>
+		<span class="tooltip"><p>The pinning mode which will be used for SSL connections. <code>AFSSLPinningModePublicKey</code> by default.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Streams" name="task_Accessing Streams"></a>
+						<h3 class="subsubtitle task-title">Accessing Streams</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inputStream">&nbsp;&nbsp;inputStream</a></code>
+		<span class="tooltip"><p>The input stream used to read data to be sent during the <a href="#//api/name/request">request</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/outputStream">&nbsp;&nbsp;outputStream</a></code>
+		<span class="tooltip"><p>The output stream that is used to write data received until the <a href="#//api/name/request">request</a> is finished.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Request Operation Information" name="task_Managing Request Operation Information"></a>
+						<h3 class="subsubtitle task-title">Managing Request Operation Information</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userInfo">&nbsp;&nbsp;userInfo</a></code>
+		<span class="tooltip"><p>The user info dictionary for the receiver.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initializing an AFURLConnectionOperation Object" name="task_Initializing an AFURLConnectionOperation Object"></a>
+						<h3 class="subsubtitle task-title">Initializing an AFURLConnectionOperation Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithRequest:">&ndash;&nbsp;initWithRequest:</a></code>
+		<span class="tooltip"><p>Initializes and returns a newly allocated operation object with a url connection configured with the specified url <a href="#//api/name/request">request</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Pausing / Resuming Requests" name="task_Pausing / Resuming Requests"></a>
+						<h3 class="subsubtitle task-title">Pausing / Resuming Requests</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pause">&ndash;&nbsp;pause</a></code>
+		<span class="tooltip"><p>Pauses the execution of the <a href="#//api/name/request">request</a> operation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isPaused">&ndash;&nbsp;isPaused</a></code>
+		<span class="tooltip"><p>Whether the <a href="#//api/name/request">request</a> operation is currently paused.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resume">&ndash;&nbsp;resume</a></code>
+		<span class="tooltip"><p>Resumes the execution of the paused <a href="#//api/name/request">request</a> operation.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring Backgrounding Task Behavior" name="task_Configuring Backgrounding Task Behavior"></a>
+						<h3 class="subsubtitle task-title">Configuring Backgrounding Task Behavior</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setShouldExecuteAsBackgroundTaskWithExpirationHandler:">&ndash;&nbsp;setShouldExecuteAsBackgroundTaskWithExpirationHandler:</a></code>
+		<span class="tooltip"><p>Specifies that the operation should continue execution after the app has entered the background, and the expiration handler for that background task.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Setting Progress Callbacks" name="task_Setting Progress Callbacks"></a>
+						<h3 class="subsubtitle task-title">Setting Progress Callbacks</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setUploadProgressBlock:">&ndash;&nbsp;setUploadProgressBlock:</a></code>
+		<span class="tooltip"><p>Sets a callback to be called when an undetermined number of bytes have been uploaded to the server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDownloadProgressBlock:">&ndash;&nbsp;setDownloadProgressBlock:</a></code>
+		<span class="tooltip"><p>Sets a callback to be called when an undetermined number of bytes have been downloaded from the server.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Setting NSURLConnection Delegate Callbacks" name="task_Setting NSURLConnection Delegate Callbacks"></a>
+						<h3 class="subsubtitle task-title">Setting NSURLConnection Delegate Callbacks</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAuthenticationAgainstProtectionSpaceBlock:">&ndash;&nbsp;setAuthenticationAgainstProtectionSpaceBlock:</a></code>
+		<span class="tooltip"><p>Sets a block to be executed to determine whether the connection should be able to respond to a protection space&rsquo;s form of authentication, as handled by the <code>NSURLConnectionDelegate</code> method <code>connection:canAuthenticateAgainstProtectionSpace:</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAuthenticationChallengeBlock:">&ndash;&nbsp;setAuthenticationChallengeBlock:</a></code>
+		<span class="tooltip"><p>Sets a block to be executed when the connection must authenticate a challenge in order to download its <a href="#//api/name/request">request</a>, as handled by the <code>NSURLConnectionDelegate</code> method <code>connection:didReceiveAuthenticationChallenge:</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setRedirectResponseBlock:">&ndash;&nbsp;setRedirectResponseBlock:</a></code>
+		<span class="tooltip"><p>Sets a block to be executed when the server redirects the <a href="#//api/name/request">request</a> from one URL to another URL, or when the <a href="#//api/name/request">request</a> URL changed by the <code>NSURLProtocol</code> subclass handling the <a href="#//api/name/request">request</a> in order to standardize its format, as handled by the <code>NSURLConnectionDelegate</code> method <code>connection:willSendRequest:redirectResponse:</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setCacheResponseBlock:">&ndash;&nbsp;setCacheResponseBlock:</a></code>
+		<span class="tooltip"><p>Sets a block to be executed to modify the <a href="#//api/name/response">response</a> a connection will cache, if any, as handled by the <code>NSURLConnectionDelegate</code> method <code>connection:willCacheResponse:</code>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/SSLPinningMode" title="SSLPinningMode"></a>
+	<h3 class="subsubtitle method-title">SSLPinningMode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The pinning mode which will be used for SSL connections. <code>AFSSLPinningModePublicKey</code> by default.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) AFURLConnectionOperationSSLPinningMode SSLPinningMode</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The pinning mode which will be used for SSL connections. <code>AFSSLPinningModePublicKey</code> by default.</p>
+
+<p>To enable SSL Pinning, <code>#define _AFNETWORKING_PIN_SSL_CERTIFICATES_</code> in <code>Prefix.pch</code>. Also, make sure that the Security framework is linked with the binary. See the &ldquo;SSL Pinning&rdquo; section in the <code>AFURLConnectionOperation</code>&ldquo; header for more information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allowsInvalidSSLCertificate" title="allowsInvalidSSLCertificate"></a>
+	<h3 class="subsubtitle method-title">allowsInvalidSSLCertificate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the connection should accept an invalid SSL certificate.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL allowsInvalidSSLCertificate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Whether the connection should accept an invalid SSL certificate.</p>
+
+<p>If <code>_AFNETWORKING_ALLOW_INVALID_SSL_CERTIFICATES_</code> is set, this property defaults to <code>YES</code> for backwards compatibility. Otherwise, this property defaults to <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/credential" title="credential"></a>
+	<h3 class="subsubtitle method-title">credential</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The credential used for authentication challenges in <code>-connection:didReceiveAuthenticationChallenge:</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSURLCredential *credential</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The credential used for authentication challenges in <code>-connection:didReceiveAuthenticationChallenge:</code>.</p>
+
+<p>This will be overridden by any shared credentials that exist for the username or password of the <a href="#//api/name/request">request</a> URL, if present.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/error" title="error"></a>
+	<h3 class="subsubtitle method-title">error</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The error, if any, that occurred in the lifecycle of the <a href="#//api/name/request">request</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) NSError *error</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The error, if any, that occurred in the lifecycle of the <a href="#//api/name/request">request</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inputStream" title="inputStream"></a>
+	<h3 class="subsubtitle method-title">inputStream</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The input stream used to read data to be sent during the <a href="#//api/name/request">request</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSInputStream *inputStream</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The input stream used to read data to be sent during the <a href="#//api/name/request">request</a>.</p>
+
+<p>This property acts as a proxy to the <code>HTTPBodyStream</code> property of <a href="#//api/name/request"><code>request</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/outputStream" title="outputStream"></a>
+	<h3 class="subsubtitle method-title">outputStream</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The output stream that is used to write data received until the <a href="#//api/name/request">request</a> is finished.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSOutputStream *outputStream</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The output stream that is used to write data received until the <a href="#//api/name/request">request</a> is finished.</p>
+
+<p>By default, data is accumulated into a buffer that is stored into <a href="#//api/name/responseData"><code>responseData</code></a> upon completion of the <a href="#//api/name/request">request</a>. When <code>outputStream</code> is set, the data will not be accumulated into an internal buffer, and as a result, the <a href="#//api/name/responseData"><code>responseData</code></a> property of the completed <a href="#//api/name/request">request</a> will be <code>nil</code>. The output stream will be scheduled in the network thread runloop upon being set.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/request" title="request"></a>
+	<h3 class="subsubtitle method-title">request</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The request used by the operation&rsquo;s connection.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) NSURLRequest *request</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The request used by the operation&rsquo;s connection.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/response" title="response"></a>
+	<h3 class="subsubtitle method-title">response</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The last response received by the operation&rsquo;s connection.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) NSURLResponse *response</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The last response received by the operation&rsquo;s connection.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/responseData" title="responseData"></a>
+	<h3 class="subsubtitle method-title">responseData</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The data received during the <a href="#//api/name/request">request</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) NSData *responseData</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The data received during the <a href="#//api/name/request">request</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/responseString" title="responseString"></a>
+	<h3 class="subsubtitle method-title">responseString</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The string representation of the <a href="#//api/name/response">response</a> data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, copy) NSString *responseString</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The string representation of the <a href="#//api/name/response">response</a> data.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/responseStringEncoding" title="responseStringEncoding"></a>
+	<h3 class="subsubtitle method-title">responseStringEncoding</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The string encoding of the <a href="#//api/name/response">response</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, assign) NSStringEncoding responseStringEncoding</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The string encoding of the <a href="#//api/name/response">response</a>.</p>
+
+<p>If the <a href="#//api/name/response">response</a> does not specify a valid string encoding, <code>responseStringEncoding</code> will return <code>NSUTF8StringEncoding</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/runLoopModes" title="runLoopModes"></a>
+	<h3 class="subsubtitle method-title">runLoopModes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The run loop modes in which the operation will run on the network thread. By default, this is a single-member set containing <code>NSRunLoopCommonModes</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSSet *runLoopModes</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The run loop modes in which the operation will run on the network thread. By default, this is a single-member set containing <code>NSRunLoopCommonModes</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldUseCredentialStorage" title="shouldUseCredentialStorage"></a>
+	<h3 class="subsubtitle method-title">shouldUseCredentialStorage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the URL connection should consult the <a href="#//api/name/credential">credential</a> storage for authenticating the connection. <code>YES</code> by default.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldUseCredentialStorage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Whether the URL connection should consult the <a href="#//api/name/credential">credential</a> storage for authenticating the connection. <code>YES</code> by default.</p>
+
+<p>This is the value that is returned in the <code>NSURLConnectionDelegate</code> method <code>-connectionShouldUseCredentialStorage:</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userInfo" title="userInfo"></a>
+	<h3 class="subsubtitle method-title">userInfo</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The user info dictionary for the receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *userInfo</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The user info dictionary for the receiver.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithRequest:" title="initWithRequest:"></a>
+	<h3 class="subsubtitle method-title">initWithRequest:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a newly allocated operation object with a url connection configured with the specified url <a href="#//api/name/request">request</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithRequest:(NSURLRequest *)<em>urlRequest</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlRequest</em></dt>
+			<dd><p>The <a href="#//api/name/request">request</a> object to be used by the operation connection.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes and returns a newly allocated operation object with a url connection configured with the specified url <a href="#//api/name/request">request</a>.</p>
+
+<p>This is the designated initializer.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isPaused" title="isPaused"></a>
+	<h3 class="subsubtitle method-title">isPaused</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the <a href="#//api/name/request">request</a> operation is currently paused.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isPaused</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the operation is currently paused, otherwise <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Whether the <a href="#//api/name/request">request</a> operation is currently paused.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pause" title="pause"></a>
+	<h3 class="subsubtitle method-title">pause</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pauses the execution of the <a href="#//api/name/request">request</a> operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)pause</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pauses the execution of the <a href="#//api/name/request">request</a> operation.</p>
+
+<p>A paused operation returns <code>NO</code> for <code>-isReady</code>, <code>-isExecuting</code>, and <code>-isFinished</code>. As such, it will remain in an <code>NSOperationQueue</code> until it is either cancelled or resumed. Pausing a finished, cancelled, or paused operation has no effect.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resume" title="resume"></a>
+	<h3 class="subsubtitle method-title">resume</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Resumes the execution of the paused <a href="#//api/name/request">request</a> operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resume</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Resumes the execution of the paused <a href="#//api/name/request">request</a> operation.</p>
+
+<p>Pause/Resume behavior varies depending on the underlying implementation for the operation class. In its base implementation, resuming a paused requests restarts the original <a href="#//api/name/request">request</a>. However, since HTTP defines a specification for how to <a href="#//api/name/request">request</a> a specific content range, <a href="../Classes/AFHTTPRequestOperation.html"><code>AFHTTPRequestOperation</code></a> will resume downloading the <a href="#//api/name/request">request</a> from where it left off, instead of restarting the original <a href="#//api/name/request">request</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAuthenticationAgainstProtectionSpaceBlock:" title="setAuthenticationAgainstProtectionSpaceBlock:"></a>
+	<h3 class="subsubtitle method-title">setAuthenticationAgainstProtectionSpaceBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets a block to be executed to determine whether the connection should be able to respond to a protection space&rsquo;s form of authentication, as handled by the <code>NSURLConnectionDelegate</code> method <code>connection:canAuthenticateAgainstProtectionSpace:</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setAuthenticationAgainstProtectionSpaceBlock:(BOOL ( ^ ) ( NSURLConnection *connection , NSURLProtectionSpace *protectionSpace ))<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>A block object to be executed to determine whether the connection should be able to respond to a protection space&rsquo;s form of authentication. The block has a <code>BOOL</code> return type and takes two arguments: the URL connection object, and the protection space to authenticate against.</p>
+
+<p>  If <a href="#//api/name/allowsInvalidSSLCertificate"><code>allowsInvalidSSLCertificate</code></a> is set to YES, <code>connection:canAuthenticateAgainstProtectionSpace:</code> will accept invalid SSL certificates, returning <code>YES</code> if the protection space authentication method is <code>NSURLAuthenticationMethodServerTrust</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets a block to be executed to determine whether the connection should be able to respond to a protection space&rsquo;s form of authentication, as handled by the <code>NSURLConnectionDelegate</code> method <code>connection:canAuthenticateAgainstProtectionSpace:</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAuthenticationChallengeBlock:" title="setAuthenticationChallengeBlock:"></a>
+	<h3 class="subsubtitle method-title">setAuthenticationChallengeBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets a block to be executed when the connection must authenticate a challenge in order to download its <a href="#//api/name/request">request</a>, as handled by the <code>NSURLConnectionDelegate</code> method <code>connection:didReceiveAuthenticationChallenge:</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setAuthenticationChallengeBlock:(void ( ^ ) ( NSURLConnection *connection , NSURLAuthenticationChallenge *challenge ))<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>A block object to be executed when the connection must authenticate a challenge in order to download its <a href="#//api/name/request">request</a>. The block has no return type and takes two arguments: the URL connection object, and the challenge that must be authenticated.</p>
+
+<p>  If <a href="#//api/name/allowsInvalidSSLCertificate"><code>allowsInvalidSSLCertificate</code></a> is set to YES, <code>connection:didReceiveAuthenticationChallenge:</code> will attempt to have the challenge sender use credentials with invalid SSL certificates.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets a block to be executed when the connection must authenticate a challenge in order to download its <a href="#//api/name/request">request</a>, as handled by the <code>NSURLConnectionDelegate</code> method <code>connection:didReceiveAuthenticationChallenge:</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setCacheResponseBlock:" title="setCacheResponseBlock:"></a>
+	<h3 class="subsubtitle method-title">setCacheResponseBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets a block to be executed to modify the <a href="#//api/name/response">response</a> a connection will cache, if any, as handled by the <code>NSURLConnectionDelegate</code> method <code>connection:willCacheResponse:</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setCacheResponseBlock:(NSCachedURLResponse *( ^ ) ( NSURLConnection *connection , NSCachedURLResponse *cachedResponse ))<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>A block object to be executed to determine what <a href="#//api/name/response">response</a> a connection will cache, if any. The block returns an <code>NSCachedURLResponse</code> object, the cached <a href="#//api/name/response">response</a> to store in memory or <code>nil</code> to prevent the <a href="#//api/name/response">response</a> from being cached, and takes two arguments: the URL connection object, and the cached <a href="#//api/name/response">response</a> provided for the <a href="#//api/name/request">request</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets a block to be executed to modify the <a href="#//api/name/response">response</a> a connection will cache, if any, as handled by the <code>NSURLConnectionDelegate</code> method <code>connection:willCacheResponse:</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDownloadProgressBlock:" title="setDownloadProgressBlock:"></a>
+	<h3 class="subsubtitle method-title">setDownloadProgressBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets a callback to be called when an undetermined number of bytes have been downloaded from the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setDownloadProgressBlock:(void ( ^ ) ( NSUInteger bytesRead , long long totalBytesRead , long long totalBytesExpectedToRead ))<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>A block object to be called when an undetermined number of bytes have been downloaded from the server. This block has no return value and takes three arguments: the number of bytes read since the last time the download progress block was called, the total bytes read, and the total bytes expected to be read during the <a href="#//api/name/request">request</a>, as initially determined by the expected content size of the <code>NSHTTPURLResponse</code> object. This block may be called multiple times, and will execute on the main thread.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets a callback to be called when an undetermined number of bytes have been downloaded from the server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setRedirectResponseBlock:" title="setRedirectResponseBlock:"></a>
+	<h3 class="subsubtitle method-title">setRedirectResponseBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets a block to be executed when the server redirects the <a href="#//api/name/request">request</a> from one URL to another URL, or when the <a href="#//api/name/request">request</a> URL changed by the <code>NSURLProtocol</code> subclass handling the <a href="#//api/name/request">request</a> in order to standardize its format, as handled by the <code>NSURLConnectionDelegate</code> method <code>connection:willSendRequest:redirectResponse:</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setRedirectResponseBlock:(NSURLRequest *( ^ ) ( NSURLConnection *connection , NSURLRequest *request , NSURLResponse *redirectResponse ))<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>A block object to be executed when the <a href="#//api/name/request">request</a> URL was changed. The block returns an <code>NSURLRequest</code> object, the URL <a href="#//api/name/request">request</a> to redirect, and takes three arguments: the URL connection object, the the proposed redirected <a href="#//api/name/request">request</a>, and the URL <a href="#//api/name/response">response</a> that caused the redirect.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets a block to be executed when the server redirects the <a href="#//api/name/request">request</a> from one URL to another URL, or when the <a href="#//api/name/request">request</a> URL changed by the <code>NSURLProtocol</code> subclass handling the <a href="#//api/name/request">request</a> in order to standardize its format, as handled by the <code>NSURLConnectionDelegate</code> method <code>connection:willSendRequest:redirectResponse:</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setShouldExecuteAsBackgroundTaskWithExpirationHandler:" title="setShouldExecuteAsBackgroundTaskWithExpirationHandler:"></a>
+	<h3 class="subsubtitle method-title">setShouldExecuteAsBackgroundTaskWithExpirationHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies that the operation should continue execution after the app has entered the background, and the expiration handler for that background task.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setShouldExecuteAsBackgroundTaskWithExpirationHandler:(void ( ^ ) ( void ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>A handler to be called shortly before the application’s remaining background time reaches 0. The handler is wrapped in a block that cancels the operation, and cleans up and marks the end of execution, unlike the <code>handler</code> parameter in <code>UIApplication -beginBackgroundTaskWithExpirationHandler:</code>, which expects this to be done in the handler itself. The handler is called synchronously on the main thread, thus blocking the application’s suspension momentarily while the application is notified.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specifies that the operation should continue execution after the app has entered the background, and the expiration handler for that background task.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setUploadProgressBlock:" title="setUploadProgressBlock:"></a>
+	<h3 class="subsubtitle method-title">setUploadProgressBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets a callback to be called when an undetermined number of bytes have been uploaded to the server.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setUploadProgressBlock:(void ( ^ ) ( NSUInteger bytesWritten , long long totalBytesWritten , long long totalBytesExpectedToWrite ))<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>A block object to be called when an undetermined number of bytes have been uploaded to the server. This block has no return value and takes three arguments: the number of bytes written since the last time the upload progress block was called, the total bytes written, and the total bytes expected to be written during the <a href="#//api/name/request">request</a>, as initially determined by the length of the HTTP body. This block may be called multiple times, and will execute on the main thread.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets a callback to be called when an undetermined number of bytes have been uploaded to the server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLConnectionOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Mattt Thompson and Scott Raymond. All rights reserved. (Last updated: 2013-04-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

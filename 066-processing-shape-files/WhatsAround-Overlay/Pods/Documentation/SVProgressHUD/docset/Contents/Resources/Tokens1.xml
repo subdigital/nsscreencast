@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SVProgressHUD.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SVProgressHUD</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SVProgressHUD/set_0:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, nonatomic, retain) UIColor *NS_AVAILABLE_IOS ( 5 _0</Declaration>
+			
+			
+			<Anchor>//api/name/_0</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SVProgressHUD/_0</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, nonatomic, retain) UIColor *NS_AVAILABLE_IOS ( 5 _0</Declaration>
+			
+			
+			<Anchor>//api/name/_0</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SVProgressHUD/show</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>+ (void)show</Declaration>
+			
+			
+			<Anchor>//api/name/show</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SVProgressHUD/showWithMaskType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showWithMaskType:(SVProgressHUDMaskType)maskType</Declaration>
+			
+			
+			<Anchor>//api/name/showWithMaskType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SVProgressHUD/showWithStatus:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showWithStatus:(NSString *)status</Declaration>
+			
+			
+			<Anchor>//api/name/showWithStatus:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SVProgressHUD/showWithStatus:maskType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showWithStatus:(NSString *)status maskType:(SVProgressHUDMaskType)maskType</Declaration>
+			
+			
+			<Anchor>//api/name/showWithStatus:maskType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SVProgressHUD/showProgress:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showProgress:(CGFloat)progress</Declaration>
+			
+			
+			<Anchor>//api/name/showProgress:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SVProgressHUD/showProgress:status:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showProgress:(CGFloat)progress status:(NSString *)status</Declaration>
+			
+			
+			<Anchor>//api/name/showProgress:status:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SVProgressHUD/showProgress:status:maskType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showProgress:(CGFloat)progress status:(NSString *)status maskType:(SVProgressHUDMaskType)maskType</Declaration>
+			
+			
+			<Anchor>//api/name/showProgress:status:maskType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SVProgressHUD/setStatus:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setStatus:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/setStatus:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SVProgressHUD/showSuccessWithStatus:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showSuccessWithStatus:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/showSuccessWithStatus:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SVProgressHUD/showErrorWithStatus:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showErrorWithStatus:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/showErrorWithStatus:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SVProgressHUD/showImage:status:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showImage:(UIImage *)image status:(NSString *)status</Declaration>
+			
+			
+			<Anchor>//api/name/showImage:status:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SVProgressHUD/dismiss</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>+ (void)dismiss</Declaration>
+			
+			
+			<Anchor>//api/name/dismiss</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SVProgressHUD/isVisible</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SVProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isVisible</Declaration>
+			
+			
+			<Anchor>//api/name/isVisible</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
