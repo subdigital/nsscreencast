@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cocoapods.svprogresshud.SVProgressHUD-0.9</string>
+	<key>CFBundleName</key>
+	<string>SVProgressHUD 0.9 Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	
+	
+	<key>DocSetDescription</key>
+	<string>A clean and lightweight progress HUD for your iOS app.</string>
+	
+	<key>DocSetFeedName</key>
+	<string>SVProgressHUD 0.9 Documentation</string>
+	
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DashDocSetFamily</key>
+	<string>appledoc</string>
+	<key>DocSetPublisherIdentifier</key>
+	<string>org.cocoapods.svprogresshud.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>Sam Vermette</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Sam Vermette</string>
+</dict>
+</plist>

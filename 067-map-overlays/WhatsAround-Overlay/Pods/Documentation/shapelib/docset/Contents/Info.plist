@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cocoapods.shapelib.shapelib-1.3</string>
+	<key>CFBundleName</key>
+	<string>shapelib 1.3 Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	
+	
+	<key>DocSetDescription</key>
+	<string>The Shapefile C Library manipulates ESRI Shapefiles.</string>
+	
+	<key>DocSetFeedName</key>
+	<string>shapelib 1.3 Documentation</string>
+	
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DashDocSetFamily</key>
+	<string>appledoc</string>
+	<key>DocSetPublisherIdentifier</key>
+	<string>org.cocoapods.shapelib.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>Frank Warmerdam</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Frank Warmerdam</string>
+</dict>
+</plist>
