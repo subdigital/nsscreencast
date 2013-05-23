@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+      <key>Name</key>
+      <string>NSScreencast Application</string>
+
+      <key>Description</key>
+      <string>A base application template for NSScreencast episodes.</string>
+
+      <key>Identifier</key>
+      <string>com.nsscreencast.template.project.application</string>
+
+      <key>Kind</key>
+      <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+
+      <key>Ancestors</key>
+      <array>
+        <string>com.apple.dt.unit.cocoaTouchApplication</string>
+      </array>
+
+      <key>Concrete</key>
+      <true />
+
+      <key>Definitions</key>
+      <dict>
+        <key>../Podfile</key>
+        <string>platform :ios, '6.0'
+
+pod 'Reachability'
+        </string>
+
+        <key>Classes/Models/.gitkeep</key>
+        <dict>
+          <key>Path</key>
+          <string>gitkeep</string>
+
+          <key>Group</key>
+          <array>
+            <string>Classes</string>
+            <string>Models</string>
+          </array>
+        </dict>
+      </dict>
+
+      <key>Nodes</key>
+      <array>
+        <string>../Podfile</string>
+        <string>Classes/Models/.gitkeep</string>
+      </array>
+    </dict>
+</plist>
+
