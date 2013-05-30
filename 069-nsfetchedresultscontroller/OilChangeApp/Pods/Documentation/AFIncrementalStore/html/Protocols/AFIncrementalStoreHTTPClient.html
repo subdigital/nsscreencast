@@ -1,0 +1,1170 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AFIncrementalStoreHTTPClient Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AFIncrementalStore 0.4.1 </a></h1>
+				<a id="developerHome" href="../index.html">Mattt Thompson</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AFIncrementalStoreHTTPClient Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/attributesForRepresentation:ofEntity:fromResponse:">&nbsp;&nbsp;&nbsp;&nbsp;- attributesForRepresentation:ofEntity:fromResponse:</option>
+	
+	<option value="//api/name/representationOfAttributes:ofManagedObject:">&nbsp;&nbsp;&nbsp;&nbsp;- representationOfAttributes:ofManagedObject:</option>
+	
+	<option value="//api/name/representationOrArrayOfRepresentationsOfEntity:fromResponseObject:">&nbsp;&nbsp;&nbsp;&nbsp;- representationOrArrayOfRepresentationsOfEntity:fromResponseObject:</option>
+	
+	<option value="//api/name/representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:">&nbsp;&nbsp;&nbsp;&nbsp;- representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:</option>
+	
+	<option value="//api/name/requestForDeletedObject:">&nbsp;&nbsp;&nbsp;&nbsp;- requestForDeletedObject:</option>
+	
+	<option value="//api/name/requestForFetchRequest:withContext:">&nbsp;&nbsp;&nbsp;&nbsp;- requestForFetchRequest:withContext:</option>
+	
+	<option value="//api/name/requestForInsertedObject:">&nbsp;&nbsp;&nbsp;&nbsp;- requestForInsertedObject:</option>
+	
+	<option value="//api/name/requestForUpdatedObject:">&nbsp;&nbsp;&nbsp;&nbsp;- requestForUpdatedObject:</option>
+	
+	<option value="//api/name/requestWithMethod:pathForObjectWithID:withContext:">&nbsp;&nbsp;&nbsp;&nbsp;- requestWithMethod:pathForObjectWithID:withContext:</option>
+	
+	<option value="//api/name/requestWithMethod:pathForRelationship:forObjectWithID:withContext:">&nbsp;&nbsp;&nbsp;&nbsp;- requestWithMethod:pathForRelationship:forObjectWithID:withContext:</option>
+	
+	<option value="//api/name/resourceIdentifierForRepresentation:ofEntity:fromResponse:">&nbsp;&nbsp;&nbsp;&nbsp;- resourceIdentifierForRepresentation:ofEntity:fromResponse:</option>
+	
+	<option value="//api/name/shouldFetchRemoteAttributeValuesForObjectWithID:inManagedObjectContext:">&nbsp;&nbsp;&nbsp;&nbsp;- shouldFetchRemoteAttributeValuesForObjectWithID:inManagedObjectContext:</option>
+	
+	<option value="//api/name/shouldFetchRemoteValuesForRelationship:forObjectWithID:inManagedObjectContext:">&nbsp;&nbsp;&nbsp;&nbsp;- shouldFetchRemoteValuesForRelationship:forObjectWithID:inManagedObjectContext:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Required Methods">Required Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Optional Methods">Optional Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attributesForRepresentation:ofEntity:fromResponse:">attributesForRepresentation:ofEntity:fromResponse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/representationOfAttributes:ofManagedObject:">representationOfAttributes:ofManagedObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/representationOrArrayOfRepresentationsOfEntity:fromResponseObject:">representationOrArrayOfRepresentationsOfEntity:fromResponseObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:">representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestForDeletedObject:">requestForDeletedObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestForFetchRequest:withContext:">requestForFetchRequest:withContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestForInsertedObject:">requestForInsertedObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestForUpdatedObject:">requestForUpdatedObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWithMethod:pathForObjectWithID:withContext:">requestWithMethod:pathForObjectWithID:withContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWithMethod:pathForRelationship:forObjectWithID:withContext:">requestWithMethod:pathForRelationship:forObjectWithID:withContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resourceIdentifierForRepresentation:ofEntity:fromResponse:">resourceIdentifierForRepresentation:ofEntity:fromResponse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldFetchRemoteAttributeValuesForObjectWithID:inManagedObjectContext:">shouldFetchRemoteAttributeValuesForObjectWithID:inManagedObjectContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldFetchRemoteValuesForRelationship:forObjectWithID:inManagedObjectContext:">shouldFetchRemoteValuesForRelationship:forObjectWithID:inManagedObjectContext:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AFIncrementalStoreHTTPClient Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AFIncrementalStoreHTTPClient Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AFIncrementalStore.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>AFIncrementalStoreHTTPClient</code> protocol defines the methods used by the HTTP client to interract with the associated web services of an <a href="../Classes/AFIncrementalStore.html"><code>AFIncrementalStore</code></a>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Required Methods" name="task_Required Methods"></a>
+						<h3 class="subsubtitle task-title">Required Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/representationOrArrayOfRepresentationsOfEntity:fromResponseObject:">&ndash;&nbsp;representationOrArrayOfRepresentationsOfEntity:fromResponseObject:</a></code>
+		<span class="tooltip"><p>Returns an <code>NSDictionary</code> or an <code>NSArray</code> of <code>NSDictionaries</code> containing the representations of the resources found in a response object.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:">&ndash;&nbsp;representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:</a></code>
+		<span class="tooltip"><p>Returns an <code>NSDictionary</code> containing the representations of associated objects found within the representation of a response object, keyed by their relationship name.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resourceIdentifierForRepresentation:ofEntity:fromResponse:">&ndash;&nbsp;resourceIdentifierForRepresentation:ofEntity:fromResponse:</a></code>
+		<span class="tooltip"><p>Returns the resource identifier for the resource whose representation of an entity came from the specified HTTP response. A resource identifier is a string that uniquely identifies a particular resource among all resource types. If new attributes come back for an existing resource identifier, the managed object associated with that resource identifier will be updated, rather than a new object being created.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attributesForRepresentation:ofEntity:fromResponse:">&ndash;&nbsp;attributesForRepresentation:ofEntity:fromResponse:</a></code>
+		<span class="tooltip"><p>Returns the attributes for the managed object corresponding to the representation of an entity from the specified response. This method is used to get the attributes of the managed object from its representation returned in <code>-representationOrArrayOfRepresentationsFromResponseObject</code> or <a href="#//api/name/representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:"><code>representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:</code></a>.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestForFetchRequest:withContext:">&ndash;&nbsp;requestForFetchRequest:withContext:</a></code>
+		<span class="tooltip"><p>Returns a URL request object for the specified fetch request within a particular managed object context.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestWithMethod:pathForObjectWithID:withContext:">&ndash;&nbsp;requestWithMethod:pathForObjectWithID:withContext:</a></code>
+		<span class="tooltip"><p>Returns a URL request object with a given HTTP method for a particular managed object. This method is used in <code></code>AFIncrementalStore<code> -newValuesForObjectWithID:withContext:error</code>.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestWithMethod:pathForRelationship:forObjectWithID:withContext:">&ndash;&nbsp;requestWithMethod:pathForRelationship:forObjectWithID:withContext:</a></code>
+		<span class="tooltip"><p>Returns a URL request object with a given HTTP method for a particular relationship of a given managed object. This method is used in <code></code>AFIncrementalStore<code> -newValueForRelationship:forObjectWithID:withContext:error:</code>.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+						
+						<a title="Optional Methods" name="task_Optional Methods"></a>
+						<h3 class="subsubtitle task-title">Optional Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/representationOfAttributes:ofManagedObject:">&ndash;&nbsp;representationOfAttributes:ofManagedObject:</a></code>
+		<span class="tooltip"><p>Returns the attributes representation of an entity from the specified managed object. This method is used to get the attributes of the representation from its managed object.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestForInsertedObject:">&ndash;&nbsp;requestForInsertedObject:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestForUpdatedObject:">&ndash;&nbsp;requestForUpdatedObject:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestForDeletedObject:">&ndash;&nbsp;requestForDeletedObject:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldFetchRemoteAttributeValuesForObjectWithID:inManagedObjectContext:">&ndash;&nbsp;shouldFetchRemoteAttributeValuesForObjectWithID:inManagedObjectContext:</a></code>
+		<span class="tooltip"><p>Returns whether the client should fetch remote attribute values for a particular managed object. This method is consulted when a managed object faults on an attribute, and will call <a href="#//api/name/requestWithMethod:pathForObjectWithID:withContext:"><code>requestWithMethod:pathForObjectWithID:withContext:</code></a> if <code>YES</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldFetchRemoteValuesForRelationship:forObjectWithID:inManagedObjectContext:">&ndash;&nbsp;shouldFetchRemoteValuesForRelationship:forObjectWithID:inManagedObjectContext:</a></code>
+		<span class="tooltip"><p>Returns whether the client should fetch remote relationship values for a particular managed object. This method is consulted when a managed object faults on a particular relationship, and will call <a href="#//api/name/requestWithMethod:pathForRelationship:forObjectWithID:withContext:"><code>requestWithMethod:pathForRelationship:forObjectWithID:withContext:</code></a> if <code>YES</code>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/attributesForRepresentation:ofEntity:fromResponse:" title="attributesForRepresentation:ofEntity:fromResponse:"></a>
+	<h3 class="subsubtitle method-title">attributesForRepresentation:ofEntity:fromResponse:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the attributes for the managed object corresponding to the representation of an entity from the specified response. This method is used to get the attributes of the managed object from its representation returned in <code>-representationOrArrayOfRepresentationsFromResponseObject</code> or <a href="#//api/name/representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:"><code>representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:</code></a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)attributesForRepresentation:(NSDictionary *)<em>representation</em> ofEntity:(NSEntityDescription *)<em>entity</em> fromResponse:(NSHTTPURLResponse *)<em>response</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>representation</em></dt>
+			<dd><p>The resource representation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>entity</em></dt>
+			<dd><p>The entity for the representation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>response</em></dt>
+			<dd><p>The HTTP response for the resource request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <code>NSDictionary</code> containing the attributes for a managed object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the attributes for the managed object corresponding to the representation of an entity from the specified response. This method is used to get the attributes of the managed object from its representation returned in <code>-representationOrArrayOfRepresentationsFromResponseObject</code> or <a href="#//api/name/representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:"><code>representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:</code></a>.</p>
+
+<p>@discussion For example, if the representation returned from <code>GET /products/123</code> had a <code>description</code> field that corresponded with the <code>productDescription</code> attribute in its Core Data model, this method would set the value of the <code>productDescription</code> key in the returned dictionary to the value of the <code>description</code> field in representation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/representationOfAttributes:ofManagedObject:" title="representationOfAttributes:ofManagedObject:"></a>
+	<h3 class="subsubtitle method-title">representationOfAttributes:ofManagedObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the attributes representation of an entity from the specified managed object. This method is used to get the attributes of the representation from its managed object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)representationOfAttributes:(NSDictionary *)<em>attributes</em> ofManagedObject:(NSManagedObject *)<em>managedObject</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>attributes</em></dt>
+			<dd><p>The resource representation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>managedObject</em></dt>
+			<dd><p>The <code>NSManagedObject</code> for the representation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <code>NSDictionary</code> containing the attributes for a representation, based on the given managed object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the attributes representation of an entity from the specified managed object. This method is used to get the attributes of the representation from its managed object.</p>
+
+<p>@discussion For example, if the representation sent to <code>POST /products</code> or <code>PUT /products/123</code> had a <code>description</code> field that corresponded with the <code>productDescription</code> attribute in its Core Data model, this method would set the value of the <code>productDescription</code> field to the value of the <code>description</code> key in representation/dictionary.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/representationOrArrayOfRepresentationsOfEntity:fromResponseObject:" title="representationOrArrayOfRepresentationsOfEntity:fromResponseObject:"></a>
+	<h3 class="subsubtitle method-title">representationOrArrayOfRepresentationsOfEntity:fromResponseObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an <code>NSDictionary</code> or an <code>NSArray</code> of <code>NSDictionaries</code> containing the representations of the resources found in a response object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)representationOrArrayOfRepresentationsOfEntity:(NSEntityDescription *)<em>entity</em> fromResponseObject:(id)<em>responseObject</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>entity</em></dt>
+			<dd><p>The entity represented</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>responseObject</em></dt>
+			<dd><p>The response object returned from the server.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <code>NSDictionary</code> with the representation or an <code>NSArray</code> of <code>NSDictionaries</code> containing the resource representations.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns an <code>NSDictionary</code> or an <code>NSArray</code> of <code>NSDictionaries</code> containing the representations of the resources found in a response object.</p>
+
+<p>@discussion For example, if <code>GET /users</code> returned an <code>NSDictionary</code> with an array of users keyed on <code>"users"</code>, this method would return the keyed array. Conversely, if <code>GET /users/123</code> returned a dictionary with all of the atributes of the requested user, this method would simply return that dictionary.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:" title="representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:"></a>
+	<h3 class="subsubtitle method-title">representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an <code>NSDictionary</code> containing the representations of associated objects found within the representation of a response object, keyed by their relationship name.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)representationsForRelationshipsFromRepresentation:(NSDictionary *)<em>representation</em> ofEntity:(NSEntityDescription *)<em>entity</em> fromResponse:(NSHTTPURLResponse *)<em>response</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>representation</em></dt>
+			<dd><p>The resource representation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>entity</em></dt>
+			<dd><p>The entity for the representation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>response</em></dt>
+			<dd><p>The HTTP response for the resource request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <code>NSDictionary</code> containing representations of relationships, keyed by relationship name.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns an <code>NSDictionary</code> containing the representations of associated objects found within the representation of a response object, keyed by their relationship name.</p>
+
+<p>@discussion For example, if <code>GET /albums/123</code> returned the representation of an album, including the tracks as sub-entities, keyed under <code>"tracks"</code>, this method would return a dictionary with an array of representations for those objects, keyed under the name of the relationship used in the model (which is likely also to be <code>"tracks"</code>). Likewise, if an album also contained a representation of its artist, that dictionary would contain a dictionary representation of that artist, keyed under the name of the relationship used in the model (which is likely also to be <code>"artist"</code>).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestForDeletedObject:" title="requestForDeletedObject:"></a>
+	<h3 class="subsubtitle method-title">requestForDeletedObject:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableURLRequest *)requestForDeletedObject:(NSManagedObject *)<em>deletedObject</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestForFetchRequest:withContext:" title="requestForFetchRequest:withContext:"></a>
+	<h3 class="subsubtitle method-title">requestForFetchRequest:withContext:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a URL request object for the specified fetch request within a particular managed object context.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableURLRequest *)requestForFetchRequest:(NSFetchRequest *)<em>fetchRequest</em> withContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fetchRequest</em></dt>
+			<dd><p>The fetch request to translate into a URL request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>context</em></dt>
+			<dd><p>The managed object context executing the fetch request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <code>NSURLRequest</code> object corresponding to the specified fetch request.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a URL request object for the specified fetch request within a particular managed object context.</p>
+
+<p>@discussion For example, if the fetch request specified the <code>User</code> entity, this method might return an <code>NSURLRequest</code> with <code>GET /users</code> if the web service was RESTful, <code>POST /endpoint?method=users.getAll</code> for an RPC-style system, or a request with an XML envelope body for a SOAP webservice.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestForInsertedObject:" title="requestForInsertedObject:"></a>
+	<h3 class="subsubtitle method-title">requestForInsertedObject:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableURLRequest *)requestForInsertedObject:(NSManagedObject *)<em>insertedObject</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestForUpdatedObject:" title="requestForUpdatedObject:"></a>
+	<h3 class="subsubtitle method-title">requestForUpdatedObject:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableURLRequest *)requestForUpdatedObject:(NSManagedObject *)<em>updatedObject</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestWithMethod:pathForObjectWithID:withContext:" title="requestWithMethod:pathForObjectWithID:withContext:"></a>
+	<h3 class="subsubtitle method-title">requestWithMethod:pathForObjectWithID:withContext:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a URL request object with a given HTTP method for a particular managed object. This method is used in <code></code>AFIncrementalStore<code> -newValuesForObjectWithID:withContext:error</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableURLRequest *)requestWithMethod:(NSString *)<em>method</em> pathForObjectWithID:(NSManagedObjectID *)<em>objectID</em> withContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>The HTTP method of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectID</em></dt>
+			<dd><p>The object ID for the specified managed object.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>context</em></dt>
+			<dd><p>The managed object context for the managed object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <code>NSURLRequest</code> object with the provided HTTP method for the resource corresponding to the managed object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a URL request object with a given HTTP method for a particular managed object. This method is used in <code></code>AFIncrementalStore<code> -newValuesForObjectWithID:withContext:error</code>.</p>
+
+<p>@discussion For example, if a <code>User</code> managed object were to be refreshed, this method might return a <code>GET /users/123</code> request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestWithMethod:pathForRelationship:forObjectWithID:withContext:" title="requestWithMethod:pathForRelationship:forObjectWithID:withContext:"></a>
+	<h3 class="subsubtitle method-title">requestWithMethod:pathForRelationship:forObjectWithID:withContext:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a URL request object with a given HTTP method for a particular relationship of a given managed object. This method is used in <code></code>AFIncrementalStore<code> -newValueForRelationship:forObjectWithID:withContext:error:</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableURLRequest *)requestWithMethod:(NSString *)<em>method</em> pathForRelationship:(NSRelationshipDescription *)<em>relationship</em> forObjectWithID:(NSManagedObjectID *)<em>objectID</em> withContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>The HTTP method of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>relationship</em></dt>
+			<dd><p>The relationship of the specifified managed object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectID</em></dt>
+			<dd><p>The object ID for the specified managed object.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>context</em></dt>
+			<dd><p>The managed object context for the managed object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <code>NSURLRequest</code> object with the provided HTTP method for the resource or resoures corresponding to the relationship of the managed object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a URL request object with a given HTTP method for a particular relationship of a given managed object. This method is used in <code></code>AFIncrementalStore<code> -newValueForRelationship:forObjectWithID:withContext:error:</code>.</p>
+
+<p>@discussion For example, if a <code>Department</code> managed object was attempting to fulfill a fault on the <code>employees</code> relationship, this method might return <code>GET /departments/sales/employees</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resourceIdentifierForRepresentation:ofEntity:fromResponse:" title="resourceIdentifierForRepresentation:ofEntity:fromResponse:"></a>
+	<h3 class="subsubtitle method-title">resourceIdentifierForRepresentation:ofEntity:fromResponse:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the resource identifier for the resource whose representation of an entity came from the specified HTTP response. A resource identifier is a string that uniquely identifies a particular resource among all resource types. If new attributes come back for an existing resource identifier, the managed object associated with that resource identifier will be updated, rather than a new object being created.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)resourceIdentifierForRepresentation:(NSDictionary *)<em>representation</em> ofEntity:(NSEntityDescription *)<em>entity</em> fromResponse:(NSHTTPURLResponse *)<em>response</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>representation</em></dt>
+			<dd><p>The resource representation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>entity</em></dt>
+			<dd><p>The entity for the representation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>response</em></dt>
+			<dd><p>The HTTP response for the resource request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <code>NSString</code> resource identifier for the resource.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the resource identifier for the resource whose representation of an entity came from the specified HTTP response. A resource identifier is a string that uniquely identifies a particular resource among all resource types. If new attributes come back for an existing resource identifier, the managed object associated with that resource identifier will be updated, rather than a new object being created.</p>
+
+<p>@discussion For example, if <code>GET /posts</code> returns a collection of posts, the resource identifier for any particular one might be its URL-safe &ldquo;slug&rdquo; or parameter string, or perhaps its numeric id.  For example: <code>/posts/123</code> might be a resource identifier for a particular post.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldFetchRemoteAttributeValuesForObjectWithID:inManagedObjectContext:" title="shouldFetchRemoteAttributeValuesForObjectWithID:inManagedObjectContext:"></a>
+	<h3 class="subsubtitle method-title">shouldFetchRemoteAttributeValuesForObjectWithID:inManagedObjectContext:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns whether the client should fetch remote attribute values for a particular managed object. This method is consulted when a managed object faults on an attribute, and will call <a href="#//api/name/requestWithMethod:pathForObjectWithID:withContext:"><code>requestWithMethod:pathForObjectWithID:withContext:</code></a> if <code>YES</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldFetchRemoteAttributeValuesForObjectWithID:(NSManagedObjectID *)<em>objectID</em> inManagedObjectContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectID</em></dt>
+			<dd><p>The object ID for the specified managed object.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>context</em></dt>
+			<dd><p>The managed object context for the managed object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if an HTTP request should be made, otherwise `NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns whether the client should fetch remote attribute values for a particular managed object. This method is consulted when a managed object faults on an attribute, and will call <a href="#//api/name/requestWithMethod:pathForObjectWithID:withContext:"><code>requestWithMethod:pathForObjectWithID:withContext:</code></a> if <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldFetchRemoteValuesForRelationship:forObjectWithID:inManagedObjectContext:" title="shouldFetchRemoteValuesForRelationship:forObjectWithID:inManagedObjectContext:"></a>
+	<h3 class="subsubtitle method-title">shouldFetchRemoteValuesForRelationship:forObjectWithID:inManagedObjectContext:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns whether the client should fetch remote relationship values for a particular managed object. This method is consulted when a managed object faults on a particular relationship, and will call <a href="#//api/name/requestWithMethod:pathForRelationship:forObjectWithID:withContext:"><code>requestWithMethod:pathForRelationship:forObjectWithID:withContext:</code></a> if <code>YES</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldFetchRemoteValuesForRelationship:(NSRelationshipDescription *)<em>relationship</em> forObjectWithID:(NSManagedObjectID *)<em>objectID</em> inManagedObjectContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>relationship</em></dt>
+			<dd><p>The relationship of the specifified managed object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectID</em></dt>
+			<dd><p>The object ID for the specified managed object.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>context</em></dt>
+			<dd><p>The managed object context for the managed object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if an HTTP request should be made, otherwise `NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns whether the client should fetch remote relationship values for a particular managed object. This method is consulted when a managed object faults on a particular relationship, and will call <a href="#//api/name/requestWithMethod:pathForRelationship:forObjectWithID:withContext:"><code>requestWithMethod:pathForRelationship:forObjectWithID:withContext:</code></a> if <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Mattt Thompson. All rights reserved. (Last updated: 2013-05-25)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

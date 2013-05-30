@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AFIncrementalStore.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AFIncrementalStore</TokenIdentifier>
+			<Abstract type="html">AFIncrementalStore is an abstract subclass of NSIncrementalStore, designed to allow you to load and save data incrementally to and from a one or more web services.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFIncrementalStore/setHTTPClient:</TokenIdentifier>
+			<Abstract type="html">The HTTP client used to manage requests and responses with the associated web services.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) AFHTTPClient&lt;AFIncrementalStoreHTTPClient&gt; *HTTPClient</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPClient</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFIncrementalStore/HTTPClient</TokenIdentifier>
+			<Abstract type="html">The HTTP client used to manage requests and responses with the associated web services.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) AFHTTPClient&lt;AFIncrementalStoreHTTPClient&gt; *HTTPClient</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPClient</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFIncrementalStore/setBackingPersistentStoreCoordinator:</TokenIdentifier>
+			<Abstract type="html">The persistent store coordinator used to persist data from the associated web serivices locally.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSPersistentStoreCoordinator *backingPersistentStoreCoordinator</Declaration>
+			
+			
+			<Anchor>//api/name/backingPersistentStoreCoordinator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFIncrementalStore/backingPersistentStoreCoordinator</TokenIdentifier>
+			<Abstract type="html">The persistent store coordinator used to persist data from the associated web serivices locally.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSPersistentStoreCoordinator *backingPersistentStoreCoordinator</Declaration>
+			
+			
+			<Anchor>//api/name/backingPersistentStoreCoordinator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AFIncrementalStore/type</TokenIdentifier>
+			<Abstract type="html">Returns the string used as the NSStoreTypeKey value by the application&apos;s persistent store coordinator.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)type</Declaration>
+			
+			<ReturnValue><Abstract type="html">The string used to describe the type of the store.</Abstract></ReturnValue>
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AFIncrementalStore/model</TokenIdentifier>
+			<Abstract type="html">Returns the managed object model used by the store.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>+ (NSManagedObjectModel *)model</Declaration>
+			
+			<ReturnValue><Abstract type="html">The managed object model used by the store</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFIncrementalStore/executeFetchRequest:withContext:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (id)executeFetchRequest:(NSFetchRequest *)fetchRequest withContext:(NSManagedObjectContext *)context error:(NSError *__autoreleasing *)error</Declaration>
+			
+			
+			<Anchor>//api/name/executeFetchRequest:withContext:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFIncrementalStore/executeSaveChangesRequest:withContext:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (id)executeSaveChangesRequest:(NSSaveChangesRequest *)saveChangesRequest withContext:(NSManagedObjectContext *)context error:(NSError *__autoreleasing *)error</Declaration>
+			
+			
+			<Anchor>//api/name/executeSaveChangesRequest:withContext:error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

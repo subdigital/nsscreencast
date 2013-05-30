@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>TransformerKit 0.2.2 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">TransformerKit 0.2.2 </a></h1>
+				<a id="developerHome" href="index.html">Mattt Thompson</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TransformerKit 0.2.2 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TransformerKit 0.2.2 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1>TransformerKit</h1>
+
+<p><strong>A block-based API for NSValueTransformer, with a growing collection of useful examples.</strong></p>
+
+<p><a href="[http://nshipster.com/nsvaluetransformer/"><code>NSValueTransformer</code></a>,](http://nshipster.com/nsvaluetransformer/),) while perhaps obscure to most iOS programmers, remains a staple of OS X development. Before Objective-C APIs got in the habit of flinging block parameters hither and thither with reckless abandon, <code>NSValueTransformer</code> was the go-to way to encapsulate mutation functionality&mdash;especially when it came to Bindings.</p>
+
+<p><code>NSValueTransformer</code> is convenient to use, but a pain to set up. Creating even a trivial value transformer required creating of its own subclass, implementing the handful of required methods, and registering a singleton instance by name.</p>
+
+<p>TransformerKit breathes new life into <code>NSValueTransformer</code>, by making them dead-simple to define and register:</p>
+
+<p>```objective-c
+NSString * const TTTCapitalizedStringTransformerName = @&ldquo;TTTCapitalizedStringTransformerName&rdquo;;</p>
+
+<p>[NSValueTransformer registerValueTransformerWithName:TTTCapitalizedStringTransformerName</p>
+
+<pre><code>                           transformedValueClass:[NSString class]
+              returningTransformedValueWithBlock:^id(id value) {
+</code></pre>
+
+<p>  return [value capitalizedString];
+}];
+```</p>
+
+<blockquote><p>TransformerKit pairs nicely with <a href="https://github.com/mattt/InflectorKit">InflectorKit</a> &amp; <a href="https://github.com/mattt/FormatterKit">FormatterKit</a>, providing well-designed APIs for manipulating user-facing content.</p></blockquote>
+
+<hr />
+
+<p>TransformerKit also contains a <em>growing</em> number of convenient transformers that your apps will love and cherish:</p>
+
+<h3>String Transformers</h3>
+
+<ul>
+<li>Capitalized</li>
+<li>UPPERCASE</li>
+<li>lowercase</li>
+<li>CamelCase</li>
+<li>llamaCase</li>
+<li>snake_case</li>
+<li>train-case</li>
+<li>esreveR* <em>(Reverse)</em></li>
+<li>Rémövê Dîaçritics <em>(Remove accents and combining marks)</em></li>
+<li>ट्रांस्लितेराते स्ट्रिंग <em>(Transliterate to Latin)</em></li>
+</ul>
+
+
+<h3>Image TRansformers</h3>
+
+<ul>
+<li>PNG Representation*</li>
+<li>JPEG Representation*</li>
+</ul>
+
+
+<blockquote><ul>
+<li><ul>
+<li><strong>Reversible</strong></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+<h2>Contact</h2>
+
+<p>Mattt Thompson</p>
+
+<ul>
+<li><a href="http://github.com/mattt">http://github.com/mattt</a></li>
+<li><a href="http://twitter.com/mattt">http://twitter.com/mattt</a></li>
+<li>m@mattt.me</li>
+</ul>
+
+
+<h2>License</h2>
+
+<p>TransformerKit is available under the MIT license. See the LICENSE file for more info.</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/TTTDateTransformers.html">TTTDateTransformers</a></li>
+							
+							<li><a href="Classes/TTTImageTransformers.html">TTTImageTransformers</a></li>
+							
+							<li><a href="Classes/TTTStringTransformers.html">TTTStringTransformers</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/NSValueTransformer+TransformerKit.html">NSValueTransformer(TransformerKit)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Mattt Thompson. All rights reserved. (Last updated: 2013-05-25)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>AFIncrementalStore 0.4.1</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>AFBlockPaginator</Name>
+			<Path>Classes/AFBlockPaginator.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>AFIncrementalStore</Name>
+			<Path>Classes/AFIncrementalStore.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>AFLimitAndOffsetPaginator</Name>
+			<Path>Classes/AFLimitAndOffsetPaginator.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>AFPageAndPerPagePaginator</Name>
+			<Path>Classes/AFPageAndPerPagePaginator.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>AFRESTClient</Name>
+			<Path>Classes/AFRESTClient.html</Path>
+		</Node>
+		
+		
+		<Node id="6">
+			<Name>AFIncrementalStoreHTTPClient</Name>
+			<Path>Protocols/AFIncrementalStoreHTTPClient.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>AFPaginator</Name>
+			<Path>Protocols/AFPaginator.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

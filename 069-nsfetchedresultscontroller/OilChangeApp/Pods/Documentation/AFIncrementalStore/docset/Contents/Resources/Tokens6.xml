@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AFIncrementalStoreHTTPClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AFIncrementalStoreHTTPClient</TokenIdentifier>
+			<Abstract type="html">The AFIncrementalStoreHTTPClient protocol defines the methods used by the HTTP client to interract with the associated web services of an AFIncrementalStore.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFIncrementalStoreHTTPClient/representationOrArrayOfRepresentationsOfEntity:fromResponseObject:</TokenIdentifier>
+			<Abstract type="html">Returns an NSDictionary or an NSArray of NSDictionaries containing the representations of the resources found in a response object.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (id)representationOrArrayOfRepresentationsOfEntity:(NSEntityDescription *)entity fromResponseObject:(id)responseObject</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The entity represented</Abstract>
+				</Parameter><Parameter>
+					<Name>responseObject</Name>
+					<Abstract type="html">The response object returned from the server.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSDictionary with the representation or an NSArray of NSDictionaries containing the resource representations.</Abstract></ReturnValue>
+			<Anchor>//api/name/representationOrArrayOfRepresentationsOfEntity:fromResponseObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFIncrementalStoreHTTPClient/representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:</TokenIdentifier>
+			<Abstract type="html">Returns an NSDictionary containing the representations of associated objects found within the representation of a response object, keyed by their relationship name.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)representationsForRelationshipsFromRepresentation:(NSDictionary *)representation ofEntity:(NSEntityDescription *)entity fromResponse:(NSHTTPURLResponse *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>representation</Name>
+					<Abstract type="html">The resource representation.</Abstract>
+				</Parameter><Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The entity for the representation.</Abstract>
+				</Parameter><Parameter>
+					<Name>response</Name>
+					<Abstract type="html">The HTTP response for the resource request.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSDictionary containing representations of relationships, keyed by relationship name.</Abstract></ReturnValue>
+			<Anchor>//api/name/representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFIncrementalStoreHTTPClient/resourceIdentifierForRepresentation:ofEntity:fromResponse:</TokenIdentifier>
+			<Abstract type="html">Returns the resource identifier for the resource whose representation of an entity came from the specified HTTP response. A resource identifier is a string that uniquely identifies a particular resource among all resource types. If new attributes come back for an existing resource identifier, the managed object associated with that resource identifier will be updated, rather than a new object being created.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)resourceIdentifierForRepresentation:(NSDictionary *)representation ofEntity:(NSEntityDescription *)entity fromResponse:(NSHTTPURLResponse *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>representation</Name>
+					<Abstract type="html">The resource representation.</Abstract>
+				</Parameter><Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The entity for the representation.</Abstract>
+				</Parameter><Parameter>
+					<Name>response</Name>
+					<Abstract type="html">The HTTP response for the resource request.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSString resource identifier for the resource.</Abstract></ReturnValue>
+			<Anchor>//api/name/resourceIdentifierForRepresentation:ofEntity:fromResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFIncrementalStoreHTTPClient/attributesForRepresentation:ofEntity:fromResponse:</TokenIdentifier>
+			<Abstract type="html">Returns the attributes for the managed object corresponding to the representation of an entity from the specified response. This method is used to get the attributes of the managed object from its representation returned in -representationOrArrayOfRepresentationsFromResponseObject or representationsForRelationshipsFromRepresentation:ofEntity:fromResponse:.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)attributesForRepresentation:(NSDictionary *)representation ofEntity:(NSEntityDescription *)entity fromResponse:(NSHTTPURLResponse *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>representation</Name>
+					<Abstract type="html">The resource representation.</Abstract>
+				</Parameter><Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The entity for the representation.</Abstract>
+				</Parameter><Parameter>
+					<Name>response</Name>
+					<Abstract type="html">The HTTP response for the resource request.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSDictionary containing the attributes for a managed object.</Abstract></ReturnValue>
+			<Anchor>//api/name/attributesForRepresentation:ofEntity:fromResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFIncrementalStoreHTTPClient/requestForFetchRequest:withContext:</TokenIdentifier>
+			<Abstract type="html">Returns a URL request object for the specified fetch request within a particular managed object context.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableURLRequest *)requestForFetchRequest:(NSFetchRequest *)fetchRequest withContext:(NSManagedObjectContext *)context</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract type="html">The fetch request to translate into a URL request.</Abstract>
+				</Parameter><Parameter>
+					<Name>context</Name>
+					<Abstract type="html">The managed object context executing the fetch request.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSURLRequest object corresponding to the specified fetch request.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestForFetchRequest:withContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFIncrementalStoreHTTPClient/requestWithMethod:pathForObjectWithID:withContext:</TokenIdentifier>
+			<Abstract type="html">Returns a URL request object with a given HTTP method for a particular managed object. This method is used in AFIncrementalStore -newValuesForObjectWithID:withContext:error.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableURLRequest *)requestWithMethod:(NSString *)method pathForObjectWithID:(NSManagedObjectID *)objectID withContext:(NSManagedObjectContext *)context</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>method</Name>
+					<Abstract type="html">The HTTP method of the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>objectID</Name>
+					<Abstract type="html">The object ID for the specified managed object.</Abstract>
+				</Parameter><Parameter>
+					<Name>context</Name>
+					<Abstract type="html">The managed object context for the managed object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSURLRequest object with the provided HTTP method for the resource corresponding to the managed object.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestWithMethod:pathForObjectWithID:withContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFIncrementalStoreHTTPClient/requestWithMethod:pathForRelationship:forObjectWithID:withContext:</TokenIdentifier>
+			<Abstract type="html">Returns a URL request object with a given HTTP method for a particular relationship of a given managed object. This method is used in AFIncrementalStore -newValueForRelationship:forObjectWithID:withContext:error:.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableURLRequest *)requestWithMethod:(NSString *)method pathForRelationship:(NSRelationshipDescription *)relationship forObjectWithID:(NSManagedObjectID *)objectID withContext:(NSManagedObjectContext *)context</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>method</Name>
+					<Abstract type="html">The HTTP method of the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>relationship</Name>
+					<Abstract type="html">The relationship of the specifified managed object</Abstract>
+				</Parameter><Parameter>
+					<Name>objectID</Name>
+					<Abstract type="html">The object ID for the specified managed object.</Abstract>
+				</Parameter><Parameter>
+					<Name>context</Name>
+					<Abstract type="html">The managed object context for the managed object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSURLRequest object with the provided HTTP method for the resource or resoures corresponding to the relationship of the managed object.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestWithMethod:pathForRelationship:forObjectWithID:withContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFIncrementalStoreHTTPClient/representationOfAttributes:ofManagedObject:</TokenIdentifier>
+			<Abstract type="html">Returns the attributes representation of an entity from the specified managed object. This method is used to get the attributes of the representation from its managed object.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)representationOfAttributes:(NSDictionary *)attributes ofManagedObject:(NSManagedObject *)managedObject</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>attributes</Name>
+					<Abstract type="html">The resource representation.</Abstract>
+				</Parameter><Parameter>
+					<Name>managedObject</Name>
+					<Abstract type="html">The NSManagedObject for the representation.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSDictionary containing the attributes for a representation, based on the given managed object.</Abstract></ReturnValue>
+			<Anchor>//api/name/representationOfAttributes:ofManagedObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFIncrementalStoreHTTPClient/requestForInsertedObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableURLRequest *)requestForInsertedObject:(NSManagedObject *)insertedObject</Declaration>
+			
+			
+			<Anchor>//api/name/requestForInsertedObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFIncrementalStoreHTTPClient/requestForUpdatedObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableURLRequest *)requestForUpdatedObject:(NSManagedObject *)updatedObject</Declaration>
+			
+			
+			<Anchor>//api/name/requestForUpdatedObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFIncrementalStoreHTTPClient/requestForDeletedObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableURLRequest *)requestForDeletedObject:(NSManagedObject *)deletedObject</Declaration>
+			
+			
+			<Anchor>//api/name/requestForDeletedObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFIncrementalStoreHTTPClient/shouldFetchRemoteAttributeValuesForObjectWithID:inManagedObjectContext:</TokenIdentifier>
+			<Abstract type="html">Returns whether the client should fetch remote attribute values for a particular managed object. This method is consulted when a managed object faults on an attribute, and will call requestWithMethod:pathForObjectWithID:withContext: if YES.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)shouldFetchRemoteAttributeValuesForObjectWithID:(NSManagedObjectID *)objectID inManagedObjectContext:(NSManagedObjectContext *)context</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectID</Name>
+					<Abstract type="html">The object ID for the specified managed object.</Abstract>
+				</Parameter><Parameter>
+					<Name>context</Name>
+					<Abstract type="html">The managed object context for the managed object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if an HTTP request should be made, otherwise `NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/shouldFetchRemoteAttributeValuesForObjectWithID:inManagedObjectContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFIncrementalStoreHTTPClient/shouldFetchRemoteValuesForRelationship:forObjectWithID:inManagedObjectContext:</TokenIdentifier>
+			<Abstract type="html">Returns whether the client should fetch remote relationship values for a particular managed object. This method is consulted when a managed object faults on a particular relationship, and will call requestWithMethod:pathForRelationship:forObjectWithID:withContext: if YES.</Abstract>
+			<DeclaredIn>AFIncrementalStore.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)shouldFetchRemoteValuesForRelationship:(NSRelationshipDescription *)relationship forObjectWithID:(NSManagedObjectID *)objectID inManagedObjectContext:(NSManagedObjectContext *)context</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>relationship</Name>
+					<Abstract type="html">The relationship of the specifified managed object</Abstract>
+				</Parameter><Parameter>
+					<Name>objectID</Name>
+					<Abstract type="html">The object ID for the specified managed object.</Abstract>
+				</Parameter><Parameter>
+					<Name>context</Name>
+					<Abstract type="html">The managed object context for the managed object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if an HTTP request should be made, otherwise `NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/shouldFetchRemoteValuesForRelationship:forObjectWithID:inManagedObjectContext:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

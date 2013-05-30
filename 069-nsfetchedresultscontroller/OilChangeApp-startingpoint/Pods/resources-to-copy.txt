@@ -1,0 +1,1 @@
+/Users/ben/nsscreencast/sourcecode/069-nsfetchedresultscontroller/OilChangeApp-startingpoint/Pods/SSToolkit/SSToolkitResources.bundle

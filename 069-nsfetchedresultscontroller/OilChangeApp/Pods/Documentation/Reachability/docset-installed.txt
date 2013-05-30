@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/ben/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.reachability.Reachability-3.1.0.docset
+Time: 2013-05-25 22:22:54 +0000
