@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AFLimitAndOffsetPaginator.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AFLimitAndOffsetPaginator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFLimitAndOffsetPaginator/setLimitParameter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, copy) NSString *limitParameter</Declaration>
+			
+			
+			<Anchor>//api/name/limitParameter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFLimitAndOffsetPaginator/limitParameter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, copy) NSString *limitParameter</Declaration>
+			
+			
+			<Anchor>//api/name/limitParameter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFLimitAndOffsetPaginator/setOffsetParameter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, copy) NSString *offsetParameter</Declaration>
+			
+			
+			<Anchor>//api/name/offsetParameter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFLimitAndOffsetPaginator/offsetParameter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, copy) NSString *offsetParameter</Declaration>
+			
+			
+			<Anchor>//api/name/offsetParameter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AFLimitAndOffsetPaginator/paginatorWithLimitParameter:offsetParameter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)paginatorWithLimitParameter:(NSString *)limitParameterName offsetParameter:(NSString *)offsetParameterName</Declaration>
+			
+			
+			<Anchor>//api/name/paginatorWithLimitParameter:offsetParameter:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

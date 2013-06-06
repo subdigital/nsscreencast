@@ -1,0 +1,634 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AFIncrementalStore Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AFIncrementalStore 0.4.1 </a></h1>
+				<a id="developerHome" href="../index.html">Mattt Thompson</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AFIncrementalStore Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/HTTPClient">&nbsp;&nbsp;&nbsp;&nbsp;HTTPClient</option>
+	
+	<option value="//api/name/backingPersistentStoreCoordinator">&nbsp;&nbsp;&nbsp;&nbsp;backingPersistentStoreCoordinator</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/model">&nbsp;&nbsp;&nbsp;&nbsp;+ model</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;+ type</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/executeFetchRequest:withContext:error:">&nbsp;&nbsp;&nbsp;&nbsp;- executeFetchRequest:withContext:error:</option>
+	
+	<option value="//api/name/executeSaveChangesRequest:withContext:error:">&nbsp;&nbsp;&nbsp;&nbsp;- executeSaveChangesRequest:withContext:error:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Incremental Store Properties">Accessing Incremental Store Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Required Methods">Required Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Optional Methods">Optional Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/HTTPClient">HTTPClient</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backingPersistentStoreCoordinator">backingPersistentStoreCoordinator</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/model">model</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeFetchRequest:withContext:error:">executeFetchRequest:withContext:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeSaveChangesRequest:withContext:error:">executeSaveChangesRequest:withContext:error:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AFIncrementalStore Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AFIncrementalStore Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSIncrementalStore</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AFIncrementalStore.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>AFIncrementalStore</code> is an abstract subclass of <code>NSIncrementalStore</code>, designed to allow you to load and save data incrementally to and from a one or more web services.</p>
+
+<h2>Subclassing Notes</h2>
+
+<h3>Methods to Override</h3>
+
+<p>In a subclass of <code>AFIncrementalStore</code>, you <em>must</em> override the following methods to provide behavior appropriate for your store:</p>
+
+<pre><code>- `type`
+- `model`
+</code></pre>
+
+<p>Additionally, all <code>NSPersistentStore</code> subclasses, and thus all <code>AFIncrementalStore</code> subclasses must do <code>NSPersistentStoreCoordinator +registerStoreClass:forStoreType:</code> in order to be created by <code>NSPersistentStoreCoordinator -addPersistentStoreWithType:configuration:URL:options:error:</code>. It is recommended that subclasses register themselves in their own <code>+initialize</code> method.</p>
+
+<p>Optionally, <code>AFIncrementalStore</code> subclasses can override the following methods:</p>
+
+<pre><code>- `executeFetchRequest:withContext:error:`
+- `executeSaveChangesRequest:withContext:error:`
+</code></pre>
+
+<h3>Methods Not To Be Overridden</h3>
+
+<p>Subclasses should not override <code>-executeRequest:withContext:error</code>. Instead, override <a href="#//api/name/executeFetchRequest:withContext:error:"><code>executeFetchRequest:withContext:error:</code></a> or <a href="#//api/name/executeSaveChangesRequest:withContext:error:"><code>executeSaveChangesRequest:withContext:error:</code></a>, which are called by <code>-executeRequest:withContext:error</code> depending on the <a href="#//api/name/type">type</a> of persistent store request.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Accessing Incremental Store Properties" name="task_Accessing Incremental Store Properties"></a>
+						<h3 class="subsubtitle task-title">Accessing Incremental Store Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/HTTPClient">&nbsp;&nbsp;HTTPClient</a></code>
+		<span class="tooltip"><p>The HTTP client used to manage requests and responses with the associated web services.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backingPersistentStoreCoordinator">&nbsp;&nbsp;backingPersistentStoreCoordinator</a></code>
+		<span class="tooltip"><p>The persistent store coordinator used to persist data from the associated web serivices locally.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Required Methods" name="task_Required Methods"></a>
+						<h3 class="subsubtitle task-title">Required Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">+&nbsp;type</a></code>
+		<span class="tooltip"><p>Returns the string used as the <code>NSStoreTypeKey</code> value by the application&rsquo;s persistent store coordinator.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/model">+&nbsp;model</a></code>
+		<span class="tooltip"><p>Returns the managed object model used by the store.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Optional Methods" name="task_Optional Methods"></a>
+						<h3 class="subsubtitle task-title">Optional Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/executeFetchRequest:withContext:error:">&ndash;&nbsp;executeFetchRequest:withContext:error:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/executeSaveChangesRequest:withContext:error:">&ndash;&nbsp;executeSaveChangesRequest:withContext:error:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/HTTPClient" title="HTTPClient"></a>
+	<h3 class="subsubtitle method-title">HTTPClient</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The HTTP client used to manage requests and responses with the associated web services.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AFHTTPClient&lt;AFIncrementalStoreHTTPClient&gt; *HTTPClient</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The HTTP client used to manage requests and responses with the associated web services.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/backingPersistentStoreCoordinator" title="backingPersistentStoreCoordinator"></a>
+	<h3 class="subsubtitle method-title">backingPersistentStoreCoordinator</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The persistent store coordinator used to persist data from the associated web serivices locally.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSPersistentStoreCoordinator *backingPersistentStoreCoordinator</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The persistent store coordinator used to persist data from the associated web serivices locally.</p>
+
+<p>@discussion Rather than persist values directly, <code>AFIncrementalStore</code> manages and proxies through a persistent store coordinator.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/model" title="model"></a>
+	<h3 class="subsubtitle method-title">model</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the managed object model used by the store.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectModel *)model</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The managed object model used by the store</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the managed object model used by the store.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the string used as the <code>NSStoreTypeKey</code> value by the application&rsquo;s persistent store coordinator.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)type</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string used to describe the type of the store.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the string used as the <code>NSStoreTypeKey</code> value by the application&rsquo;s persistent store coordinator.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/executeFetchRequest:withContext:error:" title="executeFetchRequest:withContext:error:"></a>
+	<h3 class="subsubtitle method-title">executeFetchRequest:withContext:error:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)executeFetchRequest:(NSFetchRequest *)<em>fetchRequest</em> withContext:(NSManagedObjectContext *)<em>context</em> error:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/executeSaveChangesRequest:withContext:error:" title="executeSaveChangesRequest:withContext:error:"></a>
+	<h3 class="subsubtitle method-title">executeSaveChangesRequest:withContext:error:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)executeSaveChangesRequest:(NSSaveChangesRequest *)<em>saveChangesRequest</em> withContext:(NSManagedObjectContext *)<em>context</em> error:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFIncrementalStore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Mattt Thompson. All rights reserved. (Last updated: 2013-05-25)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

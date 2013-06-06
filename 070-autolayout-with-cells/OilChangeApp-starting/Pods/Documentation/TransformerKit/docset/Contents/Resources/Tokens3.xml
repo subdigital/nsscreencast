@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TTTStringTransformers.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TTTStringTransformers</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TTTStringTransformers.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

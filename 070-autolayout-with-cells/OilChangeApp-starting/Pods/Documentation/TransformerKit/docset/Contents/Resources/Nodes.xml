@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>TransformerKit 0.2.2</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="4"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>TTTDateTransformers</Name>
+			<Path>Classes/TTTDateTransformers.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>TTTImageTransformers</Name>
+			<Path>Classes/TTTImageTransformers.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>TTTStringTransformers</Name>
+			<Path>Classes/TTTStringTransformers.html</Path>
+		</Node>
+		
+		<Node id="4">
+			<Name>NSValueTransformer(TransformerKit)</Name>
+			<Path>Categories/NSValueTransformer+TransformerKit.html</Path>
+		</Node>
+		
+		
+	</Library>
+</DocSetNodes>

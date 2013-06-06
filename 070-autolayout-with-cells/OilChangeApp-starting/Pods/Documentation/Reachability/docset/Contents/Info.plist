@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cocoapods.reachability.Reachability-3.1.0</string>
+	<key>CFBundleName</key>
+	<string>Reachability 3.1.0 Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	
+	
+	<key>DocSetDescription</key>
+	<string>ARC and GCD Compatible Reachability Class for iOS and OS X. Drop in replacement for Apple Reachability.</string>
+	
+	<key>DocSetFeedName</key>
+	<string>Reachability 3.1.0 Documentation</string>
+	
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DashDocSetFamily</key>
+	<string>appledoc</string>
+	<key>DocSetPublisherIdentifier</key>
+	<string>org.cocoapods.reachability.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>Tony Million</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Tony Million</string>
+</dict>
+</plist>
