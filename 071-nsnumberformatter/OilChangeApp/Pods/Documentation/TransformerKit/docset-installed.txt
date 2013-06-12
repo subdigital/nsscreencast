@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/ben/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.transformerkit.TransformerKit-0.2.2.docset
+Time: 2013-05-25 22:22:57 +0000

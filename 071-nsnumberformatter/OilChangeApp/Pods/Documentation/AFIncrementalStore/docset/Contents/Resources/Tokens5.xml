@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AFRESTClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AFRESTClient</TokenIdentifier>
+			<Abstract type="html">AFRESTClient is a subclass of AFHTTPClient that implements the AFIncrementalStoreHTTPClient protocol in a way that follows the conventions of a RESTful web service.</Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFRESTClient/setPaginator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) id&lt;AFPaginator&gt; paginator</Declaration>
+			
+			
+			<Anchor>//api/name/paginator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFRESTClient/paginator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) id&lt;AFPaginator&gt; paginator</Declaration>
+			
+			
+			<Anchor>//api/name/paginator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFRESTClient/setInflector:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, strong) TTTStringInflector *inflector</Declaration>
+			
+			
+			<Anchor>//api/name/inflector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFRESTClient/inflector</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, strong) TTTStringInflector *inflector</Declaration>
+			
+			
+			<Anchor>//api/name/inflector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFRESTClient/pathForEntity:</TokenIdentifier>
+			<Abstract type="html">Returns the request path for a collection of resources of the specified entity. By default, this returns an imprecise pluralization of the entity name.</Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)pathForEntity:(NSEntityDescription *)entity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The entity used to determine the resources path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSString representing the request path.</Abstract></ReturnValue>
+			<Anchor>//api/name/pathForEntity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFRESTClient/pathForObject:</TokenIdentifier>
+			<Abstract type="html">Returns the request path for the resource of a particular managed object. By default, this returns an imprecise pluralization of the entity name, with the additional path component of the resource identifier corresponding to the managed object.</Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)pathForObject:(NSManagedObject *)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The managed object used to determine the resource path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSString representing the request path.</Abstract></ReturnValue>
+			<Anchor>//api/name/pathForObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFRESTClient/pathForRelationship:forObject:</TokenIdentifier>
+			<Abstract type="html">Returns the request path for the resource of a particular managed object. By default, this returns an imprecise pluralization of the entity name, with the additional path component of either an imprecise pluralization of the relationship destination entity name if the relationship is to-many, or the relationship destination entity name if to-one.</Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)pathForRelationship:(NSRelationshipDescription *)relationship forObject:(NSManagedObject *)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>relationship</Name>
+					<Abstract type="html">The relationship used to determine the resource path</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The managed object used to determine the resource path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSString representing the request path.</Abstract></ReturnValue>
+			<Anchor>//api/name/pathForRelationship:forObject:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

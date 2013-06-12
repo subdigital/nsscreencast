@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>AFIncrementalStore 0.4.1 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">AFIncrementalStore 0.4.1 </a></h1>
+				<a id="developerHome" href="index.html">Mattt Thompson</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AFIncrementalStore 0.4.1 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AFIncrementalStore 0.4.1 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1><a href="Classes/AFIncrementalStore.html">AFIncrementalStore</a></h1>
+
+<p><strong>Core Data Persistence with AFNetworking, Done Right</strong></p>
+
+<p><a href="Classes/AFIncrementalStore.html">AFIncrementalStore</a> is an <a href="[http://nshipster.com/nsincrementalstore/"><code>NSIncrementalStore</code></a>](http://nshipster.com/nsincrementalstore/)) subclass that uses <a href="https://github.com/afnetworking/afnetworking">AFNetworking</a> to automatically request resources as properties and relationships are needed.</p>
+
+<p>Weighing in at just a few hundred LOC, in a single <code>{.h,.m}</code> file pair, <a href="Classes/AFIncrementalStore.html">AFIncrementalStore</a> is something you can get your head around. Integrating it into your project couldn&rsquo;t be easier&mdash;just swap out your <code>NSPersistentStore</code> for it. No monkey-patching, no extra properties on your models.</p>
+
+<h2>Incremental Store Persistence</h2>
+
+<p><a href="Classes/AFIncrementalStore.html"><code>AFIncrementalStore</code></a> does not persist data directly. Instead, <em>it manages a persistent store coordinator</em> that can be configured to communicate with any number of persistent stores of your choice.</p>
+
+<p>In the Twitter example, a SQLite persistent store is added, which works to persist tweets between launches, and return locally-cached results while the network request finishes:</p>
+
+<p>``` objective-c
+NSURL <em>storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@&ldquo;Twitter.sqlite&rdquo;];
+NSDictionary </em>options = @{ NSInferMappingModelAutomaticallyOption : @(YES) };</p>
+
+<p>NSError *error = nil;
+if (![incrementalStore.backingPersistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;error]) {</p>
+
+<pre><code>NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+abort();
+</code></pre>
+
+<p>}
+```</p>
+
+<p>If your data set is of a more fixed or ephemeral nature, you may want to use <code>NSInMemoryStoreType</code>.</p>
+
+<h2>Mapping Core Data to HTTP</h2>
+
+<p>The only thing you need to do is tell <code>AFIncrementalStore</code> how to map Core Data to an HTTP client. These methods are defined in the <code>AFIncrementalStoreHTTPClient</code> protocol:</p>
+
+<blockquote><p>Don&rsquo;t worry if this looks like a lot of work&mdash;if your web service is RESTful, <code>AFRESTClient</code> does a lot of the heavy lifting for you. If your target web service is SOAP, RPC, or kinda ad-hoc, you can easily use these protocol methods to get everything hooked up.</p></blockquote>
+
+<p>```objective-c
+&ndash; (id)representationOrArrayOfRepresentationsFromResponseObject:(id)responseObject;</p>
+
+<ul>
+<li><p>(NSDictionary <em>)representationsForRelationshipsFromRepresentation:(NSDictionary </em>)representation
+                                                         ofEntity:(NSEntityDescription <em>)entity
+                                                     fromResponse:(NSHTTPURLResponse </em>)response;</p></li>
+<li><p>(NSString <em>)resourceIdentifierForRepresentation:(NSDictionary </em>)representation
+                                       ofEntity:(NSEntityDescription *)entity;</p></li>
+<li><p>(NSDictionary <em>)attributesForRepresentation:(NSDictionary </em>)representation
+                                       ofEntity:(NSEntityDescription <em>)entity
+                                   fromResponse:(NSHTTPURLResponse </em>)response;</p></li>
+<li><p>(NSURLRequest <em>)requestForFetchRequest:(NSFetchRequest </em>)fetchRequest
+                           withContext:(NSManagedObjectContext *)context;</p></li>
+<li><p>(NSURLRequest <em>)requestWithMethod:(NSString </em>)method
+              pathForObjectWithID:(NSManagedObjectID <em>)objectID
+                      withContext:(NSManagedObjectContext </em>)context;</p></li>
+<li><p>(NSURLRequest <em>)requestWithMethod:(NSString </em>)method
+              pathForRelationship:(NSRelationshipDescription <em>)relationship
+                  forObjectWithID:(NSManagedObjectID </em>)objectID
+                      withContext:(NSManagedObjectContext *)context;
+```</p></li>
+</ul>
+
+
+<h2>Getting Started</h2>
+
+<p>Check out the example projects that are included in the repository. They are somewhat simple demonstration of an app that uses Core Data with <a href="Classes/AFIncrementalStore.html"><code>AFIncrementalStore</code></a> to communicate with an API for faulted properties and relationships. Note that there are no explicit network requests being made in the app&mdash;it&rsquo;s all done automatically by Core Data.</p>
+
+<p>Also, don&rsquo;t forget to pull down AFNetworking with <code>git submodule update --init</code> if you want to run the example.</p>
+
+<h2>Requirements</h2>
+
+<p><a href="Classes/AFIncrementalStore.html">AFIncrementalStore</a> requires Xcode 4.4 with either the <a href="http://developer.apple.com/library/ios/#releasenotes/General/WhatsNewIniPhoneOS/Articles/iOS5.html">iOS 5.0</a> or <a href="[http://developer.apple.com/library/mac/](http://developer.apple.com/library/mac/">Mac OS 10.6</a>#releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_6.html#//apple_ref/doc/uid/TP40008898-SW7) (<a href="https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtVersionsPlatforms.html">64-bit with modern Cocoa runtime</a>) SDK, as well as <a href="https://github.com/afnetworking/afnetworking">AFNetworking</a> 0.9 or higher.</p>
+
+<h2>Installation</h2>
+
+<p><a href="http://cocoapods.org">CocoaPods</a> is the recommended way to add <a href="Classes/AFIncrementalStore.html">AFIncrementalStore</a> to your project.</p>
+
+<p>Here&rsquo;s an example podfile that installs <a href="Classes/AFIncrementalStore.html">AFIncrementalStore</a> and its dependency, AFNetworking.</p>
+
+<h3>Podfile</h3>
+
+<p>```ruby
+platform :ios, &lsquo;5.0&rsquo;</p>
+
+<p>pod &lsquo;AFIncrementalStore&rsquo;, &lsquo;0.3.0&rsquo;
+```</p>
+
+<p>Note the specification of iOS 5.0 as the platform; leaving out the 5.0 will cause CocoaPods to fail with the following message:</p>
+
+<blockquote><p>[!] <a href="Classes/AFIncrementalStore.html">AFIncrementalStore</a> is not compatible with iOS 4.3.</p></blockquote>
+
+<h2>Credits</h2>
+
+<p><a href="Classes/AFIncrementalStore.html">AFIncrementalStore</a> was created by <a href="https://github.com/mattt/">Mattt Thompson</a>.</p>
+
+<h2>Contact</h2>
+
+<p>Follow AFNetworking on Twitter (<a href="https://twitter.com/AFNetworking">@AFNetworking</a>)</p>
+
+<h3>Creators</h3>
+
+<p><a href="http://github.com/mattt">Mattt Thompson</a><br/>
+<a href="https://twitter.com/mattt">@mattt</a></p>
+
+<h2>License</h2>
+
+<p><a href="Classes/AFIncrementalStore.html">AFIncrementalStore</a> and AFNetworking are available under the MIT license. See the LICENSE file for more info.</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/AFBlockPaginator.html">AFBlockPaginator</a></li>
+							
+							<li><a href="Classes/AFIncrementalStore.html">AFIncrementalStore</a></li>
+							
+							<li><a href="Classes/AFLimitAndOffsetPaginator.html">AFLimitAndOffsetPaginator</a></li>
+							
+							<li><a href="Classes/AFPageAndPerPagePaginator.html">AFPageAndPerPagePaginator</a></li>
+							
+							<li><a href="Classes/AFRESTClient.html">AFRESTClient</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						<h2 class="index-title">Protocol References</h2>
+						<ul>
+							
+							<li><a href="Protocols/AFIncrementalStoreHTTPClient.html">AFIncrementalStoreHTTPClient</a></li>
+							
+							<li><a href="Protocols/AFPaginator.html">AFPaginator</a></li>
+							
+						</ul>
+						
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Mattt Thompson. All rights reserved. (Last updated: 2013-05-25)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

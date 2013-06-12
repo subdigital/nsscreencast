@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSValueTransformer+TransformerKit.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSValueTransformer(TransformerKit)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSValueTransformer+TransformerKit.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSValueTransformer(TransformerKit)/registerValueTransformerWithName:transformedValueClass:returningTransformedValueWithBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSValueTransformer+TransformerKit.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)registerValueTransformerWithName:(NSString *)name transformedValueClass:(Class)transformedValueClass returningTransformedValueWithBlock:(id ( ^ ) ( id value ))transformedValueBlock</Declaration>
+			
+			
+			<Anchor>//api/name/registerValueTransformerWithName:transformedValueClass:returningTransformedValueWithBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSValueTransformer(TransformerKit)/registerValueTransformerWithName:transformedValueClass:returningTransformedValueWithBlock:allowingReverseTransformationWithBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSValueTransformer+TransformerKit.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)registerValueTransformerWithName:(NSString *)name transformedValueClass:(Class)transformedValueClass returningTransformedValueWithBlock:(id ( ^ ) ( id value ))transformedValueBlock allowingReverseTransformationWithBlock:(id ( ^ ) ( id value ))reverseTransformedValueBlock</Declaration>
+			
+			
+			<Anchor>//api/name/registerValueTransformerWithName:transformedValueClass:returningTransformedValueWithBlock:allowingReverseTransformationWithBlock:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

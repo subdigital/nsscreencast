@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TTTStringInflector.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TTTStringInflector</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TTTStringInflector.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TTTStringInflector/defaultInflector</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TTTStringInflector.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)defaultInflector</Declaration>
+			
+			
+			<Anchor>//api/name/defaultInflector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TTTStringInflector/singularize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TTTStringInflector.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)singularize:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/singularize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TTTStringInflector/pluralize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TTTStringInflector.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)pluralize:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/pluralize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TTTStringInflector/addSingularRule:withReplacement:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TTTStringInflector.h</DeclaredIn>			
+			
+			<Declaration>- (void)addSingularRule:(NSString *)rule withReplacement:(NSString *)replacement</Declaration>
+			
+			
+			<Anchor>//api/name/addSingularRule:withReplacement:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TTTStringInflector/addPluralRule:withReplacement:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TTTStringInflector.h</DeclaredIn>			
+			
+			<Declaration>- (void)addPluralRule:(NSString *)rule withReplacement:(NSString *)replacement</Declaration>
+			
+			
+			<Anchor>//api/name/addPluralRule:withReplacement:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TTTStringInflector/addIrregularWithSingular:plural:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TTTStringInflector.h</DeclaredIn>			
+			
+			<Declaration>- (void)addIrregularWithSingular:(NSString *)singular plural:(NSString *)plural</Declaration>
+			
+			
+			<Anchor>//api/name/addIrregularWithSingular:plural:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TTTStringInflector/addUncountable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TTTStringInflector.h</DeclaredIn>			
+			
+			<Declaration>- (void)addUncountable:(NSString *)word</Declaration>
+			
+			
+			<Anchor>//api/name/addUncountable:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

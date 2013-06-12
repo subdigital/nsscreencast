@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AFPageAndPerPagePaginator.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AFPageAndPerPagePaginator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFPageAndPerPagePaginator/setPageParameter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, copy) NSString *pageParameter</Declaration>
+			
+			
+			<Anchor>//api/name/pageParameter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFPageAndPerPagePaginator/pageParameter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, copy) NSString *pageParameter</Declaration>
+			
+			
+			<Anchor>//api/name/pageParameter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFPageAndPerPagePaginator/setPerPageParameter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, copy) NSString *perPageParameter</Declaration>
+			
+			
+			<Anchor>//api/name/perPageParameter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFPageAndPerPagePaginator/perPageParameter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, copy) NSString *perPageParameter</Declaration>
+			
+			
+			<Anchor>//api/name/perPageParameter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AFPageAndPerPagePaginator/paginatorWithPageParameter:perPageParameter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFRESTClient.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)paginatorWithPageParameter:(NSString *)pageParameterName perPageParameter:(NSString *)perPageParameterName</Declaration>
+			
+			
+			<Anchor>//api/name/paginatorWithPageParameter:perPageParameter:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
