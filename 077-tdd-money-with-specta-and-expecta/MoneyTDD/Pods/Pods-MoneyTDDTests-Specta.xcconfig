@@ -1,0 +1,2 @@
+PODS_MONEYTDDTESTS_SPECTA_FRAMEWORK_SEARCH_PATHS = $(inherited) "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks"
+PODS_MONEYTDDTESTS_SPECTA_OTHER_LDFLAGS = -framework Foundation -framework SenTestingKit
