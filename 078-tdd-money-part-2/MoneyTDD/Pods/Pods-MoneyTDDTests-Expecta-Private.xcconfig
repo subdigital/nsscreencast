@@ -1,0 +1,5 @@
+#include "Pods-MoneyTDDTests-Expecta.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/Expecta" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/Expecta" "${PODS_ROOT}/Headers/Specta"
+OTHER_LDFLAGS = -ObjC ${PODS_MONEYTDDTESTS_EXPECTA_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}
