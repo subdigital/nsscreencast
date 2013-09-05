@@ -10,4 +10,12 @@
 
 @implementation AlertViewProvider
 
+- (UIAlertView *)alertViewWithTitle:(NSString *)title message:(NSString *)message {
+    return [[UIAlertView alloc] initWithTitle:title
+                                      message:message
+                                     delegate:nil
+                            cancelButtonTitle:@"OK"
+                            otherButtonTitles:nil];
+}
+
 @end

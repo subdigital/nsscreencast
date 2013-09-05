@@ -10,4 +10,6 @@
 
 @interface AlertViewProvider : NSObject
 
+- (UIAlertView *)alertViewWithTitle:(NSString *)title message:(NSString *)message;
+
 @end
