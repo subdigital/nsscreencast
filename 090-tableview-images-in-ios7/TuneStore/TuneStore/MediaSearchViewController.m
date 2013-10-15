@@ -55,15 +55,20 @@
     if (imageURL) {
         cell.imageDownloadTask = [self.session dataTaskWithURL:imageURL
                                              completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                                                 NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-                                                 if (httpResponse.statusCode == 200) {
-                                                     UIImage *image = [UIImage imageWithData:data];
-                                                     dispatch_async(dispatch_get_main_queue(), ^{
-                                                         cell.artworkImageView.image = image;
-                                                     });
-                                                 } else {
-                                                     NSLog(@"Couldn't load image at URL: %@", imageURL);
+                                                 if (error) {
                                                      NSLog(@"ERROR: %@", error);
+                                                 } else {
+                                                 
+                                                     NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+                                                     if (httpResponse.statusCode == 200) {
+                                                         UIImage *image = [UIImage imageWithData:data];
+                                                         dispatch_async(dispatch_get_main_queue(), ^{
+                                                             cell.artworkImageView.image = image;
+                                                         });
+                                                     } else {
+                                                         NSLog(@"Couldn't load image at URL: %@", imageURL);
+                                                         NSLog(@"HTTP %d", httpResponse.statusCode);
+                                                     }
                                                  }
                                              }];
         [cell.imageDownloadTask resume];
