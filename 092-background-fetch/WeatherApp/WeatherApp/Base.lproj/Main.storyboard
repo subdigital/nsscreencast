@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OAK-sO-yIt"/>
+                        <viewControllerLayoutGuide type="bottom" id="o0H-S1-3Rn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K08-N2-n62">
+                                <rect key="frame" x="0.0" y="91" width="320" height="308"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="308" id="uNw-7U-v8L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="80"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last updated at xxxxxx" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dd4-jM-bpH">
+                                <rect key="frame" x="90" y="407" width="141" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="xv3-S5-ejF">
+                                <rect key="frame" x="0.0" y="47" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="M7j-rA-HZ6"/>
+                                </connections>
+                            </searchBar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XYc-OV-O0R">
+                                <rect key="frame" x="142" y="436" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.0" green="0.68219259509999997" blue="0.13094378209999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xv3-S5-ejF" firstAttribute="top" secondItem="OAK-sO-yIt" secondAttribute="bottom" constant="27" id="CpZ-tM-cCd"/>
+                            <constraint firstItem="K08-N2-n62" firstAttribute="centerX" secondItem="Dd4-jM-bpH" secondAttribute="centerX" id="OiK-l9-vVJ"/>
+                            <constraint firstItem="K08-N2-n62" firstAttribute="trailing" secondItem="xv3-S5-ejF" secondAttribute="trailing" id="QWa-7p-SPg"/>
+                            <constraint firstItem="K08-N2-n62" firstAttribute="leading" secondItem="xv3-S5-ejF" secondAttribute="leading" id="XfP-Pz-gbF"/>
+                            <constraint firstItem="xv3-S5-ejF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="fEz-tk-ije"/>
+                            <constraint firstAttribute="trailing" secondItem="xv3-S5-ejF" secondAttribute="trailing" id="ji4-IN-3lN"/>
+                            <constraint firstItem="K08-N2-n62" firstAttribute="top" secondItem="xv3-S5-ejF" secondAttribute="bottom" id="mk9-rz-2FK"/>
+                            <constraint firstItem="o0H-S1-3Rn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Dd4-jM-bpH" secondAttribute="bottom" constant="20" id="stW-54-vU7"/>
+                            <constraint firstItem="Dd4-jM-bpH" firstAttribute="top" secondItem="K08-N2-n62" secondAttribute="bottom" constant="8" symbolic="YES" id="vK3-be-TuA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="XYc-OV-O0R" id="1UP-OV-35a"/>
+                        <outlet property="searchBar" destination="xv3-S5-ejF" id="6Wo-NJ-OD8"/>
+                        <outlet property="temperatureLabel" destination="K08-N2-n62" id="bgE-7G-uIz"/>
+                        <outlet property="updatedLabel" destination="Dd4-jM-bpH" id="jup-wh-cSH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
