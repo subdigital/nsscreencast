@@ -81,7 +81,7 @@
 
 - (void)dismissPicker {
     [UIView animateWithDuration:0.25 delay:0
-                        options:UIViewAnimationCurveEaseOut
+                        options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
                          CGRect newFrame = _panel.frame;
                          newFrame.origin.y += _panel.frame.size.height;
@@ -164,7 +164,7 @@
     _panel.frame = newFrame;
     
     [UIView animateWithDuration:0.25 delay:0
-                        options:UIViewAnimationCurveEaseOut
+                        options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
                          _panel.frame = oldFrame;
                          _backdropView.alpha = 1;
