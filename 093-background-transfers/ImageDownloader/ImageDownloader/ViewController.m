@@ -39,18 +39,24 @@
     return [[NSFileManager defaultManager] fileExistsAtPath:[self localImagePath]];
 }
 
+- (NSURLSession *)session {
+    if (!_session) {
+        NSURLSessionConfiguration *config = [NSURLSessionConfiguration backgroundSessionConfiguration:@"com.ficklebits.imageDownloader.wallpaper"];
+        _session = [NSURLSession sessionWithConfiguration:config
+                                                 delegate:self
+                                            delegateQueue:nil];
+    }
+    return _session;
+}
+
 - (IBAction)downloadTapped:(id)sender {
     self.progressView.hidden = NO;
     self.progressView.progress = 0;
-    NSURL *imageUrl = [NSURL URLWithString:@"http://imgsrc.hubblesite.org/hu/db/images/hs-2006-14-a-2560x1024_wallpaper.jpg"];
+    NSURL *imageUrl = [NSURL URLWithString:
+                       @"http://imgsrc.hubblesite.org/hu/db/images/hs-2006-14-a-2560x1024_wallpaper.jpg"
+                       //@"http://m3.i.pbase.com/o2/81/503681/1/117923023.NptXUbnx.FdaysKTI2725.jpg"
+                       ];
 
-    if (!self.session) {
-        NSURLSessionConfiguration *config = [NSURLSessionConfiguration backgroundSessionConfiguration:@"com.ficklebits.imageDownloader.wallpaper"];
-        self.session = [NSURLSession sessionWithConfiguration:config
-                                                     delegate:self
-                                                delegateQueue:nil];
-    }
-    
     NSURLSessionDownloadTask *task = [self.session downloadTaskWithURL:imageUrl];
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     [task resume];
