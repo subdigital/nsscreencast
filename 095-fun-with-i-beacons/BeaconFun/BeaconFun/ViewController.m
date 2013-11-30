@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <CoreLocation/CoreLocation.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
 #define BEACON_UUID @"05FA9520-775B-4133-B3C8-7E805807B7D6"
 
