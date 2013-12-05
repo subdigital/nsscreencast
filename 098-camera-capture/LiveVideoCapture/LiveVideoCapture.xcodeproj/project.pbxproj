@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5AE3CEF184E1D0300EA702C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AE3CEE184E1D0300EA702C /* Foundation.framework */; };
+		B5AE3CF1184E1D0300EA702C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AE3CF0184E1D0300EA702C /* CoreGraphics.framework */; };
+		B5AE3CF3184E1D0300EA702C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AE3CF2184E1D0300EA702C /* UIKit.framework */; };
+		B5AE3CF9184E1D0300EA702C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5AE3CF7184E1D0300EA702C /* InfoPlist.strings */; };
+		B5AE3CFB184E1D0300EA702C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AE3CFA184E1D0300EA702C /* main.m */; };
+		B5AE3CFF184E1D0300EA702C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AE3CFE184E1D0300EA702C /* AppDelegate.m */; };
+		B5AE3D02184E1D0300EA702C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5AE3D00184E1D0300EA702C /* Main.storyboard */; };
+		B5AE3D05184E1D0300EA702C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AE3D04184E1D0300EA702C /* ViewController.m */; };
+		B5AE3D07184E1D0300EA702C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AE3D06184E1D0300EA702C /* Images.xcassets */; };
+		B5AE3D0E184E1D0300EA702C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AE3D0D184E1D0300EA702C /* XCTest.framework */; };
+		B5AE3D0F184E1D0300EA702C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AE3CEE184E1D0300EA702C /* Foundation.framework */; };
+		B5AE3D10184E1D0300EA702C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AE3CF2184E1D0300EA702C /* UIKit.framework */; };
+		B5AE3D18184E1D0300EA702C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5AE3D16184E1D0300EA702C /* InfoPlist.strings */; };
+		B5AE3D1A184E1D0300EA702C /* LiveVideoCaptureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AE3D19184E1D0300EA702C /* LiveVideoCaptureTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5AE3D11184E1D0300EA702C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5AE3CE3184E1D0300EA702C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5AE3CEA184E1D0300EA702C;
+			remoteInfo = LiveVideoCapture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5AE3CEB184E1D0300EA702C /* LiveVideoCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveVideoCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5AE3CEE184E1D0300EA702C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5AE3CF0184E1D0300EA702C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5AE3CF2184E1D0300EA702C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5AE3CF6184E1D0300EA702C /* LiveVideoCapture-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LiveVideoCapture-Info.plist"; sourceTree = "<group>"; };
+		B5AE3CF8184E1D0300EA702C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5AE3CFA184E1D0300EA702C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5AE3CFC184E1D0300EA702C /* LiveVideoCapture-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiveVideoCapture-Prefix.pch"; sourceTree = "<group>"; };
+		B5AE3CFD184E1D0300EA702C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5AE3CFE184E1D0300EA702C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5AE3D01184E1D0300EA702C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5AE3D03184E1D0300EA702C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B5AE3D04184E1D0300EA702C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B5AE3D06184E1D0300EA702C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B5AE3D0C184E1D0300EA702C /* LiveVideoCaptureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveVideoCaptureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5AE3D0D184E1D0300EA702C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B5AE3D15184E1D0300EA702C /* LiveVideoCaptureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LiveVideoCaptureTests-Info.plist"; sourceTree = "<group>"; };
+		B5AE3D17184E1D0300EA702C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5AE3D19184E1D0300EA702C /* LiveVideoCaptureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveVideoCaptureTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5AE3CE8184E1D0300EA702C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AE3CF1184E1D0300EA702C /* CoreGraphics.framework in Frameworks */,
+				B5AE3CF3184E1D0300EA702C /* UIKit.framework in Frameworks */,
+				B5AE3CEF184E1D0300EA702C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AE3D09184E1D0300EA702C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AE3D0E184E1D0300EA702C /* XCTest.framework in Frameworks */,
+				B5AE3D10184E1D0300EA702C /* UIKit.framework in Frameworks */,
+				B5AE3D0F184E1D0300EA702C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5AE3CE2184E1D0300EA702C = {
+			isa = PBXGroup;
+			children = (
+				B5AE3CF4184E1D0300EA702C /* LiveVideoCapture */,
+				B5AE3D13184E1D0300EA702C /* LiveVideoCaptureTests */,
+				B5AE3CED184E1D0300EA702C /* Frameworks */,
+				B5AE3CEC184E1D0300EA702C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5AE3CEC184E1D0300EA702C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5AE3CEB184E1D0300EA702C /* LiveVideoCapture.app */,
+				B5AE3D0C184E1D0300EA702C /* LiveVideoCaptureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5AE3CED184E1D0300EA702C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5AE3CEE184E1D0300EA702C /* Foundation.framework */,
+				B5AE3CF0184E1D0300EA702C /* CoreGraphics.framework */,
+				B5AE3CF2184E1D0300EA702C /* UIKit.framework */,
+				B5AE3D0D184E1D0300EA702C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5AE3CF4184E1D0300EA702C /* LiveVideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				B5AE3CFD184E1D0300EA702C /* AppDelegate.h */,
+				B5AE3CFE184E1D0300EA702C /* AppDelegate.m */,
+				B5AE3D00184E1D0300EA702C /* Main.storyboard */,
+				B5AE3D03184E1D0300EA702C /* ViewController.h */,
+				B5AE3D04184E1D0300EA702C /* ViewController.m */,
+				B5AE3D06184E1D0300EA702C /* Images.xcassets */,
+				B5AE3CF5184E1D0300EA702C /* Supporting Files */,
+			);
+			path = LiveVideoCapture;
+			sourceTree = "<group>";
+		};
+		B5AE3CF5184E1D0300EA702C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5AE3CF6184E1D0300EA702C /* LiveVideoCapture-Info.plist */,
+				B5AE3CF7184E1D0300EA702C /* InfoPlist.strings */,
+				B5AE3CFA184E1D0300EA702C /* main.m */,
+				B5AE3CFC184E1D0300EA702C /* LiveVideoCapture-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5AE3D13184E1D0300EA702C /* LiveVideoCaptureTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5AE3D19184E1D0300EA702C /* LiveVideoCaptureTests.m */,
+				B5AE3D14184E1D0300EA702C /* Supporting Files */,
+			);
+			path = LiveVideoCaptureTests;
+			sourceTree = "<group>";
+		};
+		B5AE3D14184E1D0300EA702C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5AE3D15184E1D0300EA702C /* LiveVideoCaptureTests-Info.plist */,
+				B5AE3D16184E1D0300EA702C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5AE3CEA184E1D0300EA702C /* LiveVideoCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5AE3D1D184E1D0300EA702C /* Build configuration list for PBXNativeTarget "LiveVideoCapture" */;
+			buildPhases = (
+				B5AE3CE7184E1D0300EA702C /* Sources */,
+				B5AE3CE8184E1D0300EA702C /* Frameworks */,
+				B5AE3CE9184E1D0300EA702C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveVideoCapture;
+			productName = LiveVideoCapture;
+			productReference = B5AE3CEB184E1D0300EA702C /* LiveVideoCapture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5AE3D0B184E1D0300EA702C /* LiveVideoCaptureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5AE3D20184E1D0300EA702C /* Build configuration list for PBXNativeTarget "LiveVideoCaptureTests" */;
+			buildPhases = (
+				B5AE3D08184E1D0300EA702C /* Sources */,
+				B5AE3D09184E1D0300EA702C /* Frameworks */,
+				B5AE3D0A184E1D0300EA702C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5AE3D12184E1D0300EA702C /* PBXTargetDependency */,
+			);
+			name = LiveVideoCaptureTests;
+			productName = LiveVideoCaptureTests;
+			productReference = B5AE3D0C184E1D0300EA702C /* LiveVideoCaptureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5AE3CE3184E1D0300EA702C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = NSScreencast;
+				TargetAttributes = {
+					B5AE3D0B184E1D0300EA702C = {
+						TestTargetID = B5AE3CEA184E1D0300EA702C;
+					};
+				};
+			};
+			buildConfigurationList = B5AE3CE6184E1D0300EA702C /* Build configuration list for PBXProject "LiveVideoCapture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5AE3CE2184E1D0300EA702C;
+			productRefGroup = B5AE3CEC184E1D0300EA702C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5AE3CEA184E1D0300EA702C /* LiveVideoCapture */,
+				B5AE3D0B184E1D0300EA702C /* LiveVideoCaptureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5AE3CE9184E1D0300EA702C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AE3D07184E1D0300EA702C /* Images.xcassets in Resources */,
+				B5AE3CF9184E1D0300EA702C /* InfoPlist.strings in Resources */,
+				B5AE3D02184E1D0300EA702C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AE3D0A184E1D0300EA702C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AE3D18184E1D0300EA702C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5AE3CE7184E1D0300EA702C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AE3D05184E1D0300EA702C /* ViewController.m in Sources */,
+				B5AE3CFF184E1D0300EA702C /* AppDelegate.m in Sources */,
+				B5AE3CFB184E1D0300EA702C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AE3D08184E1D0300EA702C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AE3D1A184E1D0300EA702C /* LiveVideoCaptureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5AE3D12184E1D0300EA702C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5AE3CEA184E1D0300EA702C /* LiveVideoCapture */;
+			targetProxy = B5AE3D11184E1D0300EA702C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5AE3CF7184E1D0300EA702C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5AE3CF8184E1D0300EA702C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B5AE3D00184E1D0300EA702C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5AE3D01184E1D0300EA702C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5AE3D16184E1D0300EA702C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5AE3D17184E1D0300EA702C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5AE3D1B184E1D0300EA702C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5AE3D1C184E1D0300EA702C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5AE3D1E184E1D0300EA702C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiveVideoCapture/LiveVideoCapture-Prefix.pch";
+				INFOPLIST_FILE = "LiveVideoCapture/LiveVideoCapture-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B5AE3D1F184E1D0300EA702C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiveVideoCapture/LiveVideoCapture-Prefix.pch";
+				INFOPLIST_FILE = "LiveVideoCapture/LiveVideoCapture-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B5AE3D21184E1D0300EA702C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LiveVideoCapture.app/LiveVideoCapture";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiveVideoCapture/LiveVideoCapture-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LiveVideoCaptureTests/LiveVideoCaptureTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B5AE3D22184E1D0300EA702C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LiveVideoCapture.app/LiveVideoCapture";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiveVideoCapture/LiveVideoCapture-Prefix.pch";
+				INFOPLIST_FILE = "LiveVideoCaptureTests/LiveVideoCaptureTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5AE3CE6184E1D0300EA702C /* Build configuration list for PBXProject "LiveVideoCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AE3D1B184E1D0300EA702C /* Debug */,
+				B5AE3D1C184E1D0300EA702C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5AE3D1D184E1D0300EA702C /* Build configuration list for PBXNativeTarget "LiveVideoCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AE3D1E184E1D0300EA702C /* Debug */,
+				B5AE3D1F184E1D0300EA702C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B5AE3D20184E1D0300EA702C /* Build configuration list for PBXNativeTarget "LiveVideoCaptureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AE3D21184E1D0300EA702C /* Debug */,
+				B5AE3D22184E1D0300EA702C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5AE3CE3184E1D0300EA702C /* Project object */;
+}
