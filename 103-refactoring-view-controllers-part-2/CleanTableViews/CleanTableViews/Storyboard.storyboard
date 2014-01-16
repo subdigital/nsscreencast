@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="eRw-9m-iQV">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Followers View Controller - My Twitter Followers-->
+        <scene sceneID="8hP-Kv-EmD">
+            <objects>
+                <viewController id="UCF-ln-E8W" customClass="FollowersViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0jH-g1-P1h"/>
+                        <viewControllerLayoutGuide type="bottom" id="pKG-Mz-z7C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F2K-cM-fH0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eyo-KH-cW5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="followerCell" rowHeight="68" id="VTw-Ba-clE" customClass="TwitterUserCell">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VTw-Ba-clE" id="9cL-sQ-ede">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joe Schmo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZa-WF-ffg">
+                                                    <rect key="frame" x="66" y="10" width="87" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="vE9-gG-Vc2">
+                                                    <rect key="frame" x="10" y="10" width="48" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="48" id="0qo-5g-noV"/>
+                                                        <constraint firstAttribute="height" constant="48" id="2oH-ZX-wLk"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@joe_schmo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51t-hf-FS5">
+                                                    <rect key="frame" x="66" y="33" width="82" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vE9-gG-Vc2" firstAttribute="leading" secondItem="9cL-sQ-ede" secondAttribute="leading" constant="10" id="1z2-ng-XXF"/>
+                                                <constraint firstItem="51t-hf-FS5" firstAttribute="leading" secondItem="vE9-gG-Vc2" secondAttribute="trailing" constant="8" id="4vc-Sm-fNw"/>
+                                                <constraint firstItem="hZa-WF-ffg" firstAttribute="leading" secondItem="vE9-gG-Vc2" secondAttribute="trailing" constant="8" id="LHI-sf-dBL"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hZa-WF-ffg" secondAttribute="trailing" constant="10" id="W6G-YV-hYP"/>
+                                                <constraint firstItem="51t-hf-FS5" firstAttribute="top" secondItem="hZa-WF-ffg" secondAttribute="bottom" constant="2" id="WKr-Vm-jst"/>
+                                                <constraint firstItem="vE9-gG-Vc2" firstAttribute="top" secondItem="9cL-sQ-ede" secondAttribute="top" constant="10" id="mRY-ZF-3F4"/>
+                                                <constraint firstItem="hZa-WF-ffg" firstAttribute="top" secondItem="9cL-sQ-ede" secondAttribute="top" constant="10" id="qTm-SC-hsv"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="51t-hf-FS5" secondAttribute="trailing" constant="10" id="sOP-Vu-wod"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="avatarImageView" destination="vE9-gG-Vc2" id="x1N-1S-WKV"/>
+                                            <outlet property="nameLabel" destination="hZa-WF-ffg" id="1Hm-c7-5mk"/>
+                                            <outlet property="screenNameLabel" destination="51t-hf-FS5" id="dP9-7t-S1S"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="UCF-ln-E8W" id="mOg-E4-Gn1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eyo-KH-cW5" firstAttribute="leading" secondItem="F2K-cM-fH0" secondAttribute="leading" id="8Y3-3Z-UGS"/>
+                            <constraint firstAttribute="bottom" secondItem="eyo-KH-cW5" secondAttribute="bottom" id="JFF-OZ-fid"/>
+                            <constraint firstAttribute="trailing" secondItem="eyo-KH-cW5" secondAttribute="trailing" id="TI9-PI-hQJ"/>
+                            <constraint firstItem="eyo-KH-cW5" firstAttribute="top" secondItem="F2K-cM-fH0" secondAttribute="top" id="n3z-bo-syo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Twitter Followers" id="UvL-wJ-5iB"/>
+                    <connections>
+                        <outlet property="tableView" destination="eyo-KH-cW5" id="Wn9-ft-wkI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qID-9b-Lod" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="739" y="257"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ll2-eQ-AJw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eRw-9m-iQV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uce-lR-cJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UCF-ln-E8W" kind="relationship" relationship="rootViewController" id="W0J-5d-L5R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l5S-4C-xXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213" y="257"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar" width="64" height="64"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
