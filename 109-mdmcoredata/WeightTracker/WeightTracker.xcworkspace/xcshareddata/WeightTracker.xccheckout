@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>091C6163-E70F-4494-A023-07B1EE4BB749</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WeightTracker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>34140681-D3BC-4402-A5D3-07085981EE43</key>
+		<string>ssh://github.com/subdigital/nsscreencast.git</string>
+		<key>3DE7869F-156E-46F5-82D7-C599356F22AD</key>
+		<string>ssh://trunksapp.com/subdigital/nsscreencast-meta.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>sourcecode/109-mdmcoredata/WeightTracker/WeightTracker.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>34140681-D3BC-4402-A5D3-07085981EE43</key>
+		<string>../../..</string>
+		<key>3DE7869F-156E-46F5-82D7-C599356F22AD</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/subdigital/nsscreencast.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3DE7869F-156E-46F5-82D7-C599356F22AD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3DE7869F-156E-46F5-82D7-C599356F22AD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>nsscreencast</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>34140681-D3BC-4402-A5D3-07085981EE43</string>
+			<key>IDESourceControlWCCName</key>
+			<string>sourcecode</string>
+		</dict>
+	</array>
+</dict>
+</plist>

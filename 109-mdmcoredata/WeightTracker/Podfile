@@ -1,0 +1,9 @@
+platform :ios, "7.0"
+
+target "WeightTracker" do
+  pod 'MDMCoreData'
+end
+
+target "WeightTrackerTests" do
+end
+

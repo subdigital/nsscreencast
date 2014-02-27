@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B583D91818BF8B66009432F8 /* BSTapScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B583D91718BF8B66009432F8 /* BSTapScrollView.m */; };
 		B5B19DCE18A925F6001B023C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B19DCD18A925F6001B023C /* Foundation.framework */; };
 		B5B19DD018A925F6001B023C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B19DCF18A925F6001B023C /* CoreGraphics.framework */; };
 		B5B19DD218A925F6001B023C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B19DD118A925F6001B023C /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B583D91618BF8B66009432F8 /* BSTapScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTapScrollView.h; sourceTree = "<group>"; };
+		B583D91718BF8B66009432F8 /* BSTapScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTapScrollView.m; sourceTree = "<group>"; };
 		B5B19DCA18A925F6001B023C /* SwipeToRevealCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeToRevealCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B19DCD18A925F6001B023C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B5B19DCF18A925F6001B023C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -133,6 +136,8 @@
 				B5B19E0618A9260C001B023C /* MailMessage.m */,
 				B5B19E0818A92893001B023C /* MailMessageCell.h */,
 				B5B19E0918A92893001B023C /* MailMessageCell.m */,
+				B583D91618BF8B66009432F8 /* BSTapScrollView.h */,
+				B583D91718BF8B66009432F8 /* BSTapScrollView.m */,
 			);
 			path = SwipeToRevealCell;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				B5B19E0718A9260C001B023C /* MailMessage.m in Sources */,
 				B5B19E0A18A92893001B023C /* MailMessageCell.m in Sources */,
 				B5B19DDE18A925F6001B023C /* AppDelegate.m in Sources */,
+				B583D91818BF8B66009432F8 /* BSTapScrollView.m in Sources */,
 				B5B19DE418A925F6001B023C /* MasterViewController.m in Sources */,
 				B5B19DDA18A925F6001B023C /* main.m in Sources */,
 			);
