@@ -50,7 +50,7 @@
 }
 
 - (NSFetchRequest *)recentEntriesFetchRequest {
-    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"WeightLog"];
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:[WTWeightLog MDMCoreDataAdditionsEntityName]];
     fetchRequest.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:@"dateTaken" ascending:NO] ];
     return fetchRequest;
 }
