@@ -10,8 +10,8 @@
 
 @interface MailMessageCell : UITableViewCell <UIScrollViewDelegate>
 
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) IBOutlet UILabel *senderLabel;
-@property (nonatomic, strong) IBOutlet UILabel *dateLabel;
 @property (nonatomic, strong) IBOutlet UILabel *subjectLabel;
 @property (nonatomic, strong) IBOutlet UILabel *previewLabel;
 

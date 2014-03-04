@@ -35,12 +35,12 @@
     
     self.messages = [NSMutableArray array];
     [senders enumerateObjectsUsingBlock:^(NSString *sender, NSUInteger idx, BOOL *stop) {
-        MailMessage *msg = [[MailMessage alloc] init];
-        msg.sender = sender;
-        msg.dateString = dateStrs[idx];
-        msg.subject = subjects[idx];
-        msg.preview = previews[idx];
-        [self.messages addObject:msg];
+        MailMessage *mailMessage = [[MailMessage alloc] init];
+        mailMessage.sender = sender;
+        mailMessage.dateString = dateStrs[idx];
+        mailMessage.subject = subjects[idx];
+        mailMessage.preview = previews[idx];
+        [self.messages addObject:mailMessage];
     }];
 }
 
@@ -56,11 +56,16 @@
     MailMessage *msg = self.messages[indexPath.row];
     
     cell.senderLabel.text = msg.sender;
-    cell.dateLabel.text = msg.dateString;
     cell.subjectLabel.text = msg.subject;
     cell.previewLabel.text = msg.preview;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"Selected %@", indexPath);
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
