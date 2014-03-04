@@ -64,6 +64,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"Selected %@", indexPath);
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

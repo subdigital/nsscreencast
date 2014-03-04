@@ -7,7 +7,6 @@
 //
 
 #import "MailMessageCell.h"
-#import "BSTapScrollView.h"
 
 const CGFloat kRevealWidth = 160.0;
 static NSString *RevealCellDidOpenNotification = @"RevealCellDidOpenNotification";
@@ -16,7 +15,7 @@ static NSString *RevealCellDidOpenNotification = @"RevealCellDidOpenNotification
     BOOL _isOpen;
 }
 
-@property (nonatomic, strong) IBOutlet BSTapScrollView *scrollView;
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) IBOutlet UIView *innerContentView;
 
 @property (nonatomic, strong) UIView *buttonContainerView;
@@ -26,13 +25,6 @@ static NSString *RevealCellDidOpenNotification = @"RevealCellDidOpenNotification
 @end
 
 @implementation MailMessageCell
-
-- (void) touchesEnded: (NSSet *) touches withEvent: (UIEvent *) event
-{
-    NSLog(@"touch cell");
-    // If not dragging, send event to next responder
-    [super touchesEnded: touches withEvent: event];
-}
 
 - (void)awakeFromNib {
     self.scrollView.showsHorizontalScrollIndicator = NO;
