@@ -1,0 +1,10 @@
+PODS:
+  - SAMRateLimit (0.2.0)
+
+DEPENDENCIES:
+  - SAMRateLimit
+
+SPEC CHECKSUMS:
+  SAMRateLimit: 22b0ba0fafa8a9c438b7f76e4182914ef704c701
+
+COCOAPODS: 0.29.0
