@@ -68,8 +68,8 @@
     CGFloat startingAngle = 2 * M_PI / self.numberOfSides / 2.0f;
     for (int n = 0; n < self.numberOfSides; n++) {
         CGFloat rotationFactor = ((2 * M_PI) / self.numberOfSides) * (n+1) + startingAngle;
-        CGFloat x = (self.bounds.size.width / 2.0f) + sin(rotationFactor) * radius;
-        CGFloat y = (self.bounds.size.height / 2.0f) + cos(rotationFactor) * radius;
+        CGFloat x = (self.bounds.size.width / 2.0f) + cos(rotationFactor) * radius;
+        CGFloat y = (self.bounds.size.height / 2.0f) + sin(rotationFactor) * radius;
         
         if (n == 0) {
             CGPathMoveToPoint(path, NULL, x, y);
