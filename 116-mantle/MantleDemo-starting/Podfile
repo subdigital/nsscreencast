@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+
+target 'MantleDemo' do
+  pod 'Mantle'
+end

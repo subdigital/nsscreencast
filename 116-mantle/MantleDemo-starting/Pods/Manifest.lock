@@ -1,0 +1,12 @@
+PODS:
+  - Mantle (1.4.1):
+    - Mantle/extobjc
+  - Mantle/extobjc (1.4.1)
+
+DEPENDENCIES:
+  - Mantle
+
+SPEC CHECKSUMS:
+  Mantle: 0714cdb2b8559d9e6c2410d6a8529e3307bff189
+
+COCOAPODS: 0.32.1
