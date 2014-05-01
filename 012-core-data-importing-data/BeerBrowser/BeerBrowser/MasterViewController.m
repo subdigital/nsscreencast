@@ -124,7 +124,6 @@
             Brewery *brewery = [Brewery breweryWithServerId:serverId usingManagedObjectContext:context];
             if (brewery == nil) {
                 brewery = [Brewery insertInManagedObjectContext:context];
-                [brewery setServerId:[NSNumber numberWithInteger:serverId]];
             }
             
             [brewery updateAttributes:dictionary];
