@@ -33,7 +33,7 @@
 }
 
 - (void)loadLastWeight {
-    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"WeightLog"];
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:[WTWeightLog MDMCoreDataAdditionsEntityName]];
     fetchRequest.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:@"dateTaken" ascending:NO] ];
     fetchRequest.fetchLimit = 1;
     
@@ -74,28 +74,19 @@
 }
 
 - (void)saveWeight:(CGFloat)weight {
-    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"WeightLog"
-                                                  inManagedObjectContext:self.persistenceController.managedObjectContext];
-    WTWeightLog *log = [[WTWeightLog alloc] initWithEntity:entityDesc
-                            insertIntoManagedObjectContext:self.persistenceController.managedObjectContext];
+    
+    WTWeightLog *log = [WTWeightLog MDMCoreDataAdditionsInsertNewObjectIntoContext:self.persistenceController.managedObjectContext];
     log.dateTaken = [NSDate date];
     log.units = @"lbs";
     log.weight = @(weight);
     
     [self updateForWeight:log];
     
-    NSError *error;
-    if([self.persistenceController.managedObjectContext save:&error]) {
-        NSLog(@"Saved");
-        
-        [self.persistenceController saveContextAndWait:YES completion:^(NSError *error) {
-            if (error) {
-                NSLog(@"ERROR:%@", [error localizedDescription]);
-            }
-        }];
-    } else {
-        NSLog(@"Couldn't save: %@", [error localizedDescription]);
-    }
+    [self.persistenceController saveContextAndWait:NO completion:^(NSError *error) {
+        if (error) {
+            NSLog(@"ERROR:%@", [error localizedDescription]);
+        }
+    }];
 }
 
 - (void)updateForWeight:(WTWeightLog *)log {
