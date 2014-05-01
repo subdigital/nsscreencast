@@ -26,7 +26,7 @@
     [self displayWord:reversed];
     
     
-    return NO;
+    return YES;
 }
 
 - (NSString *)reverseWord:(NSString *)word {
