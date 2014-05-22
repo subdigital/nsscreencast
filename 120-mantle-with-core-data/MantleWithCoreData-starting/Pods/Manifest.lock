@@ -1,0 +1,29 @@
+PODS:
+  - AsyncImageView (1.5.1)
+  - Mantle (1.4.1):
+    - Mantle/extobjc
+  - Mantle/extobjc (1.4.1)
+  - MDMCoreData (1.0.1):
+    - MDMCoreData/MDMCoreDataCore
+    - MDMCoreData/MDMFetchedResultsTableDataSource
+    - MDMCoreData/MDMPersistenceController
+    - MDMCoreData/NSManagedObject+MDMCoreDataAdditions
+  - MDMCoreData/MDMCoreDataCore (1.0.1)
+  - MDMCoreData/MDMFetchedResultsTableDataSource (1.0.1):
+    - MDMCoreData/MDMCoreDataCore
+  - MDMCoreData/MDMPersistenceController (1.0.1):
+    - MDMCoreData/MDMCoreDataCore
+  - MDMCoreData/NSManagedObject+MDMCoreDataAdditions (1.0.1):
+    - MDMCoreData/MDMCoreDataCore
+
+DEPENDENCIES:
+  - AsyncImageView
+  - Mantle
+  - MDMCoreData
+
+SPEC CHECKSUMS:
+  AsyncImageView: 686febb2b2a923353ede67c529d257498059852d
+  Mantle: 0714cdb2b8559d9e6c2410d6a8529e3307bff189
+  MDMCoreData: 48d26b5605da79e863168275e3cb81643fc8ab24
+
+COCOAPODS: 0.32.1

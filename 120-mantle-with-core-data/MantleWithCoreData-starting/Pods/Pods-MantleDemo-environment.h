@@ -1,0 +1,56 @@
+
+// To check if a library is compiled with CocoaPods you
+// can use the `COCOAPODS` macro definition which is
+// defined in the xcconfigs so it is available in
+// headers also when they are imported in the client
+// project.
+
+
+// AsyncImageView
+#define COCOAPODS_POD_AVAILABLE_AsyncImageView
+#define COCOAPODS_VERSION_MAJOR_AsyncImageView 1
+#define COCOAPODS_VERSION_MINOR_AsyncImageView 5
+#define COCOAPODS_VERSION_PATCH_AsyncImageView 1
+
+// MDMCoreData
+#define COCOAPODS_POD_AVAILABLE_MDMCoreData
+#define COCOAPODS_VERSION_MAJOR_MDMCoreData 1
+#define COCOAPODS_VERSION_MINOR_MDMCoreData 0
+#define COCOAPODS_VERSION_PATCH_MDMCoreData 1
+
+// MDMCoreData/MDMCoreDataCore
+#define COCOAPODS_POD_AVAILABLE_MDMCoreData_MDMCoreDataCore
+#define COCOAPODS_VERSION_MAJOR_MDMCoreData_MDMCoreDataCore 1
+#define COCOAPODS_VERSION_MINOR_MDMCoreData_MDMCoreDataCore 0
+#define COCOAPODS_VERSION_PATCH_MDMCoreData_MDMCoreDataCore 1
+
+// MDMCoreData/MDMFetchedResultsTableDataSource
+#define COCOAPODS_POD_AVAILABLE_MDMCoreData_MDMFetchedResultsTableDataSource
+#define COCOAPODS_VERSION_MAJOR_MDMCoreData_MDMFetchedResultsTableDataSource 1
+#define COCOAPODS_VERSION_MINOR_MDMCoreData_MDMFetchedResultsTableDataSource 0
+#define COCOAPODS_VERSION_PATCH_MDMCoreData_MDMFetchedResultsTableDataSource 1
+
+// MDMCoreData/MDMPersistenceController
+#define COCOAPODS_POD_AVAILABLE_MDMCoreData_MDMPersistenceController
+#define COCOAPODS_VERSION_MAJOR_MDMCoreData_MDMPersistenceController 1
+#define COCOAPODS_VERSION_MINOR_MDMCoreData_MDMPersistenceController 0
+#define COCOAPODS_VERSION_PATCH_MDMCoreData_MDMPersistenceController 1
+
+// MDMCoreData/NSManagedObject+MDMCoreDataAdditions
+#define COCOAPODS_POD_AVAILABLE_MDMCoreData_NSManagedObject_MDMCoreDataAdditions
+#define COCOAPODS_VERSION_MAJOR_MDMCoreData_NSManagedObject_MDMCoreDataAdditions 1
+#define COCOAPODS_VERSION_MINOR_MDMCoreData_NSManagedObject_MDMCoreDataAdditions 0
+#define COCOAPODS_VERSION_PATCH_MDMCoreData_NSManagedObject_MDMCoreDataAdditions 1
+
+// Mantle
+#define COCOAPODS_POD_AVAILABLE_Mantle
+#define COCOAPODS_VERSION_MAJOR_Mantle 1
+#define COCOAPODS_VERSION_MINOR_Mantle 4
+#define COCOAPODS_VERSION_PATCH_Mantle 1
+
+// Mantle/extobjc
+#define COCOAPODS_POD_AVAILABLE_Mantle_extobjc
+#define COCOAPODS_VERSION_MAJOR_Mantle_extobjc 1
+#define COCOAPODS_VERSION_MINOR_Mantle_extobjc 4
+#define COCOAPODS_VERSION_PATCH_Mantle_extobjc 1
+
