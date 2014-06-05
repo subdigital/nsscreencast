@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6385B534-FBC5-4D5A-BB1C-8CCF044E1879</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PopDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8D9AF988-48CE-42CA-B594-5F2872C06758</key>
+		<string>ssh://trunksapp.com/subdigital/nsscreencast-meta.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>working/PopDemo/PopDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8D9AF988-48CE-42CA-B594-5F2872C06758</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://trunksapp.com/subdigital/nsscreencast-meta.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8D9AF988-48CE-42CA-B594-5F2872C06758</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8D9AF988-48CE-42CA-B594-5F2872C06758</string>
+			<key>IDESourceControlWCCName</key>
+			<string>nsscreencast</string>
+		</dict>
+	</array>
+</dict>
+</plist>
