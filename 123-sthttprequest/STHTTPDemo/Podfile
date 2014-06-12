@@ -1,0 +1,12 @@
+platform :ios, '7.0'
+
+inhibit_all_warnings!
+
+target "STHTTPDemo" do
+  pod 'STHTTPRequest'
+end
+
+target "STHTTPDemoTests" do
+
+end
+
