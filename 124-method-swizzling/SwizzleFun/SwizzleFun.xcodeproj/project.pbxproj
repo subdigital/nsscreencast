@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5AB1731193A517200B3C827 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AB1730193A517200B3C827 /* Foundation.framework */; };
+		B5AB1733193A517200B3C827 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AB1732193A517200B3C827 /* CoreGraphics.framework */; };
+		B5AB1735193A517200B3C827 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AB1734193A517200B3C827 /* UIKit.framework */; };
+		B5AB173B193A517200B3C827 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5AB1739193A517200B3C827 /* InfoPlist.strings */; };
+		B5AB173D193A517200B3C827 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AB173C193A517200B3C827 /* main.m */; };
+		B5AB1741193A517200B3C827 /* FKBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AB1740193A517200B3C827 /* FKBAppDelegate.m */; };
+		B5AB1744193A517200B3C827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5AB1742193A517200B3C827 /* Main.storyboard */; };
+		B5AB1747193A517200B3C827 /* FKBFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AB1746193A517200B3C827 /* FKBFirstViewController.m */; };
+		B5AB174A193A517200B3C827 /* FKBSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AB1749193A517200B3C827 /* FKBSecondViewController.m */; };
+		B5AB174C193A517200B3C827 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AB174B193A517200B3C827 /* Images.xcassets */; };
+		B5AB1753193A517200B3C827 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AB1752193A517200B3C827 /* XCTest.framework */; };
+		B5AB1754193A517200B3C827 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AB1730193A517200B3C827 /* Foundation.framework */; };
+		B5AB1755193A517200B3C827 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AB1734193A517200B3C827 /* UIKit.framework */; };
+		B5AB175D193A517200B3C827 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5AB175B193A517200B3C827 /* InfoPlist.strings */; };
+		B5AB175F193A517200B3C827 /* SwizzleFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AB175E193A517200B3C827 /* SwizzleFunTests.m */; };
+		B5AB176A193A52A700B3C827 /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AB1769193A52A700B3C827 /* Foo.m */; };
+		B5AB1770193A54A200B3C827 /* FKBSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AB176F193A54A200B3C827 /* FKBSwizzler.m */; };
+		B5AB1773193A55D300B3C827 /* UIViewController+Analytics.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AB1772193A55D300B3C827 /* UIViewController+Analytics.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5AB1756193A517200B3C827 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5AB1725193A517200B3C827 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5AB172C193A517200B3C827;
+			remoteInfo = SwizzleFun;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5AB172D193A517200B3C827 /* SwizzleFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwizzleFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5AB1730193A517200B3C827 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5AB1732193A517200B3C827 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5AB1734193A517200B3C827 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5AB1738193A517200B3C827 /* SwizzleFun-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwizzleFun-Info.plist"; sourceTree = "<group>"; };
+		B5AB173A193A517200B3C827 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5AB173C193A517200B3C827 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5AB173E193A517200B3C827 /* SwizzleFun-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwizzleFun-Prefix.pch"; sourceTree = "<group>"; };
+		B5AB173F193A517200B3C827 /* FKBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKBAppDelegate.h; sourceTree = "<group>"; };
+		B5AB1740193A517200B3C827 /* FKBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKBAppDelegate.m; sourceTree = "<group>"; };
+		B5AB1743193A517200B3C827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5AB1745193A517200B3C827 /* FKBFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKBFirstViewController.h; sourceTree = "<group>"; };
+		B5AB1746193A517200B3C827 /* FKBFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKBFirstViewController.m; sourceTree = "<group>"; };
+		B5AB1748193A517200B3C827 /* FKBSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKBSecondViewController.h; sourceTree = "<group>"; };
+		B5AB1749193A517200B3C827 /* FKBSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKBSecondViewController.m; sourceTree = "<group>"; };
+		B5AB174B193A517200B3C827 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B5AB1751193A517200B3C827 /* SwizzleFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwizzleFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5AB1752193A517200B3C827 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B5AB175A193A517200B3C827 /* SwizzleFunTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwizzleFunTests-Info.plist"; sourceTree = "<group>"; };
+		B5AB175C193A517200B3C827 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5AB175E193A517200B3C827 /* SwizzleFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzleFunTests.m; sourceTree = "<group>"; };
+		B5AB1768193A52A700B3C827 /* Foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
+		B5AB1769193A52A700B3C827 /* Foo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
+		B5AB176E193A54A200B3C827 /* FKBSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKBSwizzler.h; sourceTree = "<group>"; };
+		B5AB176F193A54A200B3C827 /* FKBSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKBSwizzler.m; sourceTree = "<group>"; };
+		B5AB1771193A55D300B3C827 /* UIViewController+Analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Analytics.h"; sourceTree = "<group>"; };
+		B5AB1772193A55D300B3C827 /* UIViewController+Analytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Analytics.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5AB172A193A517200B3C827 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AB1733193A517200B3C827 /* CoreGraphics.framework in Frameworks */,
+				B5AB1735193A517200B3C827 /* UIKit.framework in Frameworks */,
+				B5AB1731193A517200B3C827 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AB174E193A517200B3C827 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AB1753193A517200B3C827 /* XCTest.framework in Frameworks */,
+				B5AB1755193A517200B3C827 /* UIKit.framework in Frameworks */,
+				B5AB1754193A517200B3C827 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5AB1724193A517200B3C827 = {
+			isa = PBXGroup;
+			children = (
+				B5AB1736193A517200B3C827 /* SwizzleFun */,
+				B5AB1758193A517200B3C827 /* SwizzleFunTests */,
+				B5AB172F193A517200B3C827 /* Frameworks */,
+				B5AB172E193A517200B3C827 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5AB172E193A517200B3C827 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5AB172D193A517200B3C827 /* SwizzleFun.app */,
+				B5AB1751193A517200B3C827 /* SwizzleFunTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5AB172F193A517200B3C827 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5AB1730193A517200B3C827 /* Foundation.framework */,
+				B5AB1732193A517200B3C827 /* CoreGraphics.framework */,
+				B5AB1734193A517200B3C827 /* UIKit.framework */,
+				B5AB1752193A517200B3C827 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5AB1736193A517200B3C827 /* SwizzleFun */ = {
+			isa = PBXGroup;
+			children = (
+				B5AB173F193A517200B3C827 /* FKBAppDelegate.h */,
+				B5AB1740193A517200B3C827 /* FKBAppDelegate.m */,
+				B5AB1742193A517200B3C827 /* Main.storyboard */,
+				B5AB1745193A517200B3C827 /* FKBFirstViewController.h */,
+				B5AB1746193A517200B3C827 /* FKBFirstViewController.m */,
+				B5AB1748193A517200B3C827 /* FKBSecondViewController.h */,
+				B5AB1749193A517200B3C827 /* FKBSecondViewController.m */,
+				B5AB174B193A517200B3C827 /* Images.xcassets */,
+				B5AB1737193A517200B3C827 /* Supporting Files */,
+				B5AB1768193A52A700B3C827 /* Foo.h */,
+				B5AB1769193A52A700B3C827 /* Foo.m */,
+				B5AB176E193A54A200B3C827 /* FKBSwizzler.h */,
+				B5AB176F193A54A200B3C827 /* FKBSwizzler.m */,
+				B5AB1771193A55D300B3C827 /* UIViewController+Analytics.h */,
+				B5AB1772193A55D300B3C827 /* UIViewController+Analytics.m */,
+			);
+			path = SwizzleFun;
+			sourceTree = "<group>";
+		};
+		B5AB1737193A517200B3C827 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5AB1738193A517200B3C827 /* SwizzleFun-Info.plist */,
+				B5AB1739193A517200B3C827 /* InfoPlist.strings */,
+				B5AB173C193A517200B3C827 /* main.m */,
+				B5AB173E193A517200B3C827 /* SwizzleFun-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5AB1758193A517200B3C827 /* SwizzleFunTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5AB175E193A517200B3C827 /* SwizzleFunTests.m */,
+				B5AB1759193A517200B3C827 /* Supporting Files */,
+			);
+			path = SwizzleFunTests;
+			sourceTree = "<group>";
+		};
+		B5AB1759193A517200B3C827 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5AB175A193A517200B3C827 /* SwizzleFunTests-Info.plist */,
+				B5AB175B193A517200B3C827 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5AB172C193A517200B3C827 /* SwizzleFun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5AB1762193A517200B3C827 /* Build configuration list for PBXNativeTarget "SwizzleFun" */;
+			buildPhases = (
+				B5AB1729193A517200B3C827 /* Sources */,
+				B5AB172A193A517200B3C827 /* Frameworks */,
+				B5AB172B193A517200B3C827 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwizzleFun;
+			productName = SwizzleFun;
+			productReference = B5AB172D193A517200B3C827 /* SwizzleFun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5AB1750193A517200B3C827 /* SwizzleFunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5AB1765193A517200B3C827 /* Build configuration list for PBXNativeTarget "SwizzleFunTests" */;
+			buildPhases = (
+				B5AB174D193A517200B3C827 /* Sources */,
+				B5AB174E193A517200B3C827 /* Frameworks */,
+				B5AB174F193A517200B3C827 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5AB1757193A517200B3C827 /* PBXTargetDependency */,
+			);
+			name = SwizzleFunTests;
+			productName = SwizzleFunTests;
+			productReference = B5AB1751193A517200B3C827 /* SwizzleFunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5AB1725193A517200B3C827 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FKB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Fickle Bits";
+				TargetAttributes = {
+					B5AB1750193A517200B3C827 = {
+						TestTargetID = B5AB172C193A517200B3C827;
+					};
+				};
+			};
+			buildConfigurationList = B5AB1728193A517200B3C827 /* Build configuration list for PBXProject "SwizzleFun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5AB1724193A517200B3C827;
+			productRefGroup = B5AB172E193A517200B3C827 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5AB172C193A517200B3C827 /* SwizzleFun */,
+				B5AB1750193A517200B3C827 /* SwizzleFunTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5AB172B193A517200B3C827 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AB174C193A517200B3C827 /* Images.xcassets in Resources */,
+				B5AB173B193A517200B3C827 /* InfoPlist.strings in Resources */,
+				B5AB1744193A517200B3C827 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AB174F193A517200B3C827 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AB175D193A517200B3C827 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5AB1729193A517200B3C827 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AB1741193A517200B3C827 /* FKBAppDelegate.m in Sources */,
+				B5AB173D193A517200B3C827 /* main.m in Sources */,
+				B5AB1770193A54A200B3C827 /* FKBSwizzler.m in Sources */,
+				B5AB174A193A517200B3C827 /* FKBSecondViewController.m in Sources */,
+				B5AB1747193A517200B3C827 /* FKBFirstViewController.m in Sources */,
+				B5AB176A193A52A700B3C827 /* Foo.m in Sources */,
+				B5AB1773193A55D300B3C827 /* UIViewController+Analytics.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AB174D193A517200B3C827 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AB175F193A517200B3C827 /* SwizzleFunTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5AB1757193A517200B3C827 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5AB172C193A517200B3C827 /* SwizzleFun */;
+			targetProxy = B5AB1756193A517200B3C827 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5AB1739193A517200B3C827 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5AB173A193A517200B3C827 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B5AB1742193A517200B3C827 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5AB1743193A517200B3C827 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5AB175B193A517200B3C827 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5AB175C193A517200B3C827 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5AB1760193A517200B3C827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5AB1761193A517200B3C827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5AB1763193A517200B3C827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwizzleFun/SwizzleFun-Prefix.pch";
+				INFOPLIST_FILE = "SwizzleFun/SwizzleFun-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B5AB1764193A517200B3C827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwizzleFun/SwizzleFun-Prefix.pch";
+				INFOPLIST_FILE = "SwizzleFun/SwizzleFun-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B5AB1766193A517200B3C827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwizzleFun.app/SwizzleFun";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwizzleFun/SwizzleFun-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SwizzleFunTests/SwizzleFunTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B5AB1767193A517200B3C827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwizzleFun.app/SwizzleFun";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwizzleFun/SwizzleFun-Prefix.pch";
+				INFOPLIST_FILE = "SwizzleFunTests/SwizzleFunTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5AB1728193A517200B3C827 /* Build configuration list for PBXProject "SwizzleFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AB1760193A517200B3C827 /* Debug */,
+				B5AB1761193A517200B3C827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5AB1762193A517200B3C827 /* Build configuration list for PBXNativeTarget "SwizzleFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AB1763193A517200B3C827 /* Debug */,
+				B5AB1764193A517200B3C827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B5AB1765193A517200B3C827 /* Build configuration list for PBXNativeTarget "SwizzleFunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AB1766193A517200B3C827 /* Debug */,
+				B5AB1767193A517200B3C827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5AB1725193A517200B3C827 /* Project object */;
+}
