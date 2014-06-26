@@ -37,6 +37,7 @@ var count: Int
 
 You can work `Double`s similarly:
 
+```
 var price: 0.5
 # price: Double = 0.5
 
@@ -46,12 +47,18 @@ var subTotal: Double
 
 ### Strings and Characters
 
+Strings are easy to work with in Swift.
+
 ```
 var string = "hello"
 var letter: Character = "A"
 ```
 
-### Collections
+You can index strings just like arrays, and any `NSString` methods just work like they did before.
+
+### Arrays
+
+You can declare arrays with square brackets:
 
 ```
 var items = [1, 3, 4]
@@ -60,7 +67,11 @@ var items = [1, 3, 4]
 #   [1] = 3
 #   [2] = 4
 # }
+```
 
+You can append items to an array:
+
+```
 items += 6
 # items: Int[] = size=4 {
 #   [0] = 1
@@ -68,7 +79,11 @@ items += 6
 #   [2] = 4
 #   [3] = 6
 # }
+```
 
+... and even append other arrays...
+
+```
 items += [7, 8]
 # items: Int[] = size=3 {
 #   [0] = 1
@@ -80,7 +95,7 @@ items += [7, 8]
 # }
 ```
 
-Using Let with arrays
+#### Using Let with arrays
 
 ```
 let items = ["Apple", "Banana"]
@@ -119,6 +134,35 @@ numbers[0...2]
 ### Dictionaries
 
 ```
-var gradebook = [:]
+var gradebook = [ "Al": "A", "Joe": "B", "Charlie": "D" ]
+gradebook["Charlie"] 
+#> String? = "D"
 ```
 
+Checking to see if values exist in the dictionary:
+
+```
+if let grade = gradebook["Ben"] {
+  // doesn't get called
+}
+
+if let grade = gradebook["Al"] {
+  println("The grade is \(grade)")
+}
+```
+
+### Looping
+
+Arrays:
+
+```
+for item in items {
+  println("The item is \(item)")
+}
+```
+
+Dictionaries:
+
+for (student, grade) in gradebook {
+  println("\(student) has a \(grade)")
+}
