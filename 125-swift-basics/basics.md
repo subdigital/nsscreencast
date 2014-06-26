@@ -163,6 +163,8 @@ for item in items {
 
 Dictionaries:
 
+```
 for (student, grade) in gradebook {
   println("\(student) has a \(grade)")
 }
+```
