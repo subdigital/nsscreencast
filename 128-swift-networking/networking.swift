@@ -23,7 +23,7 @@ class Downloader {
               self.parseJson(data, completion: completion)
 
             default:
-              println("Got an HTTP \(httpResponse.statusCode)")
+              println("Got an HTTP \(httpResponse.statusCode())")
           }
         } else {
           println("I don't know how to handle non-http responses")
