@@ -1,28 +1,54 @@
 import Foundation
 
-let config = NSURLSessionConfiguration.defaultSessionConfiguration()
-let session = NSURLSession(configuration: config)
+class Downloader {
+  let url: NSURL
+  @lazy var config = NSURLSessionConfiguration.defaultSessionConfiguration()
+  @lazy var session: NSURLSession = NSURLSession(configuration: self.config)
+  var running = false
 
-let term = "Cosmos"
-let url = NSURL(string: "https://itunes.apple.com/search?term=\(term)")
-let req = NSURLRequest(URL: url)
-var wait = true
-var json: String?
-let task = session.dataTaskWithRequest(req) {
-    (data, response, error)
-    in
-    if let httpResponse = response as? NSHTTPURLResponse {
-      println("Received HTTP \(httpResponse.statusCode())")
-      json = NSString(data: data, encoding: NSUTF8StringEncoding)
-    } else {
-      println("I don't know what to do with non-http responses")
+  typealias JSONArrayCompletion = (Array<AnyObject>?) -> ()
+
+  init(_ url: String) {
+    self.url = NSURL(string: url)
+  }
+
+  func downloadJson(completion: JSONArrayCompletion) {
+    let task = session.dataTaskWithURL(url) {
+      (let data, let response, let error) in
+        if let httpResponse = response as? NSHTTPURLResponse {
+          println("got some data")
+          switch(httpResponse.statusCode()) {
+            case 200:
+              println("got a 200")
+              self.parseJson(data, completion: completion)
+
+            default:
+              println("Got an HTTP \(httpResponse.statusCode)")
+          }
+        } else {
+          println("I don't know how to handle non-http responses")
+        }
+
+        self.running = false
     }
-    wait = false
+
+    running = true
+    task.resume()
+  }
+
+  func parseJson(data: NSData, completion: JSONArrayCompletion) {
+    completion(nil)
+  }
 }
 
-task.resume()
 
-while json == nil {
-  // wait for ctrl-c
+let downloader = Downloader("https://www.nsscreencast.com/api/episodes.json")
+downloader.downloadJson() {
+  (let jsonResponse) in
+    println("Received \(jsonResponse)")
 }
-println("Received response: \(json)")
+
+while downloader.running {
+  println("waiting...")
+  sleep(1)
+}

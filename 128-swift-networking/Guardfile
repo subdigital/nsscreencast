@@ -6,7 +6,10 @@
 #
 guard :shell do
   watch(/(.*).swift/) do |m|
-    file = m[0]
-    puts `swift -i #{file} -sdk $(xcrun -show-sdk-path -sdk macosx)`
+    puts
+    puts
+    puts
+    puts "Running #{m[0]}"
+    puts `swift -i #{m[0]} -sdk $(xcrun --show-sdk-path --sdk macosx)`
   end
 end

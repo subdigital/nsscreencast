@@ -18,7 +18,7 @@ GEM
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
-    lumberjack (1.0.9)
+    lumberjack (1.0.7)
     method_source (0.8.2)
     pry (0.10.0)
       coderay (~> 1.1.0)
