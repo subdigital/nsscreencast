@@ -12,11 +12,11 @@ struct Episode : JSONDecode {
         if let innerEpisode = d["episode"] {
           return fromJSON(innerEpisode)
         }
-
-        let id = d["id"] >>= JSInt.fromJSON ||= 0
-        let title = d["title"] >>= JSString.fromJSON ||= "<untitled>"
-        let descr = d["description"] >>= JSString.fromJSON ||= ""
-        let number = d["episode_number"] >>= JSInt.fromJSON ||= 0
+        
+        let id = d["id"] >>> JSInt.fromJSON ?? 0
+        let title = d["title"] >>> JSString.fromJSON ?? "<untitled>"
+        let descr = d["description"] >>> JSString.fromJSON ?? ""
+        let number = d["episode_number"] >>> JSInt.fromJSON ?? 0
         return Episode(id: id,
             title: title,
             episodeDescription: descr,

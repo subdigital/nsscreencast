@@ -16,7 +16,7 @@ downloader.downloadJson() {
   (let data) in
 
   let json = JSValue.decode(data)
-  if let episodes = json >>= JSArray<Episode, Episode>.fromJSON {
+  if let episodes = json >>> JSArray<Episode, Episode>.fromJSON {
     for episode in episodes {
       println("Episode: \(episode.title)")
     }
