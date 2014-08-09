@@ -2,8 +2,8 @@ import Foundation
 
 class Downloader {
   let url: NSURL
-  @lazy var config = NSURLSessionConfiguration.defaultSessionConfiguration()
-  @lazy var session: NSURLSession = NSURLSession(configuration: self.config)
+  lazy var config = NSURLSessionConfiguration.defaultSessionConfiguration()
+  lazy var session: NSURLSession = NSURLSession(configuration: self.config)
   var running = false
 
   typealias JSONArrayCompletion = (AnyObject?) -> ()
@@ -17,13 +17,13 @@ class Downloader {
       (let data, let response, let error) in
         if let httpResponse = response as? NSHTTPURLResponse {
           println("got some data")
-          switch(httpResponse.statusCode()) {
+          switch(httpResponse.statusCode) {
             case 200:
               println("got a 200")
               self.parseJson(data, completion: completion)
 
             default:
-              println("Got an HTTP \(httpResponse.statusCode())")
+              println("Got an HTTP \(httpResponse.statusCode)")
           }
         } else {
           println("I don't know how to handle non-http responses")
@@ -39,7 +39,7 @@ class Downloader {
   func parseJson(data: NSData, completion: JSONArrayCompletion) {
     var error: NSError?
     let json: AnyObject = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: &error)
-    if error {
+    if error != nil {
       println("Error parsing json: \(error)")
       completion(nil)
     } else {
@@ -77,10 +77,10 @@ func parseEpisode(dict: [ String : AnyObject ]) -> Episode? {
     if let title = dict["title"] as? NSString {
       if let description = dict["description"] as? NSString {
         if let number = dict["episode_number"] as? NSNumber {
-          return Episode(id: id.integerValue(),
+          return Episode(id: id.integerValue,
               title: title,
               episodeDescription: description,
-              number: number.integerValue())
+              number: number.integerValue)
         }
       }
     }
