@@ -10,6 +10,6 @@ guard :shell do
     puts
     puts
     puts "Running #{m[0]}"
-    puts `swift -i #{m[0]} -sdk $(xcrun --show-sdk-path --sdk macosx)`
+    puts `swift #{m[0]} -sdk $(xcrun --show-sdk-path --sdk macosx)`
   end
 end

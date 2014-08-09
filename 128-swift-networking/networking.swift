@@ -2,8 +2,8 @@ import Foundation
 
 class Downloader {
   let url: NSURL
-  @lazy var config = NSURLSessionConfiguration.defaultSessionConfiguration()
-  @lazy var session: NSURLSession = NSURLSession(configuration: self.config)
+  lazy var config = NSURLSessionConfiguration.defaultSessionConfiguration()
+  lazy var session: NSURLSession = NSURLSession(configuration: self.config)
   var running = false
 
   typealias JSONArrayCompletion = (Array<AnyObject>?) -> ()
@@ -17,13 +17,13 @@ class Downloader {
       (let data, let response, let error) in
         if let httpResponse = response as? NSHTTPURLResponse {
           println("got some data")
-          switch(httpResponse.statusCode()) {
+          switch(httpResponse.statusCode) {
             case 200:
               println("got a 200")
               self.parseJson(data, completion: completion)
 
             default:
-              println("Got an HTTP \(httpResponse.statusCode())")
+              println("Got an HTTP \(httpResponse.statusCode)")
           }
         } else {
           println("I don't know how to handle non-http responses")
