@@ -1,6 +1,6 @@
 func compact<T>(collection: [T?]) -> [T] {
   return filter(collection) {
-    if $0 {
+    if $0 != nil {
       return true
     } else {
       return false
@@ -9,7 +9,7 @@ func compact<T>(collection: [T?]) -> [T] {
 }
 
 func >>=<A, B>(source: A?, f: A -> B?) -> B? {
-  if source {
+  if source != nil {
     return f(source!)
   } else {
     return nil

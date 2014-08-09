@@ -11,7 +11,9 @@ downloader.downloadJson() {
         let maybeEpisodes: [Episode?] = array.map {
           switch $0 {
             case let .JSObject(d):
-              if let episodeDictionary = d["episode"] as? JSValue {
+              
+              let val: JSValue? = d["episode"]
+              if let episodeDictionary = val {
                 return Episode.fromJSON(episodeDictionary)
               } else {
                 println("couldn't find episode key")
