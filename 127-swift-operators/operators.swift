@@ -9,11 +9,11 @@ class Regex {
 
   func test(input: String) -> Bool {
     let range = input.rangeOfString(pattern, options: .RegularExpressionSearch)
-    return range.getLogicValue()
+    return range != nil
   }
 }
 
-operator infix =~ {}
+infix operator =~ {}
 
 func =~(input: String, pattern: String) -> Bool {
   return Regex(pattern).test(input)
@@ -39,7 +39,7 @@ struct Vector {
 let a = Vector(x: 1, y: 8)
 let b = Vector(x: 6, y: 2)
 
-operator infix .. {}
+infix operator .. {}
 
 func ..(a: Vector, b: Vector) -> Float {
   return a.dotProduct(b)
