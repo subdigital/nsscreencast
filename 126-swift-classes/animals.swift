@@ -51,7 +51,7 @@ class Molly: Dog {
   }
 
   override func eat(food: Edible) {
-    if food as? Banana {
+    if food as? Banana != nil {
       println("YUCK")
     } else {
       super.eat(food)
