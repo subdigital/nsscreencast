@@ -1,0 +1,2 @@
+PODS_REALM_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Realm/realm-cocoapods-0.82.0/ios"
+PODS_REALM_OTHER_LDFLAGS = -lc++ -framework Realm

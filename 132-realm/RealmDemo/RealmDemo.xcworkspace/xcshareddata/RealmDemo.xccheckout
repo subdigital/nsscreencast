@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EB956D9F-15E7-4384-B61C-178A73F4E94D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RealmDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CAC2C4BA-5D23-4187-93CE-F06F274F0F3D</key>
+		<string>ssh://github.com/subdigital/nsscreencast.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>132-realm/RealmDemo/RealmDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CAC2C4BA-5D23-4187-93CE-F06F274F0F3D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://trunksapp.com/subdigital/nsscreencast-meta.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CAC2C4BA-5D23-4187-93CE-F06F274F0F3D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CAC2C4BA-5D23-4187-93CE-F06F274F0F3D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>sourcecode</string>
+		</dict>
+	</array>
+</dict>
+</plist>
