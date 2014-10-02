@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CoffeeTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Many Cups Today?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHh-jp-lNh">
+                                <rect key="frame" x="206" y="374" width="188" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee-icon" translatesAutoresizingMaskIntoConstraints="NO" id="tMx-Cl-wLj">
+                                <rect key="frame" x="172" y="96" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="ByM-1N-bmn"/>
+                                    <constraint firstAttribute="height" constant="256" id="eO5-qN-Eyt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6h-jE-CE7">
+                                <rect key="frame" x="293" y="409" width="14" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.41452955163043481" green="0.23379781628795812" blue="0.074664497360373464" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zcS-cv-1ef">
+                                <rect key="frame" x="334" y="409" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperChanged:" destination="DSl-YG-Bk3" eventType="valueChanged" id="w1k-YP-1gM"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="A6h-jE-CE7" secondAttribute="centerX" id="AyP-RH-h2P"/>
+                            <constraint firstItem="zcS-cv-1ef" firstAttribute="leading" secondItem="A6h-jE-CE7" secondAttribute="trailing" constant="27" id="Hri-Ez-rXI"/>
+                            <constraint firstAttribute="centerY" secondItem="tMx-Cl-wLj" secondAttribute="centerY" constant="76.5" id="JXh-Of-wMu"/>
+                            <constraint firstAttribute="centerX" secondItem="uHh-jp-lNh" secondAttribute="centerX" id="d8Q-nw-3Sg"/>
+                            <constraint firstItem="A6h-jE-CE7" firstAttribute="centerY" secondItem="zcS-cv-1ef" secondAttribute="centerY" id="ijq-Tg-tJx"/>
+                            <constraint firstAttribute="centerX" secondItem="tMx-Cl-wLj" secondAttribute="centerX" id="oYF-p8-aje"/>
+                            <constraint firstItem="uHh-jp-lNh" firstAttribute="top" secondItem="tMx-Cl-wLj" secondAttribute="bottom" constant="22" id="pzv-o7-wFP"/>
+                            <constraint firstItem="A6h-jE-CE7" firstAttribute="top" secondItem="uHh-jp-lNh" secondAttribute="bottom" constant="14" id="r9e-v0-SJx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coffeeTracker" destination="DSl-YG-Bk3" id="W4E-lS-cte"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <customObject id="DSl-YG-Bk3" customClass="CoffeeTracker" customModule="CoffeeTracker" customModuleProvider="target">
+                    <connections>
+                        <outlet property="numberLabel" destination="A6h-jE-CE7" id="2vB-lI-tNu"/>
+                    </connections>
+                </customObject>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coffee-icon" width="256" height="256"/>
+    </resources>
+</document>
