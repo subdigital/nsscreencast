@@ -9,7 +9,7 @@ class Downloader {
     typealias JSONArrayCompletion = (NSData) -> ()
 
     init(_ url: String) {
-        self.url = NSURL(string: url)
+        self.url = NSURL(string: url)!
     }
 
     func downloadJson(completion: JSONArrayCompletion) {
