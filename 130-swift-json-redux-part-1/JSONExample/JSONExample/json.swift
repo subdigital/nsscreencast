@@ -24,7 +24,7 @@ enum JSValue : Printable {
   static func make(obj: NSObject) -> JSValue {
     switch obj {
       case let s as NSString: return .JSString(s)
-      case let n as NSNumber: return .JSNumber(n)
+      case let n as NSNumber: return .JSNumber(n.doubleValue)
       case let null as NSNull: return .JSNull()
       case let a as NSArray: return makeArray(a)
       case let d as NSDictionary: return makeObject(d)
