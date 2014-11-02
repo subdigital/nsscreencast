@@ -72,7 +72,7 @@ var items = [1, 3, 4]
 You can append items to an array:
 
 ```
-items += 6
+items.append(6)
 # items: [Int] = size=4 {
 #   [0] = 1
 #   [1] = 3
@@ -110,7 +110,7 @@ Slicing arrays
 
 ```
 var numbers = [ "a", "b", "c", "d", "e", "f", "g" ]
-numbers[0..2]
+numbers[0..<2]
 #  [String] = size=2 {
 #    [0] = "a"
 #    [1] = "b"  
