@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		680579A24C247BC839C1BEC8 /* libPods-ImgShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 010549C26CD61D28DE379A0D /* libPods-ImgShare.a */; };
+		B54FE05F1A0523B200CFA713 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B54FE05E1A0523B200CFA713 /* main.m */; };
+		B54FE0621A0523B200CFA713 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B54FE0611A0523B200CFA713 /* AppDelegate.m */; };
+		B54FE0651A0523B200CFA713 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54FE0641A0523B200CFA713 /* GalleryViewController.m */; };
+		B54FE0681A0523B200CFA713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54FE0661A0523B200CFA713 /* Main.storyboard */; };
+		B54FE06A1A0523B200CFA713 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54FE0691A0523B200CFA713 /* Images.xcassets */; };
+		B54FE06D1A0523B200CFA713 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54FE06B1A0523B200CFA713 /* LaunchScreen.xib */; };
+		B57865BB1A0D082500832BFB /* ImgShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B57865BA1A0D082500832BFB /* ImgShareKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B57865C11A0D082500832BFB /* ImgShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57865B61A0D082500832BFB /* ImgShareKit.framework */; };
+		B57865CA1A0D082500832BFB /* ImgShareKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B57865C91A0D082500832BFB /* ImgShareKitTests.m */; };
+		B57865CD1A0D082500832BFB /* ImgShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57865B61A0D082500832BFB /* ImgShareKit.framework */; };
+		B57865CE1A0D082500832BFB /* ImgShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B57865B61A0D082500832BFB /* ImgShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B57865D61A0D089200832BFB /* Keys.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57865D51A0D089200832BFB /* Keys.example.plist */; };
+		B57865D81A0D08A200832BFB /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57865D71A0D08A200832BFB /* Keys.plist */; };
+		B57865DB1A0D08E400832BFB /* NSArray+CollectionAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B57865D91A0D08E400832BFB /* NSArray+CollectionAdditions.h */; };
+		B57865DC1A0D08E400832BFB /* NSArray+CollectionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B57865DA1A0D08E400832BFB /* NSArray+CollectionAdditions.m */; };
+		B57865DF1A0D08EB00832BFB /* ImgurApi.h in Headers */ = {isa = PBXBuildFile; fileRef = B57865DD1A0D08EB00832BFB /* ImgurApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B57865E01A0D08EB00832BFB /* ImgurApi.m in Sources */ = {isa = PBXBuildFile; fileRef = B57865DE1A0D08EB00832BFB /* ImgurApi.m */; };
+		B57865EB1A0D0ABD00832BFB /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57865EA1A0D0ABD00832BFB /* ShareViewController.m */; };
+		B57865ED1A0D0ABD00832BFB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57865EC1A0D0ABD00832BFB /* MainInterface.storyboard */; };
+		B57865F01A0D0ABD00832BFB /* ImgShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B57865E51A0D0ABD00832BFB /* ImgShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B5DECDD11A0543A000D30C6F /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DECDD01A0543A000D30C6F /* ImageCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B57865C21A0D082500832BFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B54FE0511A0523B200CFA713 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B57865B51A0D082500832BFB;
+			remoteInfo = ImgShareKit;
+		};
+		B57865C41A0D082500832BFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B54FE0511A0523B200CFA713 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B54FE0581A0523B200CFA713;
+			remoteInfo = ImgShare;
+		};
+		B57865CB1A0D082500832BFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B54FE0511A0523B200CFA713 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B57865B51A0D082500832BFB;
+			remoteInfo = ImgShareKit;
+		};
+		B57865EE1A0D0ABD00832BFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B54FE0511A0523B200CFA713 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B57865E41A0D0ABD00832BFB;
+			remoteInfo = ImgShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5DECDE61A06740C00D30C6F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B57865F01A0D0ABD00832BFB /* ImgShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DECE081A06742800D30C6F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B57865CE1A0D082500832BFB /* ImgShareKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		010549C26CD61D28DE379A0D /* libPods-ImgShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImgShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F957F943DED111E31AB1826 /* Pods-ImgShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImgShare/Pods-ImgShare.release.xcconfig"; sourceTree = "<group>"; };
+		3790C5FEB171F425B4255266 /* libPods-ImgShareKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImgShareKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF19442D8F2957497A944C8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A235245989F010A2E87CE294 /* Pods-ImgShareKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgShareKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImgShareKit/Pods-ImgShareKit.debug.xcconfig"; sourceTree = "<group>"; };
+		A893E4216E68FBA3A2D7950F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B54FE0591A0523B200CFA713 /* ImgShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImgShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B54FE05D1A0523B200CFA713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B54FE05E1A0523B200CFA713 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B54FE0601A0523B200CFA713 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B54FE0611A0523B200CFA713 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B54FE0631A0523B200CFA713 /* GalleryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		B54FE0641A0523B200CFA713 /* GalleryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		B54FE0671A0523B200CFA713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B54FE0691A0523B200CFA713 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B54FE06C1A0523B200CFA713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B57865B61A0D082500832BFB /* ImgShareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57865B91A0D082500832BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57865BA1A0D082500832BFB /* ImgShareKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImgShareKit.h; sourceTree = "<group>"; };
+		B57865C01A0D082500832BFB /* ImgShareKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImgShareKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57865C81A0D082500832BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57865C91A0D082500832BFB /* ImgShareKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImgShareKitTests.m; sourceTree = "<group>"; };
+		B57865D51A0D089200832BFB /* Keys.example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.example.plist; sourceTree = "<group>"; };
+		B57865D71A0D08A200832BFB /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		B57865D91A0D08E400832BFB /* NSArray+CollectionAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CollectionAdditions.h"; sourceTree = "<group>"; };
+		B57865DA1A0D08E400832BFB /* NSArray+CollectionAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CollectionAdditions.m"; sourceTree = "<group>"; };
+		B57865DD1A0D08EB00832BFB /* ImgurApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurApi.h; sourceTree = "<group>"; };
+		B57865DE1A0D08EB00832BFB /* ImgurApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurApi.m; sourceTree = "<group>"; };
+		B57865E51A0D0ABD00832BFB /* ImgShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ImgShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57865E81A0D0ABD00832BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57865E91A0D0ABD00832BFB /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		B57865EA1A0D0ABD00832BFB /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		B57865EC1A0D0ABD00832BFB /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		B5962E261A0EC14600DA12A8 /* ImgShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ImgShare.entitlements; sourceTree = "<group>"; };
+		B5962E271A0EC15700DA12A8 /* ImgShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ImgShareExtension.entitlements; sourceTree = "<group>"; };
+		B5DECDCF1A0543A000D30C6F /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		B5DECDD01A0543A000D30C6F /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		CC0605875CFBA81C5432F032 /* Pods-ImgShareKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgShareKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImgShareKit/Pods-ImgShareKit.release.xcconfig"; sourceTree = "<group>"; };
+		D7AE4671439040ED7FF447FB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E27997CE01F2C80465D844BA /* Pods-ImgShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImgShare/Pods-ImgShare.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B54FE0561A0523B200CFA713 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680579A24C247BC839C1BEC8 /* libPods-ImgShare.a in Frameworks */,
+				B57865CD1A0D082500832BFB /* ImgShareKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57865B21A0D082500832BFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57865BD1A0D082500832BFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57865C11A0D082500832BFB /* ImgShareKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57865E21A0D0ABD00832BFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E7C01767AE395750680D95B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E27997CE01F2C80465D844BA /* Pods-ImgShare.debug.xcconfig */,
+				0F957F943DED111E31AB1826 /* Pods-ImgShare.release.xcconfig */,
+				A235245989F010A2E87CE294 /* Pods-ImgShareKit.debug.xcconfig */,
+				CC0605875CFBA81C5432F032 /* Pods-ImgShareKit.release.xcconfig */,
+				6DF19442D8F2957497A944C8 /* Pods.debug.xcconfig */,
+				D7AE4671439040ED7FF447FB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		704E202B0D7AC64E02A1B1DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				010549C26CD61D28DE379A0D /* libPods-ImgShare.a */,
+				3790C5FEB171F425B4255266 /* libPods-ImgShareKit.a */,
+				A893E4216E68FBA3A2D7950F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B54FE0501A0523B200CFA713 = {
+			isa = PBXGroup;
+			children = (
+				B54FE05B1A0523B200CFA713 /* ImgShare */,
+				B57865B71A0D082500832BFB /* ImgShareKit */,
+				B57865C61A0D082500832BFB /* ImgShareKitTests */,
+				B57865E61A0D0ABD00832BFB /* ImgShareExtension */,
+				B54FE05A1A0523B200CFA713 /* Products */,
+				4E7C01767AE395750680D95B /* Pods */,
+				704E202B0D7AC64E02A1B1DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B54FE05A1A0523B200CFA713 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B54FE0591A0523B200CFA713 /* ImgShare.app */,
+				B57865B61A0D082500832BFB /* ImgShareKit.framework */,
+				B57865C01A0D082500832BFB /* ImgShareKitTests.xctest */,
+				B57865E51A0D0ABD00832BFB /* ImgShareExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B54FE05B1A0523B200CFA713 /* ImgShare */ = {
+			isa = PBXGroup;
+			children = (
+				B5962E261A0EC14600DA12A8 /* ImgShare.entitlements */,
+				B54FE0601A0523B200CFA713 /* AppDelegate.h */,
+				B54FE0611A0523B200CFA713 /* AppDelegate.m */,
+				B54FE0631A0523B200CFA713 /* GalleryViewController.h */,
+				B54FE0641A0523B200CFA713 /* GalleryViewController.m */,
+				B54FE0661A0523B200CFA713 /* Main.storyboard */,
+				B54FE0691A0523B200CFA713 /* Images.xcassets */,
+				B54FE06B1A0523B200CFA713 /* LaunchScreen.xib */,
+				B54FE05C1A0523B200CFA713 /* Supporting Files */,
+				B5DECDCF1A0543A000D30C6F /* ImageCell.h */,
+				B5DECDD01A0543A000D30C6F /* ImageCell.m */,
+			);
+			path = ImgShare;
+			sourceTree = "<group>";
+		};
+		B54FE05C1A0523B200CFA713 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B54FE05D1A0523B200CFA713 /* Info.plist */,
+				B54FE05E1A0523B200CFA713 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B57865B71A0D082500832BFB /* ImgShareKit */ = {
+			isa = PBXGroup;
+			children = (
+				B57865BA1A0D082500832BFB /* ImgShareKit.h */,
+				B57865DD1A0D08EB00832BFB /* ImgurApi.h */,
+				B57865DE1A0D08EB00832BFB /* ImgurApi.m */,
+				B57865D91A0D08E400832BFB /* NSArray+CollectionAdditions.h */,
+				B57865DA1A0D08E400832BFB /* NSArray+CollectionAdditions.m */,
+				B57865D71A0D08A200832BFB /* Keys.plist */,
+				B57865D51A0D089200832BFB /* Keys.example.plist */,
+				B57865B81A0D082500832BFB /* Supporting Files */,
+			);
+			path = ImgShareKit;
+			sourceTree = "<group>";
+		};
+		B57865B81A0D082500832BFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B57865B91A0D082500832BFB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B57865C61A0D082500832BFB /* ImgShareKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B57865C91A0D082500832BFB /* ImgShareKitTests.m */,
+				B57865C71A0D082500832BFB /* Supporting Files */,
+			);
+			path = ImgShareKitTests;
+			sourceTree = "<group>";
+		};
+		B57865C71A0D082500832BFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B57865C81A0D082500832BFB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B57865E61A0D0ABD00832BFB /* ImgShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B5962E271A0EC15700DA12A8 /* ImgShareExtension.entitlements */,
+				B57865E91A0D0ABD00832BFB /* ShareViewController.h */,
+				B57865EA1A0D0ABD00832BFB /* ShareViewController.m */,
+				B57865EC1A0D0ABD00832BFB /* MainInterface.storyboard */,
+				B57865E71A0D0ABD00832BFB /* Supporting Files */,
+			);
+			path = ImgShareExtension;
+			sourceTree = "<group>";
+		};
+		B57865E71A0D0ABD00832BFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B57865E81A0D0ABD00832BFB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B57865B31A0D082500832BFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57865BB1A0D082500832BFB /* ImgShareKit.h in Headers */,
+				B57865DF1A0D08EB00832BFB /* ImgurApi.h in Headers */,
+				B57865DB1A0D08E400832BFB /* NSArray+CollectionAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B54FE0581A0523B200CFA713 /* ImgShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B54FE07C1A0523B200CFA713 /* Build configuration list for PBXNativeTarget "ImgShare" */;
+			buildPhases = (
+				53E32B4F88119213A61ED83A /* Check Pods Manifest.lock */,
+				B54FE0551A0523B200CFA713 /* Sources */,
+				B54FE0561A0523B200CFA713 /* Frameworks */,
+				B54FE0571A0523B200CFA713 /* Resources */,
+				B5DECDE61A06740C00D30C6F /* Embed App Extensions */,
+				B5DECE081A06742800D30C6F /* Embed Frameworks */,
+				3988832A11E80F17F580E99E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B57865CC1A0D082500832BFB /* PBXTargetDependency */,
+				B57865EF1A0D0ABD00832BFB /* PBXTargetDependency */,
+			);
+			name = ImgShare;
+			productName = ImgShare;
+			productReference = B54FE0591A0523B200CFA713 /* ImgShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B57865B51A0D082500832BFB /* ImgShareKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57865D31A0D082500832BFB /* Build configuration list for PBXNativeTarget "ImgShareKit" */;
+			buildPhases = (
+				B57865B11A0D082500832BFB /* Sources */,
+				B57865B21A0D082500832BFB /* Frameworks */,
+				B57865B31A0D082500832BFB /* Headers */,
+				B57865B41A0D082500832BFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImgShareKit;
+			productName = ImgShareKit;
+			productReference = B57865B61A0D082500832BFB /* ImgShareKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B57865BF1A0D082500832BFB /* ImgShareKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57865D41A0D082500832BFB /* Build configuration list for PBXNativeTarget "ImgShareKitTests" */;
+			buildPhases = (
+				B57865BC1A0D082500832BFB /* Sources */,
+				B57865BD1A0D082500832BFB /* Frameworks */,
+				B57865BE1A0D082500832BFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B57865C31A0D082500832BFB /* PBXTargetDependency */,
+				B57865C51A0D082500832BFB /* PBXTargetDependency */,
+			);
+			name = ImgShareKitTests;
+			productName = ImgShareKitTests;
+			productReference = B57865C01A0D082500832BFB /* ImgShareKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B57865E41A0D0ABD00832BFB /* ImgShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57865F11A0D0ABD00832BFB /* Build configuration list for PBXNativeTarget "ImgShareExtension" */;
+			buildPhases = (
+				B57865E11A0D0ABD00832BFB /* Sources */,
+				B57865E21A0D0ABD00832BFB /* Frameworks */,
+				B57865E31A0D0ABD00832BFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImgShareExtension;
+			productName = ImgShareExtension;
+			productReference = B57865E51A0D0ABD00832BFB /* ImgShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B54FE0511A0523B200CFA713 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = NSScreencast;
+				TargetAttributes = {
+					B54FE0581A0523B200CFA713 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = C2K3864N2N;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					B57865B51A0D082500832BFB = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = C2K3864N2N;
+					};
+					B57865BF1A0D082500832BFB = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = B54FE0581A0523B200CFA713;
+					};
+					B57865E41A0D0ABD00832BFB = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = C2K3864N2N;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B54FE0541A0523B200CFA713 /* Build configuration list for PBXProject "ImgShare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B54FE0501A0523B200CFA713;
+			productRefGroup = B54FE05A1A0523B200CFA713 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B54FE0581A0523B200CFA713 /* ImgShare */,
+				B57865B51A0D082500832BFB /* ImgShareKit */,
+				B57865BF1A0D082500832BFB /* ImgShareKitTests */,
+				B57865E41A0D0ABD00832BFB /* ImgShareExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B54FE0571A0523B200CFA713 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54FE0681A0523B200CFA713 /* Main.storyboard in Resources */,
+				B54FE06D1A0523B200CFA713 /* LaunchScreen.xib in Resources */,
+				B54FE06A1A0523B200CFA713 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57865B41A0D082500832BFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57865D81A0D08A200832BFB /* Keys.plist in Resources */,
+				B57865D61A0D089200832BFB /* Keys.example.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57865BE1A0D082500832BFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57865E31A0D0ABD00832BFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57865ED1A0D0ABD00832BFB /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3988832A11E80F17F580E99E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImgShare/Pods-ImgShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53E32B4F88119213A61ED83A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B54FE0551A0523B200CFA713 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54FE0651A0523B200CFA713 /* GalleryViewController.m in Sources */,
+				B5DECDD11A0543A000D30C6F /* ImageCell.m in Sources */,
+				B54FE0621A0523B200CFA713 /* AppDelegate.m in Sources */,
+				B54FE05F1A0523B200CFA713 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57865B11A0D082500832BFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57865DC1A0D08E400832BFB /* NSArray+CollectionAdditions.m in Sources */,
+				B57865E01A0D08EB00832BFB /* ImgurApi.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57865BC1A0D082500832BFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57865CA1A0D082500832BFB /* ImgShareKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57865E11A0D0ABD00832BFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57865EB1A0D0ABD00832BFB /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B57865C31A0D082500832BFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B57865B51A0D082500832BFB /* ImgShareKit */;
+			targetProxy = B57865C21A0D082500832BFB /* PBXContainerItemProxy */;
+		};
+		B57865C51A0D082500832BFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B54FE0581A0523B200CFA713 /* ImgShare */;
+			targetProxy = B57865C41A0D082500832BFB /* PBXContainerItemProxy */;
+		};
+		B57865CC1A0D082500832BFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B57865B51A0D082500832BFB /* ImgShareKit */;
+			targetProxy = B57865CB1A0D082500832BFB /* PBXContainerItemProxy */;
+		};
+		B57865EF1A0D0ABD00832BFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B57865E41A0D0ABD00832BFB /* ImgShareExtension */;
+			targetProxy = B57865EE1A0D0ABD00832BFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B54FE0661A0523B200CFA713 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B54FE0671A0523B200CFA713 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B54FE06B1A0523B200CFA713 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B54FE06C1A0523B200CFA713 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B54FE07A1A0523B200CFA713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B54FE07B1A0523B200CFA713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B54FE07D1A0523B200CFA713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E27997CE01F2C80465D844BA /* Pods-ImgShare.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ImgShare/ImgShare.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ImgShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		B54FE07E1A0523B200CFA713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F957F943DED111E31AB1826 /* Pods-ImgShare.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ImgShare/ImgShare.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ImgShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		B57865CF1A0D082500832BFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ImgShareKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B57865D01A0D082500832BFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ImgShareKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B57865D11A0D082500832BFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ImgShareKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImgShare.app/ImgShare";
+			};
+			name = Debug;
+		};
+		B57865D21A0D082500832BFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ImgShareKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImgShare.app/ImgShare";
+			};
+			name = Release;
+		};
+		B57865F21A0D0ABD00832BFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ImgShareExtension/ImgShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ImgShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B57865F31A0D0ABD00832BFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ImgShareExtension/ImgShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ImgShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B54FE0541A0523B200CFA713 /* Build configuration list for PBXProject "ImgShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B54FE07A1A0523B200CFA713 /* Debug */,
+				B54FE07B1A0523B200CFA713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B54FE07C1A0523B200CFA713 /* Build configuration list for PBXNativeTarget "ImgShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B54FE07D1A0523B200CFA713 /* Debug */,
+				B54FE07E1A0523B200CFA713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B57865D31A0D082500832BFB /* Build configuration list for PBXNativeTarget "ImgShareKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57865CF1A0D082500832BFB /* Debug */,
+				B57865D01A0D082500832BFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B57865D41A0D082500832BFB /* Build configuration list for PBXNativeTarget "ImgShareKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57865D11A0D082500832BFB /* Debug */,
+				B57865D21A0D082500832BFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B57865F11A0D0ABD00832BFB /* Build configuration list for PBXNativeTarget "ImgShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57865F21A0D0ABD00832BFB /* Debug */,
+				B57865F31A0D0ABD00832BFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B54FE0511A0523B200CFA713 /* Project object */;
+}
