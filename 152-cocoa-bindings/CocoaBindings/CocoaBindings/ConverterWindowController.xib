@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ConverterWindowController">
+            <connections>
+                <outlet property="converter" destination="cFl-35-Dxl" id="jja-yL-v4k"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Converter" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="146"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9Kp-ZT-hio">
+                        <rect key="frame" x="20" y="62" width="208" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Fahrenheit" drawsBackground="YES" id="c0p-sR-JTa">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="cFl-35-Dxl" name="value" keyPath="fahrenheit" id="XaH-jW-2dq">
+                                <dictionary key="options">
+                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LSa-OP-T43">
+                        <rect key="frame" x="252" y="62" width="208" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Celsius" drawsBackground="YES" id="5Vm-Z8-Acw">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="cFl-35-Dxl" name="value" keyPath="celsius" id="rPH-wt-ydR">
+                                <dictionary key="options">
+                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="LSa-OP-T43" secondAttribute="trailing" constant="20" id="6d9-s0-fyB"/>
+                    <constraint firstItem="LSa-OP-T43" firstAttribute="leading" secondItem="9Kp-ZT-hio" secondAttribute="trailing" constant="24" id="FYQ-jH-4aH"/>
+                    <constraint firstItem="LSa-OP-T43" firstAttribute="width" secondItem="9Kp-ZT-hio" secondAttribute="width" id="VkC-4n-z4x"/>
+                    <constraint firstAttribute="centerY" secondItem="LSa-OP-T43" secondAttribute="centerY" id="j48-bs-A5O"/>
+                    <constraint firstItem="9Kp-ZT-hio" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="jcv-v3-ZcI"/>
+                    <constraint firstAttribute="centerY" secondItem="9Kp-ZT-hio" secondAttribute="centerY" id="tqH-4q-xKR"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="305" y="297"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="dtz-vA-JtS"/>
+        <customObject id="cFl-35-Dxl" customClass="Converter"/>
+    </objects>
+</document>
