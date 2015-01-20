@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5FE9F101A6EA09E00F72A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE9F0F1A6EA09E00F72A64 /* AppDelegate.swift */; };
+		B5FE9F121A6EA09E00F72A64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FE9F111A6EA09E00F72A64 /* Images.xcassets */; };
+		B5FE9F151A6EA09E00F72A64 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5FE9F131A6EA09E00F72A64 /* MainMenu.xib */; };
+		B5FE9F211A6EA09E00F72A64 /* ToggleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE9F201A6EA09E00F72A64 /* ToggleTests.swift */; };
+		B5FE9F2C1A6EA0D000F72A64 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE9F2A1A6EA0D000F72A64 /* WindowController.swift */; };
+		B5FE9F2D1A6EA0D000F72A64 /* WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5FE9F2B1A6EA0D000F72A64 /* WindowController.xib */; };
+		B5FE9F341A6EA57E00F72A64 /* Features.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FE9F331A6EA57E00F72A64 /* Features.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5FE9F1B1A6EA09E00F72A64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FE9F021A6EA09E00F72A64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5FE9F091A6EA09E00F72A64;
+			remoteInfo = Toggle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5FE9F0A1A6EA09E00F72A64 /* Toggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FE9F0E1A6EA09E00F72A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FE9F0F1A6EA09E00F72A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5FE9F111A6EA09E00F72A64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B5FE9F141A6EA09E00F72A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B5FE9F1A1A6EA09E00F72A64 /* ToggleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToggleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FE9F1F1A6EA09E00F72A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FE9F201A6EA09E00F72A64 /* ToggleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTests.swift; sourceTree = "<group>"; };
+		B5FE9F2A1A6EA0D000F72A64 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		B5FE9F2B1A6EA0D000F72A64 /* WindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WindowController.xib; sourceTree = "<group>"; };
+		B5FE9F311A6EA57D00F72A64 /* Toggle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Toggle-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5FE9F321A6EA57E00F72A64 /* Features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Features.h; sourceTree = "<group>"; };
+		B5FE9F331A6EA57E00F72A64 /* Features.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Features.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5FE9F071A6EA09E00F72A64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FE9F171A6EA09E00F72A64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5FE9F011A6EA09E00F72A64 = {
+			isa = PBXGroup;
+			children = (
+				B5FE9F0C1A6EA09E00F72A64 /* Toggle */,
+				B5FE9F1D1A6EA09E00F72A64 /* ToggleTests */,
+				B5FE9F0B1A6EA09E00F72A64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5FE9F0B1A6EA09E00F72A64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5FE9F0A1A6EA09E00F72A64 /* Toggle.app */,
+				B5FE9F1A1A6EA09E00F72A64 /* ToggleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5FE9F0C1A6EA09E00F72A64 /* Toggle */ = {
+			isa = PBXGroup;
+			children = (
+				B5FE9F0F1A6EA09E00F72A64 /* AppDelegate.swift */,
+				B5FE9F111A6EA09E00F72A64 /* Images.xcassets */,
+				B5FE9F131A6EA09E00F72A64 /* MainMenu.xib */,
+				B5FE9F0D1A6EA09E00F72A64 /* Supporting Files */,
+				B5FE9F2A1A6EA0D000F72A64 /* WindowController.swift */,
+				B5FE9F2B1A6EA0D000F72A64 /* WindowController.xib */,
+				B5FE9F321A6EA57E00F72A64 /* Features.h */,
+				B5FE9F331A6EA57E00F72A64 /* Features.m */,
+				B5FE9F311A6EA57D00F72A64 /* Toggle-Bridging-Header.h */,
+			);
+			path = Toggle;
+			sourceTree = "<group>";
+		};
+		B5FE9F0D1A6EA09E00F72A64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5FE9F0E1A6EA09E00F72A64 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5FE9F1D1A6EA09E00F72A64 /* ToggleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5FE9F201A6EA09E00F72A64 /* ToggleTests.swift */,
+				B5FE9F1E1A6EA09E00F72A64 /* Supporting Files */,
+			);
+			path = ToggleTests;
+			sourceTree = "<group>";
+		};
+		B5FE9F1E1A6EA09E00F72A64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5FE9F1F1A6EA09E00F72A64 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5FE9F091A6EA09E00F72A64 /* Toggle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FE9F241A6EA09E00F72A64 /* Build configuration list for PBXNativeTarget "Toggle" */;
+			buildPhases = (
+				B5FE9F061A6EA09E00F72A64 /* Sources */,
+				B5FE9F071A6EA09E00F72A64 /* Frameworks */,
+				B5FE9F081A6EA09E00F72A64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Toggle;
+			productName = Toggle;
+			productReference = B5FE9F0A1A6EA09E00F72A64 /* Toggle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5FE9F191A6EA09E00F72A64 /* ToggleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FE9F271A6EA09E00F72A64 /* Build configuration list for PBXNativeTarget "ToggleTests" */;
+			buildPhases = (
+				B5FE9F161A6EA09E00F72A64 /* Sources */,
+				B5FE9F171A6EA09E00F72A64 /* Frameworks */,
+				B5FE9F181A6EA09E00F72A64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5FE9F1C1A6EA09E00F72A64 /* PBXTargetDependency */,
+			);
+			name = ToggleTests;
+			productName = ToggleTests;
+			productReference = B5FE9F1A1A6EA09E00F72A64 /* ToggleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5FE9F021A6EA09E00F72A64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = NSScreencast;
+				TargetAttributes = {
+					B5FE9F091A6EA09E00F72A64 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B5FE9F191A6EA09E00F72A64 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B5FE9F091A6EA09E00F72A64;
+					};
+				};
+			};
+			buildConfigurationList = B5FE9F051A6EA09E00F72A64 /* Build configuration list for PBXProject "Toggle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5FE9F011A6EA09E00F72A64;
+			productRefGroup = B5FE9F0B1A6EA09E00F72A64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5FE9F091A6EA09E00F72A64 /* Toggle */,
+				B5FE9F191A6EA09E00F72A64 /* ToggleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5FE9F081A6EA09E00F72A64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FE9F121A6EA09E00F72A64 /* Images.xcassets in Resources */,
+				B5FE9F2D1A6EA0D000F72A64 /* WindowController.xib in Resources */,
+				B5FE9F151A6EA09E00F72A64 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FE9F181A6EA09E00F72A64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5FE9F061A6EA09E00F72A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FE9F341A6EA57E00F72A64 /* Features.m in Sources */,
+				B5FE9F101A6EA09E00F72A64 /* AppDelegate.swift in Sources */,
+				B5FE9F2C1A6EA0D000F72A64 /* WindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FE9F161A6EA09E00F72A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FE9F211A6EA09E00F72A64 /* ToggleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5FE9F1C1A6EA09E00F72A64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5FE9F091A6EA09E00F72A64 /* Toggle */;
+			targetProxy = B5FE9F1B1A6EA09E00F72A64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5FE9F131A6EA09E00F72A64 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5FE9F141A6EA09E00F72A64 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5FE9F221A6EA09E00F72A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FEATURE_A = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"FEATURE_A=$(FEATURE_A)",
+					"DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5FE9F231A6EA09E00F72A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FEATURE_A = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "FEATURE_A=$(FEATURE_A)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B5FE9F251A6EA09E00F72A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Toggle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Toggle/Toggle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5FE9F261A6EA09E00F72A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Toggle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Toggle/Toggle-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		B5FE9F281A6EA09E00F72A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ToggleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toggle.app/Contents/MacOS/Toggle";
+			};
+			name = Debug;
+		};
+		B5FE9F291A6EA09E00F72A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ToggleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toggle.app/Contents/MacOS/Toggle";
+			};
+			name = Release;
+		};
+		B5FE9F2E1A6EA4D300F72A64 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FEATURE_A = 0;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "FEATURE_A=$(FEATURE_A)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = "App Store";
+		};
+		B5FE9F2F1A6EA4D300F72A64 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Toggle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Toggle/Toggle-Bridging-Header.h";
+			};
+			name = "App Store";
+		};
+		B5FE9F301A6EA4D300F72A64 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ToggleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toggle.app/Contents/MacOS/Toggle";
+			};
+			name = "App Store";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5FE9F051A6EA09E00F72A64 /* Build configuration list for PBXProject "Toggle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FE9F221A6EA09E00F72A64 /* Debug */,
+				B5FE9F231A6EA09E00F72A64 /* Release */,
+				B5FE9F2E1A6EA4D300F72A64 /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5FE9F241A6EA09E00F72A64 /* Build configuration list for PBXNativeTarget "Toggle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FE9F251A6EA09E00F72A64 /* Debug */,
+				B5FE9F261A6EA09E00F72A64 /* Release */,
+				B5FE9F2F1A6EA4D300F72A64 /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B5FE9F271A6EA09E00F72A64 /* Build configuration list for PBXNativeTarget "ToggleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FE9F281A6EA09E00F72A64 /* Debug */,
+				B5FE9F291A6EA09E00F72A64 /* Release */,
+				B5FE9F301A6EA4D300F72A64 /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5FE9F021A6EA09E00F72A64 /* Project object */;
+}
