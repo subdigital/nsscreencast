@@ -1,0 +1,14 @@
+//
+//  Debug.xcconfig
+//  ConfigDemo
+//
+//  Created by Ben Scheirman on 1/24/15.
+//  Copyright (c) 2015 NSScreencast. All rights reserved.
+//
+
+#include "Shared.xcconfig"
+
+ONLY_ACTIVE_ARCH = YES
+COPY_PHASE_STRIP = NO
+MTL_ENABLE_DEBUG_INFO = YES
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1 $(inherited)
