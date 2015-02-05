@@ -1,0 +1,19 @@
+//
+//  Release.xcconfig
+//  ConfigDemo
+//
+//  Created by Ben Scheirman on 1/24/15.
+//  Copyright (c) 2015 NSScreencast. All rights reserved.
+//
+
+#include "Shared.xcconfig"
+#include "Pods/Target Support Files/Pods/Pods.release.xcconfig"
+
+VALIDATE_PRODUCT = YES
+COPY_PHASE_STRIP = YES
+MTL_ENABLE_DEBUG_INFO = NO
+ENABLE_NS_ASSERTIONS = NO
+
+GOOGLE_ANALYTICS_KEY = UA-prod
+FACEBOOK_APP_ID = fb-prod
+API_URL = prod.myserver.com

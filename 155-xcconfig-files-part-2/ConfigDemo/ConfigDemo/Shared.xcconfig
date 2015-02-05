@@ -1,0 +1,12 @@
+//
+//  Shared.xcconfig
+//  ConfigDemo
+//
+//  Created by Ben Scheirman on 1/24/15.
+//  Copyright (c) 2015 NSScreencast. All rights reserved.
+//
+
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
+INFOPLIST_FILE = ConfigDemo/Info.plist
+PRODUCT_NAME = $(TARGET_NAME)

@@ -1,0 +1,20 @@
+//
+//  Debug.xcconfig
+//  ConfigDemo
+//
+//  Created by Ben Scheirman on 1/24/15.
+//  Copyright (c) 2015 NSScreencast. All rights reserved.
+//
+
+#include "Shared.xcconfig"
+#include "Pods/Target Support Files/Pods/Pods.debug.xcconfig"
+
+ONLY_ACTIVE_ARCH = YES
+COPY_PHASE_STRIP = NO
+MTL_ENABLE_DEBUG_INFO = YES
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1 $(inherited)
+
+
+GOOGLE_ANALYTICS_KEY = UA-dev
+FACEBOOK_APP_ID = fb-dev
+API_URL = dev.myserver.com
