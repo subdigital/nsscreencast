@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Uo-MC-CtI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Road Trip DJ-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="0kT-Ak-TiF">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Qkn-0H-VKm"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bXv-ol-5a9"/>
+                                    <barButtonItem systemItem="rewind" id="EIE-Uq-hDj"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="VXo-eW-UE2"/>
+                                    <barButtonItem systemItem="play" id="TzV-tF-rml"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="ufX-Di-g2N"/>
+                                    <barButtonItem systemItem="fastForward" id="JNB-OI-f8v"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="6aB-SA-9Zv"/>
+                                </items>
+                                <color key="tintColor" red="0.65748356289999998" green="0.43069706899999999" blue="0.85505445079999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0kT-Ak-TiF" secondAttribute="bottom" id="PD7-LI-olD"/>
+                            <constraint firstItem="0kT-Ak-TiF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="hDd-wu-Cyf"/>
+                            <constraint firstAttribute="trailing" secondItem="0kT-Ak-TiF" secondAttribute="trailing" id="z12-cz-1V2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Road Trip DJ" id="NpJ-wC-1RX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="b85-BH-tuy">
+                            <connections>
+                                <action selector="addMusic:" destination="vXZ-lx-hvc" id="ff3-Q7-2qO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317" y="71"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wil-CQ-yBR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Uo-MC-CtI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="lSF-gy-gj3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.65748356289999998" green="0.43069706899999999" blue="0.85505445079999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="UHs-RO-yMS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v66-Bq-q7q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="71"/>
+        </scene>
+    </scenes>
+</document>
