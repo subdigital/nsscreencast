@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Tzv-cv-6Yx">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="T5z-Qn-mzw"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="Road Trip DJ" id="Adj-4I-mmd"/>
+                    </items>
+                </navigationBar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="qmO-zZ-joG">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="rtT-bx-MRt"/>
+                    </constraints>
+                    <items/>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Tzv-cv-6Yx" secondAttribute="trailing" id="0Bw-Yi-a1J"/>
+                <constraint firstItem="qmO-zZ-joG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3ex-GA-xPK"/>
+                <constraint firstItem="Tzv-cv-6Yx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6Bb-5m-cl6"/>
+                <constraint firstItem="Tzv-cv-6Yx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6SL-TV-m5B"/>
+                <constraint firstAttribute="bottom" secondItem="qmO-zZ-joG" secondAttribute="bottom" id="7u4-Qg-Qsg"/>
+                <constraint firstAttribute="trailing" secondItem="qmO-zZ-joG" secondAttribute="trailing" id="yBh-Sd-2cB"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+</document>
