@@ -1,0 +1,11 @@
+platform :ios, '8.1'
+
+target 'NinjaGame' do
+
+end
+
+target 'NinjaGameTests' do
+  use_frameworks!
+  pod 'Quick'
+  pod 'Nimble'
+end
