@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="LocalNotifications" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dirt" translatesAutoresizingMaskIntoConstraints="NO" id="1Lv-qu-004">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTH-Hj-gvd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZY1-z9-0Ed">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wood: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tG-Re-nDY">
+                                            <rect key="frame" x="492" y="46" width="100" height="27.5"/>
+                                            <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                            <color key="textColor" red="0.46619192477876104" green="0.15423453803079734" blue="0.086787006619120921" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="0.0" height="2"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gold: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTV-gC-3TE">
+                                            <rect key="frame" x="8" y="46" width="93.5" height="27.5"/>
+                                            <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                            <color key="textColor" red="1" green="0.84780201495267382" blue="0.49938409311326026" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="0.0" height="2"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="7tG-Re-nDY" secondAttribute="centerY" id="Onm-ZY-hAW"/>
+                                        <constraint firstAttribute="trailing" secondItem="7tG-Re-nDY" secondAttribute="trailing" constant="8" id="jYr-8Z-Rv9"/>
+                                        <constraint firstItem="dTV-gC-3TE" firstAttribute="leading" secondItem="ZY1-z9-0Ed" secondAttribute="leading" constant="8" id="swJ-di-t8z"/>
+                                        <constraint firstAttribute="centerY" secondItem="dTV-gC-3TE" secondAttribute="centerY" id="xOX-NK-QD8"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="eBg-qd-QpJ"/>
+                                </constraints>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRN-53-AvT" customClass="TimedButton" customModule="LocalNotifications" customModuleProvider="target">
+                                <rect key="frame" x="200" y="210" width="200" height="85"/>
+                                <color key="backgroundColor" red="1" green="0.84780201499999996" blue="0.49938409309999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3o5-je-2Jy"/>
+                                    <constraint firstAttribute="height" constant="85" id="ybR-re-NLR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="21"/>
+                                <state key="normal" title="Mine Gold">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeoutInSeconds">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="mineGoldTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cPZ-Hv-XOJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80q-CZ-qFU" customClass="TimedButton" customModule="LocalNotifications" customModuleProvider="target">
+                                <rect key="frame" x="200" y="334" width="200" height="85"/>
+                                <color key="backgroundColor" red="0.46619192479999999" green="0.154234538" blue="0.086787006619999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Tzb-ZS-Cdu"/>
+                                    <constraint firstAttribute="height" constant="85" id="j1U-33-7qe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="21"/>
+                                <state key="normal" title="Chop Wood">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeoutInSeconds">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="chopWoodTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0Qc-ZC-Pac"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Lv-qu-004" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="05M-X2-sCb"/>
+                            <constraint firstItem="1Lv-qu-004" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="3e8-iV-Chi"/>
+                            <constraint firstItem="gTH-Hj-gvd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="8ve-0f-S68"/>
+                            <constraint firstAttribute="trailing" secondItem="1Lv-qu-004" secondAttribute="trailing" id="CAF-Ti-skk"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1Lv-qu-004" secondAttribute="bottom" id="QET-to-Cex"/>
+                            <constraint firstItem="gTH-Hj-gvd" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Qij-u7-K6f"/>
+                            <constraint firstItem="iRN-53-AvT" firstAttribute="leading" secondItem="1Lv-qu-004" secondAttribute="trailing" constant="-380" id="RfP-dB-v3P"/>
+                            <constraint firstAttribute="trailing" secondItem="gTH-Hj-gvd" secondAttribute="trailing" id="SHb-rR-vX2"/>
+                            <constraint firstItem="iRN-53-AvT" firstAttribute="top" secondItem="1Lv-qu-004" secondAttribute="top" constant="210" id="hPg-Y7-r86"/>
+                            <constraint firstItem="1Lv-qu-004" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="j1U-r7-a66"/>
+                            <constraint firstItem="iRN-53-AvT" firstAttribute="centerX" secondItem="1Lv-qu-004" secondAttribute="centerX" id="nwm-RU-M4x"/>
+                            <constraint firstItem="1Lv-qu-004" firstAttribute="centerX" secondItem="80q-CZ-qFU" secondAttribute="centerX" id="rRx-lO-q8U"/>
+                            <constraint firstItem="80q-CZ-qFU" firstAttribute="top" secondItem="iRN-53-AvT" secondAttribute="bottom" constant="39" id="xca-w0-gaw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3e8-iV-Chi"/>
+                                <exclude reference="RfP-dB-v3P"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="chopWoodButton" destination="80q-CZ-qFU" id="6HB-3d-qBd"/>
+                        <outlet property="goldLabel" destination="dTV-gC-3TE" id="9Ij-Mk-WTm"/>
+                        <outlet property="mineGoldButton" destination="iRN-53-AvT" id="Zxb-kW-Y5G"/>
+                        <outlet property="woodLabel" destination="7tG-Re-nDY" id="XgI-nJ-Qmp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dirt" width="447" height="447"/>
+    </resources>
+</document>
