@@ -162,6 +162,7 @@
 		B57797E51B2F384A00D6F2F6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = NSScreencast;
 				TargetAttributes = {

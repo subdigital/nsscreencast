@@ -49,6 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 object: notification,
                 userInfo: notification.userInfo)
         }
+        
+        completionHandler()
     }
     
     func applicationWillResignActive(application: UIApplication) {
