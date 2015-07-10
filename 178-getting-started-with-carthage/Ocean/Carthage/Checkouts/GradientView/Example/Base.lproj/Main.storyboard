@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhq-4t-1T1" customClass="GradientView" customModule="GradientView">
+                                <rect key="frame" x="20" y="20" width="560" height="560"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jhq-4t-1T1" secondAttribute="height" multiplier="1:1" id="oj3-oB-Wx9"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nku-AU-kCi">
+                                <rect key="frame" x="263" y="600" width="75" height="30"/>
+                                <state key="normal" title="Show Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8hj-DK-o0p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jhq-4t-1T1" secondAttribute="trailing" constant="20" id="QGH-8P-zOy"/>
+                            <constraint firstAttribute="centerX" secondItem="nku-AU-kCi" secondAttribute="centerX" constant="-0.5" id="Znd-DM-YEN"/>
+                            <constraint firstItem="nku-AU-kCi" firstAttribute="top" secondItem="Jhq-4t-1T1" secondAttribute="bottom" constant="20" id="c4m-bD-Z8t"/>
+                            <constraint firstItem="Jhq-4t-1T1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="dqR-Zv-J4O"/>
+                            <constraint firstItem="Jhq-4t-1T1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="em8-o6-duZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gradientView" destination="Jhq-4t-1T1" id="0Yj-mU-VZo"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="XK6-cP-W7g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="141"/>
+        </scene>
+    </scenes>
+</document>
