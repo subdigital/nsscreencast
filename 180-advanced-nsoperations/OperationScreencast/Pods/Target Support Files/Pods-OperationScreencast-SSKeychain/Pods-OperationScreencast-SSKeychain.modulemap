@@ -1,0 +1,6 @@
+framework module SSKeychain {
+  umbrella header "Pods-OperationScreencast-SSKeychain-umbrella.h"
+
+  export *
+  module * { export * }
+}

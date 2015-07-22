@@ -1,0 +1,13 @@
+platform :ios, '8.0'
+
+use_frameworks!
+
+target 'OperationScreencast' do
+  pod 'SSKeychain'
+  pod 'JMImageCache'
+end
+
+target 'OperationScreencastTests' do
+
+end
+

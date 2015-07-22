@@ -1,0 +1,13 @@
+PODS:
+  - JMImageCache (0.4.0)
+  - SSKeychain (1.2.3)
+
+DEPENDENCIES:
+  - JMImageCache
+  - SSKeychain
+
+SPEC CHECKSUMS:
+  JMImageCache: fac25eb168a25b29ac130fee6a6b17ea463c1d86
+  SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
+
+COCOAPODS: 0.36.4

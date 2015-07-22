@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BA0E117157ABECA350A6418 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D818DA220E436FFE196A532 /* Foundation.framework */; };
+		22FF29A2F7123BF65D5F81D2 /* Pods-OperationScreencast-JMImageCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DDF811093CA401FD249BCE /* Pods-OperationScreencast-JMImageCache-dummy.m */; };
+		2F2901F2D165D5E5B55E911F /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = BB51C645EAC80DF999D0F7B9 /* SSKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3092B0CC2BDF2AC1D663718D /* Pods-OperationScreencast-SSKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7F22440A886C9011BCE3E98 /* Pods-OperationScreencast-SSKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AA0ABB0C0630F7F387BF88D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D818DA220E436FFE196A532 /* Foundation.framework */; };
+		3FD7F46795C85F01732E05C5 /* UIImageView+JMImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4783DF1433EB8D2B1FBDD4 /* UIImageView+JMImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5985110432CDE75A64323165 /* Pods-OperationScreencast-JMImageCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E36CAB8AFF1648AA1B00C1D /* Pods-OperationScreencast-JMImageCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C15427A67920F3F869FBC4B /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 061B42BC2ABCC7FFD86AE6A2 /* SSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FDB0DD6CB408FFF0BE7A008 /* JMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A00C9F7834509BD0E139BEAD /* JMImageCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		95D0139E35F2B265FE62B27A /* JMImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E0312CC1F4F31BB6B6957B81 /* JMImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D24D8D3EB19A423F141698F /* Pods-OperationScreencast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2ED5782A9CCEA8A7B4DE59 /* Pods-OperationScreencast-dummy.m */; };
+		AA3E1D43A7138F726E5B88A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D818DA220E436FFE196A532 /* Foundation.framework */; };
+		B68F51C5B0DF800E9053A9A5 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6832238B3C203489357397 /* SSKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B9B7E453F3D0DED969677782 /* Pods-OperationScreencast-SSKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F57F457691D7315E69F00D /* Pods-OperationScreencast-SSKeychain-dummy.m */; };
+		BCBE40C3182C41F03CD66561 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676761E45341172C98BD90F6 /* Security.framework */; };
+		DC114C7926F81AE718C62B33 /* Pods-OperationScreencast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8949BBA84B4C135728FAFC9F /* Pods-OperationScreencast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEADA0B69D0D2CED449F7519 /* UIImageView+JMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D00E440247FDF2C59D0D1307 /* UIImageView+JMImageCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E8C2DFF26C9105CA79F15606 /* SSKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = E9279E369C5BBB4FCC8A12BB /* SSKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D1DF74D028F9885DDBF0717 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD05F5CD084F59906E375FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA597832C35DD869496ED783;
+			remoteInfo = "Pods-OperationScreencast-SSKeychain";
+		};
+		C601118713842D30A77469B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD05F5CD084F59906E375FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1769F80909543CF6A0E6DE49;
+			remoteInfo = "Pods-OperationScreencast-JMImageCache";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A6ACA7F167B57405D4F21D /* Pods-OperationScreencast-JMImageCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OperationScreencast-JMImageCache.modulemap"; sourceTree = "<group>"; };
+		061B42BC2ABCC7FFD86AE6A2 /* SSKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain.h; sourceTree = "<group>"; };
+		131888A5D84EBA3C6A212B85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14837C807A9BD460715945B2 /* Pods-OperationScreencast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OperationScreencast.release.xcconfig"; sourceTree = "<group>"; };
+		190EFA0DA973F05BDB788A04 /* Pods-OperationScreencast-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OperationScreencast-resources.sh"; sourceTree = "<group>"; };
+		1BF6B42316670A53813053F1 /* Pods-OperationScreencast-JMImageCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OperationScreencast-JMImageCache.xcconfig"; sourceTree = "<group>"; };
+		1D4783DF1433EB8D2B1FBDD4 /* UIImageView+JMImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JMImageCache.h"; sourceTree = "<group>"; };
+		1F2ED5782A9CCEA8A7B4DE59 /* Pods-OperationScreencast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OperationScreencast-dummy.m"; sourceTree = "<group>"; };
+		206021D5F67D33CD19AA9067 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38CC72C2A82684366934680D /* Pods-OperationScreencast-SSKeychain-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OperationScreencast-SSKeychain-Private.xcconfig"; sourceTree = "<group>"; };
+		43C416F5D2711C840C6A5028 /* Pods-OperationScreencast-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OperationScreencast-frameworks.sh"; sourceTree = "<group>"; };
+		45A2D955A1E28F4A696D8CCB /* Pods_OperationScreencast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OperationScreencast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		496102071D0EC997179121A2 /* Pods-OperationScreencast-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OperationScreencast-environment.h"; sourceTree = "<group>"; };
+		507C704A674452D9F3359E3F /* SSKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6832238B3C203489357397 /* SSKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
+		676761E45341172C98BD90F6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		73D81B57A0547771CA145C68 /* Pods-OperationScreencast-SSKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OperationScreencast-SSKeychain-prefix.pch"; sourceTree = "<group>"; };
+		79D479D840D62B67F003C6DB /* Pods-OperationScreencast-SSKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OperationScreencast-SSKeychain.xcconfig"; sourceTree = "<group>"; };
+		7E36CAB8AFF1648AA1B00C1D /* Pods-OperationScreencast-JMImageCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OperationScreencast-JMImageCache-umbrella.h"; sourceTree = "<group>"; };
+		8949BBA84B4C135728FAFC9F /* Pods-OperationScreencast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OperationScreencast-umbrella.h"; sourceTree = "<group>"; };
+		8D818DA220E436FFE196A532 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		93B1CD8B2906849970386BFD /* Pods-OperationScreencast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OperationScreencast.modulemap"; sourceTree = "<group>"; };
+		96E5CF5032EC984E70A22E0B /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99F1B772ABE2476246F34EDC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99F67C8590B750EAB2D864DA /* Pods-OperationScreencast-SSKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OperationScreencast-SSKeychain.modulemap"; sourceTree = "<group>"; };
+		9D99503046BCBE669F51D31E /* Pods-OperationScreencast-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OperationScreencast-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A00C9F7834509BD0E139BEAD /* JMImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JMImageCache.m; sourceTree = "<group>"; };
+		AC0BD003B2E6A8BB00827E3F /* Pods-OperationScreencast-JMImageCache-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OperationScreencast-JMImageCache-Private.xcconfig"; sourceTree = "<group>"; };
+		ACDAC6E4F302E2F21F3CFC21 /* Pods-OperationScreencast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OperationScreencast.debug.xcconfig"; sourceTree = "<group>"; };
+		B5506B2EFA5D4F85574D3E60 /* JMImageCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JMImageCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB51C645EAC80DF999D0F7B9 /* SSKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
+		D00E440247FDF2C59D0D1307 /* UIImageView+JMImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JMImageCache.m"; sourceTree = "<group>"; };
+		E0312CC1F4F31BB6B6957B81 /* JMImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JMImageCache.h; sourceTree = "<group>"; };
+		E7F22440A886C9011BCE3E98 /* Pods-OperationScreencast-SSKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OperationScreencast-SSKeychain-umbrella.h"; sourceTree = "<group>"; };
+		E9279E369C5BBB4FCC8A12BB /* SSKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
+		EA0255B3BC7398A94AE62834 /* Pods-OperationScreencast-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OperationScreencast-acknowledgements.plist"; sourceTree = "<group>"; };
+		F3F57F457691D7315E69F00D /* Pods-OperationScreencast-SSKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OperationScreencast-SSKeychain-dummy.m"; sourceTree = "<group>"; };
+		F4DDF811093CA401FD249BCE /* Pods-OperationScreencast-JMImageCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OperationScreencast-JMImageCache-dummy.m"; sourceTree = "<group>"; };
+		F6B85ABE7045A1B38637FC4D /* Pods-OperationScreencast-JMImageCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OperationScreencast-JMImageCache-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29C88248FBA4368AB50EC981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA0ABB0C0630F7F387BF88D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D843DBF80C1463647F2B337 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA0E117157ABECA350A6418 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		705C2799297D4E3849A33EA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3E1D43A7138F726E5B88A0 /* Foundation.framework in Frameworks */,
+				BCBE40C3182C41F03CD66561 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1666B62B058F6C5CF1E1F6D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0E165C0D0F31890535B6D02 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3654E4AD2E5AB09BDD0B2D26 = {
+			isa = PBXGroup;
+			children = (
+				96E5CF5032EC984E70A22E0B /* Podfile */,
+				1666B62B058F6C5CF1E1F6D7 /* Frameworks */,
+				FB87EECC4AD93E41489CD1FF /* Pods */,
+				B7043B63461E96DB262EB23C /* Products */,
+				96B77DA26FE93CC1D3751F2A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		495CBE362258AAB004BCEDB2 /* JMImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				E0312CC1F4F31BB6B6957B81 /* JMImageCache.h */,
+				A00C9F7834509BD0E139BEAD /* JMImageCache.m */,
+				1D4783DF1433EB8D2B1FBDD4 /* UIImageView+JMImageCache.h */,
+				D00E440247FDF2C59D0D1307 /* UIImageView+JMImageCache.m */,
+				4B01F27A69F5D296AD624C6C /* Support Files */,
+			);
+			path = JMImageCache;
+			sourceTree = "<group>";
+		};
+		4B01F27A69F5D296AD624C6C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				206021D5F67D33CD19AA9067 /* Info.plist */,
+				01A6ACA7F167B57405D4F21D /* Pods-OperationScreencast-JMImageCache.modulemap */,
+				1BF6B42316670A53813053F1 /* Pods-OperationScreencast-JMImageCache.xcconfig */,
+				AC0BD003B2E6A8BB00827E3F /* Pods-OperationScreencast-JMImageCache-Private.xcconfig */,
+				F4DDF811093CA401FD249BCE /* Pods-OperationScreencast-JMImageCache-dummy.m */,
+				F6B85ABE7045A1B38637FC4D /* Pods-OperationScreencast-JMImageCache-prefix.pch */,
+				7E36CAB8AFF1648AA1B00C1D /* Pods-OperationScreencast-JMImageCache-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-OperationScreencast-JMImageCache";
+			sourceTree = "<group>";
+		};
+		7C31ED3829EA62AC244084B4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				131888A5D84EBA3C6A212B85 /* Info.plist */,
+				99F67C8590B750EAB2D864DA /* Pods-OperationScreencast-SSKeychain.modulemap */,
+				79D479D840D62B67F003C6DB /* Pods-OperationScreencast-SSKeychain.xcconfig */,
+				38CC72C2A82684366934680D /* Pods-OperationScreencast-SSKeychain-Private.xcconfig */,
+				F3F57F457691D7315E69F00D /* Pods-OperationScreencast-SSKeychain-dummy.m */,
+				73D81B57A0547771CA145C68 /* Pods-OperationScreencast-SSKeychain-prefix.pch */,
+				E7F22440A886C9011BCE3E98 /* Pods-OperationScreencast-SSKeychain-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-OperationScreencast-SSKeychain";
+			sourceTree = "<group>";
+		};
+		96B77DA26FE93CC1D3751F2A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB14116A606E2B890241DF77 /* Pods-OperationScreencast */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B7043B63461E96DB262EB23C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5506B2EFA5D4F85574D3E60 /* JMImageCache.framework */,
+				45A2D955A1E28F4A696D8CCB /* Pods_OperationScreencast.framework */,
+				507C704A674452D9F3359E3F /* SSKeychain.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEC393D1C1CA9DBC77747AF7 /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				061B42BC2ABCC7FFD86AE6A2 /* SSKeychain.h */,
+				5D6832238B3C203489357397 /* SSKeychain.m */,
+				E9279E369C5BBB4FCC8A12BB /* SSKeychainQuery.h */,
+				BB51C645EAC80DF999D0F7B9 /* SSKeychainQuery.m */,
+				7C31ED3829EA62AC244084B4 /* Support Files */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
+		DB14116A606E2B890241DF77 /* Pods-OperationScreencast */ = {
+			isa = PBXGroup;
+			children = (
+				99F1B772ABE2476246F34EDC /* Info.plist */,
+				93B1CD8B2906849970386BFD /* Pods-OperationScreencast.modulemap */,
+				9D99503046BCBE669F51D31E /* Pods-OperationScreencast-acknowledgements.markdown */,
+				EA0255B3BC7398A94AE62834 /* Pods-OperationScreencast-acknowledgements.plist */,
+				1F2ED5782A9CCEA8A7B4DE59 /* Pods-OperationScreencast-dummy.m */,
+				496102071D0EC997179121A2 /* Pods-OperationScreencast-environment.h */,
+				43C416F5D2711C840C6A5028 /* Pods-OperationScreencast-frameworks.sh */,
+				190EFA0DA973F05BDB788A04 /* Pods-OperationScreencast-resources.sh */,
+				8949BBA84B4C135728FAFC9F /* Pods-OperationScreencast-umbrella.h */,
+				ACDAC6E4F302E2F21F3CFC21 /* Pods-OperationScreencast.debug.xcconfig */,
+				14837C807A9BD460715945B2 /* Pods-OperationScreencast.release.xcconfig */,
+			);
+			name = "Pods-OperationScreencast";
+			path = "Target Support Files/Pods-OperationScreencast";
+			sourceTree = "<group>";
+		};
+		E0E165C0D0F31890535B6D02 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8D818DA220E436FFE196A532 /* Foundation.framework */,
+				676761E45341172C98BD90F6 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FB87EECC4AD93E41489CD1FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				495CBE362258AAB004BCEDB2 /* JMImageCache */,
+				CEC393D1C1CA9DBC77747AF7 /* SSKeychain */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F1E25A0EC3FB19486B36D13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3092B0CC2BDF2AC1D663718D /* Pods-OperationScreencast-SSKeychain-umbrella.h in Headers */,
+				7C15427A67920F3F869FBC4B /* SSKeychain.h in Headers */,
+				E8C2DFF26C9105CA79F15606 /* SSKeychainQuery.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327D1AB3AD47F3318D28D50E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC114C7926F81AE718C62B33 /* Pods-OperationScreencast-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7ED1C19FAAF4783865C2812 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D0139E35F2B265FE62B27A /* JMImageCache.h in Headers */,
+				5985110432CDE75A64323165 /* Pods-OperationScreencast-JMImageCache-umbrella.h in Headers */,
+				3FD7F46795C85F01732E05C5 /* UIImageView+JMImageCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1769F80909543CF6A0E6DE49 /* Pods-OperationScreencast-JMImageCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87B9AE0186E117F2A5624285 /* Build configuration list for PBXNativeTarget "Pods-OperationScreencast-JMImageCache" */;
+			buildPhases = (
+				BFFCB22F9652455AD2E53B61 /* Sources */,
+				4D843DBF80C1463647F2B337 /* Frameworks */,
+				A7ED1C19FAAF4783865C2812 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-OperationScreencast-JMImageCache";
+			productName = "Pods-OperationScreencast-JMImageCache";
+			productReference = B5506B2EFA5D4F85574D3E60 /* JMImageCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		648DFF28CCC450A60BE31393 /* Pods-OperationScreencast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA84A81B6C1BB6820EC937C1 /* Build configuration list for PBXNativeTarget "Pods-OperationScreencast" */;
+			buildPhases = (
+				302D29819BE58413FCB04442 /* Sources */,
+				29C88248FBA4368AB50EC981 /* Frameworks */,
+				327D1AB3AD47F3318D28D50E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ED67B636C323458DC0784AA /* PBXTargetDependency */,
+				E3198DF0F946B7E6ACF5AC72 /* PBXTargetDependency */,
+			);
+			name = "Pods-OperationScreencast";
+			productName = "Pods-OperationScreencast";
+			productReference = 45A2D955A1E28F4A696D8CCB /* Pods_OperationScreencast.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA597832C35DD869496ED783 /* Pods-OperationScreencast-SSKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0313FF7282D54DA7B517CC52 /* Build configuration list for PBXNativeTarget "Pods-OperationScreencast-SSKeychain" */;
+			buildPhases = (
+				439E66E5B42280508AD02046 /* Sources */,
+				705C2799297D4E3849A33EA7 /* Frameworks */,
+				1F1E25A0EC3FB19486B36D13 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-OperationScreencast-SSKeychain";
+			productName = "Pods-OperationScreencast-SSKeychain";
+			productReference = 507C704A674452D9F3359E3F /* SSKeychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCD05F5CD084F59906E375FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 41B952BFBF31714E024D046B /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3654E4AD2E5AB09BDD0B2D26;
+			productRefGroup = B7043B63461E96DB262EB23C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				648DFF28CCC450A60BE31393 /* Pods-OperationScreencast */,
+				1769F80909543CF6A0E6DE49 /* Pods-OperationScreencast-JMImageCache */,
+				DA597832C35DD869496ED783 /* Pods-OperationScreencast-SSKeychain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		302D29819BE58413FCB04442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D24D8D3EB19A423F141698F /* Pods-OperationScreencast-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		439E66E5B42280508AD02046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B7E453F3D0DED969677782 /* Pods-OperationScreencast-SSKeychain-dummy.m in Sources */,
+				B68F51C5B0DF800E9053A9A5 /* SSKeychain.m in Sources */,
+				2F2901F2D165D5E5B55E911F /* SSKeychainQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFCB22F9652455AD2E53B61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDB0DD6CB408FFF0BE7A008 /* JMImageCache.m in Sources */,
+				22FF29A2F7123BF65D5F81D2 /* Pods-OperationScreencast-JMImageCache-dummy.m in Sources */,
+				DEADA0B69D0D2CED449F7519 /* UIImageView+JMImageCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8ED67B636C323458DC0784AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-OperationScreencast-JMImageCache";
+			target = 1769F80909543CF6A0E6DE49 /* Pods-OperationScreencast-JMImageCache */;
+			targetProxy = C601118713842D30A77469B6 /* PBXContainerItemProxy */;
+		};
+		E3198DF0F946B7E6ACF5AC72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-OperationScreencast-SSKeychain";
+			target = DA597832C35DD869496ED783 /* Pods-OperationScreencast-SSKeychain */;
+			targetProxy = 5D1DF74D028F9885DDBF0717 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		33CCF261E45A6BEF7CB1909E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4CF65D147D98C0EE5ECFE8C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0BD003B2E6A8BB00827E3F /* Pods-OperationScreencast-JMImageCache-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-OperationScreencast-JMImageCache/Pods-OperationScreencast-JMImageCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-OperationScreencast-JMImageCache/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-OperationScreencast-JMImageCache/Pods-OperationScreencast-JMImageCache.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JMImageCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		88929AD048D5F9D8C253862F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0BD003B2E6A8BB00827E3F /* Pods-OperationScreencast-JMImageCache-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-OperationScreencast-JMImageCache/Pods-OperationScreencast-JMImageCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-OperationScreencast-JMImageCache/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-OperationScreencast-JMImageCache/Pods-OperationScreencast-JMImageCache.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JMImageCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9492CBF80B942513BD336B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38CC72C2A82684366934680D /* Pods-OperationScreencast-SSKeychain-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-OperationScreencast-SSKeychain/Pods-OperationScreencast-SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-OperationScreencast-SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-OperationScreencast-SSKeychain/Pods-OperationScreencast-SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4B40BE4D432D850874F218C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14837C807A9BD460715945B2 /* Pods-OperationScreencast.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OperationScreencast/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-OperationScreencast/Pods-OperationScreencast.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_OperationScreencast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B47904AD84CF730349628513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACDAC6E4F302E2F21F3CFC21 /* Pods-OperationScreencast.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OperationScreencast/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-OperationScreencast/Pods-OperationScreencast.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_OperationScreencast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CB84FFE996538E2DB73750D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38CC72C2A82684366934680D /* Pods-OperationScreencast-SSKeychain-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-OperationScreencast-SSKeychain/Pods-OperationScreencast-SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-OperationScreencast-SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-OperationScreencast-SSKeychain/Pods-OperationScreencast-SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D75456159AE2E87309D2DF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0313FF7282D54DA7B517CC52 /* Build configuration list for PBXNativeTarget "Pods-OperationScreencast-SSKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB84FFE996538E2DB73750D6 /* Debug */,
+				9492CBF80B942513BD336B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41B952BFBF31714E024D046B /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33CCF261E45A6BEF7CB1909E /* Debug */,
+				D75456159AE2E87309D2DF59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87B9AE0186E117F2A5624285 /* Build configuration list for PBXNativeTarget "Pods-OperationScreencast-JMImageCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88929AD048D5F9D8C253862F /* Debug */,
+				4CF65D147D98C0EE5ECFE8C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA84A81B6C1BB6820EC937C1 /* Build configuration list for PBXNativeTarget "Pods-OperationScreencast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B47904AD84CF730349628513 /* Debug */,
+				A4B40BE4D432D850874F218C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCD05F5CD084F59906E375FB /* Project object */;
+}
