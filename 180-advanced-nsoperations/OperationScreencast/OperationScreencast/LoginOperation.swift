@@ -30,7 +30,9 @@ class LoginOperation : Operation, LoginViewControllerDelegate {
             return
         }
         
-        presentationContext.presentViewController(loginNavController, animated: true, completion: nil)
+        dispatch_async(dispatch_get_main_queue()) {
+            self.presentationContext.presentViewController(self.loginNavController, animated: true, completion: nil)
+        }
     }
     
     func loginViewControllerDidLogin(loginViewController: LoginViewController) {
