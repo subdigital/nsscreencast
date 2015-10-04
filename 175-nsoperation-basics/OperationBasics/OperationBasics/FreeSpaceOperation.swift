@@ -21,22 +21,26 @@ class FreeSpaceOperation : NSOperation {
     override func main() {
         let fileManager = NSFileManager.defaultManager()
         
-        for i in reverse(1...5) {
+        for i in (1...5).reverse() {
             if cancelled {
                 return
             }
-
-            println("Sleeping \(i)...")
+            
+            print("Sleeping \(i)...")
             sleep(1)
         }
         
         if cancelled {
             return
         }
-        
-        let attribs = fileManager.attributesOfFileSystemForPath(path, error: &error)
-        println("attribs for \(path): \(attribs)")
-        
-        self.fileSystemAttributes = attribs
+
+        do {
+            let attribs = try fileManager.attributesOfFileSystemForPath(path)
+            print("attribs for \(path): \(attribs)")
+            
+            self.fileSystemAttributes = attribs
+        } catch {
+            print(error)
+        }
     }
 }
