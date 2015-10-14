@@ -20,25 +20,25 @@ class ViewController: UIViewController {
         
         let url = NSURL(string: "http://imgsrc.hubblesite.org/hu/db/images/hs-2006-10-a-hires_jpg.jpg")!
         
-        let docsDir = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true).first! as! String
-        let targetPath = docsDir.stringByAppendingPathComponent("hubble.jpg")
+        let docsDir = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true).first! 
+        let targetPath = NSURL(fileURLWithPath: docsDir).URLByAppendingPathComponent("hubble.jpg").path!
 
         let downloadOperation = DownloadImageOperation(imageURL: url, targetPath: targetPath)
         
         downloadOperation.progressBlock = { self.downloadProgressView.progress = $0 }
         
-        var size = CGSize(width: imageView.bounds.size.width * 2, height: imageView.bounds.size.height * 2)
+        let size = CGSize(width: imageView.bounds.size.width * 2, height: imageView.bounds.size.height * 2)
         let resizeOperation = ResizeImageOperation(path: targetPath, containingSize: size)
         resizeOperation.addDependency(downloadOperation)
         
         let filterOperation = FilterImageOperation(path: targetPath)
         filterOperation.addDependency(resizeOperation)
         
-        filterOperation.completionBlock = {
-            if let outputImage = filterOperation.outputImage {
+        filterOperation.completionBlock = { [weak filterOperation] in
+            if let outputImage = filterOperation?.outputImage {
                 let context = CIContext(options: [:])
-                let cgImage = context.createCGImage(outputImage, fromRect: outputImage.extent())
-                let image = UIImage(CGImage: cgImage)!
+                let cgImage = context.createCGImage(outputImage, fromRect: outputImage.extent)
+                let image = UIImage(CGImage: cgImage)
                 self.displayImage(image)
             }
         }

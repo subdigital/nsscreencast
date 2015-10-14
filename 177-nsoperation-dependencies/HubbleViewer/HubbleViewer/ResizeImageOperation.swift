@@ -20,8 +20,8 @@ class ResizeImageOperation : Operation {
     
     override func execute() {
         let sourceImage = UIImage(contentsOfFile: path)!
-        println("Source image size: \(sourceImage.size)")
-        printSizeOnDisk(UIImageJPEGRepresentation(sourceImage, 1.0))
+        print("Source image size: \(sourceImage.size)")
+        printSizeOnDisk(UIImageJPEGRepresentation(sourceImage, 1.0)!)
         
         let width: CGFloat
         let height: CGFloat
@@ -35,7 +35,7 @@ class ResizeImageOperation : Operation {
         }
         
         let imageSize = CGSize(width: width, height: height)
-        println("Resized image: \(imageSize)")
+        print("Resized image: \(imageSize)")
         
         UIGraphicsBeginImageContextWithOptions(imageSize, true, 0.0)
         let rect = CGRect(origin: CGPoint(x: 0, y: 0), size: imageSize)
@@ -43,7 +43,7 @@ class ResizeImageOperation : Operation {
         let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        let imageData = UIImageJPEGRepresentation(resizedImage, 0.8)
+        let imageData = UIImageJPEGRepresentation(resizedImage, 0.8)!
         printSizeOnDisk(imageData)
         imageData.writeToFile(path, atomically: true)
         
@@ -53,6 +53,6 @@ class ResizeImageOperation : Operation {
     func printSizeOnDisk(data: NSData) {
         let bytes = Int64(data.length)
         let size = NSByteCountFormatter.stringFromByteCount(bytes, countStyle: NSByteCountFormatterCountStyle.File)
-        println("Size on disk: \(size)")
+        print("Size on disk: \(size)")
     }
 }

@@ -18,14 +18,14 @@ class FilterImageOperation : Operation {
     }
     
     lazy var inputImage: CIImage = {
-        let url = NSURL(fileURLWithPath: self.path)!
-        return CIImage(contentsOfURL: url)
+        let url = NSURL(fileURLWithPath: self.path)
+        return CIImage(contentsOfURL: url)!
     }()
     
     lazy var filter: CIFilter = {
         return CIFilter(name: "CISepiaTone", withInputParameters: [
             kCIInputImageKey : self.inputImage
-        ])
+        ])!
     }()
     
     override func execute() {

@@ -28,7 +28,10 @@ class DownloadImageOperation : Operation, NSURLSessionDownloadDelegate {
     
     override func execute() {
         if NSFileManager.defaultManager().fileExistsAtPath(targetPath) {
-            NSFileManager.defaultManager().removeItemAtPath(targetPath, error: nil)
+            do {
+                try NSFileManager.defaultManager().removeItemAtPath(targetPath)
+            } catch _ {
+            }
         }
         
         downloadTask = session.downloadTaskWithURL(imageURL)
@@ -47,15 +50,11 @@ class DownloadImageOperation : Operation, NSURLSessionDownloadDelegate {
     
     func URLSession(session: NSURLSession, downloadTask: NSURLSessionDownloadTask,
         didFinishDownloadingToURL location: NSURL) {
-        
-            
-            let targetURL = NSURL(fileURLWithPath: targetPath)!
-            var copyError : NSError?
-            if NSFileManager.defaultManager().copyItemAtURL(location, toURL: targetURL,
-                error: &copyError) {
-                    finish()
-                    
-            } else {
+            let targetURL = NSURL(fileURLWithPath: targetPath)
+            do {
+                try NSFileManager.defaultManager().copyItemAtURL(location, toURL: targetURL)
+                finish()
+            } catch let copyError as NSError {
                 fatalError("Could not copy: \(copyError)")
             }
             
