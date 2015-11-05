@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gp6-MT-Iep">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard-->
+        <scene sceneID="xOb-fR-gqL">
+            <objects>
+                <viewController id="h0Z-H6-STg" customClass="FirstViewController" customModule="HelloAppleTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aw-Xn-Qyn"/>
+                        <viewControllerLayoutGuide type="bottom" id="S4K-BE-kzJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mvd-7L-I4K">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="dog-uC-6Bs">
+                                <rect key="frame" x="566" y="309" width="788" height="462"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="Jhr-Df-hiV">
+                                        <rect key="frame" x="0.0" y="0.0" width="788" height="86"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWc-2z-FFB">
+                                                <rect key="frame" x="0.0" y="0.0" width="290" height="86"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="Fire Missiles"/>
+                                                <connections>
+                                                    <action selector="launchRockets:" destination="h0Z-H6-STg" eventType="primaryActionTriggered" id="LWP-o0-83o"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3q-xN-0Oq">
+                                                <rect key="frame" x="370" y="0.0" width="418" height="86"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="Drain Exhaust Valve"/>
+                                                <connections>
+                                                    <action selector="drainExhaustValve:" destination="h0Z-H6-STg" eventType="primaryActionTriggered" id="1fr-Rc-7ZY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="B8i-fz-OfV">
+                                        <rect key="frame" x="70" y="186" width="648" height="110"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kd8-qj-uRg">
+                                                <rect key="frame" x="299" y="0.0" width="50" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NQh-1j-Xta">
+                                                <rect key="frame" x="0.0" y="41" width="648" height="70"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                                <segments>
+                                                    <segment title="Normal"/>
+                                                    <segment title="Warp"/>
+                                                    <segment title="Ludicrous"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="segmentChanged:" destination="h0Z-H6-STg" eventType="valueChanged" id="zJZ-BI-V2A"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="NQh-1j-Xta" firstAttribute="width" secondItem="B8i-fz-OfV" secondAttribute="width" id="VG0-CU-ozJ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZuT-21-nbC">
+                                        <rect key="frame" x="369" y="396" width="50" height="66"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dog-uC-6Bs" firstAttribute="centerX" secondItem="mvd-7L-I4K" secondAttribute="centerX" id="1iw-Z5-5U8"/>
+                            <constraint firstItem="dog-uC-6Bs" firstAttribute="centerY" secondItem="mvd-7L-I4K" secondAttribute="centerY" id="ONx-Uc-rfP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="917-speedometer" selectedImage="917-speedometer" id="NYi-P9-SrI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31W-ph-DAj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3362" y="-405"/>
+        </scene>
+        <!--Crew-->
+        <scene sceneID="Xd3-6g-mSO">
+            <objects>
+                <tableViewController id="yWR-KT-cBI" customClass="SecondViewController" customModule="HelloAppleTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="y24-7z-u3e">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="jOC-pO-Pdp">
+                                <rect key="frame" x="0.0" y="194" width="1920" height="66"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jOC-pO-Pdp" id="HX5-7f-Afq">
+                                    <rect key="frame" x="0.0" y="0.0" width="1904" height="66"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yWR-KT-cBI" id="VuH-Os-S9a"/>
+                            <outlet property="delegate" destination="yWR-KT-cBI" id="2cm-vb-CZn"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Crew" image="974-users" id="rb0-lu-6Xs"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOs-7R-y3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3412" y="806"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tnd-sK-uxc">
+            <objects>
+                <tabBarController id="gp6-MT-Iep" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Omo-Kf-gWw">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="140"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="h0Z-H6-STg" kind="relationship" relationship="viewControllers" id="QX4-JI-23K"/>
+                        <segue destination="yWR-KT-cBI" kind="relationship" relationship="viewControllers" id="x5H-Qk-tF1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFr-0R-uit" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="167"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="917-speedometer" width="28" height="28"/>
+        <image name="974-users" width="28" height="18"/>
+    </resources>
+</document>
