@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h0Z-H6-STg">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="xOb-fR-gqL">
+            <objects>
+                <viewController id="h0Z-H6-STg" customClass="FirstViewController" customModule="HelloAppleTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aw-Xn-Qyn"/>
+                        <viewControllerLayoutGuide type="bottom" id="S4K-BE-kzJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mvd-7L-I4K">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWc-2z-FFB">
+                                <rect key="frame" x="815" y="497" width="290" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Fire Missiles"/>
+                                <connections>
+                                    <action selector="launchRockets:" destination="h0Z-H6-STg" eventType="primaryActionTriggered" id="LWP-o0-83o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="GWc-2z-FFB" firstAttribute="centerX" secondItem="mvd-7L-I4K" secondAttribute="centerX" id="J6a-nP-AGe"/>
+                            <constraint firstItem="GWc-2z-FFB" firstAttribute="centerY" secondItem="mvd-7L-I4K" secondAttribute="centerY" id="go3-uU-Mrb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="preferredFocusedView" destination="GWc-2z-FFB" id="oRp-ht-nSg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31W-ph-DAj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3362" y="-405"/>
+        </scene>
+    </scenes>
+</document>

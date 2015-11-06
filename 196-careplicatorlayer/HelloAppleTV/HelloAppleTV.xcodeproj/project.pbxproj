@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B56ABD241BE6AD9000001C2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ABD231BE6AD9000001C2C /* AppDelegate.swift */; };
+		B56ABD261BE6AD9000001C2C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ABD251BE6AD9000001C2C /* FirstViewController.swift */; };
+		B56ABD2B1BE6AD9000001C2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56ABD291BE6AD9000001C2C /* Main.storyboard */; };
+		B56ABD2D1BE6AD9000001C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56ABD2C1BE6AD9000001C2C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B56ABD201BE6AD9000001C2C /* HelloAppleTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloAppleTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56ABD231BE6AD9000001C2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B56ABD251BE6AD9000001C2C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		B56ABD2A1BE6AD9000001C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B56ABD2C1BE6AD9000001C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B56ABD2E1BE6AD9000001C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B56ABD1D1BE6AD9000001C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B56ABD171BE6AD9000001C2C = {
+			isa = PBXGroup;
+			children = (
+				B56ABD221BE6AD9000001C2C /* HelloAppleTV */,
+				B56ABD211BE6AD9000001C2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B56ABD211BE6AD9000001C2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B56ABD201BE6AD9000001C2C /* HelloAppleTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B56ABD221BE6AD9000001C2C /* HelloAppleTV */ = {
+			isa = PBXGroup;
+			children = (
+				B56ABD231BE6AD9000001C2C /* AppDelegate.swift */,
+				B56ABD251BE6AD9000001C2C /* FirstViewController.swift */,
+				B56ABD291BE6AD9000001C2C /* Main.storyboard */,
+				B56ABD2C1BE6AD9000001C2C /* Assets.xcassets */,
+				B56ABD2E1BE6AD9000001C2C /* Info.plist */,
+			);
+			path = HelloAppleTV;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B56ABD1F1BE6AD9000001C2C /* HelloAppleTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B56ABD311BE6AD9000001C2C /* Build configuration list for PBXNativeTarget "HelloAppleTV" */;
+			buildPhases = (
+				B56ABD1C1BE6AD9000001C2C /* Sources */,
+				B56ABD1D1BE6AD9000001C2C /* Frameworks */,
+				B56ABD1E1BE6AD9000001C2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloAppleTV;
+			productName = HelloAppleTV;
+			productReference = B56ABD201BE6AD9000001C2C /* HelloAppleTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B56ABD181BE6AD9000001C2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = NSScreencast;
+				TargetAttributes = {
+					B56ABD1F1BE6AD9000001C2C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = B56ABD1B1BE6AD9000001C2C /* Build configuration list for PBXProject "HelloAppleTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B56ABD171BE6AD9000001C2C;
+			productRefGroup = B56ABD211BE6AD9000001C2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B56ABD1F1BE6AD9000001C2C /* HelloAppleTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B56ABD1E1BE6AD9000001C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56ABD2D1BE6AD9000001C2C /* Assets.xcassets in Resources */,
+				B56ABD2B1BE6AD9000001C2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B56ABD1C1BE6AD9000001C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56ABD241BE6AD9000001C2C /* AppDelegate.swift in Sources */,
+				B56ABD261BE6AD9000001C2C /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B56ABD291BE6AD9000001C2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B56ABD2A1BE6AD9000001C2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B56ABD2F1BE6AD9000001C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		B56ABD301BE6AD9000001C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B56ABD321BE6AD9000001C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = HelloAppleTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsscreencast.HelloAppleTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B56ABD331BE6AD9000001C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = HelloAppleTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsscreencast.HelloAppleTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B56ABD1B1BE6AD9000001C2C /* Build configuration list for PBXProject "HelloAppleTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56ABD2F1BE6AD9000001C2C /* Debug */,
+				B56ABD301BE6AD9000001C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B56ABD311BE6AD9000001C2C /* Build configuration list for PBXNativeTarget "HelloAppleTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56ABD321BE6AD9000001C2C /* Debug */,
+				B56ABD331BE6AD9000001C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B56ABD181BE6AD9000001C2C /* Project object */;
+}
