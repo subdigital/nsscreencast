@@ -95,7 +95,7 @@
                                         <rect key="frame" x="0.0" y="194" width="644" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="awq-ip-Adv" id="ccC-qm-drc">
-                                            <rect key="frame" x="0.0" y="0.0" width="644" height="96"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="628" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" red="0.090196078430000007" green="0.68627450980000004" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
@@ -104,7 +104,7 @@
                                         <rect key="frame" x="0.0" y="304" width="644" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="56f-uk-l3u" id="qKj-sS-qom">
-                                            <rect key="frame" x="0.0" y="0.0" width="644" height="96"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="628" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" red="0.97254901959999995" green="0.16414280049999999" blue="0.81608644770000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
@@ -114,7 +114,7 @@
                                         <rect key="frame" x="0.0" y="414" width="644" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bhd-PY-Ovu" id="97Z-jU-4we">
-                                            <rect key="frame" x="0.0" y="0.0" width="644" height="96"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="628" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" red="0.43791661310000002" green="0.97254901959999995" blue="0.58828840309999997" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
@@ -123,7 +123,7 @@
                                         <rect key="frame" x="0.0" y="524" width="644" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NBa-QK-7tz" id="dLS-Kw-3BT">
-                                            <rect key="frame" x="0.0" y="0.0" width="644" height="96"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="628" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" red="0.97254901959999995" green="0.89015648489999999" blue="0.094458698090000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>

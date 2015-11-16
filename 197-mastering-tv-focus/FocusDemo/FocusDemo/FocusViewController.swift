@@ -30,6 +30,8 @@ class FocusViewController: UIViewController {
     }
     
     @IBAction func resetFocus() {
+        setNeedsFocusUpdate()
+        updateFocusIfNeeded()
     }
     
     override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
