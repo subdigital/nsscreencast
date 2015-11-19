@@ -1,0 +1,31 @@
+PODS:
+  - Argo (2.2.0)
+  - FXReachability (1.3.1)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - SSKeychain (1.2.3)
+
+DEPENDENCIES:
+  - Argo
+  - FXReachability
+  - SDWebImage (from `https://github.com/rs/SDWebImage.git`, branch `master`)
+  - SSKeychain
+
+EXTERNAL SOURCES:
+  SDWebImage:
+    :branch: master
+    :git: https://github.com/rs/SDWebImage.git
+
+CHECKOUT OPTIONS:
+  SDWebImage:
+    :commit: 30e9e0b516cca03d9f2abe75a91512d75b846406
+    :git: https://github.com/rs/SDWebImage.git
+
+SPEC CHECKSUMS:
+  Argo: 4f52a32b4cd913c204e5a45f420b3fccad3e3f24
+  FXReachability: 1d9a83617474f2a4e1b53c11a13ec4337428c126
+  SDWebImage: 119e50946eee9ddf15589227ec2b6b37966ecd04
+  SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
+
+COCOAPODS: 0.39.0
