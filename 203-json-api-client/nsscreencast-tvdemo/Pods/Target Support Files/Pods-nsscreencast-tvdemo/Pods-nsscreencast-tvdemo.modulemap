@@ -1,0 +1,6 @@
+framework module Pods_nsscreencast_tvdemo {
+  umbrella header "Pods-nsscreencast-tvdemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

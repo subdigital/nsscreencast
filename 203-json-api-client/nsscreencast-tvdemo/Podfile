@@ -1,0 +1,12 @@
+use_frameworks!
+
+plugin 'cocoapods-expert-difficulty'
+
+target 'nsscreencast-tvdemo' do
+  platform :tvos, '9.0'
+  pod 'Argo'
+  pod 'SSKeychain'
+  pod 'SDWebImage', git: 'https://github.com/rs/SDWebImage.git', branch: 'master'
+  pod 'FXReachability' # , podspec: 'podspecs/FXReachability.podspec.json'
+end
+
