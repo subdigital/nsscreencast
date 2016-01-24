@@ -12,7 +12,7 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
 
     var presenting = false
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 0.6
     }
     
@@ -32,9 +32,9 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
     }
     
     func animatePush(transitionContext: UIViewControllerContextTransitioning) {
+        guard let container = transitionContext.containerView() else { return }
         let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)! as! ViewController
         let toVC = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)! as! DetailViewController
-        let container = transitionContext.containerView()
         
         toVC.view.layoutIfNeeded()
         
@@ -83,9 +83,9 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
     }
     
     func animatePop(transitionContext: UIViewControllerContextTransitioning) {
+        guard let container = transitionContext.containerView() else { return }
         let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)! as! DetailViewController
         let toVC = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)! as! ViewController
-        let container = transitionContext.containerView()
         
         let fromImageView = fromVC.imageView
         let toImageView = getCellImageView(toVC)

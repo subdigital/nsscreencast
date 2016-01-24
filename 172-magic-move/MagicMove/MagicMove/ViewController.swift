@@ -25,7 +25,9 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let indexPath = collectionView?.indexPathsForSelectedItems().first! as! NSIndexPath
+        let selected = collectionView?.indexPathsForSelectedItems()
+        guard let indexPath = selected?.first else { return }
+
         let cell = collectionView!.cellForItemAtIndexPath(indexPath) as! ImageViewCell
         let image = cell.imageView.image
         let detailVC = segue.destinationViewController as! DetailViewController

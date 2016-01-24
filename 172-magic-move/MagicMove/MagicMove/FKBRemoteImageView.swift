@@ -38,23 +38,23 @@ class FKBRemoteImageView : UIImageView {
                             return
                         }
                         
-                        self.fkb_loadImageWithData(data)
+                        self.fkb_loadImageWithData(data!)
                     } else {
-                        println("received an HTTP \(http.statusCode) downloading \(url)")
+                        print("received an HTTP \(http.statusCode) downloading \(url)")
                     }
                 } else {
-                    println("Not an HTTP response")
+                    print("Not an HTTP response")
                 }
             } else {
-                if (error.domain == NSURLErrorDomain && error.code == NSURLErrorCancelled) {
+                if (error!.domain == NSURLErrorDomain && error!.code == NSURLErrorCancelled) {
                     // ignore this, will happen in normal use
                     return
                 }
-                println("Error downloading image: \(url) -- \(error)")
+                print("Error downloading image: \(url) -- \(error)")
             }
         }
         if let placeholderImage = placeholder {
-            image = placeholder
+            image = placeholderImage
         }
         imageTask?.resume()
     }
