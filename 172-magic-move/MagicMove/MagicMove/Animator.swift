@@ -36,6 +36,7 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
         let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)! as! ViewController
         let toVC = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)! as! DetailViewController
         
+        toVC.view.setNeedsLayout()
         toVC.view.layoutIfNeeded()
         
         let fromImageView = getCellImageView(fromVC)
