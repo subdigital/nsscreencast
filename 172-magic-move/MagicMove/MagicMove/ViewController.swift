@@ -12,6 +12,13 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
 
     var lastSelectedIndexPath: NSIndexPath?
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let layout = collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
+        let size = CGRectGetWidth(view.bounds) / 2.0 - 1
+        layout.itemSize = CGSizeMake(size, size)
+    }
+    
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 25
     }
