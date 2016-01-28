@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B55F51481C4FE48100CC142D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F51471C4FE48100CC142D /* UIColor+Extensions.swift */; };
+		B55F514A1C4FF4C100CC142D /* RaceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F51491C4FF4C100CC142D /* RaceHeaderView.swift */; };
+		B56DADAB1C4BEBEB008B5619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56DADAA1C4BEBEB008B5619 /* AppDelegate.swift */; };
+		B56DADAD1C4BEBEB008B5619 /* GuideListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56DADAC1C4BEBEB008B5619 /* GuideListViewController.swift */; };
+		B56DADAF1C4BEBEB008B5619 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56DADAE1C4BEBEB008B5619 /* GuideViewController.swift */; };
+		B56DADB21C4BEBEB008B5619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56DADB01C4BEBEB008B5619 /* Main.storyboard */; };
+		B56DADB41C4BEBEB008B5619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56DADB31C4BEBEB008B5619 /* Assets.xcassets */; };
+		B56DADB71C4BEBEB008B5619 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56DADB51C4BEBEB008B5619 /* LaunchScreen.storyboard */; };
+		B56DADC21C4BEBEB008B5619 /* StarcraftGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56DADC11C4BEBEB008B5619 /* StarcraftGuideUITests.swift */; };
+		B56DADD21C4D532D008B5619 /* GuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56DADD11C4D532D008B5619 /* GuideCell.swift */; };
+		B56DADD41C4D763C008B5619 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56DADD31C4D763C008B5619 /* Theme.swift */; };
+		B5BD650C1C4D952E00A01400 /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD650B1C4D952E00A01400 /* Guide.swift */; };
+		B5BD650E1C4D958800A01400 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD650D1C4D958800A01400 /* Unit.swift */; };
+		B5BD65191C4DA80B00A01400 /* functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD65181C4DA80B00A01400 /* functions.swift */; };
+		B5BD651D1C4DAC2B00A01400 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD651C1C4DAC2B00A01400 /* Race.swift */; };
+		B5CD9F7A1C5584BD00BB1CF1 /* UnitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD9F791C5584BD00BB1CF1 /* UnitCell.swift */; };
+		B5CD9F7C1C5584C700BB1CF1 /* EditGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD9F7B1C5584C700BB1CF1 /* EditGuideViewController.swift */; };
+		B5CD9F7E1C5584E100BB1CF1 /* UnitStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD9F7D1C5584E100BB1CF1 /* UnitStore.swift */; };
+		B5CD9F801C5584EC00BB1CF1 /* SelectUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD9F7F1C5584EC00BB1CF1 /* SelectUnitViewController.swift */; };
+		B5CD9F821C55850600BB1CF1 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD9F811C55850600BB1CF1 /* SectionHeader.swift */; };
+		B5CD9F841C5586CC00BB1CF1 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD9F831C5586CC00BB1CF1 /* TextFieldCell.swift */; };
+		B5CD9F861C55886900BB1CF1 /* SelectRaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD9F851C55886900BB1CF1 /* SelectRaceViewController.swift */; };
+		B5CD9F881C55C35300BB1CF1 /* units.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5CD9F871C55C35300BB1CF1 /* units.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B56DADBE1C4BEBEB008B5619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B56DAD9F1C4BEBEB008B5619 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B56DADA61C4BEBEB008B5619;
+			remoteInfo = StarcraftGuide;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B55F51471C4FE48100CC142D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		B55F51491C4FF4C100CC142D /* RaceHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceHeaderView.swift; sourceTree = "<group>"; };
+		B56DADA71C4BEBEB008B5619 /* StarcraftGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarcraftGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56DADAA1C4BEBEB008B5619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B56DADAC1C4BEBEB008B5619 /* GuideListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideListViewController.swift; sourceTree = "<group>"; };
+		B56DADAE1C4BEBEB008B5619 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		B56DADB11C4BEBEB008B5619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B56DADB31C4BEBEB008B5619 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B56DADB61C4BEBEB008B5619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B56DADB81C4BEBEB008B5619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B56DADBD1C4BEBEB008B5619 /* StarcraftGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarcraftGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56DADC11C4BEBEB008B5619 /* StarcraftGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarcraftGuideUITests.swift; sourceTree = "<group>"; };
+		B56DADC31C4BEBEB008B5619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B56DADD11C4D532D008B5619 /* GuideCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCell.swift; sourceTree = "<group>"; };
+		B56DADD31C4D763C008B5619 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B5BD650B1C4D952E00A01400 /* Guide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
+		B5BD650D1C4D958800A01400 /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		B5BD65181C4DA80B00A01400 /* functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
+		B5BD651C1C4DAC2B00A01400 /* Race.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		B5CD9F791C5584BD00BB1CF1 /* UnitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitCell.swift; sourceTree = "<group>"; };
+		B5CD9F7B1C5584C700BB1CF1 /* EditGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditGuideViewController.swift; sourceTree = "<group>"; };
+		B5CD9F7D1C5584E100BB1CF1 /* UnitStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitStore.swift; sourceTree = "<group>"; };
+		B5CD9F7F1C5584EC00BB1CF1 /* SelectUnitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUnitViewController.swift; sourceTree = "<group>"; };
+		B5CD9F811C55850600BB1CF1 /* SectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		B5CD9F831C5586CC00BB1CF1 /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		B5CD9F851C55886900BB1CF1 /* SelectRaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectRaceViewController.swift; sourceTree = "<group>"; };
+		B5CD9F871C55C35300BB1CF1 /* units.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = units.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B56DADA41C4BEBEB008B5619 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56DADBA1C4BEBEB008B5619 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B56DAD9E1C4BEBEB008B5619 = {
+			isa = PBXGroup;
+			children = (
+				B56DADA91C4BEBEB008B5619 /* StarcraftGuide */,
+				B56DADC01C4BEBEB008B5619 /* StarcraftGuideUITests */,
+				B56DADA81C4BEBEB008B5619 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B56DADA81C4BEBEB008B5619 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B56DADA71C4BEBEB008B5619 /* StarcraftGuide.app */,
+				B56DADBD1C4BEBEB008B5619 /* StarcraftGuideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B56DADA91C4BEBEB008B5619 /* StarcraftGuide */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD650A1C4D952700A01400 /* Models */,
+				B56DADD51C4D9196008B5619 /* View Controllers */,
+				B56DADD01C4D531A008B5619 /* UI */,
+				B56DADAA1C4BEBEB008B5619 /* AppDelegate.swift */,
+				B56DADB01C4BEBEB008B5619 /* Main.storyboard */,
+				B56DADB31C4BEBEB008B5619 /* Assets.xcassets */,
+				B56DADB51C4BEBEB008B5619 /* LaunchScreen.storyboard */,
+				B56DADB81C4BEBEB008B5619 /* Info.plist */,
+				B5CD9F871C55C35300BB1CF1 /* units.plist */,
+				B56DADD31C4D763C008B5619 /* Theme.swift */,
+				B5BD65181C4DA80B00A01400 /* functions.swift */,
+				B55F51471C4FE48100CC142D /* UIColor+Extensions.swift */,
+			);
+			path = StarcraftGuide;
+			sourceTree = "<group>";
+		};
+		B56DADC01C4BEBEB008B5619 /* StarcraftGuideUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B56DADC11C4BEBEB008B5619 /* StarcraftGuideUITests.swift */,
+				B56DADC31C4BEBEB008B5619 /* Info.plist */,
+			);
+			path = StarcraftGuideUITests;
+			sourceTree = "<group>";
+		};
+		B56DADD01C4D531A008B5619 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B5CD9F831C5586CC00BB1CF1 /* TextFieldCell.swift */,
+				B56DADD11C4D532D008B5619 /* GuideCell.swift */,
+				B5CD9F791C5584BD00BB1CF1 /* UnitCell.swift */,
+				B5CD9F811C55850600BB1CF1 /* SectionHeader.swift */,
+				B55F51491C4FF4C100CC142D /* RaceHeaderView.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		B56DADD51C4D9196008B5619 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B56DADAC1C4BEBEB008B5619 /* GuideListViewController.swift */,
+				B56DADAE1C4BEBEB008B5619 /* GuideViewController.swift */,
+				B5CD9F7B1C5584C700BB1CF1 /* EditGuideViewController.swift */,
+				B5CD9F7F1C5584EC00BB1CF1 /* SelectUnitViewController.swift */,
+				B5CD9F851C55886900BB1CF1 /* SelectRaceViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B5BD650A1C4D952700A01400 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5CD9F7D1C5584E100BB1CF1 /* UnitStore.swift */,
+				B5BD650B1C4D952E00A01400 /* Guide.swift */,
+				B5BD650D1C4D958800A01400 /* Unit.swift */,
+				B5BD651C1C4DAC2B00A01400 /* Race.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B56DADA61C4BEBEB008B5619 /* StarcraftGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B56DADC61C4BEBEB008B5619 /* Build configuration list for PBXNativeTarget "StarcraftGuide" */;
+			buildPhases = (
+				B56DADA31C4BEBEB008B5619 /* Sources */,
+				B56DADA41C4BEBEB008B5619 /* Frameworks */,
+				B56DADA51C4BEBEB008B5619 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarcraftGuide;
+			productName = StarcraftGuide;
+			productReference = B56DADA71C4BEBEB008B5619 /* StarcraftGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B56DADBC1C4BEBEB008B5619 /* StarcraftGuideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B56DADC91C4BEBEB008B5619 /* Build configuration list for PBXNativeTarget "StarcraftGuideUITests" */;
+			buildPhases = (
+				B56DADB91C4BEBEB008B5619 /* Sources */,
+				B56DADBA1C4BEBEB008B5619 /* Frameworks */,
+				B56DADBB1C4BEBEB008B5619 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B56DADBF1C4BEBEB008B5619 /* PBXTargetDependency */,
+			);
+			name = StarcraftGuideUITests;
+			productName = StarcraftGuideUITests;
+			productReference = B56DADBD1C4BEBEB008B5619 /* StarcraftGuideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B56DAD9F1C4BEBEB008B5619 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = NSScreencast;
+				TargetAttributes = {
+					B56DADA61C4BEBEB008B5619 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B56DADBC1C4BEBEB008B5619 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B56DADA61C4BEBEB008B5619;
+					};
+				};
+			};
+			buildConfigurationList = B56DADA21C4BEBEB008B5619 /* Build configuration list for PBXProject "StarcraftGuide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B56DAD9E1C4BEBEB008B5619;
+			productRefGroup = B56DADA81C4BEBEB008B5619 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B56DADA61C4BEBEB008B5619 /* StarcraftGuide */,
+				B56DADBC1C4BEBEB008B5619 /* StarcraftGuideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B56DADA51C4BEBEB008B5619 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5CD9F881C55C35300BB1CF1 /* units.plist in Resources */,
+				B56DADB71C4BEBEB008B5619 /* LaunchScreen.storyboard in Resources */,
+				B56DADB41C4BEBEB008B5619 /* Assets.xcassets in Resources */,
+				B56DADB21C4BEBEB008B5619 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56DADBB1C4BEBEB008B5619 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B56DADA31C4BEBEB008B5619 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56DADAF1C4BEBEB008B5619 /* GuideViewController.swift in Sources */,
+				B5CD9F7A1C5584BD00BB1CF1 /* UnitCell.swift in Sources */,
+				B5BD651D1C4DAC2B00A01400 /* Race.swift in Sources */,
+				B5CD9F7C1C5584C700BB1CF1 /* EditGuideViewController.swift in Sources */,
+				B56DADAD1C4BEBEB008B5619 /* GuideListViewController.swift in Sources */,
+				B55F51481C4FE48100CC142D /* UIColor+Extensions.swift in Sources */,
+				B5BD650E1C4D958800A01400 /* Unit.swift in Sources */,
+				B5CD9F801C5584EC00BB1CF1 /* SelectUnitViewController.swift in Sources */,
+				B56DADD41C4D763C008B5619 /* Theme.swift in Sources */,
+				B55F514A1C4FF4C100CC142D /* RaceHeaderView.swift in Sources */,
+				B5BD65191C4DA80B00A01400 /* functions.swift in Sources */,
+				B5BD650C1C4D952E00A01400 /* Guide.swift in Sources */,
+				B5CD9F841C5586CC00BB1CF1 /* TextFieldCell.swift in Sources */,
+				B5CD9F821C55850600BB1CF1 /* SectionHeader.swift in Sources */,
+				B56DADD21C4D532D008B5619 /* GuideCell.swift in Sources */,
+				B5CD9F861C55886900BB1CF1 /* SelectRaceViewController.swift in Sources */,
+				B56DADAB1C4BEBEB008B5619 /* AppDelegate.swift in Sources */,
+				B5CD9F7E1C5584E100BB1CF1 /* UnitStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56DADB91C4BEBEB008B5619 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56DADC21C4BEBEB008B5619 /* StarcraftGuideUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B56DADBF1C4BEBEB008B5619 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B56DADA61C4BEBEB008B5619 /* StarcraftGuide */;
+			targetProxy = B56DADBE1C4BEBEB008B5619 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B56DADB01C4BEBEB008B5619 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B56DADB11C4BEBEB008B5619 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B56DADB51C4BEBEB008B5619 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B56DADB61C4BEBEB008B5619 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B56DADC41C4BEBEB008B5619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B56DADC51C4BEBEB008B5619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B56DADC71C4BEBEB008B5619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StarcraftGuide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsscreencast.StarcraftGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B56DADC81C4BEBEB008B5619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StarcraftGuide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsscreencast.StarcraftGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B56DADCA1C4BEBEB008B5619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StarcraftGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsscreencast.StarcraftGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StarcraftGuide;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B56DADCB1C4BEBEB008B5619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StarcraftGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsscreencast.StarcraftGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StarcraftGuide;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B56DADA21C4BEBEB008B5619 /* Build configuration list for PBXProject "StarcraftGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56DADC41C4BEBEB008B5619 /* Debug */,
+				B56DADC51C4BEBEB008B5619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B56DADC61C4BEBEB008B5619 /* Build configuration list for PBXNativeTarget "StarcraftGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56DADC71C4BEBEB008B5619 /* Debug */,
+				B56DADC81C4BEBEB008B5619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B56DADC91C4BEBEB008B5619 /* Build configuration list for PBXNativeTarget "StarcraftGuideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56DADCA1C4BEBEB008B5619 /* Debug */,
+				B56DADCB1C4BEBEB008B5619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B56DAD9F1C4BEBEB008B5619 /* Project object */;
+}
