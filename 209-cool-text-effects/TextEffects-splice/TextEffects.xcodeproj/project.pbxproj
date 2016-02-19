@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5F8D22C1C7229DF004C4718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8D22B1C7229DF004C4718 /* AppDelegate.swift */; };
+		B5F8D22E1C7229DF004C4718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8D22D1C7229DF004C4718 /* ViewController.swift */; };
+		B5F8D2311C7229DF004C4718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F8D22F1C7229DF004C4718 /* Main.storyboard */; };
+		B5F8D2331C7229DF004C4718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F8D2321C7229DF004C4718 /* Assets.xcassets */; };
+		B5F8D2361C7229DF004C4718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F8D2341C7229DF004C4718 /* LaunchScreen.storyboard */; };
+		B5F8D23E1C722A31004C4718 /* TextEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8D23D1C722A31004C4718 /* TextEffectView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5F8D2281C7229DF004C4718 /* TextEffects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextEffects.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F8D22B1C7229DF004C4718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5F8D22D1C7229DF004C4718 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5F8D2301C7229DF004C4718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5F8D2321C7229DF004C4718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5F8D2351C7229DF004C4718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5F8D2371C7229DF004C4718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F8D23D1C722A31004C4718 /* TextEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextEffectView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5F8D2251C7229DF004C4718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5F8D21F1C7229DF004C4718 = {
+			isa = PBXGroup;
+			children = (
+				B5F8D22A1C7229DF004C4718 /* TextEffects */,
+				B5F8D2291C7229DF004C4718 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5F8D2291C7229DF004C4718 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5F8D2281C7229DF004C4718 /* TextEffects.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5F8D22A1C7229DF004C4718 /* TextEffects */ = {
+			isa = PBXGroup;
+			children = (
+				B5F8D22B1C7229DF004C4718 /* AppDelegate.swift */,
+				B5F8D22D1C7229DF004C4718 /* ViewController.swift */,
+				B5F8D22F1C7229DF004C4718 /* Main.storyboard */,
+				B5F8D2321C7229DF004C4718 /* Assets.xcassets */,
+				B5F8D2341C7229DF004C4718 /* LaunchScreen.storyboard */,
+				B5F8D2371C7229DF004C4718 /* Info.plist */,
+				B5F8D23D1C722A31004C4718 /* TextEffectView.swift */,
+			);
+			path = TextEffects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5F8D2271C7229DF004C4718 /* TextEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5F8D23A1C7229DF004C4718 /* Build configuration list for PBXNativeTarget "TextEffects" */;
+			buildPhases = (
+				B5F8D2241C7229DF004C4718 /* Sources */,
+				B5F8D2251C7229DF004C4718 /* Frameworks */,
+				B5F8D2261C7229DF004C4718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextEffects;
+			productName = TextEffects;
+			productReference = B5F8D2281C7229DF004C4718 /* TextEffects.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5F8D2201C7229DF004C4718 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = NSScreencast;
+				TargetAttributes = {
+					B5F8D2271C7229DF004C4718 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = B5F8D2231C7229DF004C4718 /* Build configuration list for PBXProject "TextEffects" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5F8D21F1C7229DF004C4718;
+			productRefGroup = B5F8D2291C7229DF004C4718 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5F8D2271C7229DF004C4718 /* TextEffects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5F8D2261C7229DF004C4718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F8D2361C7229DF004C4718 /* LaunchScreen.storyboard in Resources */,
+				B5F8D2331C7229DF004C4718 /* Assets.xcassets in Resources */,
+				B5F8D2311C7229DF004C4718 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5F8D2241C7229DF004C4718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F8D22E1C7229DF004C4718 /* ViewController.swift in Sources */,
+				B5F8D23E1C722A31004C4718 /* TextEffectView.swift in Sources */,
+				B5F8D22C1C7229DF004C4718 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5F8D22F1C7229DF004C4718 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5F8D2301C7229DF004C4718 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5F8D2341C7229DF004C4718 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5F8D2351C7229DF004C4718 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5F8D2381C7229DF004C4718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5F8D2391C7229DF004C4718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5F8D23B1C7229DF004C4718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextEffects/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsscreencast.TextEffects;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B5F8D23C1C7229DF004C4718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextEffects/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsscreencast.TextEffects;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5F8D2231C7229DF004C4718 /* Build configuration list for PBXProject "TextEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F8D2381C7229DF004C4718 /* Debug */,
+				B5F8D2391C7229DF004C4718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5F8D23A1C7229DF004C4718 /* Build configuration list for PBXNativeTarget "TextEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F8D23B1C7229DF004C4718 /* Debug */,
+				B5F8D23C1C7229DF004C4718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5F8D2201C7229DF004C4718 /* Project object */;
+}
