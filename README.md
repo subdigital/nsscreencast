@@ -4,11 +4,7 @@ Here you'll find the sample code used in [NSScreencast](http://nsscreencast.com)
 
 ## Requirements
 
-Most of the samples will require the most recent version of Xcode.
-
-* OS X
-* Xcode 5.0.1
-* [CocoaPods](http://cocoapods.org)
+The episode sample projects are typically built with the most recent release of Xcode at the time.
 
 ## Dependencies
 
