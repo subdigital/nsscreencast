@@ -15,3 +15,5 @@ project.xcworkspace
 .idea
 pkg
 build.output
+.vagrant
+
