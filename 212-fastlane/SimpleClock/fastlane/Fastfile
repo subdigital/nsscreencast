@@ -35,9 +35,9 @@ platform :ios do
   desc "Download/create certificates and profiles"
   lane :provisioning do
     cert(development: true, output_path: "provisioning")
-    cert(output_path: "provisioning")
-
     sigh(development: true, output_path: "provisioning")
+    
+    cert(output_path: "provisioning")
     sigh(adhoc: true, output_path: "provisioning")
     sigh(output_path: "provisioning")
   end
