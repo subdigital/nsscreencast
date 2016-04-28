@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="Episode" representedClassName="EpisodeModel" syncable="YES">
+        <attribute name="dominantColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="episodeDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="episodeNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="episodeTypeValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasHLS" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasWatched" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hlsURLValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="largeArtworkURLValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mediumArtworkURLValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publishedAtTimeInterval" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="serverId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="thumbnailURLValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoURLValue" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Episode" positionX="-63" positionY="-18" width="128" height="285"/>
+    </elements>
+</model>
