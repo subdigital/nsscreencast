@@ -17,3 +17,4 @@ pkg
 build.output
 .vagrant
 
+*.xcscmblueprint
