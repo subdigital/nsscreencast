@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="fr3-6t-Kre">
+            <objects>
+                <viewController id="hoP-nr-18R" customClass="LoginViewController" customModule="EasyAuthClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BfP-et-wJG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ofb-Qk-h8K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bmc-km-hwC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12875" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iU-Xk-yd2">
+                                <rect key="frame" x="844" y="489" width="233" height="102"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="eSV-N6-PV2">
+                                <rect key="frame" x="928" y="508" width="64" height="64"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please visit URL and type in this code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4u-vR-yMC">
+                                <rect key="frame" x="610" y="375" width="701" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="eSV-N6-PV2" firstAttribute="centerX" secondItem="Bmc-km-hwC" secondAttribute="centerX" id="36E-Yh-ksl"/>
+                            <constraint firstItem="eSV-N6-PV2" firstAttribute="centerY" secondItem="Bmc-km-hwC" secondAttribute="centerY" id="5eE-km-VVA"/>
+                            <constraint firstItem="g4u-vR-yMC" firstAttribute="centerX" secondItem="Bmc-km-hwC" secondAttribute="centerX" id="EeA-bv-RzE"/>
+                            <constraint firstItem="3iU-Xk-yd2" firstAttribute="centerX" secondItem="Bmc-km-hwC" secondAttribute="centerX" id="KwM-jR-PDU"/>
+                            <constraint firstItem="3iU-Xk-yd2" firstAttribute="centerY" secondItem="Bmc-km-hwC" secondAttribute="centerY" id="QlC-08-TjT"/>
+                            <constraint firstItem="3iU-Xk-yd2" firstAttribute="top" secondItem="g4u-vR-yMC" secondAttribute="bottom" constant="63" id="gJz-8e-qnm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="eSV-N6-PV2" id="hxU-D8-KID"/>
+                        <outlet property="authCodeLabel" destination="3iU-Xk-yd2" id="2qw-U0-4N8"/>
+                        <outlet property="directionLabel" destination="g4u-vR-yMC" id="sH6-HO-MRt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HF4-D2-W8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1969" y="-877"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EasyAuthClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O67-2S-daf">
+                                <rect key="frame" x="868" y="497" width="184" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Log In"/>
+                                <connections>
+                                    <segue destination="hoP-nr-18R" kind="presentation" id="27e-s6-ztS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are not logged in." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03l-yE-9Hb">
+                                <rect key="frame" x="655" y="379" width="610" height="78"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O67-2S-daf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Ad-hM-0xh"/>
+                            <constraint firstItem="03l-yE-9Hb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" priority="750" id="8jP-VU-ZyE"/>
+                            <constraint firstItem="O67-2S-daf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a1r-Mq-8QP"/>
+                            <constraint firstItem="03l-yE-9Hb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="djk-IH-gZj"/>
+                            <constraint firstItem="O67-2S-daf" firstAttribute="top" secondItem="03l-yE-9Hb" secondAttribute="bottom" constant="40" id="xRl-p9-EjT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="O67-2S-daf" id="AWk-Za-dSn"/>
+                        <outlet property="label" destination="03l-yE-9Hb" id="wgS-2D-WCR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+    </scenes>
+</document>
