@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ActivityPlusTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ghg-7F-IeH">
+                                <rect key="frame" x="128" y="325" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="Yuf-Ga-ygV"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="c48-F6-vPc"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSe-fP-4SS" customClass="ActivityRingView" customModule="ActivityPlusTwo" customModuleProvider="target">
+                                <rect key="frame" x="104" y="28" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="8au-aE-qsW"/>
+                                    <constraint firstAttribute="height" constant="80" id="diF-62-X2k"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFB-TV-qBu" customClass="ExerciseRingView" customModule="ActivityPlusTwo" customModuleProvider="target">
+                                <rect key="frame" x="192" y="28" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="72Q-ZV-mDL"/>
+                                    <constraint firstAttribute="height" constant="80" id="iLq-Pp-9xh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgn-6b-qe8" customClass="StandingRingView" customModule="ActivityPlusTwo" customModuleProvider="target">
+                                <rect key="frame" x="280" y="28" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="MLV-Ro-CZE"/>
+                                    <constraint firstAttribute="width" constant="80" id="eWY-9r-HvJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uud-rX-P6X" customClass="RingView" customModule="ActivityPlusTwo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="28" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.14509803921568629" green="0.14509803921568629" blue="0.14509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="94s-Q1-QCR"/>
+                                    <constraint firstAttribute="height" constant="80" id="YHU-sj-NK6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFz-fn-Dbj" customClass="SummaryRingView" customModule="ActivityPlusTwo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="28" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="XXC-0D-vQp"/>
+                                    <constraint firstAttribute="height" constant="80" id="haH-dw-an4"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWW-4E-dd3">
+                                <rect key="frame" x="130" y="363" width="114" height="30"/>
+                                <color key="backgroundColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QBI-wb-K3a"/>
+                                    <constraint firstAttribute="width" constant="114" id="SEx-2p-DKp"/>
+                                </constraints>
+                                <state key="normal" title="Randomize"/>
+                                <connections>
+                                    <action selector="randomizeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O9w-g4-WIF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CWW-4E-dd3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1cr-bg-6oo"/>
+                            <constraint firstItem="gSe-fP-4SS" firstAttribute="top" secondItem="KFz-fn-Dbj" secondAttribute="top" id="1u7-Dx-om1"/>
+                            <constraint firstItem="YFB-TV-qBu" firstAttribute="top" secondItem="KFz-fn-Dbj" secondAttribute="top" id="2gQ-Za-pYG"/>
+                            <constraint firstItem="YFB-TV-qBu" firstAttribute="height" secondItem="KFz-fn-Dbj" secondAttribute="height" id="ATP-5g-8aK"/>
+                            <constraint firstItem="KFz-fn-Dbj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="BuL-4t-c2F"/>
+                            <constraint firstItem="gSe-fP-4SS" firstAttribute="leading" secondItem="KFz-fn-Dbj" secondAttribute="trailing" constant="8" id="CYx-vv-0qz"/>
+                            <constraint firstItem="YFB-TV-qBu" firstAttribute="width" secondItem="KFz-fn-Dbj" secondAttribute="width" id="FEB-r5-VcO"/>
+                            <constraint firstItem="Uud-rX-P6X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="I8N-rJ-74B"/>
+                            <constraint firstItem="Uud-rX-P6X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IKV-Fo-PEY"/>
+                            <constraint firstItem="CWW-4E-dd3" firstAttribute="top" secondItem="Ghg-7F-IeH" secondAttribute="bottom" constant="8" id="RcB-El-jM6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ghg-7F-IeH" secondAttribute="bottom" constant="312" id="WN8-3T-AFZ"/>
+                            <constraint firstItem="gSe-fP-4SS" firstAttribute="width" secondItem="KFz-fn-Dbj" secondAttribute="width" id="ce6-SM-BoX"/>
+                            <constraint firstItem="lgn-6b-qe8" firstAttribute="leading" secondItem="YFB-TV-qBu" secondAttribute="trailing" constant="8" id="dWi-ss-v9V"/>
+                            <constraint firstItem="YFB-TV-qBu" firstAttribute="leading" secondItem="gSe-fP-4SS" secondAttribute="trailing" constant="8" id="lrk-uT-Oel"/>
+                            <constraint firstItem="lgn-6b-qe8" firstAttribute="width" secondItem="KFz-fn-Dbj" secondAttribute="width" id="mgv-lP-BUe"/>
+                            <constraint firstItem="lgn-6b-qe8" firstAttribute="top" secondItem="KFz-fn-Dbj" secondAttribute="top" id="nKX-LQ-f6A"/>
+                            <constraint firstItem="gSe-fP-4SS" firstAttribute="height" secondItem="KFz-fn-Dbj" secondAttribute="height" id="vrf-39-0s6"/>
+                            <constraint firstItem="Ghg-7F-IeH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vyD-F2-HHK"/>
+                            <constraint firstItem="KFz-fn-Dbj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wRX-Zk-WwX"/>
+                            <constraint firstItem="lgn-6b-qe8" firstAttribute="height" secondItem="KFz-fn-Dbj" secondAttribute="height" id="zAD-lh-Djc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Uud-rX-P6X"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="activityRingView" destination="gSe-fP-4SS" id="E7n-h4-UzD"/>
+                        <outlet property="exerciseRingView" destination="YFB-TV-qBu" id="GJs-kb-BgF"/>
+                        <outlet property="ringView" destination="KFz-fn-Dbj" id="Ue7-ml-WAp"/>
+                        <outlet property="standRingView" destination="lgn-6b-qe8" id="IZ9-NM-Kyk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386.5" y="317.5"/>
+        </scene>
+    </scenes>
+</document>
