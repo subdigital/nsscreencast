@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pfC-0x-Iqn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Activity+++-->
+        <scene sceneID="Dhw-Zy-Jm5">
+            <objects>
+                <collectionViewController id="ocX-O9-oaJ" customClass="ActivityCollectionViewController" customModule="ActivityPlusTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="unH-65-Kvd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s9W-5e-cqw">
+                            <size key="itemSize" width="375" height="86"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActivityCell" id="lXn-OM-puD" customClass="ActivityCell" customModule="ActivityPlusTwo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="74" width="375" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IhW-h0-HiA">
+                                            <rect key="frame" x="12" y="0.0" width="351" height="86"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SN6-yF-1vq" customClass="SummaryRingView" customModule="ActivityPlusTwo" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="3" width="80" height="80"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="AC5-92-e3X"/>
+                                                        <constraint firstAttribute="width" constant="80" id="SaC-9y-fdy"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1r-Oo-0Xt" customClass="ActivityRingView" customModule="ActivityPlusTwo" customModuleProvider="target">
+                                                    <rect key="frame" x="90" y="3" width="80" height="80"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="8MI-PV-qm2"/>
+                                                        <constraint firstAttribute="width" constant="80" id="gQx-yY-6bu"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJN-4c-IBk" customClass="ExerciseRingView" customModule="ActivityPlusTwo" customModuleProvider="target">
+                                                    <rect key="frame" x="180" y="3" width="80" height="80"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="6cw-9V-W9P"/>
+                                                        <constraint firstAttribute="width" constant="80" id="tED-r4-J7F"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEJ-H7-Zgi" customClass="StandingRingView" customModule="ActivityPlusTwo" customModuleProvider="target">
+                                                    <rect key="frame" x="271" y="3" width="80" height="80"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="NtK-hQ-YwX"/>
+                                                        <constraint firstAttribute="width" constant="80" id="nVV-WS-JeU"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="IhW-h0-HiA" secondAttribute="trailing" constant="12" id="4en-v5-Z57"/>
+                                    <constraint firstItem="IhW-h0-HiA" firstAttribute="leading" secondItem="lXn-OM-puD" secondAttribute="leading" constant="12" id="FRH-ax-bKO"/>
+                                    <constraint firstAttribute="bottom" secondItem="IhW-h0-HiA" secondAttribute="bottom" id="qC0-ns-BMC"/>
+                                    <constraint firstItem="IhW-h0-HiA" firstAttribute="top" secondItem="lXn-OM-puD" secondAttribute="top" id="tws-5g-oqI"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="activityRing" destination="E1r-Oo-0Xt" id="4At-Zl-2bN"/>
+                                    <outlet property="exerciseRing" destination="aJN-4c-IBk" id="TB0-P0-Fkf"/>
+                                    <outlet property="standingRing" destination="PEJ-H7-Zgi" id="KQs-jX-gaS"/>
+                                    <outlet property="summaryRing" destination="SN6-yF-1vq" id="7ef-ym-ysb"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ocX-O9-oaJ" id="4eA-5A-qTg"/>
+                            <outlet property="delegate" destination="ocX-O9-oaJ" id="Xnc-Li-Ohr"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Activity+++" id="Kfn-6X-LIW"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QXl-ta-xVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1212.5" y="268.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ScS-0l-g6d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pfC-0x-Iqn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="RYX-lk-FEl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ocX-O9-oaJ" kind="relationship" relationship="rootViewController" id="aHg-8e-zxD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yq0-Hh-DtD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="269"/>
+        </scene>
+    </scenes>
+</document>
