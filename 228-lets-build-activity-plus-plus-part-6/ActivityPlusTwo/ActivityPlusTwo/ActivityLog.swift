@@ -57,15 +57,15 @@ extension ActivityLog {
 }
 
 extension ActivityLog {
-    static func randomSampleWithDate(date: NSDate, moveCompleted: Bool = false, exerciseCompleted: Bool = false, standCompleted: Bool = false) -> ActivityLog {
+    static func randomSampleWithDate(date: NSDate) -> ActivityLog {
         
-        let caloriesBurned = moveCompleted ? 500 : Int(arc4random() % 800)
+        let caloriesBurned = Int(arc4random() % 800)
         let calorieGoal = 500
         
-        let exerciseMin = exerciseCompleted ? 30 : Int(arc4random() % 45)
+        let exerciseMin = Int(arc4random() % 45)
         let exerciseGoal = 30
         
-        let standHours = standCompleted ? 12 : Int(arc4random() % 16)
+        let standHours = Int(arc4random() % 16)
         let standGoal = 12
         
         return ActivityLog(date: date,

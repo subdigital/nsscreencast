@@ -59,23 +59,36 @@ class ActivityCollectionViewController: UICollectionViewController, RequiresHeal
     }
     
     func checkHealthAccess(completion: (Bool, NSError?) -> Void) {
-        guard let healthStore = self.healthStore else {
-            completion(false, nil)
-            return
-        }
         
-        let status = healthStore.authorizationStatusForType(HKObjectType.activitySummaryType())
-        switch status {
-        case .SharingAuthorized: completion(true, nil)
-        case .NotDetermined: fallthrough
-        case .SharingDenied:
-            healthStore.requestAuthorizationToShareTypes(nil, readTypes: [HKObjectType.activitySummaryType()],
-                                                         completion: completion)
-    
-        }
+        #if arch(i386) || arch(x86_64)
+            completion(true, nil)
+        #else
+            guard let healthStore = self.healthStore else {
+                completion(false, nil)
+                return
+            }
+            
+            let status = healthStore.authorizationStatusForType(HKObjectType.activitySummaryType())
+            switch status {
+            case .SharingAuthorized: completion(true, nil)
+            case .NotDetermined: fallthrough
+            case .SharingDenied:
+                healthStore.requestAuthorizationToShareTypes(nil, readTypes: [HKObjectType.activitySummaryType()],
+                                                             completion: completion)
+                
+            }
+        #endif
     }
     
     func loadHealthSamples() {
+        #if arch(i386) || arch(x86_64)
+            _loadFakeHealthSamples()
+        #else
+            _loadHealthSamplesFromHealthKit()
+        #endif
+    }
+    
+    func _loadHealthSamplesFromHealthKit() {
         activityIndicator.startAnimating()
         
         let calendar = NSCalendar.currentCalendar()
@@ -113,6 +126,14 @@ class ActivityCollectionViewController: UICollectionViewController, RequiresHeal
         }
         
         healthStore?.executeQuery(query)
+    }
+    
+    func _loadFakeHealthSamples() {
+       
+        let activities = FakeHealthData.randomSampleWithStreaks(calendar: calendar, startingWithDate: today!)
+               
+        self.dataSource = ActivityDataSource(calendar: calendar, activities: activities)
+        self.collectionView?.reloadData()
     }
 
     // MARK: UICollectionViewDataSource

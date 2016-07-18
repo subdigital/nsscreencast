@@ -12,16 +12,22 @@ import UIKit
 
 struct ActivityDataSource {
     private let calendar: NSCalendar
-    private let summaries: [HKActivitySummary]
+    var activities: [ActivityLog]!
     
     init(calendar: NSCalendar, summaries: [HKActivitySummary]) {
         self.calendar = calendar
-        self.summaries = summaries
+        self.activities = _convert(summaries)
     }
     
-    lazy var activities: [ActivityLog] = {
-        return self.summaries.map { summary in
+    init(calendar: NSCalendar, activities: [ActivityLog]) {
+        self.calendar = calendar
+        self.activities = activities
+    }
+    
+    private func _convert(summaries: [HKActivitySummary]) -> [ActivityLog] {
+        return summaries.map { summary in
             return ActivityLog.fromHealthKitSummary(summary, calendar: self.calendar)
-        }.sort { (x, y) in return x.date.compare(y.date) == NSComparisonResult.OrderedDescending }
-    }()
+            }.sort { (x, y) in return x.date.compare(y.date) == NSComparisonResult.OrderedDescending }
+
+    }
 }
