@@ -18,7 +18,8 @@ enum MetricType {
 
 struct Streak {
     let metric: MetricType
-    var numberOfDays: Int
+    let startingDate: NSDate
+    let numberOfDays: Int
 }
 
 struct ActivityDataSource {
@@ -60,7 +61,9 @@ struct ActivityDataSource {
                     potentialStreaks[metric] = numberOfDays
                 } else {
                     if let numberOfDays = potentialStreaks[metric] where numberOfDays > 1 {
-                        streaks.append(Streak(metric: metric, numberOfDays: numberOfDays))
+                        streaks.append(Streak(metric: metric,
+                            startingDate: activity.date,
+                            numberOfDays: numberOfDays))
                     }
                     potentialStreaks[metric] = nil
                 }
