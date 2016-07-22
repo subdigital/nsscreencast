@@ -1,0 +1,6 @@
+framework module Pods_ActivityPlusTwoTests {
+  umbrella header "Pods-ActivityPlusTwoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
