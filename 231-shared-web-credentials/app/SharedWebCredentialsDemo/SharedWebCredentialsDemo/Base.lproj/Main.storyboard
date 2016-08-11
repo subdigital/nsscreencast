@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SharedWebCredentialsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I9h-PF-lLN">
+                                <rect key="frame" x="218" y="120" width="163" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RBx-Lu-rUA"/>
+                                    <constraint firstAttribute="width" constant="163" id="rjh-jw-UDy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8D-ZO-C0R">
+                                <rect key="frame" x="218.5" y="175" width="163" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIU-gU-CiG">
+                                <rect key="frame" x="20" y="28" width="154" height="30"/>
+                                <state key="normal" title="Open website in Safari"/>
+                                <connections>
+                                    <action selector="openWebsiteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vPF-GE-xHA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L8D-ZO-C0R" firstAttribute="top" secondItem="I9h-PF-lLN" secondAttribute="bottom" constant="25" id="4lj-KR-Wlk"/>
+                            <constraint firstItem="L8D-ZO-C0R" firstAttribute="leading" secondItem="I9h-PF-lLN" secondAttribute="leading" id="FWc-6q-T38"/>
+                            <constraint firstItem="I9h-PF-lLN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="MPz-Gx-GuX"/>
+                            <constraint firstItem="L8D-ZO-C0R" firstAttribute="height" secondItem="I9h-PF-lLN" secondAttribute="height" id="eld-Rx-aDk"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sIU-gU-CiG" secondAttribute="leading" id="f1v-uQ-jEK"/>
+                            <constraint firstItem="L8D-ZO-C0R" firstAttribute="width" secondItem="I9h-PF-lLN" secondAttribute="width" id="jpJ-Fz-CHF"/>
+                            <constraint firstItem="sIU-gU-CiG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="wJN-Wg-eHF"/>
+                            <constraint firstItem="I9h-PF-lLN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yw0-fZ-6Ed"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="I9h-PF-lLN" id="Zlo-dM-LUz"/>
+                        <outlet property="passwordTextField" destination="L8D-ZO-C0R" id="ChN-2T-Btq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
