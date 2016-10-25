@@ -1,0 +1,6 @@
+framework module RateLimit {
+  umbrella header "RateLimit-umbrella.h"
+
+  export *
+  module * { export * }
+}

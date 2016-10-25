@@ -1,0 +1,6 @@
+
+target 'FileDownloads' do
+  use_frameworks!
+
+  pod 'RateLimit', path: '~/dev/RateLimit'
+end

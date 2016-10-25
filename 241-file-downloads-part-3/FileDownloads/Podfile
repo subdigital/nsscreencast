@@ -1,0 +1,6 @@
+target 'FileDownloads' do
+  use_frameworks!
+
+  pod 'RateLimit', '~> 1.4.0'
+
+end
