@@ -1,0 +1,15 @@
+require 'colored'
+
+guard :shell do
+  watch(/(.*).swift$/) {|m|
+
+    puts "Modified: #{m[0]}"
+    puts "Running tests..."
+    `swift test`
+    if $? == 0
+      puts "Passed".green
+    else
+      puts "Failed".red
+    end
+  }
+end
