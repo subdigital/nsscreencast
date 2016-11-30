@@ -33,7 +33,7 @@ class APIClient {
                 if let json = try? JSONSerialization.jsonObject(with: data!, options: []) as? JSONDictionary,
                     let episodesJSON = json?["episodes"] as? [JSONDictionary] {
 
-                    let episodes = episodesJSON.map(EpisodeResponse.init).flatMap { $0! }
+                    let episodes = episodesJSON.flatMap(EpisodeResponse.init)
                     DispatchQueue.main.async {
                         completion(.success(episodes))
                     }
