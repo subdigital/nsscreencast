@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3489E04E184A66C2000843E9 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3489E04D184A66C2000843E9 /* CoreBluetooth.framework */; };
 		B56CEEBC1830966800B9ACFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56CEEBB1830966800B9ACFF /* Foundation.framework */; };
 		B56CEEBE1830966800B9ACFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56CEEBD1830966800B9ACFF /* CoreGraphics.framework */; };
 		B56CEEC01830966800B9ACFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56CEEBF1830966800B9ACFF /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3489E04D184A66C2000843E9 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		B56CEEB81830966800B9ACFF /* BeaconFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56CEEBB1830966800B9ACFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B56CEEBD1830966800B9ACFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3489E04E184A66C2000843E9 /* CoreBluetooth.framework in Frameworks */,
 				B5DEAE8C1832D4EC007C1467 /* CoreLocation.framework in Frameworks */,
 				B56CEEBE1830966800B9ACFF /* CoreGraphics.framework in Frameworks */,
 				B56CEEC01830966800B9ACFF /* UIKit.framework in Frameworks */,
@@ -104,6 +107,7 @@
 		B56CEEBA1830966800B9ACFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3489E04D184A66C2000843E9 /* CoreBluetooth.framework */,
 				B56CEEF01830983300B9ACFF /* CoreLocation.framework */,
 				B56CEEBB1830966800B9ACFF /* Foundation.framework */,
 				B56CEEBD1830966800B9ACFF /* CoreGraphics.framework */,
