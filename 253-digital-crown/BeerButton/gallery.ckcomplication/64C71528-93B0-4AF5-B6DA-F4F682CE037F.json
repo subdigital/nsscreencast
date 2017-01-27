@@ -1,0 +1,12 @@
+{
+  "class" : "CLKComplicationTemplateModularLargeStandardBody",
+  "body1TextProvider" : {
+    "class" : "CLKSimpleTextProvider",
+    "text" : "Place Order"
+  },
+  "version" : 30000,
+  "headerTextProvider" : {
+    "class" : "CLKSimpleTextProvider",
+    "text" : "Beer Button"
+  }
+}
