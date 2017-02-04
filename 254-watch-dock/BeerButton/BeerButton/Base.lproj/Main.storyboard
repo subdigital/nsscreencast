@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kmX-g9-jtG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="A6Q-lG-JXD">
+            <objects>
+                <tableViewController id="KQg-rl-pvW" customClass="ViewController" customModule="BeerButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="NJW-wg-JGu">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="BeerCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeerCell" rowHeight="80" id="4Pi-17-pku" customClass="BeerCell" customModule="BeerButton" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Pi-17-pku" id="wjC-0q-bNM">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B97-sV-0hc">
+                                            <rect key="frame" x="20" y="8" width="58" height="58"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="58" id="H5B-wP-XDj"/>
+                                                <constraint firstAttribute="height" constant="58" id="XAi-Ke-syO"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="di8-WF-bKp">
+                                            <rect key="frame" x="93" y="23" width="168" height="28"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="168" id="DJx-qy-0G1"/>
+                                                <constraint firstAttribute="height" constant="28" id="Oom-OX-hI1"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="di8-WF-bKp" firstAttribute="leading" secondItem="B97-sV-0hc" secondAttribute="trailing" constant="15" id="oMD-yy-5yR"/>
+                                        <constraint firstItem="di8-WF-bKp" firstAttribute="top" secondItem="wjC-0q-bNM" secondAttribute="topMargin" constant="15" id="r8Y-Pu-jbu"/>
+                                        <constraint firstItem="B97-sV-0hc" firstAttribute="top" secondItem="wjC-0q-bNM" secondAttribute="topMargin" id="s7F-Ug-CiZ"/>
+                                        <constraint firstItem="B97-sV-0hc" firstAttribute="leading" secondItem="wjC-0q-bNM" secondAttribute="leadingMargin" constant="12" id="u8y-Sd-d1z"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="beerImage" destination="B97-sV-0hc" id="ych-YG-UNN"/>
+                                    <outlet property="beerLabel" destination="di8-WF-bKp" id="Kcd-a5-rPx"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KQg-rl-pvW" id="nGG-BT-HmG"/>
+                            <outlet property="delegate" destination="KQg-rl-pvW" id="RqR-G8-i8T"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="5RS-pg-IxK">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="dV0-Mz-mvA">
+                            <connections>
+                                <action selector="addBeer:" destination="KQg-rl-pvW" id="TGB-z2-npa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HKO-vp-KH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="385" y="396"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rqZ-ZU-ALE">
+            <objects>
+                <navigationController id="kmX-g9-jtG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J9e-4f-Geh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KQg-rl-pvW" kind="relationship" relationship="rootViewController" id="AYa-ZI-I1H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zGX-Zp-ye2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-435" y="396"/>
+        </scene>
+    </scenes>
+</document>
