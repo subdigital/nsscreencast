@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21E5DDA61E3591BF00CF1080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E5DDA51E3591BF00CF1080 /* AppDelegate.swift */; };
+		21E5DDA81E3591BF00CF1080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E5DDA71E3591BF00CF1080 /* ViewController.swift */; };
+		21E5DDAD1E3591BF00CF1080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E5DDAC1E3591BF00CF1080 /* Assets.xcassets */; };
+		21E5DDB01E3591BF00CF1080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E5DDAE1E3591BF00CF1080 /* LaunchScreen.storyboard */; };
+		21E5DDB81E35927200CF1080 /* PinInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E5DDB71E35927200CF1080 /* PinInput.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21E5DDA21E3591BF00CF1080 /* Pin Input.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pin Input.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21E5DDA51E3591BF00CF1080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21E5DDA71E3591BF00CF1080 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21E5DDAC1E3591BF00CF1080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21E5DDAF1E3591BF00CF1080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21E5DDB11E3591BF00CF1080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21E5DDB71E35927200CF1080 /* PinInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinInput.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21E5DD9F1E3591BF00CF1080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21E5DD991E3591BF00CF1080 = {
+			isa = PBXGroup;
+			children = (
+				21E5DDA41E3591BF00CF1080 /* Pin Input */,
+				21E5DDA31E3591BF00CF1080 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21E5DDA31E3591BF00CF1080 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21E5DDA21E3591BF00CF1080 /* Pin Input.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21E5DDA41E3591BF00CF1080 /* Pin Input */ = {
+			isa = PBXGroup;
+			children = (
+				21E5DDA51E3591BF00CF1080 /* AppDelegate.swift */,
+				21E5DDA71E3591BF00CF1080 /* ViewController.swift */,
+				21E5DDB71E35927200CF1080 /* PinInput.swift */,
+				21E5DDAC1E3591BF00CF1080 /* Assets.xcassets */,
+				21E5DDAE1E3591BF00CF1080 /* LaunchScreen.storyboard */,
+				21E5DDB11E3591BF00CF1080 /* Info.plist */,
+			);
+			path = "Pin Input";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21E5DDA11E3591BF00CF1080 /* Pin Input */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21E5DDB41E3591BF00CF1080 /* Build configuration list for PBXNativeTarget "Pin Input" */;
+			buildPhases = (
+				21E5DD9E1E3591BF00CF1080 /* Sources */,
+				21E5DD9F1E3591BF00CF1080 /* Frameworks */,
+				21E5DDA01E3591BF00CF1080 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pin Input";
+			productName = "Pin Input";
+			productReference = 21E5DDA21E3591BF00CF1080 /* Pin Input.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21E5DD9A1E3591BF00CF1080 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Sam Soffes";
+				TargetAttributes = {
+					21E5DDA11E3591BF00CF1080 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LHDXBG4XBK;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 21E5DD9D1E3591BF00CF1080 /* Build configuration list for PBXProject "Pin Input" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21E5DD991E3591BF00CF1080;
+			productRefGroup = 21E5DDA31E3591BF00CF1080 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21E5DDA11E3591BF00CF1080 /* Pin Input */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21E5DDA01E3591BF00CF1080 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E5DDB01E3591BF00CF1080 /* LaunchScreen.storyboard in Resources */,
+				21E5DDAD1E3591BF00CF1080 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21E5DD9E1E3591BF00CF1080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E5DDB81E35927200CF1080 /* PinInput.swift in Sources */,
+				21E5DDA81E3591BF00CF1080 /* ViewController.swift in Sources */,
+				21E5DDA61E3591BF00CF1080 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		21E5DDAE1E3591BF00CF1080 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21E5DDAF1E3591BF00CF1080 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21E5DDB21E3591BF00CF1080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21E5DDB31E3591BF00CF1080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21E5DDB51E3591BF00CF1080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LHDXBG4XBK;
+				INFOPLIST_FILE = "Pin Input/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.Pin-Input";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		21E5DDB61E3591BF00CF1080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LHDXBG4XBK;
+				INFOPLIST_FILE = "Pin Input/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.Pin-Input";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21E5DD9D1E3591BF00CF1080 /* Build configuration list for PBXProject "Pin Input" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21E5DDB21E3591BF00CF1080 /* Debug */,
+				21E5DDB31E3591BF00CF1080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21E5DDB41E3591BF00CF1080 /* Build configuration list for PBXNativeTarget "Pin Input" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21E5DDB51E3591BF00CF1080 /* Debug */,
+				21E5DDB61E3591BF00CF1080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21E5DD9A1E3591BF00CF1080 /* Project object */;
+}
