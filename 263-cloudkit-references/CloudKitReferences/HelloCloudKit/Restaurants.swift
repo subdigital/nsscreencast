@@ -29,29 +29,4 @@ class Restaurants {
         
         container.publicCloudDatabase.add(queryOperation)
     }
- 
-    static func reviews(for restaurantID: CKRecordID, completion: @escaping ([Review], Error?) -> Void) {
-        let ref = CKReference(recordID: restaurantID, action: .deleteSelf)
-        let predicate = NSPredicate(format: "restaurant == %@", ref)
-        let query = CKQuery(recordType: Review.recordType, predicate: predicate)
-        let queryOperation = CKQueryOperation(query: query)
-        
-        var results = [Review]()
-        queryOperation.recordFetchedBlock = { record in
-            results.append(Review(record: record))
-        }
-        queryOperation.queryCompletionBlock = { _, e in
-            DispatchQueue.main.async {
-                completion(results, e)
-            }
-        }
-        
-        container.publicCloudDatabase.add(queryOperation)
-    }
-    
-    static func save(review: Review) {
-        container.publicCloudDatabase.save(review.record) { (record, error) in
-            print("Saved record?  \(record?.recordID)  (Error: \(error))")
-        }
-    }
 }

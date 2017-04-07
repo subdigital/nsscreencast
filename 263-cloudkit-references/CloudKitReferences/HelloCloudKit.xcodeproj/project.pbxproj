@@ -21,7 +21,6 @@
 		B5877AD71E8C48E200B4A7E2 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5877AD61E8C48E200B4A7E2 /* ReviewCell.swift */; };
 		B5877AD91E8C778D00B4A7E2 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5877AD81E8C778D00B4A7E2 /* ReviewViewController.swift */; };
 		B5E5F75F1E64821F00280CC5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E5F75E1E64821F00280CC5 /* CloudKit.framework */; };
-		B5E639EF1E8EB005004CE999 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E639EE1E8EB005004CE999 /* Review.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +43,6 @@
 		B5877AD81E8C778D00B4A7E2 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		B5E5F75D1E64821300280CC5 /* HelloCloudKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloCloudKit.entitlements; sourceTree = "<group>"; };
 		B5E5F75E1E64821F00280CC5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		B5E639EE1E8EB005004CE999 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 			children = (
 				B582983A1E771E2100B91EAB /* Restaurant.swift */,
 				B5877AD41E8C422C00B4A7E2 /* Restaurants.swift */,
-				B5E639EE1E8EB005004CE999 /* Review.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -279,7 +276,6 @@
 				B5877AD91E8C778D00B4A7E2 /* ReviewViewController.swift in Sources */,
 				B582983B1E771E2100B91EAB /* Restaurant.swift in Sources */,
 				B5877AD71E8C48E200B4A7E2 /* ReviewCell.swift in Sources */,
-				B5E639EF1E8EB005004CE999 /* Review.swift in Sources */,
 				B5877ACC1E8AE69200B4A7E2 /* RestaurantViewController.swift in Sources */,
 				B582983E1E771E3100B91EAB /* RestaurantsViewController.swift in Sources */,
 				B5877AD11E8C19DC00B4A7E2 /* AddressCell.swift in Sources */,

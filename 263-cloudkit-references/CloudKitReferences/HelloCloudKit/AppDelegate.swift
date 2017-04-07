@@ -17,6 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        let record = CKRecord(recordType: "Review")
+        record["author_name"] = "Mike" as NSString
+        record["comment"] = "Best burger in Houston!" as NSString
+        record["stars"] = 4.5 as NSNumber
+        
+        let hubcapID = CKRecordID(recordName: "my-restaurant")
+        record["restaurant"] = CKReference(recordID: hubcapID,
+                                           action: .deleteSelf)
+        
+        CKContainer.default().publicCloudDatabase.save(record) { (record, error) in
+            print("Record: \(record)     Error: \(error)")
+        }
                
         setupAppearance()
         checkAccountStatus()
