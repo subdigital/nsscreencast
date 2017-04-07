@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C045973B0CA707E5E4706F0 /* Pods_HelloCloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 383201322E7C8EF5925BFC0A /* Pods_HelloCloudKit.framework */; };
+		B508C6741E3F833300C83C6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B508C6731E3F833300C83C6A /* AppDelegate.swift */; };
+		B508C6791E3F833300C83C6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B508C6771E3F833300C83C6A /* Main.storyboard */; };
+		B508C67B1E3F833300C83C6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B508C67A1E3F833300C83C6A /* Assets.xcassets */; };
+		B508C67E1E3F833300C83C6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B508C67C1E3F833300C83C6A /* LaunchScreen.storyboard */; };
+		B582983B1E771E2100B91EAB /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B582983A1E771E2100B91EAB /* Restaurant.swift */; };
+		B582983E1E771E3100B91EAB /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B582983D1E771E3100B91EAB /* RestaurantsViewController.swift */; };
+		B5877ACC1E8AE69200B4A7E2 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5877ACB1E8AE69200B4A7E2 /* RestaurantViewController.swift */; };
+		B5877ACF1E8AF20F00B4A7E2 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5877ACE1E8AF20F00B4A7E2 /* RestaurantCell.swift */; };
+		B5877AD11E8C19DC00B4A7E2 /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5877AD01E8C19DC00B4A7E2 /* AddressCell.swift */; };
+		B5877AD31E8C421F00B4A7E2 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5877AD21E8C421F00B4A7E2 /* Review.swift */; };
+		B5877AD51E8C422C00B4A7E2 /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5877AD41E8C422C00B4A7E2 /* Restaurants.swift */; };
+		B5877AD71E8C48E200B4A7E2 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5877AD61E8C48E200B4A7E2 /* ReviewCell.swift */; };
+		B5877AD91E8C778D00B4A7E2 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5877AD81E8C778D00B4A7E2 /* ReviewViewController.swift */; };
+		B5E5F75F1E64821F00280CC5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E5F75E1E64821F00280CC5 /* CloudKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		383201322E7C8EF5925BFC0A /* Pods_HelloCloudKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloCloudKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D05E8BF85629B348B815C4 /* Pods-HelloCloudKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCloudKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloCloudKit/Pods-HelloCloudKit.release.xcconfig"; sourceTree = "<group>"; };
+		5B0657AC5DDAD53E6A8770FB /* Pods-HelloCloudKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCloudKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloCloudKit/Pods-HelloCloudKit.debug.xcconfig"; sourceTree = "<group>"; };
+		B508C6701E3F833300C83C6A /* HelloCloudKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCloudKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B508C6731E3F833300C83C6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B508C6781E3F833300C83C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B508C67A1E3F833300C83C6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B508C67D1E3F833300C83C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B508C67F1E3F833300C83C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B582983A1E771E2100B91EAB /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		B582983D1E771E3100B91EAB /* RestaurantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		B5877ACB1E8AE69200B4A7E2 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		B5877ACE1E8AF20F00B4A7E2 /* RestaurantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		B5877AD01E8C19DC00B4A7E2 /* AddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
+		B5877AD21E8C421F00B4A7E2 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		B5877AD41E8C422C00B4A7E2 /* Restaurants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
+		B5877AD61E8C48E200B4A7E2 /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		B5877AD81E8C778D00B4A7E2 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		B5E5F75D1E64821300280CC5 /* HelloCloudKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloCloudKit.entitlements; sourceTree = "<group>"; };
+		B5E5F75E1E64821F00280CC5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B508C66D1E3F833200C83C6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5E5F75F1E64821F00280CC5 /* CloudKit.framework in Frameworks */,
+				7C045973B0CA707E5E4706F0 /* Pods_HelloCloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B508C6671E3F833200C83C6A = {
+			isa = PBXGroup;
+			children = (
+				B508C6721E3F833300C83C6A /* HelloCloudKit */,
+				B508C6711E3F833300C83C6A /* Products */,
+				B508C6861E3F834D00C83C6A /* Frameworks */,
+				D58C08298FA14704E48A3B3C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B508C6711E3F833300C83C6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B508C6701E3F833300C83C6A /* HelloCloudKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B508C6721E3F833300C83C6A /* HelloCloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				B5877ACD1E8AF20500B4A7E2 /* Views */,
+				B582983C1E771E2600B91EAB /* Controllers */,
+				B58298391E771E1700B91EAB /* Models */,
+				B5E5F75D1E64821300280CC5 /* HelloCloudKit.entitlements */,
+				B508C6731E3F833300C83C6A /* AppDelegate.swift */,
+				B508C6771E3F833300C83C6A /* Main.storyboard */,
+				B508C67A1E3F833300C83C6A /* Assets.xcassets */,
+				B508C67C1E3F833300C83C6A /* LaunchScreen.storyboard */,
+				B508C67F1E3F833300C83C6A /* Info.plist */,
+			);
+			path = HelloCloudKit;
+			sourceTree = "<group>";
+		};
+		B508C6861E3F834D00C83C6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5E5F75E1E64821F00280CC5 /* CloudKit.framework */,
+				383201322E7C8EF5925BFC0A /* Pods_HelloCloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B58298391E771E1700B91EAB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B582983A1E771E2100B91EAB /* Restaurant.swift */,
+				B5877AD21E8C421F00B4A7E2 /* Review.swift */,
+				B5877AD41E8C422C00B4A7E2 /* Restaurants.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B582983C1E771E2600B91EAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B582983D1E771E3100B91EAB /* RestaurantsViewController.swift */,
+				B5877ACB1E8AE69200B4A7E2 /* RestaurantViewController.swift */,
+				B5877AD81E8C778D00B4A7E2 /* ReviewViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B5877ACD1E8AF20500B4A7E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5877ACE1E8AF20F00B4A7E2 /* RestaurantCell.swift */,
+				B5877AD01E8C19DC00B4A7E2 /* AddressCell.swift */,
+				B5877AD61E8C48E200B4A7E2 /* ReviewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D58C08298FA14704E48A3B3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B0657AC5DDAD53E6A8770FB /* Pods-HelloCloudKit.debug.xcconfig */,
+				52D05E8BF85629B348B815C4 /* Pods-HelloCloudKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B508C66F1E3F833200C83C6A /* HelloCloudKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B508C6821E3F833300C83C6A /* Build configuration list for PBXNativeTarget "HelloCloudKit" */;
+			buildPhases = (
+				83381993993EB898F8D16976 /* [CP] Check Pods Manifest.lock */,
+				B508C66C1E3F833200C83C6A /* Sources */,
+				B508C66D1E3F833200C83C6A /* Frameworks */,
+				B508C66E1E3F833200C83C6A /* Resources */,
+				47D6C33820C0E56B87EFF767 /* [CP] Embed Pods Frameworks */,
+				F2D3483BC35DC6C3BDBE0D44 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloCloudKit;
+			productName = HelloCloudKit;
+			productReference = B508C6701E3F833300C83C6A /* HelloCloudKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B508C6681E3F833200C83C6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = NSScreencast;
+				TargetAttributes = {
+					B508C66F1E3F833200C83C6A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = C2K3864N2N;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B508C66B1E3F833200C83C6A /* Build configuration list for PBXProject "HelloCloudKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B508C6671E3F833200C83C6A;
+			productRefGroup = B508C6711E3F833300C83C6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B508C66F1E3F833200C83C6A /* HelloCloudKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B508C66E1E3F833200C83C6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B508C67E1E3F833300C83C6A /* LaunchScreen.storyboard in Resources */,
+				B508C67B1E3F833300C83C6A /* Assets.xcassets in Resources */,
+				B508C6791E3F833300C83C6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47D6C33820C0E56B87EFF767 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloCloudKit/Pods-HelloCloudKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83381993993EB898F8D16976 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2D3483BC35DC6C3BDBE0D44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloCloudKit/Pods-HelloCloudKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B508C66C1E3F833200C83C6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5877AD51E8C422C00B4A7E2 /* Restaurants.swift in Sources */,
+				B5877ACF1E8AF20F00B4A7E2 /* RestaurantCell.swift in Sources */,
+				B5877AD91E8C778D00B4A7E2 /* ReviewViewController.swift in Sources */,
+				B582983B1E771E2100B91EAB /* Restaurant.swift in Sources */,
+				B5877AD31E8C421F00B4A7E2 /* Review.swift in Sources */,
+				B5877AD71E8C48E200B4A7E2 /* ReviewCell.swift in Sources */,
+				B5877ACC1E8AE69200B4A7E2 /* RestaurantViewController.swift in Sources */,
+				B582983E1E771E3100B91EAB /* RestaurantsViewController.swift in Sources */,
+				B5877AD11E8C19DC00B4A7E2 /* AddressCell.swift in Sources */,
+				B508C6741E3F833300C83C6A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B508C6771E3F833300C83C6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B508C6781E3F833300C83C6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B508C67C1E3F833300C83C6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B508C67D1E3F833300C83C6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B508C6801E3F833300C83C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B508C6811E3F833300C83C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B508C6831E3F833300C83C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B0657AC5DDAD53E6A8770FB /* Pods-HelloCloudKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HelloCloudKit/HelloCloudKit.entitlements;
+				DEVELOPMENT_TEAM = C2K3864N2N;
+				INFOPLIST_FILE = HelloCloudKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsscreencast.HelloCloudKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B508C6841E3F833300C83C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52D05E8BF85629B348B815C4 /* Pods-HelloCloudKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HelloCloudKit/HelloCloudKit.entitlements;
+				DEVELOPMENT_TEAM = C2K3864N2N;
+				INFOPLIST_FILE = HelloCloudKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsscreencast.HelloCloudKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B508C66B1E3F833200C83C6A /* Build configuration list for PBXProject "HelloCloudKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B508C6801E3F833300C83C6A /* Debug */,
+				B508C6811E3F833300C83C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B508C6821E3F833300C83C6A /* Build configuration list for PBXNativeTarget "HelloCloudKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B508C6831E3F833300C83C6A /* Debug */,
+				B508C6841E3F833300C83C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B508C6681E3F833200C83C6A /* Project object */;
+}
