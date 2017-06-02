@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B52E18E21ED48A9200CC3EC3 /* NilCoalescingAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52E18E11ED48A9200CC3EC3 /* NilCoalescingAssignment.swift */; };
+		B52E18E41ED49D2D00CC3EC3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52E18E31ED49D2D00CC3EC3 /* AppCoordinator.swift */; };
+		B52E18E61ED49DDD00CC3EC3 /* UIViewController+Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52E18E51ED49DDD00CC3EC3 /* UIViewController+Storyboards.swift */; };
+		B58063921ECA59760008C407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58063911ECA59760008C407 /* AppDelegate.swift */; };
+		B58063941ECA59760008C407 /* FoldersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58063931ECA59760008C407 /* FoldersViewController.swift */; };
+		B58063971ECA59760008C407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58063951ECA59760008C407 /* Main.storyboard */; };
+		B58063991ECA59760008C407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58063981ECA59760008C407 /* Assets.xcassets */; };
+		B580639C1ECA59760008C407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B580639A1ECA59760008C407 /* LaunchScreen.storyboard */; };
+		B58063A61ECA598A0008C407 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58063A51ECA598A0008C407 /* CloudKit.framework */; };
+		B58063A81ECB62690008C407 /* NotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58063A71ECB62690008C407 /* NotesManager.swift */; };
+		B58063AB1ECB62A50008C407 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58063AA1ECB62A50008C407 /* Folder.swift */; };
+		B58063AE1ECB63210008C407 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58063AD1ECB63210008C407 /* Result.swift */; };
+		B58063B01ECB6B280008C407 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58063AF1ECB6B280008C407 /* UIViewController+Alerts.swift */; };
+		B58063B31ECB6CE60008C407 /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58063B21ECB6CE60008C407 /* NotesListViewController.swift */; };
+		B58063B51ECB71530008C407 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58063B41ECB71530008C407 /* Note.swift */; };
+		B58063B71ECB79060008C407 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58063B61ECB79060008C407 /* NoteViewController.swift */; };
+		B5A545151EDF180B0062B043 /* InitialSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A545141EDF180B0062B043 /* InitialSetupViewController.swift */; };
+		B5A545181EDF1D540062B043 /* InMemoryNotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A545171EDF1D540062B043 /* InMemoryNotesManager.swift */; };
+		B5A5451A1EDF1D690062B043 /* InMemoryNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A545191EDF1D690062B043 /* InMemoryNote.swift */; };
+		B5A5451E1EDF1E4B0062B043 /* InMemoryFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5451D1EDF1E4B0062B043 /* InMemoryFolder.swift */; };
+		B5A545251EDF72940062B043 /* FoldersDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A545241EDF72940062B043 /* FoldersDatasource.swift */; };
+		B5A545271EDF82C80062B043 /* NotesDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A545261EDF82C80062B043 /* NotesDatasource.swift */; };
+		B5A545291EE081720062B043 /* DatasourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A545281EE081720062B043 /* DatasourceDelegate.swift */; };
+		B5A5452C1EE087B20062B043 /* ArrayDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5452B1EE087B20062B043 /* ArrayDatasource.swift */; };
+		B5A5452F1EE09B840062B043 /* CloudKitNotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5452E1EE09B840062B043 /* CloudKitNotesManager.swift */; };
+		B5A545311EE09B8C0062B043 /* CloudKitFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A545301EE09B8C0062B043 /* CloudKitFolder.swift */; };
+		B5A545331EE09B930062B043 /* CloudKitNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A545321EE09B930062B043 /* CloudKitNote.swift */; };
+		B5A545351EE0A1BF0062B043 /* CKRecordWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A545341EE0A1BF0062B043 /* CKRecordWrapper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B52E18E11ED48A9200CC3EC3 /* NilCoalescingAssignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NilCoalescingAssignment.swift; sourceTree = "<group>"; };
+		B52E18E31ED49D2D00CC3EC3 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B52E18E51ED49DDD00CC3EC3 /* UIViewController+Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboards.swift"; sourceTree = "<group>"; };
+		B580638E1ECA59760008C407 /* SharedNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharedNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B58063911ECA59760008C407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B58063931ECA59760008C407 /* FoldersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersViewController.swift; sourceTree = "<group>"; };
+		B58063961ECA59760008C407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B58063981ECA59760008C407 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B580639B1ECA59760008C407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B580639D1ECA59760008C407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B58063A31ECA59840008C407 /* SharedNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharedNotes.entitlements; sourceTree = "<group>"; };
+		B58063A51ECA598A0008C407 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		B58063A71ECB62690008C407 /* NotesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesManager.swift; sourceTree = "<group>"; };
+		B58063AA1ECB62A50008C407 /* Folder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
+		B58063AD1ECB63210008C407 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B58063AF1ECB6B280008C407 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		B58063B21ECB6CE60008C407 /* NotesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
+		B58063B41ECB71530008C407 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		B58063B61ECB79060008C407 /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		B5A545141EDF180B0062B043 /* InitialSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialSetupViewController.swift; sourceTree = "<group>"; };
+		B5A545171EDF1D540062B043 /* InMemoryNotesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryNotesManager.swift; sourceTree = "<group>"; };
+		B5A545191EDF1D690062B043 /* InMemoryNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryNote.swift; sourceTree = "<group>"; };
+		B5A5451D1EDF1E4B0062B043 /* InMemoryFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryFolder.swift; sourceTree = "<group>"; };
+		B5A545241EDF72940062B043 /* FoldersDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldersDatasource.swift; sourceTree = "<group>"; };
+		B5A545261EDF82C80062B043 /* NotesDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesDatasource.swift; sourceTree = "<group>"; };
+		B5A545281EE081720062B043 /* DatasourceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatasourceDelegate.swift; sourceTree = "<group>"; };
+		B5A5452B1EE087B20062B043 /* ArrayDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDatasource.swift; sourceTree = "<group>"; };
+		B5A5452E1EE09B840062B043 /* CloudKitNotesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitNotesManager.swift; sourceTree = "<group>"; };
+		B5A545301EE09B8C0062B043 /* CloudKitFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitFolder.swift; sourceTree = "<group>"; };
+		B5A545321EE09B930062B043 /* CloudKitNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitNote.swift; sourceTree = "<group>"; };
+		B5A545341EE0A1BF0062B043 /* CKRecordWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKRecordWrapper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B580638B1ECA59760008C407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B58063A61ECA598A0008C407 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B58063851ECA59760008C407 = {
+			isa = PBXGroup;
+			children = (
+				B58063901ECA59760008C407 /* SharedNotes */,
+				B580638F1ECA59760008C407 /* Products */,
+				B58063A41ECA598A0008C407 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B580638F1ECA59760008C407 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B580638E1ECA59760008C407 /* SharedNotes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B58063901ECA59760008C407 /* SharedNotes */ = {
+			isa = PBXGroup;
+			children = (
+				B58063AC1ECB63190008C407 /* Support */,
+				B58063A91ECB629A0008C407 /* Models */,
+				B58063B11ECB6C7F0008C407 /* Controllers */,
+				B58063A31ECA59840008C407 /* SharedNotes.entitlements */,
+				B58063911ECA59760008C407 /* AppDelegate.swift */,
+				B52E18E31ED49D2D00CC3EC3 /* AppCoordinator.swift */,
+				B58063951ECA59760008C407 /* Main.storyboard */,
+				B58063981ECA59760008C407 /* Assets.xcassets */,
+				B580639A1ECA59760008C407 /* LaunchScreen.storyboard */,
+				B580639D1ECA59760008C407 /* Info.plist */,
+			);
+			path = SharedNotes;
+			sourceTree = "<group>";
+		};
+		B58063A41ECA598A0008C407 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B58063A51ECA598A0008C407 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B58063A91ECB629A0008C407 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5A5452A1EE082A40062B043 /* Datasources */,
+				B5A545161EDF1D440062B043 /* InMemory */,
+				B5A5452D1EE09B770062B043 /* CloudKit */,
+				B58063A71ECB62690008C407 /* NotesManager.swift */,
+				B58063AA1ECB62A50008C407 /* Folder.swift */,
+				B58063B41ECB71530008C407 /* Note.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B58063AC1ECB63190008C407 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				B58063AD1ECB63210008C407 /* Result.swift */,
+				B58063AF1ECB6B280008C407 /* UIViewController+Alerts.swift */,
+				B52E18E11ED48A9200CC3EC3 /* NilCoalescingAssignment.swift */,
+				B52E18E51ED49DDD00CC3EC3 /* UIViewController+Storyboards.swift */,
+				B5A545281EE081720062B043 /* DatasourceDelegate.swift */,
+				B5A5452B1EE087B20062B043 /* ArrayDatasource.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		B58063B11ECB6C7F0008C407 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B58063931ECA59760008C407 /* FoldersViewController.swift */,
+				B58063B21ECB6CE60008C407 /* NotesListViewController.swift */,
+				B58063B61ECB79060008C407 /* NoteViewController.swift */,
+				B5A545141EDF180B0062B043 /* InitialSetupViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B5A545161EDF1D440062B043 /* InMemory */ = {
+			isa = PBXGroup;
+			children = (
+				B5A545171EDF1D540062B043 /* InMemoryNotesManager.swift */,
+				B5A545191EDF1D690062B043 /* InMemoryNote.swift */,
+				B5A5451D1EDF1E4B0062B043 /* InMemoryFolder.swift */,
+			);
+			name = InMemory;
+			sourceTree = "<group>";
+		};
+		B5A5452A1EE082A40062B043 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				B5A545241EDF72940062B043 /* FoldersDatasource.swift */,
+				B5A545261EDF82C80062B043 /* NotesDatasource.swift */,
+			);
+			name = Datasources;
+			sourceTree = "<group>";
+		};
+		B5A5452D1EE09B770062B043 /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				B5A5452E1EE09B840062B043 /* CloudKitNotesManager.swift */,
+				B5A545301EE09B8C0062B043 /* CloudKitFolder.swift */,
+				B5A545321EE09B930062B043 /* CloudKitNote.swift */,
+				B5A545341EE0A1BF0062B043 /* CKRecordWrapper.swift */,
+			);
+			name = CloudKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B580638D1ECA59760008C407 /* SharedNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B58063A01ECA59760008C407 /* Build configuration list for PBXNativeTarget "SharedNotes" */;
+			buildPhases = (
+				B580638A1ECA59760008C407 /* Sources */,
+				B580638B1ECA59760008C407 /* Frameworks */,
+				B580638C1ECA59760008C407 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedNotes;
+			productName = SharedNotes;
+			productReference = B580638E1ECA59760008C407 /* SharedNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B58063861ECA59760008C407 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = NSScreencast;
+				TargetAttributes = {
+					B580638D1ECA59760008C407 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = C2K3864N2N;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B58063891ECA59760008C407 /* Build configuration list for PBXProject "SharedNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B58063851ECA59760008C407;
+			productRefGroup = B580638F1ECA59760008C407 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B580638D1ECA59760008C407 /* SharedNotes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B580638C1ECA59760008C407 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B580639C1ECA59760008C407 /* LaunchScreen.storyboard in Resources */,
+				B58063991ECA59760008C407 /* Assets.xcassets in Resources */,
+				B58063971ECA59760008C407 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B580638A1ECA59760008C407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52E18E21ED48A9200CC3EC3 /* NilCoalescingAssignment.swift in Sources */,
+				B52E18E61ED49DDD00CC3EC3 /* UIViewController+Storyboards.swift in Sources */,
+				B5A545151EDF180B0062B043 /* InitialSetupViewController.swift in Sources */,
+				B5A545331EE09B930062B043 /* CloudKitNote.swift in Sources */,
+				B58063941ECA59760008C407 /* FoldersViewController.swift in Sources */,
+				B52E18E41ED49D2D00CC3EC3 /* AppCoordinator.swift in Sources */,
+				B5A545351EE0A1BF0062B043 /* CKRecordWrapper.swift in Sources */,
+				B58063B01ECB6B280008C407 /* UIViewController+Alerts.swift in Sources */,
+				B58063AE1ECB63210008C407 /* Result.swift in Sources */,
+				B5A5451A1EDF1D690062B043 /* InMemoryNote.swift in Sources */,
+				B5A5452F1EE09B840062B043 /* CloudKitNotesManager.swift in Sources */,
+				B58063B51ECB71530008C407 /* Note.swift in Sources */,
+				B58063B71ECB79060008C407 /* NoteViewController.swift in Sources */,
+				B5A5451E1EDF1E4B0062B043 /* InMemoryFolder.swift in Sources */,
+				B5A545311EE09B8C0062B043 /* CloudKitFolder.swift in Sources */,
+				B5A545181EDF1D540062B043 /* InMemoryNotesManager.swift in Sources */,
+				B58063A81ECB62690008C407 /* NotesManager.swift in Sources */,
+				B5A545291EE081720062B043 /* DatasourceDelegate.swift in Sources */,
+				B5A545271EDF82C80062B043 /* NotesDatasource.swift in Sources */,
+				B58063921ECA59760008C407 /* AppDelegate.swift in Sources */,
+				B58063AB1ECB62A50008C407 /* Folder.swift in Sources */,
+				B5A545251EDF72940062B043 /* FoldersDatasource.swift in Sources */,
+				B5A5452C1EE087B20062B043 /* ArrayDatasource.swift in Sources */,
+				B58063B31ECB6CE60008C407 /* NotesListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B58063951ECA59760008C407 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B58063961ECA59760008C407 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B580639A1ECA59760008C407 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B580639B1ECA59760008C407 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B580639E1ECA59760008C407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B580639F1ECA59760008C407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B58063A11ECA59760008C407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SharedNotes/SharedNotes.entitlements;
+				DEVELOPMENT_TEAM = C2K3864N2N;
+				INFOPLIST_FILE = SharedNotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsscreencast.SharedNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B58063A21ECA59760008C407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SharedNotes/SharedNotes.entitlements;
+				DEVELOPMENT_TEAM = C2K3864N2N;
+				INFOPLIST_FILE = SharedNotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsscreencast.SharedNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B58063891ECA59760008C407 /* Build configuration list for PBXProject "SharedNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B580639E1ECA59760008C407 /* Debug */,
+				B580639F1ECA59760008C407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B58063A01ECA59760008C407 /* Build configuration list for PBXNativeTarget "SharedNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B58063A11ECA59760008C407 /* Debug */,
+				B58063A21ECA59760008C407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B58063861ECA59760008C407 /* Project object */;
+}
