@@ -9,7 +9,7 @@
 import Foundation
 import CloudKit
 
-protocol CKRecordWrapper : VendsCoding {
+protocol CKRecordWrapper {
     static var RecordType: String { get }
     
     var record: CKRecord { get }

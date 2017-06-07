@@ -8,12 +8,7 @@
 
 import Foundation
 
-protocol VendsCoding {
-    func codable() -> NSCoding
-    static func fromCoding(decoder: NSCoder) -> Folder?
-}
-
-protocol Folder : VendsCoding {
+protocol Folder {
     var identifier: String? { get }
     var name: String { get set }
     var createdAt: Date? { get }

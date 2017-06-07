@@ -8,7 +8,7 @@
 
 import Foundation
 
-class InMemoryNote : Note, NSCoding, VendsCoding {
+class InMemoryNote : Note, NSCoding {
     var identifier: String?
     var content: String = ""
     var createdAt: Date?

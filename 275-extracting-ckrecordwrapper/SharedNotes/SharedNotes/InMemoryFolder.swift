@@ -8,7 +8,7 @@
 
 import Foundation
 
-class InMemoryFolder : Folder, NSCoding, VendsCoding {
+class InMemoryFolder : Folder, NSCoding {
     var identifier: String?
     var name: String
     var createdAt: Date?
