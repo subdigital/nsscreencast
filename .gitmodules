@@ -1,6 +1,0 @@
-[submodule "004-bdd-style-testing-with-kiwi/GuessTheNumber/lib/Kiwi"]
-	path = 004-bdd-style-testing-with-kiwi/GuessTheNumber/lib/Kiwi
-	url = https://github.com/allending/Kiwi.git
-[submodule "031-forms/best-latte-server"]
-	path = 031-forms/best-latte-server
-	url = https://github.com/subdigital/best-latte-server.git
