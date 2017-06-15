@@ -1,1 +1,0 @@
-../../../SSZipArchive/minizip/mztools.h

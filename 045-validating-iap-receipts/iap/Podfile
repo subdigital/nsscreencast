@@ -1,5 +1,0 @@
-platform :ios
-
-pod 'SVProgressHUD'
-pod 'MAConfirmButton'
-pod 'NSData+Base64'

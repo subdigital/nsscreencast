@@ -1,7 +1,0 @@
-PODS:
-  - AFNetworking (1.0RC1)
-  - SVWebViewController (0.1)
-
-DEPENDENCIES:
-  - AFNetworking
-  - SVWebViewController (from `https://github.com/subdigital/SVWebViewController')

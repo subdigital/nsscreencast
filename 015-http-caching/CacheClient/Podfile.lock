@@ -1,7 +1,0 @@
-PODS:
-  - AFNetworking (1.0RC1)
-  - SDURLCache (1.2)
-
-DEPENDENCIES:
-  - AFNetworking
-  - SDURLCache

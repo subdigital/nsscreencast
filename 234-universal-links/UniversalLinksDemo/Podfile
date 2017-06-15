@@ -1,6 +1,0 @@
-target 'SharedWebCredentialsDemo' do
-  use_frameworks!
-
-  pod 'SDWebImage'
-
-end

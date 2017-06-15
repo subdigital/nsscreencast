@@ -1,1 +1,0 @@
-../../WindowsAzureMobileServices/sdk/iOS/src/MSQuery.h

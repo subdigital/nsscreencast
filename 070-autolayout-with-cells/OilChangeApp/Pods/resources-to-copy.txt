@@ -1,1 +1,0 @@
-/Users/ben/nsscreencast/sourcecode/070-autolayout-with-cells/OilChangeApp/Pods/SSToolkit/SSToolkitResources.bundle

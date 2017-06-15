@@ -1,1 +1,0 @@
-../../MDMCoreData/Classes/MDMFetchedResultsTableDataSource/MDMFetchedResultsTableDataSource.h

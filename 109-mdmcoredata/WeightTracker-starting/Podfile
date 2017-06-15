@@ -1,8 +1,0 @@
-platform :ios, "7.0"
-
-target "WeightTracker" do
-end
-
-target "WeightTrackerTests" do
-end
-

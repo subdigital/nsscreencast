@@ -1,4 +1,0 @@
-PODS_ROOT = ${SRCROOT}/Pods
-ALWAYS_SEARCH_USER_PATHS = YES
-OTHER_LDFLAGS = -ObjC -Wl,-no_compact_unwind -lstdc++ -framework MessageUI -framework QuartzCore -framework SystemConfiguration
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/A2DynamicDelegate" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/BlocksKit" "${PODS_ROOT}/Headers/KKGridView" "${PODS_ROOT}/Headers/libffi"

@@ -1,2 +1,0 @@
-PODS_NINJAGAMETESTS_NIMBLE_FRAMEWORK_SEARCH_PATHS = $(inherited) "$(SDKROOT)/Developer/Library/Frameworks" "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-PODS_NINJAGAMETESTS_NIMBLE_OTHER_LDFLAGS = -framework "XCTest"

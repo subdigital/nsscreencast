@@ -1,1 +1,0 @@
-../../SSToolkit/SSToolkit/SSCollectionViewExtremityTableViewCell.h

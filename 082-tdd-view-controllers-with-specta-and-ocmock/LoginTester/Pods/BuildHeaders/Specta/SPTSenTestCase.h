@@ -1,1 +1,0 @@
-../../Specta/src/SPTSenTestCase.h

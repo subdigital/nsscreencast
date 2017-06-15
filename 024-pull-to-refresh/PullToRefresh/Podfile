@@ -1,4 +1,0 @@
-platform :ios
-xcodeproj 'PullToRefresh.xcodeproj'
-
-dependency 'SSPullToRefresh'

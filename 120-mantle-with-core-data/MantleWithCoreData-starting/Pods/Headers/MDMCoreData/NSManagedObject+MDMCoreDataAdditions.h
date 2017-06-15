@@ -1,1 +1,0 @@
-../../MDMCoreData/Classes/NSManagedObject+MDMCoreDataAdditions/NSManagedObject+MDMCoreDataAdditions.h

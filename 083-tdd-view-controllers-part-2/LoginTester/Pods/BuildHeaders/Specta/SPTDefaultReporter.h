@@ -1,1 +1,0 @@
-../../Specta/src/SPTDefaultReporter.h

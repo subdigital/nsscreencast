@@ -1,6 +1,0 @@
-framework module FXReachability {
-  umbrella header "FXReachability-umbrella.h"
-
-  export *
-  module * { export * }
-}

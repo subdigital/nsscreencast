@@ -1,5 +1,0 @@
-PODS:
-  - AFNetworking (0.9.1)
-
-DEPENDENCIES:
-  - AFNetworking

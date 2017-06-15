@@ -1,6 +1,0 @@
-framework module Argo {
-  umbrella header "Argo-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module Quick {
-  umbrella header "Pods-NinjaGameTests-Quick-umbrella.h"
-
-  export *
-  module * { export * }
-}
